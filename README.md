@@ -1,2 +1,2 @@
 # -quantitative_research
-Teach yourself every step of the quantitative research
+My road to qr ! 2025年12月8日19:30:40
