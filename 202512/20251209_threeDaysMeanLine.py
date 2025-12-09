@@ -23,6 +23,7 @@ df['signalBuyOrNot'] = np.where(df['threeDaysMean'].shift(1)<df['price'],1,0)
 df['threeDaysMeanGains'] = (df['incOrNot'] *df['signalBuyOrNot']).cumsum().round(2)
 df['brainlessFixedInvestment'] = df['incOrNot'].cumsum().round(2)
 print(df)
+
 '''
     day  price  incOrNot  threeDaysMean  signalBuyOrNot  threeDaysMeanGains  brainlessFixedInvestment
 0     1    100       NaN            NaN               0                 NaN                       NaN
