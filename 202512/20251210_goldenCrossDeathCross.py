@@ -12,6 +12,7 @@ Strategy:
 
 ''' 
 
+# modified version
 import numpy as np
 import pandas as pd
 
@@ -27,30 +28,74 @@ df['incOrNot'] = df['price'].pct_change().round(2)
 df['AverageThreeDays'] = df['price'].rolling(window=3).mean().round(2)
 df['AverageFiveDays'] = df['price'].rolling(window=5).mean().round(2)
 
-'''
-Start holding after the golden cross (1)
-Liquidation after a death cross (0)
-Other times it remains the same as yesterday
-'''
-
-df['signalBuyOrNot'] = 0
-for i in range(5,len(day)):
-    if df['AverageThreeDays'].iloc[i] > df['AverageFiveDays'].iloc[i]:
-        if df['AverageThreeDays'].iloc[i-1] < df['AverageFiveDays'].iloc[i-1]:
-            df['signalBuyOrNot'].iloc[i] = 1
-            continue
-    if df['AverageThreeDays'].iloc[i] < df['AverageFiveDays'].iloc[i]:
-        if df['AverageThreeDays'].iloc[i-1] > df['AverageFiveDays'].iloc[i-1]:
-            df['signalBuyOrNot'].iloc[i] = 0
-            continue
-    df['signalBuyOrNot'].iloc[i] = df['signalBuyOrNot'].iloc[i-1]
+golden_cross = (df['AverageThreeDays'] > df['AverageFiveDays'])*(
+    df['AverageThreeDays'].shift(1) < df['AverageFiveDays'].shift(1)
+)
+death_cross = (df['AverageThreeDays'] < df['AverageFiveDays'])*(
+    df['AverageThreeDays'].shift(1) > df['AverageFiveDays'].shift(1)
+)
+df['signalBuyOrNot'] = pd.Series(index=df.index, dtype=int)
+df.loc[golden_cross,'signalBuyOrNot'] = 1
+df.loc[death_cross,'signalBuyOrNot'] = 0
+df['signalBuyOrNot'] = df['signalBuyOrNot'].fillna(method='pad',axis=0)
+print(golden_cross,death_cross,df['signalBuyOrNot'])
 # The same day is counted as the same day, and the real market cannot be done, 
 # why shift? Because the moving average can only be calculated at the close, it can only be bought at the opening of the next day.
 # Only when the market closes today can we make tomorrow's judgment
-df['strategyGains'] = (df['incOrNot'] *df['signalBuyOrNot'].shift(1)).cumsum().round(2)  
-df['brainlessFixedInvestment'] = df['incOrNot'].cumsum().round(2)
+# df['strategyGains'] = (df['incOrNot'] *df['signalBuyOrNot'].shift(1)).cumsum().round(2)  
+# df['brainlessFixedInvestment'] = df['incOrNot'].cumsum().round(2)
     
-print(df)
+# print(df)
+
+
+
+
+
+
+
+
+#--------------------------------------------------------------------------
+# import numpy as np
+# import pandas as pd
+
+# price = [100, 102, 99, 97, 101, 105, 103, 108, 106, 110, 115, 112, 118, 120, 117]
+# day = [i for i in range(1,len(price)+1)]
+# df = pd.DataFrame({
+#     'day':day,
+#     'price':price
+# })
+
+# df['incOrNot'] = df['price'].pct_change().round(2)
+
+# df['AverageThreeDays'] = df['price'].rolling(window=3).mean().round(2)
+# df['AverageFiveDays'] = df['price'].rolling(window=5).mean().round(2)
+
+# '''
+# Start holding after the golden cross (1)
+# Liquidation after a death cross (0)
+# Other times it remains the same as yesterday
+# '''
+
+# df['signalBuyOrNot'] = 0
+# for i in range(5,len(day)):
+#     if df['AverageThreeDays'].iloc[i] > df['AverageFiveDays'].iloc[i]:
+#         if df['AverageThreeDays'].iloc[i-1] < df['AverageFiveDays'].iloc[i-1]:
+#             df['signalBuyOrNot'].iloc[i] = 1
+#             continue
+#     if df['AverageThreeDays'].iloc[i] < df['AverageFiveDays'].iloc[i]:
+#         if df['AverageThreeDays'].iloc[i-1] > df['AverageFiveDays'].iloc[i-1]:
+#             df['signalBuyOrNot'].iloc[i] = 0
+#             continue
+#     df['signalBuyOrNot'].iloc[i] = df['signalBuyOrNot'].iloc[i-1]
+# # The same day is counted as the same day, and the real market cannot be done, 
+# # why shift? Because the moving average can only be calculated at the close, it can only be bought at the opening of the next day.
+# # Only when the market closes today can we make tomorrow's judgment
+# df['strategyGains'] = (df['incOrNot'] *df['signalBuyOrNot'].shift(1)).cumsum().round(2)  
+# df['brainlessFixedInvestment'] = df['incOrNot'].cumsum().round(2)
+    
+# print(df)
+
+
 # '''
 #     day  price  incOrNot  AverageThreeDays  AverageFiveDays  signalBuyOrNot  strategyGains  brainlessFixedInvestment
 # 0     1    100       NaN               NaN              NaN               0            NaN                       NaN
