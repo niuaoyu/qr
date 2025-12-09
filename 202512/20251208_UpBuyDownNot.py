@@ -21,7 +21,6 @@ df['buyOrNot'] = np.where(df['incOrDec'].shift(1)>0,1,0)
 # Gains and Losses: 
 # If I hold it today (signal=1), my profit = today’s increase or decrease
 # If I take a short position today (signal=0), my profit = 0
-
 df['strategyGains'] = (df['incOrDec'] * df['buyOrNot']).cumsum().round(2)
 df['brainlessFixedInvestment'] = df['incOrDec'].cumsum().round(2)
 
