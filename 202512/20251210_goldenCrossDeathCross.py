@@ -11,6 +11,7 @@ Strategy:
         Both conditions are met at the same time = golden cross occurs
 
 ''' 
+
 import numpy as np
 import pandas as pd
 
