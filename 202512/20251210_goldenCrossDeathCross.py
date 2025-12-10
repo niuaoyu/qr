@@ -38,19 +38,13 @@ df['signalBuyOrNot'] = pd.Series(index=df.index, dtype=int)
 df.loc[golden_cross,'signalBuyOrNot'] = 1
 df.loc[death_cross,'signalBuyOrNot'] = 0
 df['signalBuyOrNot'] = df['signalBuyOrNot'].fillna(method='pad',axis=0)
-print(golden_cross,death_cross,df['signalBuyOrNot'])
 # The same day is counted as the same day, and the real market cannot be done, 
 # why shift? Because the moving average can only be calculated at the close, it can only be bought at the opening of the next day.
 # Only when the market closes today can we make tomorrow's judgment
-# df['strategyGains'] = (df['incOrNot'] *df['signalBuyOrNot'].shift(1)).cumsum().round(2)  
-# df['brainlessFixedInvestment'] = df['incOrNot'].cumsum().round(2)
+df['strategyGains'] = (df['incOrNot'] *df['signalBuyOrNot'].shift(1)).cumsum().round(2)  
+df['brainlessFixedInvestment'] = df['incOrNot'].cumsum().round(2)
     
-# print(df)
-
-
-
-
-
+print(df)
 
 
 
@@ -96,22 +90,22 @@ print(golden_cross,death_cross,df['signalBuyOrNot'])
 # print(df)
 
 
-# '''
-#     day  price  incOrNot  AverageThreeDays  AverageFiveDays  signalBuyOrNot  strategyGains  brainlessFixedInvestment
-# 0     1    100       NaN               NaN              NaN               0            NaN                       NaN
-# 1     2    102      0.02               NaN              NaN               0           0.00                      0.02
-# 2     3     99     -0.03            100.33              NaN               0          -0.00                     -0.01
-# 3     4     97     -0.02             99.33              NaN               0          -0.00                     -0.03
-# 4     5    101      0.04             99.00             99.8               0           0.00                      0.01
-# 5     6    105      0.04            101.00            100.8               1           0.04                      0.05
-# 6     7    103     -0.02            103.00            101.0               1          -0.02                      0.03
-# 7     8    108      0.05            105.33            102.8               1           0.05                      0.08
-# 8     9    106     -0.02            105.67            104.6               1          -0.02                      0.06
-# 9    10    110      0.04            108.00            106.4               1           0.04                      0.10
-# 10   11    115      0.05            110.33            108.4               1           0.05                      0.15
-# 11   12    112     -0.03            112.33            110.2               1          -0.03                      0.12
-# 12   13    118      0.05            115.00            112.2               1           0.05                      0.17
-# 13   14    120      0.02            116.67            115.0               1           0.02                      0.19
-# 14   15    117     -0.03            118.33            116.4               1          -0.03                      0.16
-# '''
+'''
+    day  price  incOrNot  AverageThreeDays  AverageFiveDays  signalBuyOrNot  strategyGains  brainlessFixedInvestment
+0     1    100       NaN               NaN              NaN             NaN            NaN                       NaN
+1     2    102      0.02               NaN              NaN             NaN            NaN                      0.02
+2     3     99     -0.03            100.33              NaN             NaN            NaN                     -0.01
+3     4     97     -0.02             99.33              NaN             NaN            NaN                     -0.03
+4     5    101      0.04             99.00             99.8             NaN            NaN                      0.01
+5     6    105      0.04            101.00            100.8             1.0            NaN                      0.05
+6     7    103     -0.02            103.00            101.0             1.0          -0.02                      0.03
+7     8    108      0.05            105.33            102.8             1.0           0.03                      0.08
+8     9    106     -0.02            105.67            104.6             1.0           0.01                      0.06
+9    10    110      0.04            108.00            106.4             1.0           0.05                      0.10
+10   11    115      0.05            110.33            108.4             1.0           0.10                      0.15
+11   12    112     -0.03            112.33            110.2             1.0           0.07                      0.12
+12   13    118      0.05            115.00            112.2             1.0           0.12                      0.17
+13   14    120      0.02            116.67            115.0             1.0           0.14                      0.19
+14   15    117     -0.03            118.33            116.4             1.0           0.11                      0.16
+'''
 
