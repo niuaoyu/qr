@@ -1,63 +1,53 @@
+# Mean Reversion: Betting that if it falls too much, it will rise, and if it rises too much, it will fall (catching a falling knife).
 '''
-Double moving average strategy (golden cross death cross)
-Strategy:
-    You count the short-term moving average (3 days) and the long-term moving average (5 days)
-        Short-term upside long-term → buy signal (golden cross: the trend is just rising)
-        Short-term breakdown long-term → sell signal (death cross: the trend is coming to an end)
-        Add a rule: if the loss exceeds 5%, force selling
+Indicator Calculation:
+    Middle Band: Average closing price over the past 20 days.
+    Standard Deviation: Standard deviation of closing prices over the past 20 days.
+    Upper Band: Middle Band + 2 standard deviations.
+    Lower Band: Middle Band - 2 standard deviations.
 
-    What is "top-on"
-        1. Yesterday: Short-term moving average < Long-term moving average 
-        2. Today: Short-term moving average > long-term moving average
-        Both conditions are met at the same time = golden cross occurs
-
-''' 
+Trading Signals:
+    Buy (Entry): When yesterday's closing price < yesterday's lower band. (The price has fallen too much; buy the dip.)
+    Sell/Exit (Exit): When yesterday's closing price > yesterday's upper band. (The price has risen too much; exit.)
+    Hold: If in the middle range, maintain the previous position.
+'''
 
 import numpy as np
 import pandas as pd
+csv_path = r'C:\Users\nay\Desktop\qr\qr\data\000300.XSHG_250101_251213_days.csv'
+df = pd.read_csv(csv_path).loc[:,['date','prev_close']] 
+'''
+           date  prev_close
+0    2025-01-02   3934.9109
+1    2025-01-03   3820.3952
+2    2025-01-06   3775.1648
+3    2025-01-07   3768.9697
+4    2025-01-08   3796.1055
+..          ...         ...
+225  2025-12-08   4584.5368
+226  2025-12-09   4621.7545
+227  2025-12-10   4598.2232
+228  2025-12-11   4591.8273
+229  2025-12-12   4552.1848
 
-price = [100, 100.6, 101.4, 101.8, 102.3, 102.9, 103.5, 104.0, 104.8, 105.5, 106.1, 106.7, 107.2, 107.9, 108.4, 109.2, 109.8, 
-         110.3, 110.9, 111.6, 113.8, 111.9, 114.2, 112.4, 116.8, 115.1, 118.3, 116.7, 120.0, 118.2, 121.7, 120.0, 123.6, 121.9, 
-         125.4, 123.6, 127.1, 125.3, 128.9, 127.0, 122.0, 117.0, 112.0, 107.0, 102.0, 97.0, 92.0, 87.0, 82.0, 90.0, 85.5, 94.5,
-           90.0, 99.0, 94.5, 103.5, 99.0, 108.0, 103.5, 112.5, 108.0, 117.0, 112.5, 121.5, 117.0, 126.0, 121.5, 130.5, 126.0, 
-           135.0, 130.5, 139.5, 135.0, 144.0, 139.5, 148.5, 144.0, 153.0]
-day = [i for i in range(1,len(price)+1)]
-df = pd.DataFrame({
-    'day':day,
-    'price':price
-})
+[230 rows x 2 columns]
+'''
 
-df['incOrNot'] = df['price'].pct_change().round(2)
+df['mean20'] = df['prev_close'].rolling(window=20).mean()
+df['std20'] = df['prev_close'].rolling(window=20).std()
+df['upper'] = df['mean20'] + 2 * df['std20']
+df['lower'] = df['mean20'] - 2 * df['std20']
+# 1 buy 0 sell 
+entry_event  = (df['prev_close'] < (df['lower'])).fillna(False).astype(bool)
+exit_event = (df['prev_close'] > (df['upper'])).fillna(False).astype(bool)
+pos = pd.Series(np.nan,index=df.index)
+pos[entry_event] = 1
+pos[exit_event] = 0
+df['position'] = pos.ffill().fillna(0).astype(int)
 
-df['AverageThreeDays'] = df['price'].rolling(window=3).mean().round(2)
-df['AverageFiveDays'] = df['price'].rolling(window=5).mean().round(2)
+df['incOrNot'] = df['prev_close'].pct_change()
 
-golden_cross = (df['AverageThreeDays'] > df['AverageFiveDays'])*(
-    df['AverageThreeDays'].shift(1) < df['AverageFiveDays'].shift(1)
-)
-lossFivePercentAfterGoldenCross = df['incOrNot']<=-0.05
-death_cross = (df['AverageThreeDays'] < df['AverageFiveDays'])*(
-    df['AverageThreeDays'].shift(1) > df['AverageFiveDays'].shift(1)
-)
-
-df['signalBuyOrNot'] = pd.Series(index=df.index, dtype=int)
-df.loc[golden_cross,'signalBuyOrNot'] = 1
-df.loc[lossFivePercentAfterGoldenCross,'signalBuyOrNot'] = 0
-df.loc[death_cross,'signalBuyOrNot'] = 0
-df['signalBuyOrNot'] = df['signalBuyOrNot'].fillna(method='pad',axis=0) # Maintaining the golden and dead crosses
-
-# Add a rule: if the loss exceeds 5%, force selling
-
-
-# The same day is counted as the same day, and the real market cannot be done, 
-# why shift? Because the moving average can only be calculated at the close, it can only be bought at the opening of the next day.
-# Only when the market closes today can we make tomorrow's judgment
-df['strategyGains'] = (df['incOrNot'] *df['signalBuyOrNot'].shift(1)).cumsum().round(2)  
-df['brainlessFixedInvestment'] = df['incOrNot'].cumsum().round(2)
-    
+# position: yesterday buy or sell signal;incOrNot:today's earn or loss's percentage 
+df['strategyGains'] = (1+(df['incOrNot'].shift(-1).fillna(0) * df['position'])).cumprod()-1  
+df['brainlessFixedInvestment'] = (1+df['incOrNot']).cumprod()-1
 print(df)
-
-
-
-
-
