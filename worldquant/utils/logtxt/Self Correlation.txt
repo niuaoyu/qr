@@ -1,0 +1,1 @@
+template = 'group_neutralize(ts_rank(rank({vo_alias})/rank(enterprise_value),10),industry)'
