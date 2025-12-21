@@ -1,0 +1,3 @@
+API:sk-ant-oat01-FaAJ5cb2mRyXQLRhW9Fv3m7ULXL2Q-k6XEUAZ9TruoYUYLVAuBnBjAhQxrb4G1lfr-N76ZNTLwrq8Bgj5f-mFW4bBLTOUAA
+URL:https://code.newcli.com/claude/droid
+MODEL:claude-opus-4-1-20250805
