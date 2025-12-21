@@ -1,3 +1,7 @@
+only-one
+-rank(ts_corr(pv13_revere_key_sector_total, returns, 10))
+
+
 rank(ts_delta(close, 5)) * rank(volume)
 -rank(ts_corr(high, volume, 10))
 rank(ts_delta(vwap, 3)) - rank(adv20)

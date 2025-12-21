@@ -1,3 +1,10 @@
+Alpha ID: A1degQRQ（2734849800账号）
+Expression: -rank(ts_corr(pv13_revere_key_sector_total, returns, 10))
+Sharpe: 1.47
+Turnover: 0.09
+Fitness: 1.04
+Grade: AVERAGE
+--------------------------------------------------
  Alpha ID: npb6Zj9x
 Expression: rank(fnd6_newqv1300_lcoq / assets)
 Sharpe: 1.79
