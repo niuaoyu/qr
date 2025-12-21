@@ -1,3 +1,15 @@
 API:sk-ant-oat01-FaAJ5cb2mRyXQLRhW9Fv3m7ULXL2Q-k6XEUAZ9TruoYUYLVAuBnBjAhQxrb4G1lfr-N76ZNTLwrq8Bgj5f-mFW4bBLTOUAA
 URL:https://code.newcli.com/claude/droid
 MODEL:claude-opus-4-1-20250805
+
+教程链接
+https://comate.baidu.com/zh/page/5jj9aqzh4yj
+
+echo 'export ANTHROPIC_BASE_URL="https://api.deepseek.com/anthropic"' >> ~/.bashrc
+echo 'export ANTHROPIC_AUTH_TOKEN="你的API Key"' >> ~/.bashrc
+echo 'export ANTHROPIC_MODEL="deepseek-chat"' >> ~/.bashrc
+echo 'export ANTHROPIC_SMALL_FAST_MODEL="deepseek-chat"' >> ~/.bashrc
+source ~/.bashrc
+
+echo $ANTHROPIC_BASE_URL
+echo $ANTHROPIC_AUTH_TOKEN
