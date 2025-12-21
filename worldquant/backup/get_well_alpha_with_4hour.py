@@ -70,7 +70,7 @@ import re
 # for expr in alpha_expressions:
 #     print(expr)
 
-from main_part.unknow_alpha import load_alpha_expressions
+from qr.worldquant.ready_to_test_alpha_list.unknow_alpha import load_alpha_expressions
 alpha_expressions = load_alpha_expressions()
 print('total alpha expressions:', len(alpha_expressions))
 for expr in alpha_expressions:
@@ -140,7 +140,7 @@ logging.basicConfig(filename='simulation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # from utils.allSubmitOrNot import get_alpha_checks
-from utils.writeTxt import write_lines
+from qr.worldquant.select_alpha_list.writeTxt import write_lines
 submit_count = 0
 next_start_index = 0
 from time import sleep

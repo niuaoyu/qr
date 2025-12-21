@@ -16,4 +16,4 @@ def write_lines(filepath: Union[str, Path], lines: Union[str, Iterable[str]], en
         for line in lines_to_write:
             f.write(f"{line}\n")
 
-write_lines(r"C:\Users\nay\Desktop\qr\qr\worldquant\utils\alphalist.txt", "First line")
+write_lines(r"C:\Users\nay\Desktop\qr\qr\worldquant\well_alpha_list\alphalist.txt", "First line")

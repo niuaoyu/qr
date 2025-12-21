@@ -1,8 +1,9 @@
-def load_alpha_expressions():
+from pathlib import Path
+from typing import Iterable, Union
+import os
+def load_alpha_expressions(filepath: Union[str, Path],  encoding: str = "utf-8") -> None:
     # Path to the alpha file
-    import os
-    alpha_file_path = r'C:\Users\nay\Desktop\qr\qr\worldquant\main_part\unknow_alpha.txt'
-
+    alpha_file_path = Path(filepath)
     # Read the file and create the list
     alpha_expressions = []
     if os.path.exists(alpha_file_path):
@@ -13,7 +14,5 @@ def load_alpha_expressions():
     return alpha_expressions
 
 if __name__ == "__main__":
-    alpha_expressions = load_alpha_expressions()
+    alpha_expressions = load_alpha_expressions(r'C:\Users\nay\Desktop\qr\qr\worldquant\ready_to_test_alpha_list\unknow_alpha.txt')
     print('total alpha expressions:', len(alpha_expressions))
-    for expr in alpha_expressions:
-        print(expr)

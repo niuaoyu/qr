@@ -1,0 +1,14 @@
+ Alpha ID: npb6Zj9x
+Expression: rank(fnd6_newqv1300_lcoq / assets)
+Sharpe: 1.79
+Turnover: 0.0316
+Fitness: 1.27
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: QPdvXqZ5
+Expression: rank(ts_backfill(fnd6_drc, 365) / cap)
+Sharpe: 1.51
+Turnover: 0.0166
+Fitness: 1.03
+Grade: AVERAGE
+--------------------------------------------------
