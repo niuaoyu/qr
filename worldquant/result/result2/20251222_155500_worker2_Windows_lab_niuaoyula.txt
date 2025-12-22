@@ -1,0 +1,7 @@
+Alpha ID: 0mWgLP2p
+Expression: ts_decay_linear(-1 * group_neutralize(rank((ts_backfill(income, 730) - ts_backfill(cashflow_op, 730)) / ts_backfill(assets, 730)), sector), 5)
+Sharpe: 0.46
+Turnover: 0.0195
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------

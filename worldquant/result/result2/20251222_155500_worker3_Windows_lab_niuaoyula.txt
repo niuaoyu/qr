@@ -1,0 +1,7 @@
+Alpha ID: leZGYgex
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(nws12_prez_mov_vol), 5)), sector), 10)
+Sharpe: -0.2
+Turnover: 0.2689
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------

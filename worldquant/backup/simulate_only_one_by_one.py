@@ -4,9 +4,9 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 # sys.path.append(r"C:\Users\nay\Desktop\qr\qr\worldquant")
 
 from main_part.sign_in import sign_in
-from qr.worldquant.ready_to_test_alpha_list.unknow_alpha import load_alpha_expressions
-from main_part.compositional_expression import create_alpha_list
-from main_part.send import send_alpha_list
+from qr.worldquant.main_part.load_alpha_expressions import load_alpha_expressions
+from qr.worldquant.backup.compositional_expression import create_alpha_list
+from qr.worldquant.backup.send import send_alpha_list
 
 
 sess = sign_in()

@@ -1,0 +1,7 @@
+Alpha ID: 58V51Jm5
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_ady_mean), 60)), sector), 10)
+Sharpe: 0.4
+Turnover: 0.0163
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------

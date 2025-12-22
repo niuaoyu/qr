@@ -9,7 +9,7 @@ logging.basicConfig(filename='simulation.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # from utils.allSubmitOrNot import get_alpha_checks
-from qr.worldquant.well_alpha_list.writeTxt import write_lines
+from qr.worldquant.backup.write_txt import write_lines
 
 from time import sleep
 
