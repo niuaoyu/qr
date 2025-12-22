@@ -2,14 +2,16 @@ API:sk-ant-oat01-FaAJ5cb2mRyXQLRhW9Fv3m7ULXL2Q-k6XEUAZ9TruoYUYLVAuBnBjAhQxrb4G1l
 URL:https://code.newcli.com/claude/droid
 MODEL:claude-opus-4-1-20250805
 
-教程链接
+环境配置Claude Code 教程链接
 https://comate.baidu.com/zh/page/5jj9aqzh4yj
 
-echo 'export ANTHROPIC_BASE_URL="https://api.deepseek.com/anthropic"' >> ~/.bashrc
-echo 'export ANTHROPIC_AUTH_TOKEN="你的API Key"' >> ~/.bashrc
-echo 'export ANTHROPIC_MODEL="deepseek-chat"' >> ~/.bashrc
-echo 'export ANTHROPIC_SMALL_FAST_MODEL="deepseek-chat"' >> ~/.bashrc
+echo 'export ANTHROPIC_BASE_URL="https://code.newcli.com/claude/droid"' >> ~/.bashrc
+echo 'export ANTHROPIC_AUTH_TOKEN="sk-ant-oat01-FaAJ5cb2mRyXQLRhW9Fv3m7ULXL2Q-k6XEUAZ9TruoYUYLVAuBnBjAhQxrb4G1lfr-N76ZNTLwrq8Bgj5f-mFW4bBLTOUAA"' >> ~/.bashrc
+echo 'export ANTHROPIC_MODEL="claude-opus-4-1-20250805"' >> ~/.bashrc
 source ~/.bashrc
 
 echo $ANTHROPIC_BASE_URL
 echo $ANTHROPIC_AUTH_TOKEN
+
+在 VS Code 中配置 Claude Code 插件
+https://xaixapi.com/blog/vscode-claude-code-config/
