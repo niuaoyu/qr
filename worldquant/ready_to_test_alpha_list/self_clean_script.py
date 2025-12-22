@@ -1,6 +1,11 @@
 import os
 import re
-
+import sys
+# 为了能成功导入 'main_part'，需要将项目的根目录添加到 Python 的搜索路径中。
+# 项目根目录 'worldquant' 是当前脚本所在目录 'ready_to_test_alpha_list' 的上一级。
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)
+from main_part.global_config import DATA_PATH
 def is_header_line(line: str) -> bool:
     """
     检查某一行是否属于文件头部分。
@@ -96,7 +101,7 @@ def main():
     """
     主函数，遍历指定目录并清理所有 .txt 文件。
     """
-    target_directory = r'C:\Users\nay\Desktop\qr\qr\worldquant\ready_to_test_alpha_list'
+    target_directory = os.path.join(DATA_PATH, "ready_to_test_alpha_list")
     
     print(f"🚀 开始扫描并清理目录中的 .txt 文件: {target_directory}\n")
     

@@ -1,6 +1,23 @@
 import platform
 import os
 
+import sys
+
+# 为了能成功导入 'main_part'，需要将项目的根目录添加到 Python 的搜索路径中。
+# 项目根目录 'worldquant' 是当前脚本所在目录 'ready_to_test_alpha_list' 的上一级。
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)
+r'''
+import sys：导入 sys 模块，以便我们可以操作 Python 的路径。
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))：
+这行代码会获取当前脚本的绝对路径，然后连续两次调用 os.path.dirname 来向上追溯到父目录，
+最终得到 C:\Users\nay\Desktop\qr\qr\worldquant 这个项目根目录的路径。
+sys.path.insert(0, project_root)：将项目根目录添加到 Python 解释器查找模块的路径列表的最前面。
+这样，当你执行 from main_part.global_config ... 时，Python 就能在这个路径下找到 main_part 文件夹，并成功导入。
+'''
+
+
+
 # 获取当前系统名称 ('Windows' 或 'Linux')
 system_name = platform.system()
 
