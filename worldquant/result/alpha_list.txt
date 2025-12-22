@@ -1,4 +1,4 @@
---------------------------------------------------
+--------------------------------------------------2025-12-22
 Alpha ID: 2rkWMwk6
 Expression: group_neutralize(rank(ts_backfill(debt_lt, 365) / ts_backfill(assets, 365)), industry)
 Sharpe: 1.27
