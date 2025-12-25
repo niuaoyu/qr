@@ -22,10 +22,10 @@ submit_count = 0
 submit_count_lock = threading.Lock()
 result_write_lock = threading.Lock() # 新增：用于控制写入结果文件的锁
 
-SAVE_RESULT_DIR = os.path.join(DATA_PATH, "result","result2")
+SAVE_RESULT_DIR = os.path.join(DATA_PATH, "result","version2")
 WRITE_LINES_DIR = os.path.join(DATA_PATH, "result", "alpha_list.txt") # 修改：指向 alpha_list.txt
-INPUT_ALPHA_FILE = os.path.join(DATA_PATH, "ready_to_test_alpha_list", "clean_alpha","test7_gpt.txt")
-USER_CHOICE = 'lab'  # 选择哪个账户？ubuntu、lab、mylab
+INPUT_ALPHA_FILE = os.path.join(DATA_PATH, "ready_to_test_alpha_list", "clean_alpha","test10_notebook.txt")
+USER_CHOICE = 'ubuntu'  # 选择哪个账户？ubuntu、lab、mylab
 
 def prepend_to_file(filepath, content):
     """读取文件原有内容，将新内容写入到最上方"""
