@@ -1,3 +1,185 @@
+Alpha ID: 1Y52dM9k
+Expression: rank(ts_corr(ts_backfill(fnd6_newa2v1300_spceeps, 45), returns, 120))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: XgEOngNX
+Expression: -rank(ts_corr(implied_volatility_put_270, returns, 120))
+Sharpe: 1.48
+Turnover: 0.1187
+Fitness: 1.08
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: 9qQ2wald
+Expression: rank((ts_backfill(fnd6_newqv1300_spceepsq, 90)) / (ts_backfill(enterprise_value, 90)))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: QPdoaleQ
+Expression: rank(ts_zscore(returns, 1))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: P0EAv7Op
+Expression: rank(ts_mean(ts_backfill(fnd6_newqv1300_glceeps12, 180), 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: N1o2gnA7
+Expression: -rank(ts_corr(implied_volatility_mean_360, returns, 120))
+Sharpe: 1.46
+Turnover: 0.1361
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: leZNQpl5
+Expression: rank((ts_backfill(fnd6_newqv1300_spceepspq, 45)) / (ts_mean(volume, 2)))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: A1d2OLgd
+Expression: -rank(ts_corr(implied_volatility_mean_90, returns, 120))
+Sharpe: 1.39
+Turnover: 0.1293
+Fitness: 1.08
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: 3qW26GW6
+Expression: ts_rank(snt_buzz_fast_d1, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: N1o2WpNo
+Expression: ts_rank(snt_value, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: rKmn3Nm8
+Expression: rank(ts_zscore(open, 1))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: 6Xb28RPG
+Expression: -rank(ts_corr(implied_volatility_mean_270, returns, 120))
+Sharpe: 1.45
+Turnover: 0.1361
+Fitness: 1.03
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: LLx2jXz6
+Expression: (rank(ts_rank(high, 1))) - (rank(ts_rank(close, 1)))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: O0v2YeYb
+Expression: -rank(ts_corr(implied_volatility_put_90, returns, 120))
+Sharpe: 1.47
+Turnover: 0.1123
+Fitness: 1.17
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: N1o20L3e
+Expression: rank(zscore((ts_backfill(fnd6_newqv1300_spceepspq, 365)) / (ts_backfill(assets, 365))))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: e7JWljJp
+Expression: rank((ts_backfill(fnd6_pncepsq, 90)) / (ts_mean(volume, 20)))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: 88qXROZX
+Expression: rank(ts_zscore(vwap, 1))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: 0mW5p5R6
+Expression: ts_rank(returns, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: O0vgonlR
+Expression: rank(zscore((ts_backfill(fnd6_newq_xoptepsqp, 365)) / (ts_backfill(enterprise_value, 365))))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: XgEM1jL0
+Expression: ts_rank(snt_buzz_ret_fast_d1, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: omeZQOpE
+Expression: rank(ts_mean(ts_backfill(fnd6_newqv1300_glceeps12, 365), 20))
+Sharpe: 1.59
+Turnover: 0.0751
+Fitness: 3.51
+Grade: SPECTACULAR
+--------------------------------------------------
+Alpha ID: JjLrZzqE
+Expression: ts_rank(snt_social_volume, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: mLkQMb06
+Expression: -rank(ts_corr(implied_volatility_put_60, returns, 120))
+Sharpe: 1.33
+Turnover: 0.1099
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: O0vg0pRg
+Expression: -ts_rank(returns, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: 1Y5Pr3WJ
+Expression: -rank(ts_corr(implied_volatility_mean_720, returns, 120))
+Sharpe: 1.55
+Turnover: 0.1351
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: ak3wmbgv
+Expression: rank(zscore((ts_backfill(fnd6_newqv1300_xoptepsq, 180)) / (ts_backfill(enterprise_value, 180))))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
 --------------------------------------------------2025-12-22
 Alpha ID: 2rkWMwk6
 Expression: group_neutralize(rank(ts_backfill(debt_lt, 365) / ts_backfill(assets, 365)), industry)

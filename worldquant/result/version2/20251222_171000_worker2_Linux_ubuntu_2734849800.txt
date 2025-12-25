@@ -1,0 +1,4102 @@
+Alpha ID: XgEeNO81
+Expression: rank(ts_sum(returns, 1))
+Sharpe: -1.24
+Turnover: 1.3609
+Fitness: -0.36
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVP3K55
+Expression: (rank(ts_sum(returns, 90))) - (rank(ts_mean(abs(returns), 2)))
+Sharpe: -0.16
+Turnover: 0.5799
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAZd9pz
+Expression: -rank(ts_delta(volume, 1))
+Sharpe: -0.61
+Turnover: 1.4999
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgZx69j
+Expression: (rank((ts_backfill(sales, 180)) / (ts_backfill(enterprise_value, 180)))) - (rank(ts_mean(abs(returns), 60)))
+Sharpe: 0.26
+Turnover: 0.054
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRV6ZOnz
+Expression: rank(ts_delta(returns, 10))
+Sharpe: -0.97
+Turnover: 1.3631
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLxrEo52
+Expression: rank(ts_corr(returns, volume, 252))
+Sharpe: -0.39
+Turnover: 0.0467
+Fitness: -0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qYE9Eo
+Expression: rank(ts_mean(ts_backfill(est_netprofit_adj, 365), 30))
+Sharpe: 0.17
+Turnover: 0.01
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEevPb1
+Expression: -rank(ts_sum(returns, 252))
+Sharpe: 0.24
+Turnover: 0.0859
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEev9ra
+Expression: rank((implied_volatility_call_60) / (historical_volatility_180))
+Sharpe: 1.12
+Turnover: 0.4576
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbQeqnd
+Expression: rank((implied_volatility_mean_360) / (historical_volatility_20))
+Sharpe: 0.32
+Turnover: 0.3628
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3wQgzR
+Expression: rank(ts_delta(vwap, 60))
+Sharpe: -0.8
+Turnover: 0.1617
+Fitness: -0.54
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ9GZ3x
+Expression: rank(ts_mean(snt_buzz_bfl_fast_d1, 5))
+Sharpe: 0.14
+Turnover: 0.3841
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAZz1ak
+Expression: ts_rank(snt_buzz, 10)
+Sharpe: 0.25
+Turnover: 1.1667
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wo6a02
+Expression: rank(ts_delta(snt_buzz, 252))
+Sharpe: 0.16
+Turnover: 1.1441
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgZeOa6
+Expression: (rank(ts_sum(returns, 1))) - (rank(ts_mean(abs(returns), 5)))
+Sharpe: -0.53
+Turnover: 1.0537
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQmOAje
+Expression: rank(ts_mean(snt_buzz_ret_fast_d1, 90))
+Sharpe: -0.42
+Turnover: 0.0653
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVPkZX5
+Expression: rank(ts_corr(ts_delta(low, 1), volume, 252))
+Sharpe: -0.37
+Turnover: 0.0454
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vVXMXp
+Expression: (rank((ts_backfill(ebitda, 90)) / (ts_backfill(assets, 90)))) + (rank(ts_sum(returns, 252)))
+Sharpe: 0.1
+Turnover: 0.0699
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ9Pnrl
+Expression: rank(ts_mean(abs(returns), 30))
+Sharpe: -0.23
+Turnover: 0.0988
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPRQAXpl
+Expression: (rank((ts_backfill(ebitda, 180)) / (ts_backfill(assets, 180)))) + (rank(ts_sum(returns, 60)))
+Sharpe: -0.2
+Turnover: 0.139
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3wmbgv
+Expression: rank(zscore((ts_backfill(fnd6_newqv1300_xoptepsq, 180)) / (ts_backfill(enterprise_value, 180))))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: 58VeKAb5
+Expression: rank(((high) - (low)) / (abs(close)))
+Sharpe: -0.05
+Turnover: 0.8336
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dmp6Rl
+Expression: rank(ts_delta(snt_buzz_ret_fast_d1, 60))
+Sharpe: -0.62
+Turnover: 0.9479
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vVL5jR
+Expression: rank(ts_mean(ts_backfill(min_research_development_expense_guidance, 365), 30))
+Sharpe: 0.23
+Turnover: 0.013
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPdJVvNR
+Expression: rank(((close) - (open)) / (abs(open)))
+Sharpe: -1.35
+Turnover: 1.3488
+Fitness: -0.39
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78VM5YZO
+Expression: rank(ts_corr(ts_backfill(fnd6_newqv1300_epspxq, 45), returns, 252))
+Sharpe: -0.24
+Turnover: 0.1141
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW6Jm1q
+Expression: rank(ts_corr(ts_delta(close, 1), volume, 252))
+Sharpe: -0.35
+Turnover: 0.0463
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omerdedn
+Expression: -rank(ts_corr(implied_volatility_mean_60, returns, 10))
+Sharpe: 0.62
+Turnover: 0.5033
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qYwan7
+Expression: -rank(ts_delta(high, 1))
+Sharpe: 1.5
+Turnover: 1.2743
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaWZd7g
+Expression: -rank(ts_delta(vwap, 252))
+Sharpe: 0.12
+Turnover: 0.0796
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAZrYMM
+Expression: (rank((ts_backfill(ebitda, 365)) / (ts_backfill(assets, 365)))) + (rank(ts_sum(returns, 10)))
+Sharpe: -0.32
+Turnover: 0.3417
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLxrQ2an
+Expression: rank(ts_corr(scl12_sentiment_fast_d1, returns, 120))
+Sharpe: -0.71
+Turnover: 0.0776
+Fitness: -0.28
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5woNA5j
+Expression: rank((beta_last_360_days_spy) * (historical_volatility_30))
+Sharpe: 0.09
+Turnover: 0.1618
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 3qW583kg
+Expression: rank(zscore((ts_backfill(min_net_profit_guidance, 180)) / (ts_backfill(debt_lt, 180))))
+Sharpe: 0.8
+Turnover: 0.0126
+Fitness: 0.55
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JvXrjd
+Expression: rank(ts_delta(snt_value_fast_d1, 120))
+Sharpe: -0.2
+Turnover: 1.1726
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3w5bw5
+Expression: -rank(ts_mean(abs(returns), 30))
+Sharpe: 0.23
+Turnover: 0.0988
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dmormX
+Expression: rank(ts_zscore(vwap, 5))
+Sharpe: -1.39
+Turnover: 0.9281
+Fitness: -0.47
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y5Pr3WJ
+Expression: -rank(ts_corr(implied_volatility_mean_720, returns, 120))
+Sharpe: 1.55
+Turnover: 0.1351
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: j2QO51JW
+Expression: rank(ts_mean(volume, 10))
+Sharpe: 0.34
+Turnover: 0.0561
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vkoev6dG
+Expression: (rank(ts_sum(returns, 120))) - (rank(ts_mean(abs(returns), 60)))
+Sharpe: -0.05
+Turnover: 0.1054
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZ1GZJ
+Expression: -rank(ts_corr(implied_volatility_call_120, returns, 60))
+Sharpe: 0.56
+Turnover: 0.1725
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAa5KL3b
+Expression: rank(ts_mean(ts_backfill(anl4_netprofit_high, 90), 90))
+Sharpe: 0.37
+Turnover: 0.0099
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dE1WlR
+Expression: rank(ts_sum(returns, 252))
+Sharpe: -0.24
+Turnover: 0.0859
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y50YLpW
+Expression: rank(ts_delta(snt_social_value, 90))
+Sharpe: -0.51
+Turnover: 0.3548
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vg0pRg
+Expression: -ts_rank(returns, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: gJzLJZZK
+Expression: rank(ts_delay(returns, 2))
+Sharpe: -0.88
+Turnover: 1.361
+Fitness: -0.21
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAVP2x8
+Expression: rank(ts_decay_linear(ts_delta(returns, 1), 10))
+Sharpe: -0.98
+Turnover: 1.3426
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLPjjVn
+Expression: rank(ts_delta(scl12_buzz_fast_d1, 20))
+Sharpe: 0.45
+Turnover: 1.2686
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vgQekd
+Expression: rank(ts_delay(low, 5))
+Sharpe: 0.19
+Turnover: 0.0252
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKm8pO13
+Expression: -rank(ts_corr(implied_volatility_mean_30, returns, 10))
+Sharpe: 0.79
+Turnover: 0.4998
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZ8Rwk
+Expression: (rank(ts_rank(open, 30))) - (rank(ts_rank(low, 30)))
+Sharpe: -0.25
+Turnover: 1.4279
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3Gj0ex
+Expression: -rank((ts_backfill(anl4_netprofit_high, 180)) / (ts_backfill(debt_lt, 180)))
+Sharpe: -0.17
+Turnover: 0.0193
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq59ddWL
+Expression: (rank(ts_sum(returns, 5))) - (rank(ts_mean(abs(returns), 20)))
+Sharpe: -0.38
+Turnover: 0.4882
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAa5qkKp
+Expression: (rank((ts_backfill(dividend, 180)) / (abs(close)))) + (rank(snt_buzz_ret_fast_d1))
+Sharpe: -0.23
+Turnover: 0.8727
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rkeMm8N
+Expression: rank(zscore((ts_backfill(max_free_cashflow_guidance, 180)) / (ts_backfill(enterprise_value, 180))))
+Sharpe: 0.28
+Turnover: 0.0271
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vgOM8p
+Expression: rank((ts_backfill(research_development_expense, 90)) / (ts_mean(volume, 3)))
+Sharpe: -0.02
+Turnover: 0.1378
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW5lOXk
+Expression: rank((ts_delta(ts_backfill(anl4_rd_exp_high, 180), 90)) / (ts_backfill(enterprise_value, 180)))
+Sharpe: -0.13
+Turnover: 0.0577
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5Ax731J
+Expression: (rank((ts_backfill(sales, 90)) / (ts_backfill(enterprise_value, 90)))) - (rank(ts_mean(abs(returns), 60)))
+Sharpe: 0.26
+Turnover: 0.0546
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5Ax7rv0
+Expression: -rank((ts_backfill(forward_price_360, 180)) / (ts_backfill(equity, 180)))
+Sharpe: 0.41
+Turnover: 0.0313
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq597P9P
+Expression: (rank(ts_rank(close, 60))) - (rank(ts_rank(returns, 20)))
+Sharpe: -0.01
+Turnover: 0.9391
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EKWz2q
+Expression: -rank(ts_delta(vwap, 30))
+Sharpe: 0.77
+Turnover: 0.2303
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLP3xO1
+Expression: -rank(ts_corr(implied_volatility_call_360, returns, 20))
+Sharpe: 0.59
+Turnover: 0.3161
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZ5ppm
+Expression: rank(ts_decay_linear(ts_delta(vwap, 60), 20))
+Sharpe: -0.41
+Turnover: 0.0532
+Fitness: -0.22
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVPMzLb
+Expression: (rank(ts_corr(ts_delta(returns, 1), ts_delta(volume, 1), 60))) - (rank(ts_mean(abs(returns), 1)))
+Sharpe: -0.28
+Turnover: 0.8816
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx3ap21
+Expression: rank(ts_mean(volume, 20))
+Sharpe: 0.27
+Turnover: 0.0345
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjLrEQGn
+Expression: (rank((ts_backfill(sales, 365)) / (ts_backfill(enterprise_value, 365)))) - (rank(ts_mean(abs(returns), 1)))
+Sharpe: 0.36
+Turnover: 1.0063
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: gJzLOGW0
+Expression: -rank((ts_backfill(pretax_income_total, 45)) / (ts_backfill(debt_lt, 45)))
+Sharpe: -0.13
+Turnover: 0.0168
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZ5bwn
+Expression: rank(ts_delta(returns, 3))
+Sharpe: -0.38
+Turnover: 1.3604
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx3AWd1
+Expression: -rank(ts_delta(open, 252))
+Sharpe: 0.08
+Turnover: 0.0884
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq592kqg
+Expression: -rank(ts_delta(vwap, 2))
+Sharpe: 1.59
+Turnover: 0.9001
+Fitness: 0.57
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx3Ap8L
+Expression: -rank(ts_corr(implied_volatility_mean_360, returns, 252))
+Sharpe: 1.25
+Turnover: 0.094
+Fitness: 0.88
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ1bKeO
+Expression: rank(ts_zscore(close, 252))
+Sharpe: -0.15
+Turnover: 0.1341
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjLrZzqE
+Expression: ts_rank(snt_social_volume, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: YPdYGozA
+Expression: -rank(ts_corr(implied_volatility_put_30, returns, 60))
+Sharpe: 1.03
+Turnover: 0.1571
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwg3OYm3
+Expression: rank(ts_decay_linear(ts_delta(open, 3), 3))
+Sharpe: -1.32
+Turnover: 0.5847
+Fitness: -0.53
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq59lZKk
+Expression: rank(ts_corr(ts_backfill(anl4_netprofita_median, 365), returns, 252))
+Sharpe: -0.26
+Turnover: 0.1249
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQk0dR2
+Expression: ts_rank(snt_value_fast_d1, 2)
+Sharpe: -1.05
+Turnover: 1.5191
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv9JRrQ
+Expression: rank(ts_mean(snt_social_value, 90))
+Sharpe: 0.59
+Turnover: 0.0592
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dEdadY
+Expression: (rank(ts_rank(returns, 252))) - (rank(ts_rank(high, 60)))
+Sharpe: -0.36
+Turnover: 1.0766
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv9vb75
+Expression: rank(ts_delta(vwap, 20))
+Sharpe: -0.75
+Turnover: 0.2831
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW5WNbq
+Expression: (rank(ts_rank(open, 90))) - (rank(ts_rank(low, 10)))
+Sharpe: 0.58
+Turnover: 0.6955
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLPLOmg
+Expression: rank(ts_decay_linear(ts_delta(open, 252), 10))
+Sharpe: -0.01
+Turnover: 0.0351
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPRZe3xx
+Expression: rank(ts_mean(ts_backfill(est_cashflow_invst, 365), 20))
+Sharpe: -0.21
+Turnover: 0.0111
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ1xxY7
+Expression: -rank(ts_delta(volume, 90))
+Sharpe: -1.15
+Turnover: 0.8037
+Fitness: -0.29
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLPXrL0
+Expression: rank(ts_delay(close, 3))
+Sharpe: 0.14
+Turnover: 0.026
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPd6evAg
+Expression: rank(ts_mean(snt_social_volume, 2))
+Sharpe: 0.53
+Turnover: 0.257
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y50vPWm
+Expression: rank(zscore((ts_backfill(anl4_rd_exp_mean, 90)) / (ts_backfill(debt_lt, 90))))
+Sharpe: -0.21
+Turnover: 0.0166
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEMXGqb
+Expression: (rank((ts_backfill(sales, 90)) / (ts_backfill(enterprise_value, 90)))) - (rank(ts_mean(abs(returns), 2)))
+Sharpe: 0.39
+Turnover: 0.6432
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78Vlgq32
+Expression: -rank(ts_delta(volume, 252))
+Sharpe: -0.82
+Turnover: 0.7721
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPRZxk3p
+Expression: rank(ts_mean(abs(returns), 60))
+Sharpe: -0.22
+Turnover: 0.0564
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKm8Q8ko
+Expression: rank(ts_mean(abs(returns), 2))
+Sharpe: -0.16
+Turnover: 0.79
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o8WOO7
+Expression: rank(ts_corr(scl12_buzz_fast_d1, returns, 10))
+Sharpe: 0.04
+Turnover: 0.4426
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ16MXA
+Expression: (rank(ts_corr(ts_delta(low, 1), ts_delta(volume, 1), 252))) - (rank(ts_mean(abs(returns), 60)))
+Sharpe: 0.02
+Turnover: 0.0557
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wv8z2J
+Expression: rank((beta_last_30_days_spy) * (historical_volatility_20))
+Sharpe: -0.04
+Turnover: 0.2703
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq59kpOP
+Expression: (rank((ts_backfill(ebitda, 180)) / (ts_backfill(assets, 180)))) + (rank(ts_sum(returns, 10)))
+Sharpe: -0.33
+Turnover: 0.3418
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o8qmZL
+Expression: rank(ts_corr(ts_delta(low, 1), volume, 60))
+Sharpe: -0.68
+Turnover: 0.1122
+Fitness: -0.34
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbrY2qz
+Expression: rank((ts_backfill(fn_comprehensive_income_net_of_tax_a, 90)) / (ts_mean(volume, 10)))
+Sharpe: -0.03
+Turnover: 0.0399
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYLNqd1Q
+Expression: (rank((ts_backfill(dividend, 90)) / (abs(close)))) + (rank(snt_social_volume))
+Sharpe: 0.45
+Turnover: 0.319
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJnZdQ
+Expression: rank(ts_mean(ts_backfill(gross_income_total, 180), 10))
+Sharpe: 0.26
+Turnover: 0.0104
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dEbKWw
+Expression: (rank((ts_backfill(ebitda, 180)) / (ts_backfill(assets, 180)))) + (rank(ts_sum(returns, 3)))
+Sharpe: -0.65
+Turnover: 0.6146
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wvmEjx
+Expression: rank(ts_zscore(vwap, 252))
+Sharpe: -0.11
+Turnover: 0.1219
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPdYm76J
+Expression: (rank((ts_backfill(ebitda, 90)) / (ts_backfill(assets, 90)))) + (rank(ts_sum(returns, 30)))
+Sharpe: -0.14
+Turnover: 0.1951
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6XbN1Lgp
+Expression: rank(ts_zscore(high, 252))
+Sharpe: -0.12
+Turnover: 0.1265
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6XbNq8b5
+Expression: rank((implied_volatility_mean_360) / (historical_volatility_120))
+Sharpe: 0.91
+Turnover: 0.3058
+Fitness: 0.36
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVPzaZQ
+Expression: rank(ts_mean(abs(returns), 10))
+Sharpe: -0.16
+Turnover: 0.2419
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6XbNqa5Y
+Expression: rank((ts_delta(ts_backfill(min_gross_income_guidance, 365), 90)) / (ts_backfill(debt_lt, 365)))
+Sharpe: -0.11
+Turnover: 0.0242
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLPamE0
+Expression: (rank(ts_rank(close, 2))) - (rank(ts_rank(open, 1)))
+Sharpe: -1.41
+Turnover: 1.433
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAa5zrln
+Expression: ts_rank(snt_buzz_ret, 60)
+Sharpe: -0.36
+Turnover: 0.8698
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLPaKpe
+Expression: (rank(ts_delta(returns, 60))) - (rank(ts_delay(ts_delta(returns, 60), 1)))
+Sharpe: -0.05
+Turnover: 1.7469
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPdYkVQv
+Expression: (rank((ts_backfill(dividend, 365)) / (abs(close)))) + (rank(snt_social_value))
+Sharpe: 0.44
+Turnover: 0.3689
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ1RkJN
+Expression: rank((ts_backfill(max_pretax_profit_guidance, 180)) / (ts_backfill(enterprise_value, 180)))
+Sharpe: 0.23
+Turnover: 0.027
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rkenJN8
+Expression: (rank(ts_corr(ts_delta(returns, 1), ts_delta(volume, 1), 60))) - (rank(ts_mean(abs(returns), 2)))
+Sharpe: -0.1
+Turnover: 0.5665
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVWJjX6
+Expression: rank(ts_mean(snt_buzz_bfl, 120))
+Sharpe: 0.72
+Turnover: 0.0339
+Fitness: 0.35
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o858Jg
+Expression: rank((ts_delta(ts_backfill(anl4_afv4_median_eps, 45), 120)) / (ts_backfill(volume, 45)))
+Sharpe: 1.01
+Turnover: 0.1209
+Fitness: 0.61
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vkoe2Ve8
+Expression: rank(ts_corr(scl12_sentiment, returns, 20))
+Sharpe: -0.96
+Turnover: 0.2556
+Fitness: -0.28
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLkQrXzW
+Expression: (rank(ts_rank(low, 252))) - (rank(ts_rank(vwap, 10)))
+Sharpe: 0.97
+Turnover: 0.5813
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVWnQl5
+Expression: (rank((ts_backfill(dividend, 45)) / (abs(close)))) + (rank(scl12_buzz))
+Sharpe: -0.3
+Turnover: 1.1656
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW5egY8
+Expression: rank(ts_mean(volume, 30))
+Sharpe: 0.24
+Turnover: 0.0266
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPd62R3r
+Expression: rank((implied_volatility_mean_60) / (historical_volatility_10))
+Sharpe: -0.1
+Turnover: 0.5084
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dEnd9E
+Expression: rank(ts_corr(ts_backfill(est_cashflow_op, 365), returns, 20))
+Sharpe: -0.69
+Turnover: 0.4966
+Fitness: -0.18
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbrnWrq
+Expression: -rank((ts_backfill(max_adjusted_eps_guidance, 90)) / (ts_backfill(debt_lt, 90)))
+Sharpe: -0.65
+Turnover: 0.0121
+Fitness: -0.45
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEMk9Ax
+Expression: rank((ts_backfill(max_adjusted_net_profit_guidance, 90)) / (ts_backfill(sales, 90)))
+Sharpe: 0.53
+Turnover: 0.0127
+Fitness: 0.34
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVP56d3
+Expression: -rank(ts_sum(returns, 90))
+Sharpe: 0.5
+Turnover: 0.1415
+Fitness: 0.34
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qXn57m
+Expression: -rank(ts_corr(implied_volatility_mean_10, returns, 252))
+Sharpe: 1.08
+Turnover: 0.0723
+Fitness: 0.8
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAa5RwMJ
+Expression: rank((ts_delta(ts_backfill(ebit, 365), 60)) / (ts_backfill(volume, 365)))
+Sharpe: 0.25
+Turnover: 0.0937
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wvdx9X
+Expression: rank((ts_backfill(anl4_qfv4_eps_number, 180)) / (ts_mean(volume, 60)))
+Sharpe: 0.09
+Turnover: 0.0286
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JEL50M
+Expression: (rank(ts_delta(low, 252))) - (rank(ts_delay(ts_delta(low, 252), 1)))
+Sharpe: -1.41
+Turnover: 1.4085
+Fitness: -0.31
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQkJn7K
+Expression: rank(ts_decay_linear(ts_delta(returns, 90), 3))
+Sharpe: -1.51
+Turnover: 0.887
+Fitness: -0.59
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6XbNEq15
+Expression: (rank(ts_delta(returns, 20))) - (rank(ts_delay(ts_delta(returns, 20), 2)))
+Sharpe: -0.16
+Turnover: 1.409
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ10lR2
+Expression: (rank(ts_delta(open, 5))) - (rank(ts_delay(ts_delta(open, 5), 3)))
+Sharpe: -0.99
+Turnover: 0.9207
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vkoe8aAM
+Expression: (rank((ts_backfill(sales, 180)) / (ts_backfill(enterprise_value, 180)))) - (rank(ts_mean(abs(returns), 10)))
+Sharpe: 0.26
+Turnover: 0.1954
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o8OJOw
+Expression: rank((implied_volatility_mean_1080) / (historical_volatility_30))
+Sharpe: 0.56
+Turnover: 0.3291
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqze9vOX
+Expression: rank(zscore((ts_backfill(min_ebit_guidance, 180)) / (ts_backfill(debt_lt, 180))))
+Sharpe: 0.72
+Turnover: 0.0124
+Fitness: 0.49
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QOZb9o
+Expression: rank(ts_corr(ts_backfill(forward_price_120, 180), returns, 20))
+Sharpe: -0.38
+Turnover: 0.4302
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLkQ8JwW
+Expression: -rank((ts_backfill(anl4_qfv4_eps_number, 365)) / (ts_backfill(liabilities, 365)))
+Sharpe: 0.48
+Turnover: 0.0202
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 3qWJ7E0N
+Expression: rank(ts_mean(ts_backfill(operating_income, 365), 3))
+Sharpe: 0.28
+Turnover: 0.0173
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6XbNwpR7
+Expression: rank(ts_mean(volume, 5))
+Sharpe: 0.37
+Turnover: 0.094
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vgpW1R
+Expression: ts_rank(scl12_buzz, 252)
+Sharpe: -0.04
+Turnover: 1.3249
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78VlwMK2
+Expression: rank((ts_delta(ts_backfill(operating_cashflow_reported_value, 90), 90)) / (ts_backfill(volume, 90)))
+Sharpe: 0.42
+Turnover: 0.1565
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6XbNwWKY
+Expression: rank((implied_volatility_mean_skew_20) / (historical_volatility_150))
+Sharpe: 0.04
+Turnover: 0.9396
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EK3WnW
+Expression: rank(ts_delta(implied_volatility_call_90, 10))
+Sharpe: 1.51
+Turnover: 0.8777
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dEPgvY
+Expression: rank(ts_corr(snt_value, returns, 252))
+Sharpe: 0.73
+Turnover: 0.0523
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZVl6V2
+Expression: (rank(ts_sum(returns, 30))) - (rank(ts_mean(abs(returns), 60)))
+Sharpe: -0.21
+Turnover: 0.2009
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJGLZZ
+Expression: rank(ts_delta(implied_volatility_mean_skew_60, 90))
+Sharpe: -0.47
+Turnover: 1.0637
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLP8z6a
+Expression: rank((beta_last_60_days_spy) * (historical_volatility_20))
+Sharpe: 0.07
+Turnover: 0.221
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ1lw0A
+Expression: rank(ts_decay_linear(ts_delta(high, 90), 10))
+Sharpe: -0.2
+Turnover: 0.0567
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJV11k
+Expression: -rank(ts_delta(low, 60))
+Sharpe: 0.8
+Turnover: 0.1697
+Fitness: 0.52
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: gJzL9pPl
+Expression: -rank(ts_delta(open, 120))
+Sharpe: 0.28
+Turnover: 0.1297
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAVL8Pa
+Expression: (rank(ts_delta(returns, 10))) - (rank(ts_delay(ts_delta(returns, 10), 1)))
+Sharpe: -0.27
+Turnover: 1.7481
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv9emP3
+Expression: rank(zscore((ts_backfill(anl4_capex_std, 90)) / (ts_backfill(liabilities, 90))))
+Sharpe: -0.05
+Turnover: 0.0316
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5AxeLrK
+Expression: ts_rank(snt_buzz_ret, 2)
+Sharpe: 0.11
+Turnover: 1.2983
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rkeNYdP
+Expression: rank(ts_decay_linear(ts_delta(high, 30), 5))
+Sharpe: -0.63
+Turnover: 0.1314
+Fitness: -0.39
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVWaMQx
+Expression: (rank(ts_delta(vwap, 3))) - (rank(ts_delay(ts_delta(vwap, 3), 2)))
+Sharpe: -0.91
+Turnover: 1.0634
+Fitness: -0.21
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EKGpNx
+Expression: ts_rank(snt_value, 10)
+Sharpe: 0.1
+Turnover: 1.1694
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQkpjar
+Expression: (rank((ts_backfill(sales, 365)) / (ts_backfill(enterprise_value, 365)))) - (rank(ts_mean(abs(returns), 30)))
+Sharpe: 0.27
+Turnover: 0.0841
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o8bGx8
+Expression: (rank(ts_delta(high, 252))) - (rank(ts_delay(ts_delta(high, 252), 2)))
+Sharpe: -1.36
+Turnover: 0.9955
+Fitness: -0.38
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: VkoeGA0A
+Expression: (rank((ts_backfill(dividend, 365)) / (abs(close)))) + (rank(scl12_buzz))
+Sharpe: -0.3
+Turnover: 1.1656
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZVjZJP
+Expression: (rank(ts_corr(ts_delta(returns, 1), ts_delta(volume, 1), 120))) - (rank(ts_mean(abs(returns), 2)))
+Sharpe: -0.01
+Turnover: 0.5629
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dElaNw
+Expression: rank(ts_mean(ts_backfill(anl4_netprofita_high, 90), 2))
+Sharpe: 0.21
+Turnover: 0.0119
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rkel70N
+Expression: rank(ts_corr(snt_value, returns, 120))
+Sharpe: 0.65
+Turnover: 0.0805
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZq6gm
+Expression: rank(ts_corr(scl12_buzz_fast_d1, returns, 120))
+Sharpe: -0.62
+Turnover: 0.0788
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq59j9b8
+Expression: -rank(ts_delta(volume, 2))
+Sharpe: -0.73
+Turnover: 1.1582
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEM73Vb
+Expression: (rank(ts_sum(returns, 60))) - (rank(ts_mean(abs(returns), 30)))
+Sharpe: -0.19
+Turnover: 0.1537
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dE0JgX
+Expression: rank((ts_delta(ts_backfill(forward_price_270, 90), 30)) / (ts_backfill(sales, 90)))
+Sharpe: -0.31
+Turnover: 0.3585
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vkoe627G
+Expression: rank(ts_delta(implied_volatility_call_30, 10))
+Sharpe: 1.58
+Turnover: 0.8697
+Fitness: 0.44
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx39d69
+Expression: rank((ts_backfill(anl4_fcf_high, 365)) / (ts_mean(volume, 10)))
+Sharpe: 0.13
+Turnover: 0.0437
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QO3ag9
+Expression: (rank(ts_rank(returns, 252))) - (rank(ts_rank(high, 20)))
+Sharpe: -0.27
+Turnover: 1.1838
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEMWeeb
+Expression: rank(ts_delta(high, 90))
+Sharpe: -0.34
+Turnover: 0.135
+Fitness: -0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3Ab5m6
+Expression: rank((ts_delta(ts_backfill(fn_def_income_tax_expense_a, 365), 90)) / (ts_backfill(liabilities, 365)))
+Sharpe: -0.82
+Turnover: 0.0649
+Fitness: -0.38
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqze8Q6K
+Expression: rank(ts_mean(snt_buzz_ret, 2))
+Sharpe: 0.51
+Turnover: 0.6558
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qXjeNa
+Expression: rank(zscore((ts_backfill(actual_dividend_value_quarterly, 365)) / (ts_backfill(sales, 365))))
+Sharpe: -0.06
+Turnover: 0.0153
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv9bglO
+Expression: ts_rank(snt_buzz, 3)
+Sharpe: 0.31
+Turnover: 1.4067
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EK2Ybw
+Expression: (rank((ts_backfill(sales, 45)) / (ts_backfill(enterprise_value, 45)))) - (rank(ts_mean(abs(returns), 20)))
+Sharpe: 0.32
+Turnover: 0.1154
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKm8Oan1
+Expression: rank(ts_corr(snt_value_fast_d1, returns, 252))
+Sharpe: 0.69
+Turnover: 0.0512
+Fitness: 0.27
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JEQkod
+Expression: rank(zscore((ts_backfill(anl4_fcf_mean, 90)) / (ts_backfill(assets, 90))))
+Sharpe: 0.38
+Turnover: 0.0205
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZWeLb
+Expression: -rank(ts_corr(implied_volatility_call_10, returns, 60))
+Sharpe: 0.71
+Turnover: 0.1571
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vkoe038Y
+Expression: -rank(ts_mean(abs(returns), 5))
+Sharpe: 0.09
+Turnover: 0.4129
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5AxRVYP
+Expression: ts_rank(scl12_buzz_fast_d1, 30)
+Sharpe: 0.06
+Turnover: 1.3347
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 3qWJVke0
+Expression: rank(ts_zscore(returns, 90))
+Sharpe: -1.55
+Turnover: 1.3738
+Fitness: -0.43
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAV3rX8
+Expression: (rank(ts_corr(ts_delta(high, 1), ts_delta(volume, 1), 60))) - (rank(ts_mean(abs(returns), 10)))
+Sharpe: -0.17
+Turnover: 0.2095
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEMRGjX
+Expression: -rank(ts_delta(returns, 10))
+Sharpe: 0.97
+Turnover: 1.3631
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wvK8vg
+Expression: rank(ts_mean(scl12_sentiment_fast_d1, 120))
+Sharpe: -0.58
+Turnover: 0.0467
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZVEnzK
+Expression: rank(ts_delay(vwap, 1))
+Sharpe: 0.11
+Turnover: 0.0246
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqzer3Nd
+Expression: rank(ts_mean(ts_backfill(anl4_ebitda_flag, 180), 5))
+Sharpe: 0.34
+Turnover: 0.017
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZVEJaA
+Expression: rank((implied_volatility_mean_60) / (historical_volatility_90))
+Sharpe: 0.73
+Turnover: 0.3637
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o8N1kq
+Expression: rank(ts_corr(ts_delta(close, 1), volume, 20))
+Sharpe: -0.38
+Turnover: 0.2595
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPd6vLZr
+Expression: rank(zscore((ts_backfill(anl4_capex_number, 45)) / (ts_backfill(liabilities, 45))))
+Sharpe: -0.45
+Turnover: 0.0148
+Fitness: -0.28
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbrvwaz
+Expression: rank(ts_corr(snt_buzz_ret_fast_d1, returns, 120))
+Sharpe: 0.25
+Turnover: 0.0923
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3GKNq1
+Expression: rank(ts_sum(returns, 2))
+Sharpe: -1.27
+Turnover: 0.9678
+Fitness: -0.47
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZEEZJ
+Expression: rank(ts_delta(implied_volatility_put_360, 90))
+Sharpe: 0.73
+Turnover: 0.5646
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVP1GQG
+Expression: rank(ts_delay(returns, 5))
+Sharpe: 0.14
+Turnover: 1.3611
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JE5ZXN
+Expression: rank(ts_delay(high, 3))
+Sharpe: 0.14
+Turnover: 0.0251
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEMa5qx
+Expression: rank((ts_backfill(max_gross_income_guidance, 90)) / (ts_backfill(equity, 90)))
+Sharpe: 0.53
+Turnover: 0.014
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjLr8Xzj
+Expression: rank((ts_backfill(return_assets, 45)) / (ts_mean(volume, 3)))
+Sharpe: 0.31
+Turnover: 0.0792
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3AaRZK
+Expression: ts_rank(snt_buzz_bfl_fast_d1, 252)
+Sharpe: -0.03
+Turnover: 1.2292
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3AaA6m
+Expression: rank(ts_corr(snt_buzz_ret_fast_d1, returns, 10))
+Sharpe: -0.15
+Turnover: 0.541
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJYj2Q
+Expression: rank(ts_mean(volume, 60))
+Sharpe: 0.13
+Turnover: 0.0182
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq598l1k
+Expression: rank(ts_delay(low, 1))
+Sharpe: 0.11
+Turnover: 0.0251
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZPAr2
+Expression: rank((ts_delta(ts_backfill(fnd6_newqv1300_rdipq, 45), 60)) / (ts_backfill(equity, 45)))
+Sharpe: -0.46
+Turnover: 0.087
+Fitness: -0.34
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVPYdx3
+Expression: (rank((ts_backfill(sales, 90)) / (ts_backfill(enterprise_value, 90)))) - (rank(ts_mean(abs(returns), 20)))
+Sharpe: 0.3
+Turnover: 0.1149
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZPL6m
+Expression: rank(ts_mean(ts_backfill(fn_income_taxes_paid_q, 90), 30))
+Sharpe: 0.35
+Turnover: 0.0211
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJYYnd
+Expression: rank(ts_mean(snt_buzz_fast_d1, 252))
+Sharpe: 0.31
+Turnover: 0.0209
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPRZVZvj
+Expression: -rank(ts_delta(close, 3))
+Sharpe: 1.67
+Turnover: 0.7882
+Fitness: 0.66
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 3qWJ1Mz0
+Expression: rank(ts_delta(scl12_sentiment_fast_d1, 3))
+Sharpe: 0.82
+Turnover: 1.3256
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wvYVEK
+Expression: -rank((ts_backfill(fnd2_sbcpnshardpreops, 180)) / (ts_backfill(debt_lt, 180)))
+Sharpe: 0.13
+Turnover: 0.012
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLP90Oo
+Expression: rank((implied_volatility_call_720) / (historical_volatility_30))
+Sharpe: 0.8
+Turnover: 0.3606
+Fitness: 0.27
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPd6Oa9W
+Expression: rank(ts_mean(ts_backfill(max_research_development_expense_guidance, 365), 2))
+Sharpe: 0.22
+Turnover: 0.016
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAVdZGo
+Expression: rank(ts_mean(ts_backfill(gross_income_total, 365), 120))
+Sharpe: 0.29
+Turnover: 0.0093
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwg3x2xq
+Expression: rank(ts_mean(volume, 2))
+Sharpe: 0.38
+Turnover: 0.1879
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPdYEWLv
+Expression: rank((implied_volatility_call_360) / (historical_volatility_120))
+Sharpe: 1.35
+Turnover: 0.3618
+Fitness: 0.56
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPdYEp6R
+Expression: rank(ts_corr(ts_backfill(cashflow_op, 45), returns, 120))
+Sharpe: 0.46
+Turnover: 0.2506
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVPpG7Q
+Expression: rank(ts_delta(snt_buzz_ret_fast_d1, 5))
+Sharpe: -0.21
+Turnover: 0.9344
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv9zqp0
+Expression: rank(ts_corr(ts_delta(vwap, 1), volume, 252))
+Sharpe: -0.38
+Turnover: 0.044
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjLrzwxO
+Expression: rank((ts_backfill(est_fcf, 180)) / (ts_backfill(liabilities, 180)))
+Sharpe: 0.21
+Turnover: 0.0201
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EKzexM
+Expression: rank(ts_decay_linear(ts_delta(low, 252), 3))
+Sharpe: -0.06
+Turnover: 0.0556
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: VkoezlZA
+Expression: -rank(ts_corr(implied_volatility_put_180, returns, 20))
+Sharpe: 0.77
+Turnover: 0.3118
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjLrzQAW
+Expression: rank(ts_delta(scl12_buzz_fast_d1, 90))
+Sharpe: 0.29
+Turnover: 1.2638
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEMzV75
+Expression: rank(zscore((ts_backfill(fnd6_newqv1300_epsfiq, 45)) / (ts_backfill(sales, 45))))
+Sharpe: 0.24
+Turnover: 0.0263
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq59GwEl
+Expression: rank((ts_delta(ts_backfill(anl4_capex_flag, 365), 120)) / (ts_backfill(liabilities, 365)))
+Sharpe: -1.37
+Turnover: 0.0569
+Fitness: -0.87
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJ06kk
+Expression: (rank((ts_backfill(sales, 180)) / (ts_backfill(enterprise_value, 180)))) - (rank(ts_mean(abs(returns), 30)))
+Sharpe: 0.28
+Turnover: 0.0847
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPdYJn6A
+Expression: rank(ts_mean(abs(returns), 5))
+Sharpe: -0.09
+Turnover: 0.4129
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dEmg0l
+Expression: rank((ts_delta(ts_backfill(ebitda, 365), 30)) / (ts_backfill(assets, 365)))
+Sharpe: 0.74
+Turnover: 0.131
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qXYQYz
+Expression: rank(ts_zscore(close, 90))
+Sharpe: -0.54
+Turnover: 0.2144
+Fitness: -0.28
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVP62L3
+Expression: rank(ts_delta(scl12_buzz_fast_d1, 30))
+Sharpe: 0.39
+Turnover: 1.2695
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vgVRop
+Expression: (rank(ts_sum(returns, 3))) - (rank(ts_mean(abs(returns), 10)))
+Sharpe: -0.53
+Turnover: 0.6328
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3GwgKR
+Expression: -rank(ts_sum(returns, 2))
+Sharpe: 1.27
+Turnover: 0.9678
+Fitness: 0.47
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 3qWJJMog
+Expression: rank(ts_delta(scl12_buzz_fast_d1, 252))
+Sharpe: 0.09
+Turnover: 1.2795
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5AxxgO0
+Expression: rank(ts_corr(ts_backfill(fn_prepaid_expense_q, 365), returns, 20))
+Sharpe: -0.86
+Turnover: 0.5866
+Fitness: -0.36
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKm882za
+Expression: rank((ts_backfill(anl4_qf_az_eps_number, 90)) / (ts_mean(volume, 30)))
+Sharpe: 0.02
+Turnover: 0.0354
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv99WYx
+Expression: rank((ts_backfill(rp_ess_dividends, 90)) / (ts_backfill(debt_lt, 90)))
+Sharpe: -0.17
+Turnover: 0.2214
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAVVZRk
+Expression: rank(ts_delta(implied_volatility_put_90, 252))
+Sharpe: 0.82
+Turnover: 0.4668
+Fitness: 0.33
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPd668nr
+Expression: -rank((ts_backfill(fn_def_income_tax_expense_q, 365)) / (ts_backfill(volume, 365)))
+Sharpe: 0.21
+Turnover: 0.1104
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJxWvG
+Expression: ts_rank(scl12_buzz_fast_d1, 3)
+Sharpe: 0.17
+Turnover: 1.4854
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: VkoeR33A
+Expression: (rank((ts_backfill(dividend, 90)) / (abs(close)))) + (rank(scl12_buzz))
+Sharpe: -0.3
+Turnover: 1.1656
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPRZ2rg8
+Expression: rank(ts_mean(ts_backfill(eps, 90), 60))
+Sharpe: 0.28
+Turnover: 0.018
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qX2VPq
+Expression: rank(ts_decay_linear(ts_delta(low, 20), 3))
+Sharpe: -0.64
+Turnover: 0.2007
+Fitness: -0.32
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq59YAJK
+Expression: -rank((ts_backfill(dividend_estimate_maximum, 180)) / (ts_backfill(sales, 180)))
+Sharpe: -0.08
+Turnover: 0.0111
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVWAK05
+Expression: (rank(ts_corr(ts_delta(low, 1), ts_delta(volume, 1), 20))) - (rank(ts_mean(abs(returns), 2)))
+Sharpe: 0.03
+Turnover: 0.5984
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAVnmpr
+Expression: rank(ts_delay(vwap, 3))
+Sharpe: 0.14
+Turnover: 0.0247
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vgjn5d
+Expression: rank((ts_backfill(forward_price_20, 365)) / (ts_mean(volume, 30)))
+Sharpe: -0.04
+Turnover: 0.0283
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5AxMVYr
+Expression: -rank(ts_delta(close, 20))
+Sharpe: 0.89
+Turnover: 0.3122
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPd6AONr
+Expression: rank((implied_volatility_call_720) / (historical_volatility_20))
+Sharpe: 0.58
+Turnover: 0.3887
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLPowGj
+Expression: rank(ts_decay_linear(ts_delta(high, 120), 20))
+Sharpe: -0.23
+Turnover: 0.0376
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y50AkLW
+Expression: -rank(ts_corr(implied_volatility_mean_150, returns, 60))
+Sharpe: 1.03
+Turnover: 0.1917
+Fitness: 0.5
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJ267d
+Expression: ts_rank(snt_buzz_fast_d1, 2)
+Sharpe: 0.2
+Turnover: 1.4806
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EKmj5W
+Expression: rank(ts_mean(snt_buzz_ret, 120))
+Sharpe: -0.29
+Turnover: 0.0507
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAVN599
+Expression: ts_rank(snt_buzz_bfl, 90)
+Sharpe: 0.34
+Turnover: 1.2524
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYLNvpbx
+Expression: (rank((ts_backfill(dividend, 365)) / (abs(close)))) + (rank(snt_buzz_bfl_fast_d1))
+Sharpe: 0.19
+Turnover: 1.1397
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQkOV0o
+Expression: -rank((ts_backfill(anl4_ebit_median, 90)) / (ts_backfill(liabilities, 90)))
+Sharpe: -0.22
+Turnover: 0.018
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW52PKq
+Expression: -rank((ts_backfill(max_reported_pretax_income_guidance, 365)) / (ts_backfill(assets, 365)))
+Sharpe: -0.52
+Turnover: 0.0107
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQkOnPr
+Expression: rank((beta_last_360_days_spy) * (historical_volatility_150))
+Sharpe: 0.07
+Turnover: 0.112
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ1wde2
+Expression: (rank((ts_backfill(dividend, 90)) / (abs(close)))) + (rank(snt_buzz_ret_fast_d1))
+Sharpe: -0.23
+Turnover: 0.8727
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJrmkN
+Expression: rank(zscore((ts_backfill(anl4_netprofita_number, 180)) / (ts_backfill(sales, 180))))
+Sharpe: -0.28
+Turnover: 0.0216
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dEX00E
+Expression: (rank((ts_backfill(sales, 45)) / (ts_backfill(enterprise_value, 45)))) - (rank(ts_mean(abs(returns), 10)))
+Sharpe: 0.28
+Turnover: 0.1965
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQk5n31
+Expression: -rank(ts_sum(returns, 10))
+Sharpe: 0.92
+Turnover: 0.4405
+Fitness: 0.44
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QOpR8Z
+Expression: rank(ts_corr(ts_backfill(anl4_rd_exp_mean, 180), returns, 20))
+Sharpe: -0.39
+Turnover: 0.4868
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKm8qEgE
+Expression: -rank(ts_corr(implied_volatility_mean_720, returns, 252))
+Sharpe: 1.35
+Turnover: 0.0937
+Fitness: 0.93
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEM3p8x
+Expression: rank(ts_corr(snt_social_value, returns, 20))
+Sharpe: 1.04
+Turnover: 0.3653
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JEY9Az
+Expression: rank(ts_mean(ts_backfill(anl4_ebitda_mean, 180), 60))
+Sharpe: 0.37
+Turnover: 0.0091
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqzex381
+Expression: rank(ts_corr(ts_backfill(net_profit_reported_value, 180), returns, 10))
+Sharpe: 0.56
+Turnover: 0.7427
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwg32M9X
+Expression: rank(ts_mean(ts_backfill(forward_price_270, 365), 120))
+Sharpe: 0.25
+Turnover: 0.0097
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPdYVOzW
+Expression: (rank(ts_corr(ts_delta(open, 1), ts_delta(volume, 1), 120))) - (rank(ts_mean(abs(returns), 30)))
+Sharpe: 0.03
+Turnover: 0.101
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o8dYGw
+Expression: (rank(ts_delta(open, 2))) - (rank(ts_delay(ts_delta(open, 2), 2)))
+Sharpe: -0.62
+Turnover: 1.2362
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbrEJw3
+Expression: rank((ts_delta(ts_backfill(max_reported_eps_guidance_2, 90), 60)) / (ts_backfill(debt_lt, 90)))
+Sharpe: -0.05
+Turnover: 0.0687
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qXwq3W
+Expression: ts_rank(snt_value_fast_d1, 252)
+Sharpe: -0.61
+Turnover: 1.1149
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dEAOgY
+Expression: rank(ts_delta(implied_volatility_call_10, 90))
+Sharpe: 0.84
+Turnover: 0.7178
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JEjOeN
+Expression: rank(ts_zscore(close, 2))
+Sharpe: -1.5
+Turnover: 1.6229
+Fitness: -0.41
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKm8x5md
+Expression: rank(ts_corr(ts_backfill(anl4_epsr_number, 180), returns, 252))
+Sharpe: -0.21
+Turnover: 0.1098
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQknxMV
+Expression: rank(ts_delta(snt_buzz_bfl, 3))
+Sharpe: 0.4
+Turnover: 1.2776
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZxmm5
+Expression: rank(ts_corr(ts_backfill(min_stock_option_expense_guidance_2, 90), returns, 60))
+Sharpe: 0.18
+Turnover: 0.3025
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wvNqGX
+Expression: (rank(ts_delta(vwap, 30))) - (rank(ts_delay(ts_delta(vwap, 30), 2)))
+Sharpe: -0.95
+Turnover: 1.011
+Fitness: -0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qXM6no
+Expression: rank((ts_backfill(anl4_fcf_number, 180)) / (ts_backfill(equity, 180)))
+Sharpe: -0.1
+Turnover: 0.0157
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx30RZn
+Expression: (rank(ts_rank(vwap, 60))) - (rank(ts_rank(high, 20)))
+Sharpe: 0.21
+Turnover: 0.6604
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JEX39z
+Expression: (rank(ts_sum(returns, 1))) - (rank(ts_mean(abs(returns), 3)))
+Sharpe: -0.53
+Turnover: 1.1001
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5Ax9Rv1
+Expression: rank(ts_zscore(low, 90))
+Sharpe: -0.45
+Turnover: 0.2045
+Fitness: -0.22
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JEX1Qp
+Expression: rank((ts_delta(ts_backfill(fn_prepaid_expense_a, 45), 30)) / (ts_backfill(enterprise_value, 45)))
+Sharpe: -0.04
+Turnover: 0.1594
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqzel0bR
+Expression: rank((ts_backfill(cashflow_per_share_average, 90)) / (ts_backfill(liabilities, 90)))
+Sharpe: 0.08
+Turnover: 0.0122
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW51Zrp
+Expression: rank(ts_zscore(open, 3))
+Sharpe: -1.45
+Turnover: 1.3046
+Fitness: -0.38
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaEKARN
+Expression: rank(ts_mean(ts_backfill(max_investing_cashflow_guidance_2, 45), 1))
+Sharpe: 0.54
+Turnover: 0.0337
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rk21zAw
+Expression: -rank(ts_corr(implied_volatility_mean_60, returns, 120))
+Sharpe: 1.31
+Turnover: 0.1247
+Fitness: 1.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqzLvOaV
+Expression: rank((ts_backfill(fnd6_newqv1300_rdipq, 180)) / (ts_mean(volume, 30)))
+Sharpe: -0.39
+Turnover: 0.0427
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9jgaW
+Expression: rank(zscore((ts_backfill(fnd6_newa2v1300_rdip, 365)) / (ts_backfill(equity, 365))))
+Sharpe: 0.06
+Turnover: 0.0165
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JWlQKz
+Expression: rank((ts_backfill(cashflow_efficiency_rank_derivative, 90)) / (ts_mean(volume, 2)))
+Sharpe: -0.42
+Turnover: 0.184
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPR2KVkx
+Expression: -rank((ts_backfill(return_assets, 180)) / (ts_backfill(liabilities, 180)))
+Sharpe: -0.27
+Turnover: 0.026
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9jJRA
+Expression: rank(ts_mean(ts_backfill(anl4_median_epsreported, 180), 10))
+Sharpe: 0.28
+Turnover: 0.0115
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0v21dO7
+Expression: rank(ts_decay_linear(ts_delta(high, 10), 5))
+Sharpe: -0.95
+Turnover: 0.2387
+Fitness: -0.52
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o21vEq
+Expression: rank(zscore((ts_backfill(max_gross_income_guidance_2, 365)) / (ts_backfill(debt_lt, 365))))
+Sharpe: 0.77
+Turnover: 0.0125
+Fitness: 0.53
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wP58Og
+Expression: rank(ts_corr(ts_backfill(income_beforeextra, 365), returns, 252))
+Sharpe: 0.1
+Turnover: 0.1148
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLvR23a
+Expression: ts_rank(snt_buzz_ret, 252)
+Sharpe: -0.5
+Turnover: 0.857
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EA03Rp
+Expression: rank(ts_delta(implied_volatility_mean_180, 1))
+Sharpe: 1.96
+Turnover: 1.5312
+Fitness: 0.39
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEOgb6m
+Expression: rank(ts_mean(ts_backfill(fnd2_sbcpnshardpreops, 45), 252))
+Sharpe: 0.58
+Turnover: 0.0076
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZwM7aP
+Expression: rank(ts_delta(implied_volatility_put_360, 2))
+Sharpe: 1.15
+Turnover: 1.1977
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d21pMw
+Expression: rank(ts_decay_linear(ts_delta(high, 20), 3))
+Sharpe: -0.59
+Turnover: 0.1982
+Fitness: -0.29
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3gjk9O
+Expression: (rank((ts_backfill(ebitda, 45)) / (ts_backfill(assets, 45)))) + (rank(ts_sum(returns, 1)))
+Sharpe: -0.6
+Turnover: 1.0429
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPR2leKN
+Expression: -rank((ts_backfill(forward_price_10, 180)) / (ts_backfill(enterprise_value, 180)))
+Sharpe: 0.37
+Turnover: 0.0329
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d2jb2E
+Expression: (rank(ts_sum(returns, 2))) - (rank(ts_mean(abs(returns), 1)))
+Sharpe: -0.76
+Turnover: 1.1881
+Fitness: -0.2
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QMzgAk
+Expression: (rank(ts_corr(ts_delta(open, 1), ts_delta(volume, 1), 10))) - (rank(ts_mean(abs(returns), 5)))
+Sharpe: -0.01
+Turnover: 0.4606
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYL1PmLQ
+Expression: rank((ts_backfill(dividend_estimate_standard_deviation, 90)) / (ts_mean(volume, 30)))
+Sharpe: -0.04
+Turnover: 0.0314
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ2ZN3o
+Expression: -rank(ts_delta(vwap, 120))
+Sharpe: 0.33
+Turnover: 0.115
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6Xb278M7
+Expression: rank(ts_corr(snt_social_volume, returns, 20))
+Sharpe: 0.74
+Turnover: 0.3772
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d29OXE
+Expression: (rank(ts_delta(close, 20))) - (rank(ts_delay(ts_delta(close, 20), 2)))
+Sharpe: -1.23
+Turnover: 1.0727
+Fitness: -0.34
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZNd02l
+Expression: rank(ts_zscore(high, 10))
+Sharpe: -1.29
+Turnover: 0.6435
+Fitness: -0.53
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JWmQ7l
+Expression: -rank(ts_corr(implied_volatility_mean_60, returns, 252))
+Sharpe: 1.19
+Turnover: 0.085
+Fitness: 0.91
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPR23VZx
+Expression: rank((implied_volatility_mean_skew_1080) / (historical_volatility_120))
+Sharpe: 0.31
+Turnover: 0.8037
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A21LlL
+Expression: rank(zscore((ts_backfill(anl4_medianepsbfam, 90)) / (ts_backfill(equity, 90))))
+Sharpe: 0.8
+Turnover: 0.0171
+Fitness: 0.48
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLklpn5W
+Expression: -rank((ts_backfill(anl4_afv4_eps_low, 180)) / (ts_backfill(assets, 180)))
+Sharpe: -0.3
+Turnover: 0.0165
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL2wV8m
+Expression: ts_rank(snt_value, 5)
+Sharpe: 0.1
+Turnover: 1.2604
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mWalnN8
+Expression: rank((ts_backfill(fnd6_newa1v1300_epsfx, 180)) / (ts_mean(volume, 2)))
+Sharpe: 0.17
+Turnover: 0.0947
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx2jXz6
+Expression: (rank(ts_rank(high, 1))) - (rank(ts_rank(close, 1)))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: kq5Y73pL
+Expression: rank((ts_backfill(fnd6_mfma2_opeps, 365)) / (ts_mean(volume, 60)))
+Sharpe: 0.15
+Turnover: 0.0153
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLkl3mv5
+Expression: rank(ts_corr(snt_buzz, returns, 20))
+Sharpe: 0.48
+Turnover: 0.2663
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d2WLeX
+Expression: -rank(ts_corr(implied_volatility_call_120, returns, 252))
+Sharpe: 0.94
+Turnover: 0.0789
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9rOK6
+Expression: rank(ts_delta(scl12_buzz_fast_d1, 1))
+Sharpe: -0.02
+Turnover: 1.6095
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLkl3EE2
+Expression: -rank(ts_delta(high, 5))
+Sharpe: 1.48
+Turnover: 0.5815
+Fitness: 0.64
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A2W75P
+Expression: rank((ts_backfill(interest_expense, 365)) / (ts_mean(volume, 2)))
+Sharpe: 0.4
+Turnover: 0.1451
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3KZE6r
+Expression: rank(ts_delta(snt_value, 30))
+Sharpe: 0.38
+Turnover: 1.1662
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mWa3KRv
+Expression: rank((ts_backfill(anl4_fcfps_flag, 90)) / (ts_mean(volume, 2)))
+Sharpe: -0.27
+Turnover: 0.1961
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o2mOJg
+Expression: (rank(ts_rank(close, 1))) - (rank(ts_rank(open, 10)))
+Sharpe: 1.39
+Turnover: 0.7601
+Fitness: 0.53
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78V2bznZ
+Expression: rank(ts_mean(ts_backfill(fnd2_a_stkrpeprogramardamt, 45), 252))
+Sharpe: 0.19
+Turnover: 0.0074
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLklRYY6
+Expression: rank(ts_delta(snt_buzz_fast_d1, 3))
+Sharpe: 0.05
+Turnover: 1.1981
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0v2PRAY
+Expression: -rank(ts_delta(low, 252))
+Sharpe: 0.1
+Turnover: 0.0821
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3KZ1JZ
+Expression: rank(ts_decay_linear(ts_delta(close, 2), 3))
+Sharpe: -1.65
+Turnover: 0.6837
+Fitness: -0.71
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPA2RJgn
+Expression: rank((implied_volatility_put_360) / (historical_volatility_180))
+Sharpe: 0.14
+Turnover: 0.3621
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL2Zq2e
+Expression: -rank(ts_corr(implied_volatility_call_180, returns, 10))
+Sharpe: -0.01
+Turnover: 0.4729
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ2L0mq
+Expression: rank((ts_delta(ts_backfill(min_customized_eps_guidance, 90), 30)) / (ts_backfill(equity, 90)))
+Sharpe: 0.04
+Turnover: 0.1125
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9Gwev
+Expression: rank(ts_corr(ts_backfill(fnd6_newa2v1300_rdipa, 180), returns, 252))
+Sharpe: 0.01
+Turnover: 0.1493
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 58V2oqY1
+Expression: rank(ts_mean(snt_social_value, 20))
+Sharpe: 0.47
+Turnover: 0.1228
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYL1epxj
+Expression: (rank(ts_rank(returns, 2))) - (rank(ts_rank(open, 1)))
+Sharpe: -0.63
+Turnover: 1.6165
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 3qW2ZlpP
+Expression: rank(zscore((ts_backfill(dividend_max_guidance_quarterly, 365)) / (ts_backfill(liabilities, 365))))
+Sharpe: 0.62
+Turnover: 0.0106
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgpAvVV
+Expression: (rank(ts_rank(high, 252))) - (rank(ts_rank(open, 10)))
+Sharpe: 0.88
+Turnover: 0.6552
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv7pXvO
+Expression: rank((ts_backfill(min_stock_option_expense_guidance_2, 180)) / (ts_mean(volume, 1)))
+Sharpe: 0.4
+Turnover: 0.3099
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y52QANm
+Expression: rank((ts_delta(ts_backfill(min_stock_option_expense_guidance, 180), 120)) / (ts_backfill(enterprise_value, 180)))
+Sharpe: 0.07
+Turnover: 0.0133
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 58V2Wbjn
+Expression: rank(ts_delta(snt_value_fast_d1, 20))
+Sharpe: -0.65
+Turnover: 1.1788
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv7JvdP
+Expression: (rank(ts_corr(ts_delta(vwap, 1), ts_delta(volume, 1), 120))) - (rank(ts_mean(abs(returns), 5)))
+Sharpe: -0.18
+Turnover: 0.299
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omekOA55
+Expression: -rank(ts_delta(returns, 252))
+Sharpe: 1.19
+Turnover: 1.3642
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZNXrdO
+Expression: -rank((ts_backfill(news_eps_actual, 90)) / (ts_backfill(enterprise_value, 90)))
+Sharpe: -0.5
+Turnover: 0.0379
+Fitness: -0.31
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgpOK8X
+Expression: (rank(ts_rank(open, 30))) - (rank(ts_rank(close, 3)))
+Sharpe: 0.21
+Turnover: 1.0497
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6Xb2OJOO
+Expression: -rank(ts_delta(low, 5))
+Sharpe: 1.5
+Turnover: 0.5852
+Fitness: 0.66
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Wjmx85nx
+Expression: (rank((ts_backfill(ebitda, 90)) / (ts_backfill(assets, 90)))) + (rank(ts_sum(returns, 10)))
+Sharpe: -0.33
+Turnover: 0.3418
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3K3lOm
+Expression: rank(ts_delta(implied_volatility_mean_skew_30, 3))
+Sharpe: -0.63
+Turnover: 1.2656
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL2Lw6n
+Expression: ts_rank(snt_buzz_ret_fast_d1, 252)
+Sharpe: -0.72
+Turnover: 0.8592
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omekeeal
+Expression: rank(ts_corr(ts_delta(high, 1), volume, 60))
+Sharpe: -0.82
+Turnover: 0.11
+Fitness: -0.47
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wPwdxX
+Expression: -rank((ts_backfill(fnd6_newqv1300_rdipepsq, 365)) / (ts_backfill(liabilities, 365)))
+Sharpe: 0.33
+Turnover: 0.0433
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wPwRGv
+Expression: -rank((ts_backfill(max_ebit_guidance, 90)) / (ts_backfill(assets, 90)))
+Sharpe: -0.61
+Turnover: 0.0112
+Fitness: -0.42
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx2xEl1
+Expression: (rank(ts_rank(returns, 20))) - (rank(ts_rank(high, 2)))
+Sharpe: -0.54
+Turnover: 1.5324
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A2APa0
+Expression: rank((beta_last_90_days_spy) * (historical_volatility_60))
+Sharpe: 0.07
+Turnover: 0.1591
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVo0K1z
+Expression: -rank(ts_corr(implied_volatility_call_1080, returns, 120))
+Sharpe: 1.18
+Turnover: 0.1161
+Fitness: 0.65
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx2ejVa
+Expression: rank(ts_corr(snt_buzz_bfl_fast_d1, returns, 10))
+Sharpe: 0.04
+Turnover: 0.4286
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVo0g3A
+Expression: -rank((ts_backfill(anl4_capex_flag, 180)) / (ts_backfill(debt_lt, 180)))
+Sharpe: 0.65
+Turnover: 0.0136
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d26qnE
+Expression: -rank((ts_backfill(pretax_income_actual_reported_value, 180)) / (ts_backfill(sales, 180)))
+Sharpe: 0.09
+Turnover: 0.0283
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPA2w558
+Expression: -rank(ts_delta(open, 2))
+Sharpe: 1.42
+Turnover: 0.9653
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y52vJzR
+Expression: (rank((ts_backfill(ebitda, 180)) / (ts_backfill(assets, 180)))) + (rank(ts_sum(returns, 30)))
+Sharpe: -0.14
+Turnover: 0.1951
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9Z5Qv
+Expression: (rank(ts_corr(ts_delta(returns, 1), ts_delta(volume, 1), 252))) - (rank(ts_mean(abs(returns), 2)))
+Sharpe: -0.06
+Turnover: 0.566
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: gJz0vWmO
+Expression: rank(ts_corr(ts_backfill(selling_general_admin_expense, 90), returns, 20))
+Sharpe: -0.12
+Turnover: 0.5278
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rk2EWK5
+Expression: rank(ts_corr(scl12_buzz, returns, 252))
+Sharpe: -0.34
+Turnover: 0.0514
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmxkRGN
+Expression: rank(ts_corr(ts_backfill(min_free_cashflow_per_share_guidance, 365), returns, 10))
+Sharpe: 0.27
+Turnover: 0.7532
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3Kpm1r
+Expression: (rank((ts_backfill(dividend, 45)) / (abs(close)))) + (rank(snt_buzz_ret))
+Sharpe: 0.24
+Turnover: 0.8645
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdomPjX
+Expression: (rank((ts_backfill(sales, 180)) / (ts_backfill(enterprise_value, 180)))) - (rank(ts_mean(abs(returns), 3)))
+Sharpe: 0.31
+Turnover: 0.484
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mWanlG8
+Expression: rank((ts_backfill(fn_income_tax_expense_q, 365)) / (ts_backfill(equity, 365)))
+Sharpe: 0.66
+Turnover: 0.0319
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdomX0w
+Expression: rank(ts_mean(snt_social_value, 10))
+Sharpe: 0.5
+Turnover: 0.1885
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVoaarw
+Expression: rank(zscore((ts_backfill(max_investing_cashflow_guidance, 365)) / (ts_backfill(volume, 365))))
+Sharpe: 0.39
+Turnover: 0.3102
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmxKd2Z
+Expression: rank((beta_last_30_days_spy) * (historical_volatility_90))
+Sharpe: -0.04
+Turnover: 0.2462
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKmnQJMj
+Expression: rank(ts_zscore(high, 20))
+Sharpe: -0.94
+Turnover: 0.4438
+Fitness: -0.41
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5YeZaP
+Expression: rank(ts_delta(snt_social_value, 1))
+Sharpe: -0.7
+Turnover: 1.0452
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: gJz07eeJ
+Expression: rank((ts_delta(ts_backfill(anl4_netprofit_std, 365), 30)) / (ts_backfill(liabilities, 365)))
+Sharpe: 0.61
+Turnover: 0.1393
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx2Omon
+Expression: rank((ts_backfill(fnd6_newa1v1300_cogs, 180)) / (ts_backfill(sales, 180)))
+Sharpe: 0.17
+Turnover: 0.0226
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPR2x2Nl
+Expression: rank((ts_delta(ts_backfill(anl4_rd_exp_median, 45), 120)) / (ts_backfill(debt_lt, 45)))
+Sharpe: 0.18
+Turnover: 0.0483
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVvX7N2
+Expression: -rank((ts_backfill(max_adjusted_eps_guidance, 365)) / (ts_backfill(volume, 365)))
+Sharpe: -0.52
+Turnover: 0.2867
+Fitness: -0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: VkoRwVeA
+Expression: rank(ts_mean(snt_buzz_bfl_fast_d1, 90))
+Sharpe: 0.5
+Turnover: 0.043
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEOw6G8
+Expression: ts_rank(snt_buzz_ret, 3)
+Sharpe: 0.17
+Turnover: 1.2045
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL200rO
+Expression: (rank(ts_corr(ts_delta(open, 1), ts_delta(volume, 1), 60))) - (rank(ts_mean(abs(returns), 10)))
+Sharpe: -0.09
+Turnover: 0.2053
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EArlRx
+Expression: rank((ts_backfill(anl4_capex_std, 45)) / (ts_mean(volume, 2)))
+Sharpe: -0.08
+Turnover: 0.1302
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5Ykn9k
+Expression: rank(zscore((ts_backfill(min_operating_cashflow_guidance, 365)) / (ts_backfill(liabilities, 365))))
+Sharpe: 0.67
+Turnover: 0.0107
+Fitness: 0.5
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o2WpNo
+Expression: ts_rank(snt_value, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: E5A20G6K
+Expression: rank((ts_delta(ts_backfill(est_fcf_ps, 365), 90)) / (ts_backfill(sales, 365)))
+Sharpe: -0.16
+Turnover: 0.0488
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0v2wNo1
+Expression: (rank(ts_rank(returns, 90))) - (rank(ts_rank(high, 60)))
+Sharpe: -0.28
+Turnover: 1.0573
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: VkoRwNnY
+Expression: rank(ts_zscore(close, 120))
+Sharpe: -0.4
+Turnover: 0.1866
+Fitness: -0.2
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgpJMOo
+Expression: rank(ts_corr(ts_backfill(fnd2_unrgtxbnfrdsrefpstf, 365), returns, 120))
+Sharpe: 0.95
+Turnover: 0.2494
+Fitness: 0.47
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaEwWLn
+Expression: -rank(ts_delta(high, 90))
+Sharpe: 0.34
+Turnover: 0.135
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ2P3j9
+Expression: rank((ts_backfill(anl4_ebit_value, 90)) / (ts_mean(volume, 3)))
+Sharpe: 0.23
+Turnover: 0.1088
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5YkweO
+Expression: rank((implied_volatility_call_270) / (historical_volatility_30))
+Sharpe: 0.74
+Turnover: 0.3574
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL2YqMO
+Expression: -rank(ts_corr(implied_volatility_call_20, returns, 252))
+Sharpe: 0.87
+Turnover: 0.0712
+Fitness: 0.53
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mWa9Wmr
+Expression: rank(zscore((ts_backfill(anl4_fcf_low, 365)) / (ts_backfill(sales, 365))))
+Sharpe: 0.28
+Turnover: 0.0219
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78V20qLb
+Expression: -rank(ts_corr(implied_volatility_call_150, returns, 252))
+Sharpe: 0.9
+Turnover: 0.0796
+Fitness: 0.53
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QMWwnZ
+Expression: ts_rank(snt_social_volume, 252)
+Sharpe: -0.17
+Turnover: 0.3118
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx2q1qL
+Expression: rank(ts_delta(implied_volatility_mean_skew_270, 20))
+Sharpe: -0.18
+Turnover: 1.1038
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6Xb23K6p
+Expression: rank((beta_last_30_days_spy) * (historical_volatility_10))
+Sharpe: 0.01
+Turnover: 0.3267
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5YbarP
+Expression: rank((ts_delta(ts_backfill(anl4_fcfps_flag, 180), 60)) / (ts_backfill(sales, 180)))
+Sharpe: -0.12
+Turnover: 0.0884
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d2Yr0W
+Expression: (rank(ts_delta(low, 60))) - (rank(ts_delay(ts_delta(low, 60), 2)))
+Sharpe: -0.91
+Turnover: 1.0229
+Fitness: -0.21
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3KVKMR
+Expression: (rank(ts_corr(ts_delta(open, 1), ts_delta(volume, 1), 252))) - (rank(ts_mean(abs(returns), 2)))
+Sharpe: 0.0
+Turnover: 0.5498
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmxnrYk
+Expression: rank(ts_mean(ts_backfill(operating_income, 45), 1))
+Sharpe: 0.29
+Turnover: 0.0187
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx26jqM
+Expression: (rank((ts_backfill(dividend, 365)) / (abs(close)))) + (rank(snt_buzz_ret_fast_d1))
+Sharpe: -0.23
+Turnover: 0.8727
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5YXl2P
+Expression: rank(ts_corr(ts_backfill(fn_accum_oth_income_loss_net_of_tax_q, 45), returns, 120))
+Sharpe: -0.47
+Turnover: 0.2067
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaEQM1q
+Expression: (rank(ts_corr(ts_delta(vwap, 1), ts_delta(volume, 1), 120))) - (rank(ts_mean(abs(returns), 2)))
+Sharpe: -0.18
+Turnover: 0.5677
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EA6qPx
+Expression: rank((ts_delta(ts_backfill(cashflow_per_share_minimum, 365), 90)) / (ts_backfill(sales, 365)))
+Sharpe: -0.33
+Turnover: 0.044
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78V2QK61
+Expression: rank(ts_decay_linear(ts_delta(close, 20), 3))
+Sharpe: -0.69
+Turnover: 0.2033
+Fitness: -0.36
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ2KJG1
+Expression: rank((implied_volatility_mean_20) / (historical_volatility_90))
+Sharpe: 0.64
+Turnover: 0.4441
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx261XM
+Expression: (rank((ts_backfill(dividend, 180)) / (abs(close)))) + (rank(snt_social_value))
+Sharpe: 0.44
+Turnover: 0.3689
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbXoP1z
+Expression: -rank(ts_corr(implied_volatility_mean_360, returns, 60))
+Sharpe: 0.9
+Turnover: 0.1922
+Fitness: 0.39
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mWadPGG
+Expression: rank(ts_mean(snt_buzz_ret_fast_d1, 120))
+Sharpe: -0.44
+Turnover: 0.0518
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JWKV26
+Expression: rank(ts_mean(snt_buzz_fast_d1, 20))
+Sharpe: 0.18
+Turnover: 0.1122
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaEQWNl
+Expression: rank(ts_decay_linear(ts_delta(returns, 1), 3))
+Sharpe: -0.38
+Turnover: 1.3954
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 3qW2xOnO
+Expression: rank(ts_mean(scl12_sentiment, 5))
+Sharpe: -0.83
+Turnover: 0.4513
+Fitness: -0.18
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL2ma3e
+Expression: (rank(ts_corr(ts_delta(close, 1), ts_delta(volume, 1), 20))) - (rank(ts_mean(abs(returns), 5)))
+Sharpe: -0.12
+Turnover: 0.3645
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QMwEd5
+Expression: -rank((ts_backfill(cashflow_per_share_average, 365)) / (ts_backfill(debt_lt, 365)))
+Sharpe: 0.03
+Turnover: 0.0136
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqzLo1dd
+Expression: (rank(ts_sum(returns, 30))) - (rank(ts_mean(abs(returns), 10)))
+Sharpe: -0.23
+Turnover: 0.2586
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omekzwvm
+Expression: rank(ts_mean(snt_buzz_bfl_fast_d1, 3))
+Sharpe: 0.28
+Turnover: 0.5518
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6Xb2qYeJ
+Expression: rank((implied_volatility_put_20) / (historical_volatility_10))
+Sharpe: -0.3
+Turnover: 0.5593
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaEzxPg
+Expression: ts_rank(snt_value, 252)
+Sharpe: -0.08
+Turnover: 1.1074
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVvzEWY
+Expression: rank((ts_backfill(anl4_rd_exp_low, 45)) / (ts_backfill(enterprise_value, 45)))
+Sharpe: 0.37
+Turnover: 0.0445
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omekz6M5
+Expression: rank(ts_corr(snt_buzz, returns, 60))
+Sharpe: 0.99
+Turnover: 0.1223
+Fitness: 0.51
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVoz2Xb
+Expression: rank(ts_delta(implied_volatility_put_30, 60))
+Sharpe: 0.85
+Turnover: 0.7202
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omekzPb5
+Expression: (rank((ts_backfill(dividend, 90)) / (abs(close)))) + (rank(scl12_buzz_fast_d1))
+Sharpe: 0.01
+Turnover: 1.1644
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLklz7ep
+Expression: rank((ts_delta(ts_backfill(anl4_fcfps_low, 90), 60)) / (ts_backfill(assets, 90)))
+Sharpe: -0.54
+Turnover: 0.0652
+Fitness: -0.18
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omekzZWb
+Expression: -rank((ts_backfill(min_free_cashflow_guidance, 90)) / (ts_backfill(enterprise_value, 90)))
+Sharpe: -0.26
+Turnover: 0.0278
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ26O8r
+Expression: ts_rank(snt_value_fast_d1, 5)
+Sharpe: -0.56
+Turnover: 1.2654
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A2adZr
+Expression: rank(ts_decay_linear(ts_delta(low, 252), 20))
+Sharpe: 0.03
+Turnover: 0.0271
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ2AZ61
+Expression: rank(ts_delta(low, 3))
+Sharpe: -1.55
+Turnover: 0.7519
+Fitness: -0.6
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6Xb2Y80E
+Expression: rank(ts_corr(ts_backfill(fn_income_taxes_paid_q, 365), returns, 10))
+Sharpe: -0.05
+Turnover: 0.7402
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: VkoRYJVY
+Expression: (rank((ts_backfill(dividend, 365)) / (abs(close)))) + (rank(scl12_buzz_fast_d1))
+Sharpe: 0.01
+Turnover: 1.1644
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EAXrnw
+Expression: rank((beta_last_60_days_spy) * (historical_volatility_150))
+Sharpe: 0.12
+Turnover: 0.1765
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3gWlgx
+Expression: -rank(ts_corr(implied_volatility_mean_skew_1080, returns, 20))
+Sharpe: -0.27
+Turnover: 0.2776
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL25gYE
+Expression: rank((ts_delta(ts_backfill(cashflow_per_share_median_value, 45), 30)) / (ts_backfill(liabilities, 45)))
+Sharpe: -0.04
+Turnover: 0.1207
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaEmRaW
+Expression: rank(ts_decay_linear(ts_delta(open, 10), 5))
+Sharpe: -0.93
+Turnover: 0.2445
+Fitness: -0.49
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZNRV38
+Expression: rank((ts_backfill(anl4_ebitda_std, 365)) / (ts_mean(volume, 30)))
+Sharpe: 0.0
+Turnover: 0.04
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVoJvpQ
+Expression: rank(ts_zscore(open, 2))
+Sharpe: -1.17
+Turnover: 1.6149
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbXOKb8
+Expression: rank(ts_mean(ts_backfill(cashflow_efficiency_rank_derivative, 180), 3))
+Sharpe: -0.86
+Turnover: 0.0154
+Fitness: -0.59
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdo5KNK
+Expression: rank((ts_delta(ts_backfill(return_assets, 180), 90)) / (ts_backfill(sales, 180)))
+Sharpe: 0.72
+Turnover: 0.0522
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d2OLgd
+Expression: -rank(ts_corr(implied_volatility_mean_90, returns, 120))
+Sharpe: 1.39
+Turnover: 0.1293
+Fitness: 1.08
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: LLx2l2lv
+Expression: -rank(ts_corr(implied_volatility_mean_10, returns, 10))
+Sharpe: 0.66
+Turnover: 0.4896
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y52nAaM
+Expression: rank(ts_delta(implied_volatility_put_180, 60))
+Sharpe: 1.07
+Turnover: 0.6003
+Fitness: 0.38
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y52n8xJ
+Expression: rank(ts_mean(ts_backfill(anl4_ebitda_number, 45), 3))
+Sharpe: 0.96
+Turnover: 0.0293
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0v2b1nb
+Expression: ts_rank(snt_buzz_bfl, 5)
+Sharpe: 0.24
+Turnover: 1.3554
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Wjmxa13Z
+Expression: ts_rank(snt_social_value, 2)
+Sharpe: -0.92
+Turnover: 0.9297
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaEP6Yn
+Expression: rank(ts_mean(scl12_sentiment_fast_d1, 90))
+Sharpe: -0.65
+Turnover: 0.0563
+Fitness: -0.29
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL2gKWO
+Expression: rank((ts_delta(ts_backfill(pretax_income_reported, 90), 30)) / (ts_backfill(sales, 90)))
+Sharpe: -0.33
+Turnover: 0.1301
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbXZ0L3
+Expression: rank(ts_decay_linear(ts_delta(returns, 60), 20))
+Sharpe: -1.01
+Turnover: 0.3641
+Fitness: -0.53
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0v2bkZb
+Expression: rank(ts_delta(vwap, 10))
+Sharpe: -1.13
+Turnover: 0.404
+Fitness: -0.53
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A2grbL
+Expression: rank(ts_zscore(close, 20))
+Sharpe: -1.13
+Turnover: 0.471
+Fitness: -0.53
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZNQ778
+Expression: rank(ts_delay(vwap, 2))
+Sharpe: 0.12
+Turnover: 0.0247
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3gA1b1
+Expression: rank(ts_delta(implied_volatility_mean_10, 10))
+Sharpe: 1.51
+Turnover: 0.8259
+Fitness: 0.44
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 58V2aQvX
+Expression: rank(ts_delta(implied_volatility_call_360, 60))
+Sharpe: 1.2
+Turnover: 0.652
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: KPR2Xrw1
+Expression: -rank(ts_delta(vwap, 1))
+Sharpe: 1.56
+Turnover: 1.2422
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88q2aR8v
+Expression: rank(ts_corr(ts_backfill(min_sg_and_a_expense_guidance, 45), returns, 10))
+Sharpe: 0.21
+Turnover: 0.1202
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVvnPOp
+Expression: rank(ts_mean(ts_backfill(min_net_profit_guidance, 90), 60))
+Sharpe: 0.55
+Turnover: 0.053
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mWaeaGr
+Expression: rank(ts_delta(implied_volatility_mean_270, 10))
+Sharpe: 1.38
+Turnover: 0.8428
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o2gYmg
+Expression: -rank((ts_backfill(anl4_netprofit_flag, 45)) / (ts_backfill(sales, 45)))
+Sharpe: 0.46
+Turnover: 0.0127
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqzL5qWV
+Expression: (rank(ts_rank(vwap, 1))) - (rank(ts_rank(close, 60)))
+Sharpe: 0.82
+Turnover: 0.3475
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLklqR55
+Expression: rank(ts_decay_linear(ts_delta(returns, 20), 10))
+Sharpe: -0.86
+Turnover: 0.5059
+Fitness: -0.34
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5Ynla8
+Expression: rank(ts_decay_linear(ts_delta(open, 30), 3))
+Sharpe: -0.62
+Turnover: 0.1671
+Fitness: -0.34
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx2nbAn
+Expression: rank((ts_delta(ts_backfill(anl4_fcf_low, 90), 120)) / (ts_backfill(liabilities, 90)))
+Sharpe: -0.31
+Turnover: 0.0466
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdonaqg
+Expression: -rank((ts_backfill(forward_price_20, 90)) / (ts_backfill(liabilities, 90)))
+Sharpe: 0.86
+Turnover: 0.0248
+Fitness: 0.64
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3gN1Nw
+Expression: -rank((ts_backfill(earnings_per_share_standard_deviation, 365)) / (ts_backfill(volume, 365)))
+Sharpe: -0.14
+Turnover: 0.2221
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9Nb36
+Expression: rank((ts_backfill(anl4_ebitda_flag, 180)) / (ts_backfill(debt_lt, 180)))
+Sharpe: -0.63
+Turnover: 0.0122
+Fitness: -0.43
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbXn6Vd
+Expression: rank(zscore((ts_backfill(dividend_max_guidance_value, 45)) / (ts_backfill(debt_lt, 45))))
+Sharpe: 0.6
+Turnover: 0.0126
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZwnYNv
+Expression: (rank(ts_rank(returns, 60))) - (rank(ts_rank(open, 60)))
+Sharpe: -0.23
+Turnover: 1.0935
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o2n8p7
+Expression: rank(zscore((ts_backfill(anl4_epsr_number, 45)) / (ts_backfill(sales, 45))))
+Sharpe: -0.27
+Turnover: 0.0205
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL2nAjO
+Expression: (rank(ts_rank(high, 90))) - (rank(ts_rank(vwap, 5)))
+Sharpe: 0.41
+Turnover: 0.7399
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JWnX8J
+Expression: rank(ts_delta(open, 120))
+Sharpe: -0.28
+Turnover: 0.1297
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d2kjVX
+Expression: rank(ts_mean(ts_backfill(fnd2_a_atdlsecexfcepsastkos, 365), 10))
+Sharpe: -0.36
+Turnover: 0.0113
+Fitness: -0.18
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6Xb2zgX7
+Expression: rank((ts_backfill(anl4_fcfps_high, 90)) / (ts_mean(volume, 1)))
+Sharpe: 0.04
+Turnover: 0.1756
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rk2JQRN
+Expression: (rank(ts_delta(high, 20))) - (rank(ts_delay(ts_delta(high, 20), 1)))
+Sharpe: -0.97
+Turnover: 1.4691
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaERznJ
+Expression: (rank(ts_rank(returns, 3))) - (rank(ts_rank(high, 30)))
+Sharpe: 0.46
+Turnover: 1.0318
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVoddkA
+Expression: rank(ts_delta(high, 3))
+Sharpe: -1.58
+Turnover: 0.7486
+Fitness: -0.62
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKmnAo0J
+Expression: rank(ts_delta(snt_buzz_bfl, 30))
+Sharpe: 0.37
+Turnover: 1.2382
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL2bvPW
+Expression: (rank(ts_corr(ts_delta(returns, 1), ts_delta(volume, 1), 10))) - (rank(ts_mean(abs(returns), 1)))
+Sharpe: -0.14
+Turnover: 0.925
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EAv7Op
+Expression: rank(ts_mean(ts_backfill(fnd6_newqv1300_glceeps12, 180), 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: 58V2MzzJ
+Expression: (rank((ts_backfill(ebitda, 180)) / (ts_backfill(assets, 180)))) + (rank(ts_sum(returns, 252)))
+Sharpe: 0.1
+Turnover: 0.0698
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv7kWZQ
+Expression: rank((ts_delta(ts_backfill(min_customized_eps_guidance, 90), 120)) / (ts_backfill(assets, 90)))
+Sharpe: -0.08
+Turnover: 0.0212
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78V2JG5O
+Expression: (rank(ts_corr(ts_delta(close, 1), ts_delta(volume, 1), 20))) - (rank(ts_mean(abs(returns), 10)))
+Sharpe: -0.06
+Turnover: 0.2733
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9QzGM
+Expression: (rank(ts_delta(low, 120))) - (rank(ts_delay(ts_delta(low, 120), 1)))
+Sharpe: -0.52
+Turnover: 1.4198
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: gJz0xLpJ
+Expression: (rank(ts_corr(ts_delta(low, 1), ts_delta(volume, 1), 20))) - (rank(ts_mean(abs(returns), 1)))
+Sharpe: -0.07
+Turnover: 0.8959
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9QO3l
+Expression: rank(ts_delta(vwap, 120))
+Sharpe: -0.33
+Turnover: 0.115
+Fitness: -0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv7k29J
+Expression: rank((implied_volatility_mean_360) / (historical_volatility_60))
+Sharpe: 0.72
+Turnover: 0.2994
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmxgEkO
+Expression: rank(ts_corr(snt_buzz_fast_d1, returns, 10))
+Sharpe: 0.0
+Turnover: 0.4405
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPA2xMb9
+Expression: rank((implied_volatility_mean_skew_270) / (historical_volatility_120))
+Sharpe: 0.32
+Turnover: 0.7675
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVveVbx
+Expression: rank(ts_delta(implied_volatility_mean_1080, 60))
+Sharpe: 1.18
+Turnover: 0.5843
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5YKeMd
+Expression: rank((ts_backfill(news_eps_actual, 90)) / (ts_mean(volume, 10)))
+Sharpe: 0.3
+Turnover: 0.043
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9Amrl
+Expression: rank(ts_mean(scl12_buzz_fast_d1, 252))
+Sharpe: -0.35
+Turnover: 0.0229
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqzLWJQR
+Expression: rank((implied_volatility_mean_10) / (historical_volatility_180))
+Sharpe: 0.58
+Turnover: 0.495
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A2KEWK
+Expression: rank(ts_corr(ts_backfill(max_adjusted_eps_guidance, 45), returns, 60))
+Sharpe: 0.1
+Turnover: 0.3022
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL2d79n
+Expression: (rank(ts_corr(ts_delta(returns, 1), ts_delta(volume, 1), 10))) - (rank(ts_mean(abs(returns), 5)))
+Sharpe: -0.03
+Turnover: 0.4185
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVve9G2
+Expression: rank(ts_zscore(returns, 20))
+Sharpe: -1.42
+Turnover: 1.37
+Fitness: -0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPA2x6vz
+Expression: rank(ts_corr(snt_buzz_ret, returns, 20))
+Sharpe: -0.02
+Turnover: 0.3313
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d23EdR
+Expression: -rank(ts_corr(implied_volatility_mean_150, returns, 252))
+Sharpe: 1.25
+Turnover: 0.0921
+Fitness: 0.94
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5YKp3L
+Expression: (rank(ts_corr(ts_delta(low, 1), ts_delta(volume, 1), 120))) - (rank(ts_mean(abs(returns), 30)))
+Sharpe: 0.01
+Turnover: 0.093
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d23A0E
+Expression: -rank(ts_corr(implied_volatility_mean_10, returns, 20))
+Sharpe: 1.04
+Turnover: 0.3254
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o2p1jE
+Expression: rank((ts_delta(ts_backfill(dividend, 180), 30)) / (ts_backfill(sales, 180)))
+Sharpe: -0.94
+Turnover: 1.8819
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 58V2wxEn
+Expression: rank(zscore((ts_backfill(fnd6_newa1v1300_ebit, 90)) / (ts_backfill(assets, 90))))
+Sharpe: 0.24
+Turnover: 0.0141
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wPxVaj
+Expression: rank(ts_delta(implied_volatility_call_10, 120))
+Sharpe: 0.62
+Turnover: 0.7219
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZwAZ2v
+Expression: -rank(ts_delta(high, 252))
+Sharpe: 0.12
+Turnover: 0.0804
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqzL9w08
+Expression: rank((ts_backfill(fnd6_newa2v1300_xrd, 90)) / (ts_backfill(equity, 90)))
+Sharpe: 0.28
+Turnover: 0.0181
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmxpX6N
+Expression: (rank(ts_delta(high, 30))) - (rank(ts_delay(ts_delta(high, 30), 3)))
+Sharpe: -0.47
+Turnover: 0.8397
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ2wald
+Expression: rank((ts_backfill(fnd6_newqv1300_spceepsq, 90)) / (ts_backfill(enterprise_value, 90)))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: MPA2pxRr
+Expression: rank(ts_delta(implied_volatility_mean_skew_90, 60))
+Sharpe: -0.58
+Turnover: 1.0795
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A2wEJ1
+Expression: (rank(ts_rank(vwap, 90))) - (rank(ts_rank(high, 20)))
+Sharpe: 0.49
+Turnover: 0.5765
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdoaGRw
+Expression: (rank(ts_corr(ts_delta(low, 1), ts_delta(volume, 1), 252))) - (rank(ts_mean(abs(returns), 3)))
+Sharpe: -0.06
+Turnover: 0.4124
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rk27wJ5
+Expression: rank(ts_mean(scl12_buzz, 30))
+Sharpe: -0.42
+Turnover: 0.0871
+Fitness: -0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbXgvvq
+Expression: rank(ts_corr(ts_backfill(est_eps, 90), returns, 20))
+Sharpe: 0.32
+Turnover: 0.4921
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Wjmxp3XN
+Expression: rank((ts_backfill(research_development_expense_actual_value, 180)) / (ts_backfill(equity, 180)))
+Sharpe: 0.09
+Turnover: 0.0207
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx2pre6
+Expression: rank(ts_corr(ts_backfill(anl4_fcfps_median, 90), returns, 120))
+Sharpe: 0.63
+Turnover: 0.1837
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rk27o56
+Expression: rank(ts_delta(snt_social_value, 30))
+Sharpe: 0.26
+Turnover: 0.3553
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYL1pJq1
+Expression: (rank(ts_delta(low, 90))) - (rank(ts_delay(ts_delta(low, 90), 2)))
+Sharpe: -1.37
+Turnover: 1.0121
+Fitness: -0.4
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JW0lMl
+Expression: -rank((ts_backfill(max_free_cashflow_per_share_guidance, 90)) / (ts_backfill(liabilities, 90)))
+Sharpe: -0.64
+Turnover: 0.0106
+Fitness: -0.48
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JW0oRE
+Expression: rank(ts_delta(implied_volatility_mean_skew_180, 90))
+Sharpe: -0.16
+Turnover: 1.0142
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ2rob2
+Expression: rank(ts_delta(implied_volatility_call_720, 20))
+Sharpe: 1.35
+Turnover: 0.8138
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLv8Yqz
+Expression: rank(ts_delta(implied_volatility_mean_skew_60, 120))
+Sharpe: -0.42
+Turnover: 1.0786
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88q2QLYv
+Expression: rank(ts_corr(ts_backfill(fn_profit_loss_q, 90), returns, 252))
+Sharpe: 0.21
+Turnover: 0.1202
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVol2NQ
+Expression: (rank(ts_rank(high, 3))) - (rank(ts_rank(returns, 10)))
+Sharpe: -0.33
+Turnover: 1.4561
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88q2QNbW
+Expression: (rank(ts_delta(close, 252))) - (rank(ts_delay(ts_delta(close, 252), 2)))
+Sharpe: -1.67
+Turnover: 1.0261
+Fitness: -0.51
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A2EnwK
+Expression: rank((ts_backfill(return_equity, 45)) / (ts_backfill(sales, 45)))
+Sharpe: 0.38
+Turnover: 0.0271
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVovREw
+Expression: (rank(ts_rank(returns, 20))) - (rank(ts_rank(low, 5)))
+Sharpe: 0.14
+Turnover: 1.3792
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 58V2kbko
+Expression: rank((ts_backfill(min_ebit_guidance_2, 90)) / (ts_mean(volume, 20)))
+Sharpe: 0.43
+Turnover: 0.0311
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QMrm5O
+Expression: rank((implied_volatility_call_90) / (historical_volatility_30))
+Sharpe: 0.62
+Turnover: 0.3786
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEO8qbl
+Expression: rank(zscore((ts_backfill(income, 45)) / (ts_backfill(volume, 45))))
+Sharpe: 0.3
+Turnover: 0.1947
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rk2NQnY
+Expression: rank((implied_volatility_call_360) / (historical_volatility_90))
+Sharpe: 1.16
+Turnover: 0.3542
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ27A0K
+Expression: rank(ts_mean(ts_backfill(anl4_ebitda_low, 180), 5))
+Sharpe: 0.36
+Turnover: 0.0108
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ279Od
+Expression: rank(ts_corr(ts_backfill(fnd2_q_atdlsecexfcepsastkos, 90), returns, 60))
+Sharpe: -0.08
+Turnover: 0.3142
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3KdLn6
+Expression: rank((ts_delta(ts_backfill(actual_dividend_value_quarterly, 180), 60)) / (ts_backfill(assets, 180)))
+Sharpe: -0.05
+Turnover: 0.0893
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdo976M
+Expression: rank((ts_backfill(max_operating_cashflow_guidance, 45)) / (ts_backfill(volume, 45)))
+Sharpe: 0.39
+Turnover: 0.3053
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omekgW66
+Expression: -rank((ts_backfill(anl4_epsr_number, 365)) / (ts_backfill(enterprise_value, 365)))
+Sharpe: 0.01
+Turnover: 0.0314
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmxVlQN
+Expression: rank(ts_mean(scl12_sentiment_fast_d1, 30))
+Sharpe: -0.38
+Turnover: 0.1252
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rk2NWE6
+Expression: rank(ts_corr(snt_buzz_ret_fast_d1, returns, 20))
+Sharpe: 0.7
+Turnover: 0.3365
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEO8Za8
+Expression: rank(ts_mean(ts_backfill(max_pretax_profit_guidance, 45), 20))
+Sharpe: 0.27
+Turnover: 0.0857
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPd9vjYw
+Expression: rank(ts_delta(scl12_sentiment_fast_d1, 120))
+Sharpe: 0.05
+Turnover: 1.3055
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JW3wjJ
+Expression: -rank(ts_delta(low, 30))
+Sharpe: 0.72
+Turnover: 0.2425
+Fitness: 0.36
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx2Glpv
+Expression: -rank(ts_corr(implied_volatility_mean_skew_150, returns, 10))
+Sharpe: -0.35
+Turnover: 0.4234
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaENkbn
+Expression: rank(ts_corr(ts_backfill(max_adjusted_eps_guidance_2, 180), returns, 60))
+Sharpe: 0.16
+Turnover: 0.3021
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdoG7mQ
+Expression: rank((implied_volatility_put_20) / (historical_volatility_60))
+Sharpe: 0.19
+Turnover: 0.4811
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVoNGGb
+Expression: rank(ts_decay_linear(ts_delta(high, 3), 3))
+Sharpe: -1.4
+Turnover: 0.564
+Fitness: -0.6
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88q2p2WX
+Expression: rank(ts_mean(snt_buzz_bfl_fast_d1, 120))
+Sharpe: 0.5
+Turnover: 0.0354
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKmn2qWE
+Expression: -rank((ts_backfill(dividend_estimate_median_value, 90)) / (ts_backfill(enterprise_value, 90)))
+Sharpe: -0.25
+Turnover: 0.014
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grv7lqw5
+Expression: rank((ts_backfill(min_capex_guidance, 45)) / (ts_backfill(debt_lt, 45)))
+Sharpe: 0.58
+Turnover: 0.0134
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JWzmP6
+Expression: -rank((ts_backfill(anl4_medianepsbfam, 90)) / (ts_backfill(enterprise_value, 90)))
+Sharpe: -0.7
+Turnover: 0.0407
+Fitness: -0.52
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKmnjvGd
+Expression: -rank(ts_corr(implied_volatility_mean_skew_60, returns, 20))
+Sharpe: 0.35
+Turnover: 0.2785
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 58V2lRKk
+Expression: (rank((ts_backfill(dividend, 180)) / (abs(close)))) + (rank(snt_social_volume))
+Sharpe: 0.45
+Turnover: 0.319
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mWaw8WK
+Expression: (rank(ts_delta(high, 120))) - (rank(ts_delay(ts_delta(high, 120), 2)))
+Sharpe: -0.7
+Turnover: 1.0049
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o27b57
+Expression: rank((implied_volatility_call_360) / (historical_volatility_10))
+Sharpe: 0.21
+Turnover: 0.5006
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYL17QYZ
+Expression: (rank(ts_sum(returns, 60))) - (rank(ts_mean(abs(returns), 20)))
+Sharpe: -0.18
+Turnover: 0.1672
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EA7Yep
+Expression: rank((ts_backfill(fnd6_newa2v1300_rdipeps, 45)) / (ts_mean(volume, 1)))
+Sharpe: 0.17
+Turnover: 0.0169
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYL17Nk3
+Expression: rank((implied_volatility_mean_skew_720) / (historical_volatility_30))
+Sharpe: 0.28
+Turnover: 0.7933
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ2XnXV
+Expression: (rank(ts_rank(returns, 20))) - (rank(ts_rank(open, 20)))
+Sharpe: 0.02
+Turnover: 1.1662
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaEYAEl
+Expression: -rank(ts_corr(implied_volatility_mean_90, returns, 252))
+Sharpe: 1.25
+Turnover: 0.0882
+Fitness: 0.98
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omek6pRk
+Expression: rank(ts_corr(snt_value, returns, 60))
+Sharpe: 1.41
+Turnover: 0.1249
+Fitness: 0.75
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3KREmR
+Expression: (rank(ts_corr(ts_delta(low, 1), ts_delta(volume, 1), 10))) - (rank(ts_mean(abs(returns), 60)))
+Sharpe: 0.05
+Turnover: 0.3377
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdo3mpG
+Expression: rank(ts_corr(ts_backfill(news_dividend_yield, 45), returns, 10))
+Sharpe: -0.06
+Turnover: 0.6553
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYL10lGY
+Expression: rank(ts_corr(snt_buzz_bfl_fast_d1, returns, 60))
+Sharpe: 0.94
+Turnover: 0.1301
+Fitness: 0.46
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o2QA77
+Expression: rank(ts_corr(ts_backfill(max_customized_eps_guidance, 365), returns, 10))
+Sharpe: 0.27
+Turnover: 0.753
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3gLnw5
+Expression: -rank((ts_backfill(anl4_afv4_eps_high, 180)) / (ts_backfill(volume, 180)))
+Sharpe: -0.14
+Turnover: 0.2111
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3gLK6v
+Expression: rank(ts_mean(snt_buzz_ret, 60))
+Sharpe: -0.17
+Turnover: 0.0909
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wPOYGX
+Expression: (rank(ts_rank(open, 60))) - (rank(ts_rank(close, 10)))
+Sharpe: 0.66
+Turnover: 0.8453
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdo3xZg
+Expression: rank((ts_backfill(min_research_development_expense_guidance_2, 365)) / (ts_backfill(assets, 365)))
+Sharpe: 0.49
+Turnover: 0.011
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3KbY2M
+Expression: (rank(ts_delta(open, 90))) - (rank(ts_delay(ts_delta(open, 90), 3)))
+Sharpe: -1.02
+Turnover: 0.8703
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: gJz0b6MJ
+Expression: rank(ts_delta(implied_volatility_put_1080, 60))
+Sharpe: 0.93
+Turnover: 0.6525
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: gJz0bEqg
+Expression: rank(ts_mean(snt_value_fast_d1, 5))
+Sharpe: -0.15
+Turnover: 0.4202
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVor0q3
+Expression: rank(ts_mean(ts_backfill(anl4_rd_exp_number, 365), 120))
+Sharpe: 1.09
+Turnover: 0.019
+Fitness: 0.69
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbXdoO8
+Expression: rank(ts_delta(implied_volatility_mean_270, 5))
+Sharpe: 1.96
+Turnover: 0.9835
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZNvrnN
+Expression: rank(ts_corr(ts_backfill(min_net_profit_guidance, 365), returns, 20))
+Sharpe: -0.2
+Turnover: 0.5374
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A2pe3K
+Expression: rank(ts_delta(snt_buzz_ret, 60))
+Sharpe: -0.19
+Turnover: 0.9512
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3KbR7M
+Expression: -rank((ts_backfill(min_gross_income_guidance, 45)) / (ts_backfill(liabilities, 45)))
+Sharpe: -0.66
+Turnover: 0.0116
+Fitness: -0.47
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78V2NLj8
+Expression: -rank((ts_backfill(fn_accum_oth_income_loss_net_of_tax_q, 45)) / (ts_backfill(liabilities, 45)))
+Sharpe: 0.16
+Turnover: 0.0145
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaE3Vdq
+Expression: rank(ts_corr(ts_backfill(anl4_netprofit_high, 180), returns, 20))
+Sharpe: 0.01
+Turnover: 0.5026
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgpR35g
+Expression: -rank(ts_corr(implied_volatility_put_60, returns, 252))
+Sharpe: 1.24
+Turnover: 0.0735
+Fitness: 0.96
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JWbZzz
+Expression: rank((implied_volatility_put_20) / (historical_volatility_90))
+Sharpe: 0.29
+Turnover: 0.5037
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6Xb2j5Op
+Expression: rank(ts_mean(ts_backfill(max_pretax_profit_guidance, 365), 120))
+Sharpe: 0.33
+Turnover: 0.0279
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88q2P5ro
+Expression: rank((ts_delta(ts_backfill(operating_income, 365), 90)) / (ts_backfill(assets, 365)))
+Sharpe: 0.94
+Turnover: 0.0567
+Fitness: 0.5
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78V26b0O
+Expression: rank(ts_corr(ts_backfill(min_research_development_expense_guidance, 365), returns, 60))
+Sharpe: -0.05
+Turnover: 0.0803
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYL1ALl8
+Expression: rank(zscore((ts_backfill(research_development_expense_actual_value, 90)) / (ts_backfill(liabilities, 90))))
+Sharpe: -0.22
+Turnover: 0.0175
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wP1eJE
+Expression: rank(ts_delta(implied_volatility_put_720, 3))
+Sharpe: 0.99
+Turnover: 1.136
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdoK26K
+Expression: (rank(ts_corr(ts_delta(open, 1), ts_delta(volume, 1), 20))) - (rank(ts_mean(abs(returns), 3)))
+Sharpe: 0.02
+Turnover: 0.4866
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omekWYkl
+Expression: rank((ts_backfill(fnd6_newa2v1300_rdipeps, 45)) / (ts_backfill(sales, 45)))
+Sharpe: -0.07
+Turnover: 0.0163
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88q2Ppdm
+Expression: rank((ts_backfill(fnd6_newa2v1300_xsga, 365)) / (ts_mean(volume, 30)))
+Sharpe: 0.23
+Turnover: 0.0276
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgp552x
+Expression: ts_rank(snt_value, 90)
+Sharpe: 0.05
+Turnover: 1.1198
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1d2vx8E
+Expression: (rank((ts_backfill(dividend, 45)) / (abs(close)))) + (rank(snt_buzz_fast_d1))
+Sharpe: -0.23
+Turnover: 0.9722
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6Xb2K6Kp
+Expression: rank((ts_backfill(anl4_netprofita_value, 90)) / (ts_mean(volume, 3)))
+Sharpe: 0.18
+Turnover: 0.1044
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5A2R9M1
+Expression: rank((ts_backfill(cashflow_op, 45)) / (ts_mean(volume, 60)))
+Sharpe: 0.17
+Turnover: 0.0169
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVv96w5
+Expression: rank((implied_volatility_put_30) / (historical_volatility_120))
+Sharpe: 0.43
+Turnover: 0.4786
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78V2o02L
+Expression: (rank(ts_corr(ts_delta(vwap, 1), ts_delta(volume, 1), 120))) - (rank(ts_mean(abs(returns), 3)))
+Sharpe: -0.16
+Turnover: 0.4298
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rk2jaX8
+Expression: -rank(ts_corr(implied_volatility_put_10, returns, 120))
+Sharpe: 1.16
+Turnover: 0.0979
+Fitness: 0.84
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y52j7mz
+Expression: rank(ts_corr(ts_backfill(max_financing_cashflow_guidance, 365), returns, 20))
+Sharpe: -0.07
+Turnover: 0.5378
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QMe6j5
+Expression: rank(ts_mean(ts_backfill(fn_income_tax_expense_a, 180), 120))
+Sharpe: 0.2
+Turnover: 0.0104
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wPK1rw
+Expression: rank((ts_delta(ts_backfill(dividend_estimate_standard_deviation, 45), 30)) / (ts_backfill(liabilities, 45)))
+Sharpe: 0.19
+Turnover: 0.1339
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbXA5WE
+Expression: rank((ts_backfill(anl4_rd_exp_low, 365)) / (ts_backfill(assets, 365)))
+Sharpe: 0.24
+Turnover: 0.0179
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQ2x0Vr
+Expression: (rank(ts_corr(ts_delta(open, 1), ts_delta(volume, 1), 20))) - (rank(ts_mean(abs(returns), 20)))
+Sharpe: 0.11
+Turnover: 0.2479
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKmnR6K8
+Expression: rank((ts_backfill(anl4_rd_exp_flag, 365)) / (ts_mean(volume, 10)))
+Sharpe: -0.34
+Turnover: 0.0571
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVvQEQQ
+Expression: rank(ts_corr(snt_social_volume, returns, 60))
+Sharpe: -0.09
+Turnover: 0.1686
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
