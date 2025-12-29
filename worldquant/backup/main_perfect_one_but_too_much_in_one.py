@@ -1,22 +1,14 @@
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-import concurrent.futures
+from qr.worldquant.global_config import DATA_PATH,system_name,USER
 import json
 import time
 from datetime import datetime
 
-# 确保其他模块可以被正确导入
-
-
 # 从您现有的脚本中导入必要的组件
 from qr.worldquant.io.sign_in import sign_in
 from qr.worldquant.io.load_alpha_expressions import load_alpha_expressions
-from qr.worldquant.backup.write_txt import write_lines
-
-# --- 结果保存函数 (逻辑源自您的 send.py) ---
-
-
 import threading
 from queue import Queue
 
@@ -28,13 +20,33 @@ simulation_semaphore = threading.Semaphore(3)
 # 全局计数器，用于统计 grade != 'INFERIOR' 的数量
 submit_count = 0
 submit_count_lock = threading.Lock()
+result_write_lock = threading.Lock() # 新增：用于控制写入结果文件的锁
 
+SAVE_RESULT_DIR = os.path.join(DATA_PATH, "result","version2")
+WRITE_LINES_DIR = os.path.join(DATA_PATH, "result", "alpha_list.txt") # 修改：指向 alpha_list.txt
+INPUT_ALPHA_FILE = os.path.join(DATA_PATH, "ready_to_test_alpha_list", "clean_alpha","test12_wq_template.txt")
+USER_CHOICE = 'lab'  # 选择哪个账户？ubuntu、lab、mylab
+
+def prepend_to_file(filepath, content):
+    """读取文件原有内容，将新内容写入到最上方"""
+    with result_write_lock:
+        try:
+            old_content = ""
+            if os.path.exists(filepath):
+                with open(filepath, "r", encoding="utf-8") as f:
+                    old_content = f.read()
+            
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(content + "\n" + old_content)
+            print(f"📝 结果已插入到文件顶部: {filepath}")
+        except Exception as e:
+            print(f"❌ 写入文件失败: {e}")
 
 def save_alpha_result(result_entry, start_timestamp,worker_id):
     """每个worker保存到独立的文件"""
-    result_dir = r"C:\Users\nay\Desktop\qr\qr\worldquant\result"
+    result_dir = SAVE_RESULT_DIR
     os.makedirs(result_dir, exist_ok=True)
-    filename = f"{start_timestamp}_worker{worker_id}_results.txt"
+    filename = f"{start_timestamp}_worker{worker_id}_{system_name}_{USER_CHOICE}_{USER[USER_CHOICE]['name'].split('@')[0]}.txt"
     filepath = os.path.join(result_dir, filename)
     
     with open(filepath, "a", encoding="utf-8") as f:
@@ -50,7 +62,7 @@ def process_single_alpha(alpha_payload, start_timestamp, worker_id):
     增加 worker_id 参数，用于区分不同worker的结果文件
     """
     # 每个线程都应该有自己的 session，避免冲突
-    sess = sign_in()
+    sess = sign_in(USER_CHOICE)
     if not sess:
         print(f"工作线程登录失败，Alpha: {alpha_payload.get('regular')}")
         return
@@ -71,7 +83,7 @@ def process_single_alpha(alpha_payload, start_timestamp, worker_id):
                 )
                 if sim_resp.status_code == 401:
                     print(f"Token 过期，正在为 Alpha '{expression_code}' 重新认证...")
-                    sess = sign_in()
+                    sess = sign_in(USER_CHOICE)
                     continue # 重新尝试提交
 
                 sim_progress_url = sim_resp.headers.get('Location')
@@ -92,7 +104,7 @@ def process_single_alpha(alpha_payload, start_timestamp, worker_id):
                     sim_progress_resp = sess.get(sim_progress_url)
                     if sim_progress_resp.status_code == 401:
                         print(f"轮询时 Token 过期，正在为 Alpha '{expression_code}' 重新认证...")
-                        sess = sign_in()
+                        sess = sign_in(USER_CHOICE)
                         continue
                     
                     retry_after_sec = float(sim_progress_resp.headers.get('Retry-After', '0'))
@@ -122,7 +134,7 @@ def process_single_alpha(alpha_payload, start_timestamp, worker_id):
                 alpha_detail_resp = sess.get(f'https://api.worldquantbrain.com/alphas/{alpha_id}')
                 if alpha_detail_resp.status_code == 401:
                     print(f"获取详情时 Token 过期，正在为 Alpha ID '{alpha_id}' 重新认证...")
-                    sess = sign_in()
+                    sess = sign_in(USER_CHOICE)
                     continue # 重试获取详情
                 
                 alpha_detail = alpha_detail_resp.json()
@@ -151,7 +163,7 @@ def process_single_alpha(alpha_payload, start_timestamp, worker_id):
                     with submit_count_lock:
                         global submit_count
                         submit_count += 1
-                    write_lines(r"C:\Users\nay\Desktop\qr\qr\worldquant\utils\logtxt\alphalist.txt", alpha_id)
+                    prepend_to_file(WRITE_LINES_DIR, result_entry)
 
                 break # 成功完成，退出当前alpha的重试循环
 
@@ -160,7 +172,7 @@ def process_single_alpha(alpha_payload, start_timestamp, worker_id):
             time.sleep(10)
             try:
                 print("尝试在异常后重新登录...")
-                sess = sign_in()
+                sess = sign_in(USER_CHOICE)
             except Exception as sign_in_e:
                 print(f"异常后重新登录失败: {sign_in_e}")
                 time.sleep(30) # 等待更长时间
@@ -187,10 +199,8 @@ def worker_loop(worker_id, start_timestamp):
 def main():
     # 设置并行任务（工人）数量，根据您的配额设置为3
     MAX_WORKERS = 3
-    
-    input_file_path = r'C:\Users\nay\Desktop\qr\qr\worldquant\ready_to_test_alpha_list\test5_notebooklm.txt'
     print("正在加载 Alpha 表达式...")
-    alpha_expressions = load_alpha_expressions(input_file_path)
+    alpha_expressions = load_alpha_expressions(INPUT_ALPHA_FILE)
     
     # 准备回测请求体列表
     alpha_list = []
@@ -225,18 +235,6 @@ def main():
     
     print("所有 Alpha 回测任务已处理完毕。")
 
-    # 重命名文件，加上 submit_count
-    if os.path.exists(input_file_path):
-        dir_name = os.path.dirname(input_file_path)
-        base_name = os.path.basename(input_file_path)
-        name, ext = os.path.splitext(base_name)
-        new_name = f"{name}_{submit_count}{ext}"
-        new_path = os.path.join(dir_name, new_name)
-        try:
-            os.rename(input_file_path, new_path)
-            print(f"📄 文件已重命名为: {new_path}")
-        except Exception as e:
-            print(f"❌ 重命名文件失败: {e}")
 
 if __name__ == "__main__":
     main()

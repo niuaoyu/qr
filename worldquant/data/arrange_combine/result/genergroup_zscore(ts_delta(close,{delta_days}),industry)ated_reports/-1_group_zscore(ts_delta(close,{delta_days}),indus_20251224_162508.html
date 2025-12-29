@@ -1,0 +1,1959 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alpha Simulation Report</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+            th, td { padding: 10px; border: 1px solid #ddd; text-align: left; font-size: 14px; }
+            th { background-color: #007bff; color: white; position: sticky; top: 0; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .btn { padding: 5px 10px; cursor: pointer; background: #28a745; color: white; border: none; border-radius: 3px; }
+            .btn:hover { background: #218838; }
+            .details-row { display: none; background-color: #f0f8ff; }
+            .details-row > td { padding: 15px; }
+            .json-box { background: #fff; border: 1px solid #ccc; max-height: 400px; overflow-y: auto; font-family: monospace; padding: 0; }
+            .controls { margin-bottom: 15px; }
+            .controls button { margin-right: 10px; padding: 8px 15px; font-size: 14px; }
+            .group-header { background-color: #d1ecf1; color: #0c5460; font-weight: bold; }
+            .chart-container { background: white; padding: 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            .json-inner-table { width: 100%; border-collapse: collapse; margin-top: 0; background-color: #fdfdfd; }
+            .json-inner-table td { padding: 5px 8px; border: 1px solid #eee; font-family: monospace; vertical-align: top; font-size: 13px; }
+            .json-key { font-weight: bold; color: #a52a2a; width: 30%; }
+            .json-value { color: #008000; white-space: pre-wrap; word-break: break-all; }
+        </style>
+        <script>
+            function toggleDetails(rowId) {
+                var row = document.getElementById(rowId);
+                row.style.display = row.style.display === 'table-row' ? 'none' : 'table-row';
+            }
+            function toggleAllSection(sectionName) {
+                var divs = document.getElementsByClassName('json-' + sectionName);
+                for(var i=0; i<divs.length; i++) {
+                    var parentRow = divs[i].closest('tr');
+                    // 如果父行是隐藏的，先显示父行（可选策略，这里只切换内容可见性）
+                    // 简单起见，我们只切换 div 的显示，但因为 div 在 details-row 里，
+                    // 所以这个按钮最好是用来“展开所有详情行”或者“在详情行里只看 IS/OS”
+                    // 这里实现：展开所有详情行
+                    parentRow.style.display = parentRow.style.display === 'table-row' ? 'none' : 'table-row';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Alpha 排列组合回测报告</h2>
+        <p>生成时间: 2025-12-24 16:25:08.891174</p>
+        <div class="controls">
+            <button class="btn" onclick="var rows=document.querySelectorAll('.details-row'); rows.forEach(r => r.style.display = r.style.display==='table-row'?'none':'table-row');">
+                展开/折叠 所有详情
+            </button>
+        </div>
+
+        <!-- Visualization Dashboard -->
+        <div class="chart-container">
+            <h3>📊 可视化分析 (Visualization Dashboard)</h3>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <!-- Line Chart Controls -->
+                <div style="flex: 1; min-width: 400px;">
+                    <h4>📈 趋势分析 (Trend Analysis)</h4>
+                    <div class="controls">
+                        <label>X轴: <select id="lineX"></select></label>
+                        <label>Y轴: <select id="lineY"></select></label>
+                        <label>分组: <select id="lineGroup"></select></label>
+                        <button class="btn" onclick="updateLineChart()">更新图表</button>
+                    </div>
+                    <div id="lineChart" style="width:100%; height:400px;"></div>
+                </div>
+
+                <!-- Heatmap Controls -->
+                <div style="flex: 1; min-width: 400px;">
+                    <h4>🔥 参数热力图 (Heatmap)</h4>
+                    <div class="controls">
+                        <label>筛选Expr: <select id="heatFilterExpr"></select></label>
+                        <br><br>
+                        <label>行(Y): <select id="heatRow"></select></label>
+                        <label>列(X): <select id="heatCol"></select></label>
+                        <label>数值: <select id="heatMetric"></select></label>
+                        <button class="btn" onclick="updateHeatmap()">更新热力图</button>
+                    </div>
+                    <div id="heatmap" style="width:100%; height:400px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>universe</th><th>decay</th><th>truncation</th>
+                    <th>Grade</th>
+                    <th>Sharpe</th>
+                    <th>Fitness</th>
+                    <th>Turnover</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+    <tr class="group-header"><td colspan="9">Alpha Expression: -1*group_zscore(ts_delta(close,10),industry)</td></tr>
+            <tr>
+                <td>1</td>
+                <td>TOP3000</td><td>5</td><td>0.01</td>
+                <td>INFERIOR</td>
+                <td>1.19</td>
+                <td>0.79</td>
+                <td>0.2467</td>
+                <td><button class="btn" onclick="toggleDetails('detail-0')">详情</button></td>
+            </tr>
+            <tr id="detail-0" class="details-row">
+                <td colspan="9">
+                    <div style="display:flex; gap:10px;">
+                        <div style="flex:1;">
+                            <h4>IS Stats</h4>
+                            <div class="json-box">{
+  "pnl": 5416085,
+  "bookSize": 20000000,
+  "longCount": 1662,
+  "shortCount": 1466,
+  "turnover": 0.2467,
+  "returns": 0.1095,
+  "drawdown": 0.0783,
+  "margin": 0.000887,
+  "sharpe": 1.19,
+  "fitness": 0.79,
+  "startDate": "2018-01-20",
+  "checks": [
+    {
+      "name": "LOW_SHARPE",
+      "result": "FAIL",
+      "limit": 1.25,
+      "value": 1.19
+    },
+    {
+      "name": "LOW_FITNESS",
+      "result": "FAIL",
+      "limit": 1.0,
+      "value": 0.79
+    },
+    {
+      "name": "LOW_TURNOVER",
+      "result": "PASS",
+      "limit": 0.01,
+      "value": 0.2467
+    },
+    {
+      "name": "HIGH_TURNOVER",
+      "result": "PASS",
+      "limit": 0.7,
+      "value": 0.2467
+    },
+    {
+      "name": "CONCENTRATED_WEIGHT",
+      "result": "PASS"
+    },
+    {
+      "name": "LOW_SUB_UNIVERSE_SHARPE",
+      "result": "PASS",
+      "limit": 0.52,
+      "value": 0.74
+    },
+    {
+      "name": "SELF_CORRELATION",
+      "result": "PENDING"
+    },
+    {
+      "name": "MATCHES_COMPETITION",
+      "result": "PASS",
+      "competitions": [
+        {
+          "id": "challenge",
+          "name": "Challenge"
+        }
+      ]
+    }
+  ]
+}</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Test Stats</h4>
+                            <div class="json-box">null</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Full Response</h4>
+                            <div class="json-box">{
+  "id": "1Y530AaK",
+  "type": "REGULAR",
+  "author": "LH74870",
+  "settings": {
+    "instrumentType": "EQUITY",
+    "region": "USA",
+    "universe": "TOP3000",
+    "delay": 1,
+    "decay": 5,
+    "neutralization": "INDUSTRY",
+    "truncation": 0.01,
+    "pasteurization": "ON",
+    "unitHandling": "VERIFY",
+    "nanHandling": "ON",
+    "maxTrade": "OFF",
+    "language": "FASTEXPR",
+    "visualization": false,
+    "startDate": "2018-01-20",
+    "endDate": "2023-01-20"
+  },
+  "regular": {
+    "code": "-1*group_zscore(ts_delta(close,10),industry)",
+    "description": null,
+    "operatorCount": 3
+  },
+  "dateCreated": "2025-12-24T03:28:21-05:00",
+  "dateSubmitted": null,
+  "dateModified": "2025-12-24T03:28:22-05:00",
+  "name": null,
+  "favorite": false,
+  "hidden": false,
+  "color": null,
+  "category": null,
+  "tags": [],
+  "classifications": [
+    {
+      "id": "DATA_USAGE:SINGLE_DATA_SET",
+      "name": "Single Data Set Alpha"
+    }
+  ],
+  "grade": "INFERIOR",
+  "stage": "IS",
+  "status": "UNSUBMITTED",
+  "is": {
+    "pnl": 5416085,
+    "bookSize": 20000000,
+    "longCount": 1662,
+    "shortCount": 1466,
+    "turnover": 0.2467,
+    "returns": 0.1095,
+    "drawdown": 0.0783,
+    "margin": 0.000887,
+    "sharpe": 1.19,
+    "fitness": 0.79,
+    "startDate": "2018-01-20",
+    "checks": [
+      {
+        "name": "LOW_SHARPE",
+        "result": "FAIL",
+        "limit": 1.25,
+        "value": 1.19
+      },
+      {
+        "name": "LOW_FITNESS",
+        "result": "FAIL",
+        "limit": 1.0,
+        "value": 0.79
+      },
+      {
+        "name": "LOW_TURNOVER",
+        "result": "PASS",
+        "limit": 0.01,
+        "value": 0.2467
+      },
+      {
+        "name": "HIGH_TURNOVER",
+        "result": "PASS",
+        "limit": 0.7,
+        "value": 0.2467
+      },
+      {
+        "name": "CONCENTRATED_WEIGHT",
+        "result": "PASS"
+      },
+      {
+        "name": "LOW_SUB_UNIVERSE_SHARPE",
+        "result": "PASS",
+        "limit": 0.52,
+        "value": 0.74
+      },
+      {
+        "name": "SELF_CORRELATION",
+        "result": "PENDING"
+      },
+      {
+        "name": "MATCHES_COMPETITION",
+        "result": "PASS",
+        "competitions": [
+          {
+            "id": "challenge",
+            "name": "Challenge"
+          }
+        ]
+      }
+    ]
+  },
+  "os": null,
+  "train": null,
+  "test": null,
+  "prod": null,
+  "competitions": null,
+  "themes": null,
+  "pyramids": null,
+  "pyramidThemes": null,
+  "team": null
+}</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>TOP3000</td><td>15</td><td>0.1</td>
+                <td>INFERIOR</td>
+                <td>0.92</td>
+                <td>0.66</td>
+                <td>0.1641</td>
+                <td><button class="btn" onclick="toggleDetails('detail-1')">详情</button></td>
+            </tr>
+            <tr id="detail-1" class="details-row">
+                <td colspan="9">
+                    <div style="display:flex; gap:10px;">
+                        <div style="flex:1;">
+                            <h4>IS Stats</h4>
+                            <div class="json-box">{
+  "pnl": 4236127,
+  "bookSize": 20000000,
+  "longCount": 1674,
+  "shortCount": 1454,
+  "turnover": 0.1641,
+  "returns": 0.0856,
+  "drawdown": 0.0931,
+  "margin": 0.001043,
+  "sharpe": 0.92,
+  "fitness": 0.66,
+  "startDate": "2018-01-20",
+  "checks": [
+    {
+      "name": "LOW_SHARPE",
+      "result": "FAIL",
+      "limit": 1.25,
+      "value": 0.92
+    },
+    {
+      "name": "LOW_FITNESS",
+      "result": "FAIL",
+      "limit": 1.0,
+      "value": 0.66
+    },
+    {
+      "name": "LOW_TURNOVER",
+      "result": "PASS",
+      "limit": 0.01,
+      "value": 0.1641
+    },
+    {
+      "name": "HIGH_TURNOVER",
+      "result": "PASS",
+      "limit": 0.7,
+      "value": 0.1641
+    },
+    {
+      "name": "CONCENTRATED_WEIGHT",
+      "result": "PASS"
+    },
+    {
+      "name": "LOW_SUB_UNIVERSE_SHARPE",
+      "result": "PASS",
+      "limit": 0.4,
+      "value": 0.49
+    },
+    {
+      "name": "SELF_CORRELATION",
+      "result": "PENDING"
+    },
+    {
+      "name": "MATCHES_COMPETITION",
+      "result": "PASS",
+      "competitions": [
+        {
+          "id": "challenge",
+          "name": "Challenge"
+        }
+      ]
+    }
+  ]
+}</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Test Stats</h4>
+                            <div class="json-box">null</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Full Response</h4>
+                            <div class="json-box">{
+  "id": "WjmrxMAQ",
+  "type": "REGULAR",
+  "author": "LH74870",
+  "settings": {
+    "instrumentType": "EQUITY",
+    "region": "USA",
+    "universe": "TOP3000",
+    "delay": 1,
+    "decay": 15,
+    "neutralization": "INDUSTRY",
+    "truncation": 0.1,
+    "pasteurization": "ON",
+    "unitHandling": "VERIFY",
+    "nanHandling": "ON",
+    "maxTrade": "OFF",
+    "language": "FASTEXPR",
+    "visualization": false,
+    "startDate": "2018-01-20",
+    "endDate": "2023-01-20"
+  },
+  "regular": {
+    "code": "-1*group_zscore(ts_delta(close,10),industry)",
+    "description": null,
+    "operatorCount": 3
+  },
+  "dateCreated": "2025-12-24T03:29:44-05:00",
+  "dateSubmitted": null,
+  "dateModified": "2025-12-24T03:29:44-05:00",
+  "name": null,
+  "favorite": false,
+  "hidden": false,
+  "color": null,
+  "category": null,
+  "tags": [],
+  "classifications": [
+    {
+      "id": "DATA_USAGE:SINGLE_DATA_SET",
+      "name": "Single Data Set Alpha"
+    }
+  ],
+  "grade": "INFERIOR",
+  "stage": "IS",
+  "status": "UNSUBMITTED",
+  "is": {
+    "pnl": 4236127,
+    "bookSize": 20000000,
+    "longCount": 1674,
+    "shortCount": 1454,
+    "turnover": 0.1641,
+    "returns": 0.0856,
+    "drawdown": 0.0931,
+    "margin": 0.001043,
+    "sharpe": 0.92,
+    "fitness": 0.66,
+    "startDate": "2018-01-20",
+    "checks": [
+      {
+        "name": "LOW_SHARPE",
+        "result": "FAIL",
+        "limit": 1.25,
+        "value": 0.92
+      },
+      {
+        "name": "LOW_FITNESS",
+        "result": "FAIL",
+        "limit": 1.0,
+        "value": 0.66
+      },
+      {
+        "name": "LOW_TURNOVER",
+        "result": "PASS",
+        "limit": 0.01,
+        "value": 0.1641
+      },
+      {
+        "name": "HIGH_TURNOVER",
+        "result": "PASS",
+        "limit": 0.7,
+        "value": 0.1641
+      },
+      {
+        "name": "CONCENTRATED_WEIGHT",
+        "result": "PASS"
+      },
+      {
+        "name": "LOW_SUB_UNIVERSE_SHARPE",
+        "result": "PASS",
+        "limit": 0.4,
+        "value": 0.49
+      },
+      {
+        "name": "SELF_CORRELATION",
+        "result": "PENDING"
+      },
+      {
+        "name": "MATCHES_COMPETITION",
+        "result": "PASS",
+        "competitions": [
+          {
+            "id": "challenge",
+            "name": "Challenge"
+          }
+        ]
+      }
+    ]
+  },
+  "os": null,
+  "train": null,
+  "test": null,
+  "prod": null,
+  "competitions": null,
+  "themes": null,
+  "pyramids": null,
+  "pyramidThemes": null,
+  "team": null
+}</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>TOP3000</td><td>15</td><td>0.01</td>
+                <td>INFERIOR</td>
+                <td>0.89</td>
+                <td>0.63</td>
+                <td>0.1637</td>
+                <td><button class="btn" onclick="toggleDetails('detail-2')">详情</button></td>
+            </tr>
+            <tr id="detail-2" class="details-row">
+                <td colspan="9">
+                    <div style="display:flex; gap:10px;">
+                        <div style="flex:1;">
+                            <h4>IS Stats</h4>
+                            <div class="json-box">{
+  "pnl": 4067973,
+  "bookSize": 20000000,
+  "longCount": 1674,
+  "shortCount": 1454,
+  "turnover": 0.1637,
+  "returns": 0.0822,
+  "drawdown": 0.0935,
+  "margin": 0.001004,
+  "sharpe": 0.89,
+  "fitness": 0.63,
+  "startDate": "2018-01-20",
+  "checks": [
+    {
+      "name": "LOW_SHARPE",
+      "result": "FAIL",
+      "limit": 1.25,
+      "value": 0.89
+    },
+    {
+      "name": "LOW_FITNESS",
+      "result": "FAIL",
+      "limit": 1.0,
+      "value": 0.63
+    },
+    {
+      "name": "LOW_TURNOVER",
+      "result": "PASS",
+      "limit": 0.01,
+      "value": 0.1637
+    },
+    {
+      "name": "HIGH_TURNOVER",
+      "result": "PASS",
+      "limit": 0.7,
+      "value": 0.1637
+    },
+    {
+      "name": "CONCENTRATED_WEIGHT",
+      "result": "PASS"
+    },
+    {
+      "name": "LOW_SUB_UNIVERSE_SHARPE",
+      "result": "PASS",
+      "limit": 0.39,
+      "value": 0.44
+    },
+    {
+      "name": "SELF_CORRELATION",
+      "result": "PENDING"
+    },
+    {
+      "name": "MATCHES_COMPETITION",
+      "result": "PASS",
+      "competitions": [
+        {
+          "id": "challenge",
+          "name": "Challenge"
+        }
+      ]
+    }
+  ]
+}</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Test Stats</h4>
+                            <div class="json-box">null</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Full Response</h4>
+                            <div class="json-box">{
+  "id": "VkoQRJV5",
+  "type": "REGULAR",
+  "author": "LH74870",
+  "settings": {
+    "instrumentType": "EQUITY",
+    "region": "USA",
+    "universe": "TOP3000",
+    "delay": 1,
+    "decay": 15,
+    "neutralization": "INDUSTRY",
+    "truncation": 0.01,
+    "pasteurization": "ON",
+    "unitHandling": "VERIFY",
+    "nanHandling": "ON",
+    "maxTrade": "OFF",
+    "language": "FASTEXPR",
+    "visualization": false,
+    "startDate": "2018-01-20",
+    "endDate": "2023-01-20"
+  },
+  "regular": {
+    "code": "-1*group_zscore(ts_delta(close,10),industry)",
+    "description": null,
+    "operatorCount": 3
+  },
+  "dateCreated": "2025-12-24T03:30:20-05:00",
+  "dateSubmitted": null,
+  "dateModified": "2025-12-24T03:30:21-05:00",
+  "name": null,
+  "favorite": false,
+  "hidden": false,
+  "color": null,
+  "category": null,
+  "tags": [],
+  "classifications": [
+    {
+      "id": "DATA_USAGE:SINGLE_DATA_SET",
+      "name": "Single Data Set Alpha"
+    }
+  ],
+  "grade": "INFERIOR",
+  "stage": "IS",
+  "status": "UNSUBMITTED",
+  "is": {
+    "pnl": 4067973,
+    "bookSize": 20000000,
+    "longCount": 1674,
+    "shortCount": 1454,
+    "turnover": 0.1637,
+    "returns": 0.0822,
+    "drawdown": 0.0935,
+    "margin": 0.001004,
+    "sharpe": 0.89,
+    "fitness": 0.63,
+    "startDate": "2018-01-20",
+    "checks": [
+      {
+        "name": "LOW_SHARPE",
+        "result": "FAIL",
+        "limit": 1.25,
+        "value": 0.89
+      },
+      {
+        "name": "LOW_FITNESS",
+        "result": "FAIL",
+        "limit": 1.0,
+        "value": 0.63
+      },
+      {
+        "name": "LOW_TURNOVER",
+        "result": "PASS",
+        "limit": 0.01,
+        "value": 0.1637
+      },
+      {
+        "name": "HIGH_TURNOVER",
+        "result": "PASS",
+        "limit": 0.7,
+        "value": 0.1637
+      },
+      {
+        "name": "CONCENTRATED_WEIGHT",
+        "result": "PASS"
+      },
+      {
+        "name": "LOW_SUB_UNIVERSE_SHARPE",
+        "result": "PASS",
+        "limit": 0.39,
+        "value": 0.44
+      },
+      {
+        "name": "SELF_CORRELATION",
+        "result": "PENDING"
+      },
+      {
+        "name": "MATCHES_COMPETITION",
+        "result": "PASS",
+        "competitions": [
+          {
+            "id": "challenge",
+            "name": "Challenge"
+          }
+        ]
+      }
+    ]
+  },
+  "os": null,
+  "train": null,
+  "test": null,
+  "prod": null,
+  "competitions": null,
+  "themes": null,
+  "pyramids": null,
+  "pyramidThemes": null,
+  "team": null
+}</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>TOP3000</td><td>5</td><td>0.1</td>
+                <td>INFERIOR</td>
+                <td>1.23</td>
+                <td>0.84</td>
+                <td>0.247</td>
+                <td><button class="btn" onclick="toggleDetails('detail-3')">详情</button></td>
+            </tr>
+            <tr id="detail-3" class="details-row">
+                <td colspan="9">
+                    <div style="display:flex; gap:10px;">
+                        <div style="flex:1;">
+                            <h4>IS Stats</h4>
+                            <div class="json-box">{
+  "pnl": 5637241,
+  "bookSize": 20000000,
+  "longCount": 1662,
+  "shortCount": 1466,
+  "turnover": 0.247,
+  "returns": 0.1139,
+  "drawdown": 0.0785,
+  "margin": 0.000923,
+  "sharpe": 1.23,
+  "fitness": 0.84,
+  "startDate": "2018-01-20",
+  "checks": [
+    {
+      "name": "LOW_SHARPE",
+      "result": "FAIL",
+      "limit": 1.25,
+      "value": 1.23
+    },
+    {
+      "name": "LOW_FITNESS",
+      "result": "FAIL",
+      "limit": 1.0,
+      "value": 0.84
+    },
+    {
+      "name": "LOW_TURNOVER",
+      "result": "PASS",
+      "limit": 0.01,
+      "value": 0.247
+    },
+    {
+      "name": "HIGH_TURNOVER",
+      "result": "PASS",
+      "limit": 0.7,
+      "value": 0.247
+    },
+    {
+      "name": "CONCENTRATED_WEIGHT",
+      "result": "PASS"
+    },
+    {
+      "name": "LOW_SUB_UNIVERSE_SHARPE",
+      "result": "PASS",
+      "limit": 0.53,
+      "value": 0.8
+    },
+    {
+      "name": "SELF_CORRELATION",
+      "result": "PENDING"
+    },
+    {
+      "name": "MATCHES_COMPETITION",
+      "result": "PASS",
+      "competitions": [
+        {
+          "id": "challenge",
+          "name": "Challenge"
+        }
+      ]
+    }
+  ]
+}</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Test Stats</h4>
+                            <div class="json-box">null</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Full Response</h4>
+                            <div class="json-box">{
+  "id": "j2QkMLve",
+  "type": "REGULAR",
+  "author": "LH74870",
+  "settings": {
+    "instrumentType": "EQUITY",
+    "region": "USA",
+    "universe": "TOP3000",
+    "delay": 1,
+    "decay": 5,
+    "neutralization": "INDUSTRY",
+    "truncation": 0.1,
+    "pasteurization": "ON",
+    "unitHandling": "VERIFY",
+    "nanHandling": "ON",
+    "maxTrade": "OFF",
+    "language": "FASTEXPR",
+    "visualization": false,
+    "startDate": "2018-01-20",
+    "endDate": "2023-01-20"
+  },
+  "regular": {
+    "code": "-1*group_zscore(ts_delta(close,10),industry)",
+    "description": null,
+    "operatorCount": 3
+  },
+  "dateCreated": "2025-12-24T03:30:43-05:00",
+  "dateSubmitted": null,
+  "dateModified": "2025-12-24T03:30:43-05:00",
+  "name": null,
+  "favorite": false,
+  "hidden": false,
+  "color": null,
+  "category": null,
+  "tags": [],
+  "classifications": [
+    {
+      "id": "DATA_USAGE:SINGLE_DATA_SET",
+      "name": "Single Data Set Alpha"
+    }
+  ],
+  "grade": "INFERIOR",
+  "stage": "IS",
+  "status": "UNSUBMITTED",
+  "is": {
+    "pnl": 5637241,
+    "bookSize": 20000000,
+    "longCount": 1662,
+    "shortCount": 1466,
+    "turnover": 0.247,
+    "returns": 0.1139,
+    "drawdown": 0.0785,
+    "margin": 0.000923,
+    "sharpe": 1.23,
+    "fitness": 0.84,
+    "startDate": "2018-01-20",
+    "checks": [
+      {
+        "name": "LOW_SHARPE",
+        "result": "FAIL",
+        "limit": 1.25,
+        "value": 1.23
+      },
+      {
+        "name": "LOW_FITNESS",
+        "result": "FAIL",
+        "limit": 1.0,
+        "value": 0.84
+      },
+      {
+        "name": "LOW_TURNOVER",
+        "result": "PASS",
+        "limit": 0.01,
+        "value": 0.247
+      },
+      {
+        "name": "HIGH_TURNOVER",
+        "result": "PASS",
+        "limit": 0.7,
+        "value": 0.247
+      },
+      {
+        "name": "CONCENTRATED_WEIGHT",
+        "result": "PASS"
+      },
+      {
+        "name": "LOW_SUB_UNIVERSE_SHARPE",
+        "result": "PASS",
+        "limit": 0.53,
+        "value": 0.8
+      },
+      {
+        "name": "SELF_CORRELATION",
+        "result": "PENDING"
+      },
+      {
+        "name": "MATCHES_COMPETITION",
+        "result": "PASS",
+        "competitions": [
+          {
+            "id": "challenge",
+            "name": "Challenge"
+          }
+        ]
+      }
+    ]
+  },
+  "os": null,
+  "train": null,
+  "test": null,
+  "prod": null,
+  "competitions": null,
+  "themes": null,
+  "pyramids": null,
+  "pyramidThemes": null,
+  "team": null
+}</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        <tr class="group-header"><td colspan="9">Alpha Expression: -1*group_zscore(ts_delta(close,5),industry)</td></tr>
+            <tr>
+                <td>5</td>
+                <td>TOP3000</td><td>5</td><td>0.01</td>
+                <td>INFERIOR</td>
+                <td>1.43</td>
+                <td>0.84</td>
+                <td>0.3776</td>
+                <td><button class="btn" onclick="toggleDetails('detail-4')">详情</button></td>
+            </tr>
+            <tr id="detail-4" class="details-row">
+                <td colspan="9">
+                    <div style="display:flex; gap:10px;">
+                        <div style="flex:1;">
+                            <h4>IS Stats</h4>
+                            <div class="json-box">{
+  "pnl": 6439502,
+  "bookSize": 20000000,
+  "longCount": 1647,
+  "shortCount": 1481,
+  "turnover": 0.3776,
+  "returns": 0.1301,
+  "drawdown": 0.0651,
+  "margin": 0.000689,
+  "sharpe": 1.43,
+  "fitness": 0.84,
+  "startDate": "2018-01-20",
+  "checks": [
+    {
+      "name": "LOW_SHARPE",
+      "result": "PASS",
+      "limit": 1.25,
+      "value": 1.43
+    },
+    {
+      "name": "LOW_FITNESS",
+      "result": "FAIL",
+      "limit": 1.0,
+      "value": 0.84
+    },
+    {
+      "name": "LOW_TURNOVER",
+      "result": "PASS",
+      "limit": 0.01,
+      "value": 0.3776
+    },
+    {
+      "name": "HIGH_TURNOVER",
+      "result": "PASS",
+      "limit": 0.7,
+      "value": 0.3776
+    },
+    {
+      "name": "CONCENTRATED_WEIGHT",
+      "result": "PASS"
+    },
+    {
+      "name": "LOW_SUB_UNIVERSE_SHARPE",
+      "result": "PASS",
+      "limit": 0.62,
+      "value": 1.0
+    },
+    {
+      "name": "SELF_CORRELATION",
+      "result": "PENDING"
+    },
+    {
+      "name": "MATCHES_COMPETITION",
+      "result": "PASS",
+      "competitions": [
+        {
+          "id": "challenge",
+          "name": "Challenge"
+        }
+      ]
+    }
+  ]
+}</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Test Stats</h4>
+                            <div class="json-box">null</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Full Response</h4>
+                            <div class="json-box">{
+  "id": "d5wJvWKE",
+  "type": "REGULAR",
+  "author": "LH74870",
+  "settings": {
+    "instrumentType": "EQUITY",
+    "region": "USA",
+    "universe": "TOP3000",
+    "delay": 1,
+    "decay": 5,
+    "neutralization": "INDUSTRY",
+    "truncation": 0.01,
+    "pasteurization": "ON",
+    "unitHandling": "VERIFY",
+    "nanHandling": "ON",
+    "maxTrade": "OFF",
+    "language": "FASTEXPR",
+    "visualization": false,
+    "startDate": "2018-01-20",
+    "endDate": "2023-01-20"
+  },
+  "regular": {
+    "code": "-1*group_zscore(ts_delta(close,5),industry)",
+    "description": null,
+    "operatorCount": 3
+  },
+  "dateCreated": "2025-12-24T03:26:39-05:00",
+  "dateSubmitted": null,
+  "dateModified": "2025-12-24T03:26:40-05:00",
+  "name": null,
+  "favorite": false,
+  "hidden": false,
+  "color": null,
+  "category": null,
+  "tags": [],
+  "classifications": [
+    {
+      "id": "DATA_USAGE:SINGLE_DATA_SET",
+      "name": "Single Data Set Alpha"
+    }
+  ],
+  "grade": "INFERIOR",
+  "stage": "IS",
+  "status": "UNSUBMITTED",
+  "is": {
+    "pnl": 6439502,
+    "bookSize": 20000000,
+    "longCount": 1647,
+    "shortCount": 1481,
+    "turnover": 0.3776,
+    "returns": 0.1301,
+    "drawdown": 0.0651,
+    "margin": 0.000689,
+    "sharpe": 1.43,
+    "fitness": 0.84,
+    "startDate": "2018-01-20",
+    "checks": [
+      {
+        "name": "LOW_SHARPE",
+        "result": "PASS",
+        "limit": 1.25,
+        "value": 1.43
+      },
+      {
+        "name": "LOW_FITNESS",
+        "result": "FAIL",
+        "limit": 1.0,
+        "value": 0.84
+      },
+      {
+        "name": "LOW_TURNOVER",
+        "result": "PASS",
+        "limit": 0.01,
+        "value": 0.3776
+      },
+      {
+        "name": "HIGH_TURNOVER",
+        "result": "PASS",
+        "limit": 0.7,
+        "value": 0.3776
+      },
+      {
+        "name": "CONCENTRATED_WEIGHT",
+        "result": "PASS"
+      },
+      {
+        "name": "LOW_SUB_UNIVERSE_SHARPE",
+        "result": "PASS",
+        "limit": 0.62,
+        "value": 1.0
+      },
+      {
+        "name": "SELF_CORRELATION",
+        "result": "PENDING"
+      },
+      {
+        "name": "MATCHES_COMPETITION",
+        "result": "PASS",
+        "competitions": [
+          {
+            "id": "challenge",
+            "name": "Challenge"
+          }
+        ]
+      }
+    ]
+  },
+  "os": null,
+  "train": null,
+  "test": null,
+  "prod": null,
+  "competitions": null,
+  "themes": null,
+  "pyramids": null,
+  "pyramidThemes": null,
+  "team": null
+}</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>TOP3000</td><td>15</td><td>0.01</td>
+                <td>INFERIOR</td>
+                <td>1.18</td>
+                <td>0.84</td>
+                <td>0.2222</td>
+                <td><button class="btn" onclick="toggleDetails('detail-5')">详情</button></td>
+            </tr>
+            <tr id="detail-5" class="details-row">
+                <td colspan="9">
+                    <div style="display:flex; gap:10px;">
+                        <div style="flex:1;">
+                            <h4>IS Stats</h4>
+                            <div class="json-box">{
+  "pnl": 5572379,
+  "bookSize": 20000000,
+  "longCount": 1672,
+  "shortCount": 1456,
+  "turnover": 0.2222,
+  "returns": 0.1126,
+  "drawdown": 0.0688,
+  "margin": 0.001014,
+  "sharpe": 1.18,
+  "fitness": 0.84,
+  "startDate": "2018-01-20",
+  "checks": [
+    {
+      "name": "LOW_SHARPE",
+      "result": "FAIL",
+      "limit": 1.25,
+      "value": 1.18
+    },
+    {
+      "name": "LOW_FITNESS",
+      "result": "FAIL",
+      "limit": 1.0,
+      "value": 0.84
+    },
+    {
+      "name": "LOW_TURNOVER",
+      "result": "PASS",
+      "limit": 0.01,
+      "value": 0.2222
+    },
+    {
+      "name": "HIGH_TURNOVER",
+      "result": "PASS",
+      "limit": 0.7,
+      "value": 0.2222
+    },
+    {
+      "name": "CONCENTRATED_WEIGHT",
+      "result": "PASS"
+    },
+    {
+      "name": "LOW_SUB_UNIVERSE_SHARPE",
+      "result": "PASS",
+      "limit": 0.51,
+      "value": 0.67
+    },
+    {
+      "name": "SELF_CORRELATION",
+      "result": "PENDING"
+    },
+    {
+      "name": "MATCHES_COMPETITION",
+      "result": "PASS",
+      "competitions": [
+        {
+          "id": "challenge",
+          "name": "Challenge"
+        }
+      ]
+    }
+  ]
+}</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Test Stats</h4>
+                            <div class="json-box">null</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Full Response</h4>
+                            <div class="json-box">{
+  "id": "XgEZMa3z",
+  "type": "REGULAR",
+  "author": "LH74870",
+  "settings": {
+    "instrumentType": "EQUITY",
+    "region": "USA",
+    "universe": "TOP3000",
+    "delay": 1,
+    "decay": 15,
+    "neutralization": "INDUSTRY",
+    "truncation": 0.01,
+    "pasteurization": "ON",
+    "unitHandling": "VERIFY",
+    "nanHandling": "ON",
+    "maxTrade": "OFF",
+    "language": "FASTEXPR",
+    "visualization": false,
+    "startDate": "2018-01-20",
+    "endDate": "2023-01-20"
+  },
+  "regular": {
+    "code": "-1*group_zscore(ts_delta(close,5),industry)",
+    "description": null,
+    "operatorCount": 3
+  },
+  "dateCreated": "2025-12-24T03:26:53-05:00",
+  "dateSubmitted": null,
+  "dateModified": "2025-12-24T03:26:54-05:00",
+  "name": null,
+  "favorite": false,
+  "hidden": false,
+  "color": null,
+  "category": null,
+  "tags": [],
+  "classifications": [
+    {
+      "id": "DATA_USAGE:SINGLE_DATA_SET",
+      "name": "Single Data Set Alpha"
+    }
+  ],
+  "grade": "INFERIOR",
+  "stage": "IS",
+  "status": "UNSUBMITTED",
+  "is": {
+    "pnl": 5572379,
+    "bookSize": 20000000,
+    "longCount": 1672,
+    "shortCount": 1456,
+    "turnover": 0.2222,
+    "returns": 0.1126,
+    "drawdown": 0.0688,
+    "margin": 0.001014,
+    "sharpe": 1.18,
+    "fitness": 0.84,
+    "startDate": "2018-01-20",
+    "checks": [
+      {
+        "name": "LOW_SHARPE",
+        "result": "FAIL",
+        "limit": 1.25,
+        "value": 1.18
+      },
+      {
+        "name": "LOW_FITNESS",
+        "result": "FAIL",
+        "limit": 1.0,
+        "value": 0.84
+      },
+      {
+        "name": "LOW_TURNOVER",
+        "result": "PASS",
+        "limit": 0.01,
+        "value": 0.2222
+      },
+      {
+        "name": "HIGH_TURNOVER",
+        "result": "PASS",
+        "limit": 0.7,
+        "value": 0.2222
+      },
+      {
+        "name": "CONCENTRATED_WEIGHT",
+        "result": "PASS"
+      },
+      {
+        "name": "LOW_SUB_UNIVERSE_SHARPE",
+        "result": "PASS",
+        "limit": 0.51,
+        "value": 0.67
+      },
+      {
+        "name": "SELF_CORRELATION",
+        "result": "PENDING"
+      },
+      {
+        "name": "MATCHES_COMPETITION",
+        "result": "PASS",
+        "competitions": [
+          {
+            "id": "challenge",
+            "name": "Challenge"
+          }
+        ]
+      }
+    ]
+  },
+  "os": null,
+  "train": null,
+  "test": null,
+  "prod": null,
+  "competitions": null,
+  "themes": null,
+  "pyramids": null,
+  "pyramidThemes": null,
+  "team": null
+}</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td>TOP3000</td><td>15</td><td>0.1</td>
+                <td>INFERIOR</td>
+                <td>1.22</td>
+                <td>0.89</td>
+                <td>0.2228</td>
+                <td><button class="btn" onclick="toggleDetails('detail-6')">详情</button></td>
+            </tr>
+            <tr id="detail-6" class="details-row">
+                <td colspan="9">
+                    <div style="display:flex; gap:10px;">
+                        <div style="flex:1;">
+                            <h4>IS Stats</h4>
+                            <div class="json-box">{
+  "pnl": 5849099,
+  "bookSize": 20000000,
+  "longCount": 1673,
+  "shortCount": 1455,
+  "turnover": 0.2228,
+  "returns": 0.1182,
+  "drawdown": 0.069,
+  "margin": 0.001061,
+  "sharpe": 1.22,
+  "fitness": 0.89,
+  "startDate": "2018-01-20",
+  "checks": [
+    {
+      "name": "LOW_SHARPE",
+      "result": "FAIL",
+      "limit": 1.25,
+      "value": 1.22
+    },
+    {
+      "name": "LOW_FITNESS",
+      "result": "FAIL",
+      "limit": 1.0,
+      "value": 0.89
+    },
+    {
+      "name": "LOW_TURNOVER",
+      "result": "PASS",
+      "limit": 0.01,
+      "value": 0.2228
+    },
+    {
+      "name": "HIGH_TURNOVER",
+      "result": "PASS",
+      "limit": 0.7,
+      "value": 0.2228
+    },
+    {
+      "name": "CONCENTRATED_WEIGHT",
+      "result": "PASS"
+    },
+    {
+      "name": "LOW_SUB_UNIVERSE_SHARPE",
+      "result": "PASS",
+      "limit": 0.53,
+      "value": 0.74
+    },
+    {
+      "name": "SELF_CORRELATION",
+      "result": "PENDING"
+    },
+    {
+      "name": "MATCHES_COMPETITION",
+      "result": "PASS",
+      "competitions": [
+        {
+          "id": "challenge",
+          "name": "Challenge"
+        }
+      ]
+    }
+  ]
+}</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Test Stats</h4>
+                            <div class="json-box">null</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Full Response</h4>
+                            <div class="json-box">{
+  "id": "xAa7557p",
+  "type": "REGULAR",
+  "author": "LH74870",
+  "settings": {
+    "instrumentType": "EQUITY",
+    "region": "USA",
+    "universe": "TOP3000",
+    "delay": 1,
+    "decay": 15,
+    "neutralization": "INDUSTRY",
+    "truncation": 0.1,
+    "pasteurization": "ON",
+    "unitHandling": "VERIFY",
+    "nanHandling": "ON",
+    "maxTrade": "OFF",
+    "language": "FASTEXPR",
+    "visualization": false,
+    "startDate": "2018-01-20",
+    "endDate": "2023-01-20"
+  },
+  "regular": {
+    "code": "-1*group_zscore(ts_delta(close,5),industry)",
+    "description": null,
+    "operatorCount": 3
+  },
+  "dateCreated": "2025-12-24T03:27:55-05:00",
+  "dateSubmitted": null,
+  "dateModified": "2025-12-24T03:27:56-05:00",
+  "name": null,
+  "favorite": false,
+  "hidden": false,
+  "color": null,
+  "category": null,
+  "tags": [],
+  "classifications": [
+    {
+      "id": "DATA_USAGE:SINGLE_DATA_SET",
+      "name": "Single Data Set Alpha"
+    }
+  ],
+  "grade": "INFERIOR",
+  "stage": "IS",
+  "status": "UNSUBMITTED",
+  "is": {
+    "pnl": 5849099,
+    "bookSize": 20000000,
+    "longCount": 1673,
+    "shortCount": 1455,
+    "turnover": 0.2228,
+    "returns": 0.1182,
+    "drawdown": 0.069,
+    "margin": 0.001061,
+    "sharpe": 1.22,
+    "fitness": 0.89,
+    "startDate": "2018-01-20",
+    "checks": [
+      {
+        "name": "LOW_SHARPE",
+        "result": "FAIL",
+        "limit": 1.25,
+        "value": 1.22
+      },
+      {
+        "name": "LOW_FITNESS",
+        "result": "FAIL",
+        "limit": 1.0,
+        "value": 0.89
+      },
+      {
+        "name": "LOW_TURNOVER",
+        "result": "PASS",
+        "limit": 0.01,
+        "value": 0.2228
+      },
+      {
+        "name": "HIGH_TURNOVER",
+        "result": "PASS",
+        "limit": 0.7,
+        "value": 0.2228
+      },
+      {
+        "name": "CONCENTRATED_WEIGHT",
+        "result": "PASS"
+      },
+      {
+        "name": "LOW_SUB_UNIVERSE_SHARPE",
+        "result": "PASS",
+        "limit": 0.53,
+        "value": 0.74
+      },
+      {
+        "name": "SELF_CORRELATION",
+        "result": "PENDING"
+      },
+      {
+        "name": "MATCHES_COMPETITION",
+        "result": "PASS",
+        "competitions": [
+          {
+            "id": "challenge",
+            "name": "Challenge"
+          }
+        ]
+      }
+    ]
+  },
+  "os": null,
+  "train": null,
+  "test": null,
+  "prod": null,
+  "competitions": null,
+  "themes": null,
+  "pyramids": null,
+  "pyramidThemes": null,
+  "team": null
+}</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                <td>TOP3000</td><td>5</td><td>0.1</td>
+                <td>INFERIOR</td>
+                <td>1.45</td>
+                <td>0.86</td>
+                <td>0.3783</td>
+                <td><button class="btn" onclick="toggleDetails('detail-7')">详情</button></td>
+            </tr>
+            <tr id="detail-7" class="details-row">
+                <td colspan="9">
+                    <div style="display:flex; gap:10px;">
+                        <div style="flex:1;">
+                            <h4>IS Stats</h4>
+                            <div class="json-box">{
+  "pnl": 6591088,
+  "bookSize": 20000000,
+  "longCount": 1647,
+  "shortCount": 1481,
+  "turnover": 0.3783,
+  "returns": 0.1332,
+  "drawdown": 0.065,
+  "margin": 0.000704,
+  "sharpe": 1.45,
+  "fitness": 0.86,
+  "startDate": "2018-01-20",
+  "checks": [
+    {
+      "name": "LOW_SHARPE",
+      "result": "PASS",
+      "limit": 1.25,
+      "value": 1.45
+    },
+    {
+      "name": "LOW_FITNESS",
+      "result": "FAIL",
+      "limit": 1.0,
+      "value": 0.86
+    },
+    {
+      "name": "LOW_TURNOVER",
+      "result": "PASS",
+      "limit": 0.01,
+      "value": 0.3783
+    },
+    {
+      "name": "HIGH_TURNOVER",
+      "result": "PASS",
+      "limit": 0.7,
+      "value": 0.3783
+    },
+    {
+      "name": "CONCENTRATED_WEIGHT",
+      "result": "PASS"
+    },
+    {
+      "name": "LOW_SUB_UNIVERSE_SHARPE",
+      "result": "PASS",
+      "limit": 0.63,
+      "value": 1.04
+    },
+    {
+      "name": "SELF_CORRELATION",
+      "result": "PENDING"
+    },
+    {
+      "name": "MATCHES_COMPETITION",
+      "result": "PASS",
+      "competitions": [
+        {
+          "id": "challenge",
+          "name": "Challenge"
+        }
+      ]
+    }
+  ]
+}</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Test Stats</h4>
+                            <div class="json-box">null</div>
+                        </div>
+                        <div style="flex:1;">
+                            <h4>Full Response</h4>
+                            <div class="json-box">{
+  "id": "npbGrX3E",
+  "type": "REGULAR",
+  "author": "LH74870",
+  "settings": {
+    "instrumentType": "EQUITY",
+    "region": "USA",
+    "universe": "TOP3000",
+    "delay": 1,
+    "decay": 5,
+    "neutralization": "INDUSTRY",
+    "truncation": 0.1,
+    "pasteurization": "ON",
+    "unitHandling": "VERIFY",
+    "nanHandling": "ON",
+    "maxTrade": "OFF",
+    "language": "FASTEXPR",
+    "visualization": false,
+    "startDate": "2018-01-20",
+    "endDate": "2023-01-20"
+  },
+  "regular": {
+    "code": "-1*group_zscore(ts_delta(close,5),industry)",
+    "description": null,
+    "operatorCount": 3
+  },
+  "dateCreated": "2025-12-24T03:28:01-05:00",
+  "dateSubmitted": null,
+  "dateModified": "2025-12-24T03:28:01-05:00",
+  "name": null,
+  "favorite": false,
+  "hidden": false,
+  "color": null,
+  "category": null,
+  "tags": [],
+  "classifications": [
+    {
+      "id": "DATA_USAGE:SINGLE_DATA_SET",
+      "name": "Single Data Set Alpha"
+    }
+  ],
+  "grade": "INFERIOR",
+  "stage": "IS",
+  "status": "UNSUBMITTED",
+  "is": {
+    "pnl": 6591088,
+    "bookSize": 20000000,
+    "longCount": 1647,
+    "shortCount": 1481,
+    "turnover": 0.3783,
+    "returns": 0.1332,
+    "drawdown": 0.065,
+    "margin": 0.000704,
+    "sharpe": 1.45,
+    "fitness": 0.86,
+    "startDate": "2018-01-20",
+    "checks": [
+      {
+        "name": "LOW_SHARPE",
+        "result": "PASS",
+        "limit": 1.25,
+        "value": 1.45
+      },
+      {
+        "name": "LOW_FITNESS",
+        "result": "FAIL",
+        "limit": 1.0,
+        "value": 0.86
+      },
+      {
+        "name": "LOW_TURNOVER",
+        "result": "PASS",
+        "limit": 0.01,
+        "value": 0.3783
+      },
+      {
+        "name": "HIGH_TURNOVER",
+        "result": "PASS",
+        "limit": 0.7,
+        "value": 0.3783
+      },
+      {
+        "name": "CONCENTRATED_WEIGHT",
+        "result": "PASS"
+      },
+      {
+        "name": "LOW_SUB_UNIVERSE_SHARPE",
+        "result": "PASS",
+        "limit": 0.63,
+        "value": 1.04
+      },
+      {
+        "name": "SELF_CORRELATION",
+        "result": "PENDING"
+      },
+      {
+        "name": "MATCHES_COMPETITION",
+        "result": "PASS",
+        "competitions": [
+          {
+            "id": "challenge",
+            "name": "Challenge"
+          }
+        ]
+      }
+    ]
+  },
+  "os": null,
+  "train": null,
+  "test": null,
+  "prod": null,
+  "competitions": null,
+  "themes": null,
+  "pyramids": null,
+  "pyramidThemes": null,
+  "team": null
+}</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        
+            </tbody>
+        </table>
+
+        <script>
+            // --- 1. Data Parsing Logic (解析表格数据) ---
+            const table = document.querySelector('table');
+            const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.innerText.trim());
+            
+            // 自动识别列索引
+            const gradeIndex = headers.indexOf('Grade');
+            const paramStartIndex = 1; // Parameters start after the 'ID' column
+            
+            // 参数列：位于 ID 和 Grade 之间
+            const paramNames = headers.slice(paramStartIndex, gradeIndex);
+            // 指标列：位于 Grade 之后 (排除最后一列 Action)
+            const metricNames = headers.slice(gradeIndex + 1, headers.length - 1);
+            
+            const rawData = [];
+            let currentExpr = "Default";
+            const uniqueExprs = new Set();
+
+            const rows = table.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+                if (row.classList.contains('group-header')) {
+                    currentExpr = row.innerText.replace('Alpha Expression: ', '').trim();
+                    uniqueExprs.add(currentExpr);
+                    return;
+                }
+                if (row.classList.contains('details-row')) return;
+                
+                const cells = row.querySelectorAll('td');
+                if (cells.length < headers.length) return;
+
+                const rowObj = {};
+                rowObj['Expression'] = currentExpr;
+                
+                // 提取参数 (Parameters)
+                paramNames.forEach((name, i) => {
+                    const val = cells[paramStartIndex + i].innerText.trim();
+                    // 尝试转为数字，如果是纯数字字符串
+                    rowObj[name] = isNaN(val) || val === '' ? val : parseFloat(val);
+                });
+
+                // 提取指标 (Metrics)
+                metricNames.forEach((name, i) => {
+                    const val = cells[gradeIndex + 1 + i].innerText.trim();
+                    rowObj[name] = isNaN(val) || val === '' ? val : parseFloat(val);
+                });
+                
+                rawData.push(rowObj);
+            });
+
+            // --- 2. Initialization (初始化控件) ---
+            function populateSelect(id, options, defaultVal) {
+                const sel = document.getElementById(id);
+                sel.innerHTML = '';
+                options.forEach(opt => {
+                    const el = document.createElement('option');
+                    el.value = opt;
+                    el.innerText = opt;
+                    if (opt === defaultVal) el.selected = true;
+                    sel.appendChild(el);
+                });
+            }
+
+            const allParams = ['Expression', ...paramNames];
+            
+            // 初始化折线图控件
+            populateSelect('lineX', paramNames, paramNames[1] || paramNames[0]); // 默认选第2个参数(如decay)
+            populateSelect('lineY', metricNames, 'Sharpe');
+            populateSelect('lineGroup', allParams, 'Expression'); 
+
+            // 初始化热力图控件
+            populateSelect('heatFilterExpr', ['All', ...Array.from(uniqueExprs)], 'All');
+            populateSelect('heatRow', paramNames, paramNames[0] || '');
+            populateSelect('heatCol', paramNames, paramNames[1] || paramNames[0] || '');
+            populateSelect('heatMetric', metricNames, 'Sharpe');
+
+            // --- 3. Chart Functions (绘图函数) ---
+            function updateLineChart() {
+                const xAttr = document.getElementById('lineX').value;
+                const yAttr = document.getElementById('lineY').value;
+                const groupAttr = document.getElementById('lineGroup').value;
+
+                // 按分组字段聚合数据
+                const groups = {};
+                rawData.forEach(d => {
+                    const gVal = d[groupAttr];
+                    if (!groups[gVal]) groups[gVal] = { x: [], y: [] };
+                    groups[gVal].x.push(d[xAttr]);
+                    groups[gVal].y.push(d[yAttr]);
+                });
+
+                const traces = Object.keys(groups).map(gName => {
+                    // 对 X轴数据排序，保证线条连贯
+                    const combined = groups[gName].x.map((x, i) => ({ x, y: groups[gName].y[i] }));
+                    combined.sort((a, b) => (a.x > b.x) ? 1 : -1);
+                    
+                    return {
+                        x: combined.map(c => c.x),
+                        y: combined.map(c => c.y),
+                        mode: 'lines+markers',
+                        name: gName
+                    };
+                });
+
+                Plotly.newPlot('lineChart', traces, { 
+                    title: `${yAttr} vs ${xAttr} (Group by ${groupAttr})`,
+                    xaxis: { title: xAttr },
+                    yaxis: { title: yAttr },
+                    margin: { t: 40, r: 20, l: 50, b: 40 }
+                });
+            }
+
+            function updateHeatmap() {
+                const rowAttr = document.getElementById('heatRow').value;
+                const colAttr = document.getElementById('heatCol').value;
+                const metricAttr = document.getElementById('heatMetric').value;
+                const filterExpr = document.getElementById('heatFilterExpr').value;
+
+                // 筛选数据
+                let chartData = rawData;
+                if (filterExpr !== 'All') {
+                    chartData = rawData.filter(d => d['Expression'] === filterExpr);
+                }
+
+                // 获取唯一的行/列值
+                const rowVals = [...new Set(chartData.map(d => d[rowAttr]))].sort((a,b) => a-b);
+                const colVals = [...new Set(chartData.map(d => d[colAttr]))].sort((a,b) => a-b);
+
+                // 构建 Z 矩阵
+                const z = rowVals.map(r => {
+                    return colVals.map(c => {
+                        // 查找匹配的数据点 (如果有多个匹配，取第一个)
+                        const match = chartData.find(d => d[rowAttr] == r && d[colAttr] == c);
+                        return match ? match[metricAttr] : null;
+                    });
+                });
+
+                const data = [{
+                    x: colVals,
+                    y: rowVals,
+                    z: z,
+                    type: 'heatmap',
+                    colorscale: 'RdYlGn', // 红-黄-绿 渐变
+                    showscale: true,
+                    zsmooth: false
+                }];
+
+                Plotly.newPlot('heatmap', data, {
+                    title: `${metricAttr} Heatmap (${rowAttr} vs ${colAttr})`,
+                    xaxis: { title: colAttr, type: 'category' },
+                    yaxis: { title: rowAttr, type: 'category' },
+                    margin: { t: 40, r: 20, l: 100, b: 40 }
+                });
+            }
+
+            // --- 4. JSON Formatting Logic ---
+            function formatJsonAsTable(data) {
+                if (data === null || typeof data !== 'object') {
+                    let displayValue = data;
+                    if (typeof displayValue === 'string') {
+                        if (displayValue.startsWith('http')) {
+                            displayValue = `<a href="${displayValue}" target="_blank">${displayValue}</a>`;
+                        }
+                    }
+                    return `<span class="json-value">${displayValue}</span>`;
+                }
+
+                let html = '<table class="json-inner-table">';
+                if (Array.isArray(data)) {
+                    data.forEach((item, index) => {
+                        html += `<tr><td class="json-key">${index}</td><td>${formatJsonAsTable(item)}</td></tr>`;
+                    });
+                } else {
+                    for (const key in data) {
+                        if (data.hasOwnProperty(key)) {
+                            html += `<tr><td class="json-key">${key}</td><td>${formatJsonAsTable(data[key])}</td></tr>`;
+                        }
+                    }
+                }
+                html += '</table>';
+                return html;
+            }
+
+            function initializeJsonFormatting() {
+                const jsonBoxes = document.querySelectorAll('.json-box');
+                jsonBoxes.forEach(box => {
+                    try {
+                        const jsonText = box.textContent.trim();
+                        if (jsonText === 'null' || jsonText === '') {
+                            box.innerHTML = `<span class="json-value">${jsonText || 'null'}</span>`;
+                            return;
+                        }
+                        const jsonData = JSON.parse(jsonText);
+                        box.innerHTML = formatJsonAsTable(jsonData);
+                    } catch (e) {
+                        console.error("Failed to parse JSON:", box.textContent, e);
+                    }
+                });
+            }
+
+            // 初始渲染
+            updateLineChart();
+            updateHeatmap();
+            initializeJsonFormatting();
+        </script>
+    </body>
+    </html>
+    

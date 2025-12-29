@@ -13,7 +13,7 @@ from qr.worldquant.backup.write_txt import write_lines
 
 from time import sleep
 
-from main_part.sign_in import sign_in
+from qr.worldquant.io.sign_in import sign_in
 sess = sign_in()
 
 def save_alpha_result(result_entry, start_timestamp, result_dir):

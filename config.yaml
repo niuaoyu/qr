@@ -1,0 +1,27 @@
+# ===============================
+# Global Configuration File
+# ===============================
+
+# --- OpenAI API Settings ---
+openai_base_url: "https://code.newcli.com/claude/droid" # e.g. https://api.deepseek.com
+openai_api_key: "sk-ant-oat01-FaAJ5cb2mRyXQLRhW9Fv3m7ULXL2Q-k6XEUAZ9TruoYUYLVAuBnBjAhQxrb4G1lfr-N76ZNTLwrq8Bgj5f-mFW4bBLTOUAA" # e.g. sk-...
+openai_model_name: "claude-opus-4-1-20250805" # e.g. deepseek-chat
+reasoner_model_name: "todo" # e.g. deepseek-reasoner
+
+# --- WorldQuant Platform Credentials ---
+worldquant_account: "672019598@qq.com"
+worldquant_password: "NAYnay232408."
+
+worldquant_login_url: "https://platform.worldquantbrain.com/sign-in"
+worldquant_api_auth: "https://api.worldquantbrain.com/authentication"
+# worldquant_consultant_posts_url: "https://support.worldquantbrain.com/hc/en-us/community/topics/18910956638743-顾问专属中文论坛"
+worldquant_consultant_posts_url: "https://support.worldquantbrain.com/hc/en-us/community/topics/12913416465431-%E4%B8%AD%E6%96%87%E8%AE%BA%E5%9D%9B"
+# You can also choose any other WorldQuant Forum URL you have access to.
+
+# --- Dataset from WorldQuant Brain
+enabled_field_datasets: # Select the field database you want to use to build alphas.
+  - pv1                 # Database name reference ./data/wq_fields
+  - fundamental6
+  - analyst4
+  - model16
+  - news12

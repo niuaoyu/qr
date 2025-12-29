@@ -1,0 +1,1085 @@
+Alpha ID: 0mWgLP2p
+Expression: ts_decay_linear(-1 * group_neutralize(rank((ts_backfill(income, 730) - ts_backfill(cashflow_op, 730)) / ts_backfill(assets, 730)), sector), 5)
+Sharpe: 0.46
+Turnover: 0.0195
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLxzw2zn
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_ebitda, 30), 10)), industry), 40) + rank(ts_sum(returns, 20))
+Sharpe: -0.61
+Turnover: 0.2851
+Fitness: -0.29
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVGAkxx
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_cashflow_ps, 90) / cap), industry), 20)
+Sharpe: 0.33
+Turnover: 0.0104
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5AzM9OJ
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(debt, 730) / ts_backfill(equity, 730)), industry), 10) + rank(ts_sum(returns, 60))
+Sharpe: -1.02
+Turnover: 0.1322
+Fitness: -0.87
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5GwmN6
+Expression: group_neutralize(rank(ts_backfill(operating_income, 730) / ts_backfill(assets, 730)), industry) * rank(-ts_std_dev(returns, 120))
+Sharpe: 0.4
+Turnover: 0.0305
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JGYKxN
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_basicconqfv110_mean), 60)), subindustry), 10)
+Sharpe: 0.45
+Turnover: 0.017
+Fitness: 0.28
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JGY0lg
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(scl12_buzz_fast_d1, 20)), sector), 20)
+Sharpe: 0.87
+Turnover: 0.7075
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQMe8wo
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(gross_income_total, 730) / ts_backfill(sales, 730)), subindustry), 10) * rank(-ts_std_dev(returns, 120))
+Sharpe: 0.12
+Turnover: 0.0232
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3z0Gj5
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(assets, 180) / ts_backfill(ebitda, 180)), industry), 40) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 5), 120)), industry), 40)
+Sharpe: 1.05
+Turnover: 0.0626
+Fitness: 0.79
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5Azj9Z9
+Expression: group_neutralize(rank(ts_backfill(ebitda, 180) / ts_backfill(sales, 180)), subindustry)
+Sharpe: 0.24
+Turnover: 0.0177
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5Azdk2m
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(nws12_afterhsz_close_vol), 5)), subindustry), 10)
+Sharpe: -1.41
+Turnover: 0.8388
+Fitness: -0.81
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjLz9gwW
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(debt_st, 730) / ts_backfill(equity, 730)), subindustry), 10)
+Sharpe: -0.74
+Turnover: 0.0156
+Fitness: -0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRVGQP2v
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(scl12_sentiment, 20)), industry), 40)
+Sharpe: -0.65
+Turnover: 0.765
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPdz8pMg
+Expression: -1 * group_neutralize(rank((ts_backfill(income, 730) - ts_backfill(cashflow_op, 730)) / ts_backfill(assets, 730)), sector)
+Sharpe: 0.48
+Turnover: 0.022
+Fitness: 0.28
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EzVkMJ
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(liabilities, 180) / ts_backfill(assets, 180)), sector), 20)
+Sharpe: -1.36
+Turnover: 0.0116
+Fitness: -1.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEzdGlb
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(rp_css_price, 60)), sector), 10) * rank(ts_sum(returns, 60))
+Sharpe: 0.33
+Turnover: 1.4478
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6Xb05ba7
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_dez1qfv4_est), 5)), industry), 20)
+Sharpe: 0.36
+Turnover: 0.0639
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPdzRm9q
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_basicdetaillt_estvalue), 20)), subindustry), 5)
+Sharpe: 0.16
+Turnover: 0.0469
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgG9lrx
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_basicconafv110_high), 60)), subindustry), 5)
+Sharpe: 0.45
+Turnover: 0.0198
+Fitness: 0.27
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5GzZeK
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(scl12_sentvec), 60)), industry), 5)
+Sharpe: -0.51
+Turnover: 0.0487
+Fitness: -0.21
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAaGJ20l
+Expression: ts_decay_linear(rank(ts_decay_linear(group_neutralize(rank(ts_backfill(cogs, 730) / ts_backfill(capex, 730)), sector), 40) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 10), 120)), sector), 40)), 5)
+Sharpe: 0.45
+Turnover: 0.0489
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: GrvzZ9R0
+Expression: group_neutralize(rank(ts_zscore(rp_ess_insider, 20)), industry) * rank(ts_sum(returns, 60))
+Sharpe: 0.29
+Turnover: 1.6297
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dmRKOl
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(cogs, 365) / ts_backfill(sales, 365)), industry), 20)
+Sharpe: 0.23
+Turnover: 0.015
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLxrPbwM
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(rp_css_technical, 60)), industry), 40) * rank(ts_sum(returns, 10))
+Sharpe: 0.62
+Turnover: 0.086
+Fitness: 0.52
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEejoWx
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(cashflow_op, 365) / ts_backfill(assets, 365)), subindustry), 20) * rank(-ts_std_dev(returns, 120))
+Sharpe: 0.37
+Turnover: 0.0182
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rkW1KV5
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 3), 120)), subindustry), 10)
+Sharpe: 1.43
+Turnover: 0.3466
+Fitness: 0.84
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: vRV6K2Vz
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_eaz2lafv110_estvalue), 60)), sector), 20)
+Sharpe: 0.25
+Turnover: 0.0162
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVP8b2p
+Expression: group_neutralize(rank(ts_backfill(capex, 180) / ts_backfill(sga_expense, 180)), industry)
+Sharpe: 0.67
+Turnover: 0.0156
+Fitness: 0.39
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEejzW0
+Expression: group_neutralize(rank(ts_backfill(gross_income_total, 180) / ts_backfill(cap, 180)), industry)
+Sharpe: 0.68
+Turnover: 0.0308
+Fitness: 0.54
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vko5vLG0
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(rp_ess_ptg, 120)), sector), 40)
+Sharpe: -0.49
+Turnover: 1.3605
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: npbQ1jPM
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(nws12_prez_57p), 60)), industry), 40)
+Sharpe: 0.8
+Turnover: 0.0698
+Fitness: 0.54
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgZwwqX
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(capex, 180) / ts_backfill(sales, 180)), sector), 10) * rank(-ts_zscore(returns, 120))
+Sharpe: -0.56
+Turnover: 0.7523
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: zqz0q6Xd
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(scl12_sentvec), 60)), industry), 40)
+Sharpe: -0.58
+Turnover: 0.0269
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL1jRkj
+Expression: -1 * group_neutralize(rank(ts_backfill(inventory, 180) / ts_backfill(assets, 180)), sector)
+Sharpe: -0.7
+Turnover: 0.0136
+Fitness: -0.4
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZ3MlAv
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(receivable, 730) / ts_backfill(sales, 730)), sector), 5) * rank(-ts_zscore(returns, 60))
+Sharpe: 0.55
+Turnover: 0.7784
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: leZ9eKvl
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(rp_ess_insider, 120)), sector), 40)
+Sharpe: 0.04
+Turnover: 1.5196
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLKR5Gn
+Expression: group_neutralize(rank(ts_zscore(rp_ess_price, 60)), subindustry) * rank(ts_sum(returns, 60))
+Sharpe: -0.44
+Turnover: 1.5788
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vV039q
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(sga_expense, 730) / ts_backfill(income, 730)), industry), 5) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 5), 120)), industry), 10)
+Sharpe: 0.91
+Turnover: 0.1606
+Fitness: 0.59
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVPKppl
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(rp_css_insider, 120)), sector), 10)
+Sharpe: 0.02
+Turnover: 1.597
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JvkwpE
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(rp_css_product, 120)), industry), 10)
+Sharpe: 0.33
+Turnover: 1.4405
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLKj00e
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(nws18_nip), 20)), sector), 20)
+Sharpe: -0.08
+Turnover: 0.0676
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLk1wzmX
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_bookvalue_ps, 60) / enterprise_value), subindustry), 40)
+Sharpe: 0.2
+Turnover: 0.0259
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: JjL1MpoO
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_ptp, 90), 60)), subindustry), 20)
+Sharpe: 0.14
+Turnover: 0.0428
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW6OXJv
+Expression: ts_decay_linear(group_neutralize(rank(ts_corr(returns, volume, 20)), sector), 10)
+Sharpe: -0.28
+Turnover: 0.1234
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vVQWX7
+Expression: ts_decay_linear(rank(ts_decay_linear(group_neutralize(rank(ts_backfill(cashflow_op, 180) / ts_backfill(assets, 180)), sector), 40) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 5), 60)), sector), 10)), 20)
+Sharpe: 0.5
+Turnover: 0.0661
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vVQzXg
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(capex, 730) / ts_backfill(assets, 730)), industry), 20) * rank(-ts_zscore(returns, 60))
+Sharpe: -0.91
+Turnover: 0.6998
+Fitness: -0.21
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grvx1NV5
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(rp_css_equity, 60)), sector), 20)
+Sharpe: 0.91
+Turnover: 1.466
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: RRLKjgX1
+Expression: -1 * group_neutralize(rank(ts_backfill(debt_st, 730) / ts_backfill(equity, 730)), sector)
+Sharpe: -0.74
+Turnover: 0.0186
+Fitness: -0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVPqOv1
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_netdebt, 90), 20)), sector), 40)
+Sharpe: -0.78
+Turnover: 0.0738
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3w6Wl2
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(debt_lt, 365) / ts_backfill(gross_income_total, 365)), subindustry), 40) + ts_decay_linear(group_neutralize(rank(ts_zscore(rp_ess_product, 20)), subindustry), 20)
+Sharpe: 0.65
+Turnover: 1.194
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QxvgKZ
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_cashflow_invst, 90), 10)), industry), 20)
+Sharpe: 0.03
+Turnover: 0.1413
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW6qYQq
+Expression: group_neutralize(rank(ts_delta(ts_backfill(est_rd_expense, 90), 60)), subindustry) + rank(ts_sum(returns, 20))
+Sharpe: -0.23
+Turnover: 0.2415
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rkWMwk6
+Expression: group_neutralize(rank(ts_backfill(debt_lt, 365) / ts_backfill(assets, 365)), industry)
+Sharpe: 1.27
+Turnover: 0.0151
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: 0mW6qNXG
+Expression: -1 * group_neutralize(rank(ts_backfill(debt_lt, 180) / ts_backfill(assets, 180)), subindustry)
+Sharpe: -1.28
+Turnover: 0.0153
+Fitness: -1.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Wjm0MZdd
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(nws12_mainz_5_min), 20)), sector), 5)
+Sharpe: 0.36
+Turnover: 0.1488
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3nkGAK
+Expression: group_neutralize(rank(ts_backfill(cashflow_op, 180) / ts_backfill(retained_earnings, 180)), sector)
+Sharpe: -0.14
+Turnover: 0.0144
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: mLk13Rd2
+Expression: group_neutralize(rank(ts_zscore(rp_nip_business, 20)), sector)
+Sharpe: 0.03
+Turnover: 1.4595
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JvpKJp
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(nws12_mainz_reportsess), 60)), industry), 5)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+Alpha ID: zqz0MO9o
+Expression: ts_decay_linear(-1 * group_neutralize(rank((close - vwap) / ts_std_dev(close, 20)), subindustry), 40)
+Sharpe: 1.01
+Turnover: 0.2975
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 3qW5bVLP
+Expression: -1 * group_neutralize(rank(ts_backfill(debt_st, 180) / ts_backfill(assets, 180)), industry)
+Sharpe: -0.89
+Turnover: 0.0208
+Fitness: -0.46
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grvxazl0
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_shequity, 90), 5)), sector), 5)
+Sharpe: 0.85
+Turnover: 0.3755
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZ3Rk62
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(sga_expense, 180) / ts_backfill(sales, 180)), sector), 20)
+Sharpe: 0.29
+Turnover: 0.014
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y5PMJMz
+Expression: group_neutralize(rank(ts_corr(returns, (high - low), 120)), sector)
+Sharpe: -0.55
+Turnover: 0.0823
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwgZLRkx
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(gross_income_total, 730) / ts_backfill(capex, 730)), industry), 5) + ts_decay_linear(group_neutralize(rank(ts_zscore(rp_css_business, 60)), industry), 20)
+Sharpe: 0.48
+Turnover: 0.8612
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vko5Wz1w
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(liabilities, 365) / ts_backfill(assets, 365)), subindustry), 20)
+Sharpe: -1.36
+Turnover: 0.0114
+Fitness: -1.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: MPAZJPkL
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_epsr, 90), 10)), sector), 20) + rank(ts_sum(returns, 10))
+Sharpe: -0.94
+Turnover: 0.395
+Fitness: -0.44
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW61KKq
+Expression: group_neutralize(rank(ts_zscore(rp_ess_insider, 60)), subindustry)
+Sharpe: 0.49
+Turnover: 1.5932
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QxqrP9
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_sales, 30), 10)), sector), 40)
+Sharpe: -0.19
+Turnover: 0.0935
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o3YLv8
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(gross_income_total, 730) / ts_backfill(sales, 730)), subindustry), 20)
+Sharpe: 0.5
+Turnover: 0.0164
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5AL9P1L
+Expression: ts_decay_linear(group_neutralize(rank(ts_corr(returns, (high - low), 20)), subindustry), 20)
+Sharpe: -0.32
+Turnover: 0.0995
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZVK1kZ
+Expression: ts_decay_linear(rank(ts_decay_linear(group_neutralize(rank(ts_backfill(sga_expense, 730) / ts_backfill(receivable, 730)), sector), 10) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 3), 120)), sector), 40)), 10)
+Sharpe: -0.13
+Turnover: 0.0474
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: j2QO5lAO
+Expression: ts_decay_linear(1 * group_neutralize(rank(ts_backfill(working_capital, 365) / ts_backfill(assets, 365)), sector), 20)
+Sharpe: -0.44
+Turnover: 0.0135
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rke1Jgw
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(scl12_sentvec), 5)), sector), 40)
+Sharpe: -0.19
+Turnover: 0.1186
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq59x8Yg
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_bookvalue_ps, 60), 5)), industry), 10)
+Sharpe: -0.02
+Turnover: 0.2589
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQkzeWe
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_basicdetaillt_estvalue), 5)), sector), 40)
+Sharpe: 0.09
+Turnover: 0.2601
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qX89Gv
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(nws12_afterhsz_1_minute), 60)), subindustry), 10)
+Sharpe: -0.59
+Turnover: 0.063
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: gJzLJw0K
+Expression: group_neutralize(rank(ts_delta(ts_backfill(est_cashflow_fin, 90), 5)), industry) + rank(ts_sum(returns, 20))
+Sharpe: -0.83
+Turnover: 0.3299
+Fitness: -0.42
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQkqpbo
+Expression: ts_decay_linear(group_neutralize(rank(ts_sum(returns, 20)), industry), 20)
+Sharpe: -0.42
+Turnover: 0.1009
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZmEj2
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(assets, 365) / ts_backfill(operating_income, 365)), industry), 40) * rank(ts_sum(returns, 60))
+Sharpe: 0.27
+Turnover: 0.0957
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: N1o818eq
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_tbv_ps, 60) / close), industry), 40)
+Sharpe: 0.65
+Turnover: 0.0096
+Fitness: 0.39
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq59qzXP
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(scl12_sentiment, 60)), industry), 20)
+Sharpe: -0.06
+Turnover: 0.6702
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVWKxPd
+Expression: group_neutralize(rank(ts_backfill(ebitda, 730) / ts_backfill(equity, 730)), subindustry)
+Sharpe: 0.64
+Turnover: 0.0153
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JEkrRp
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(sales, 365) / ts_backfill(inventory, 365)), industry), 5)
+Sharpe: 0.34
+Turnover: 0.0169
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZ86b6
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 10), 120)), industry), 40)
+Sharpe: 0.87
+Turnover: 0.1083
+Fitness: 0.63
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVWKAv6
+Expression: group_neutralize(rank(ts_backfill(cashflow_op, 365) / ts_backfill(equity, 365)), sector)
+Sharpe: 0.8
+Turnover: 0.0156
+Fitness: 0.57
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3G66WW
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(scl12_buzz, 60)), sector), 10)
+Sharpe: -0.44
+Turnover: 0.6285
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vgOKQY
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_netdebt, 60), 5)), industry), 20) + rank(ts_sum(returns, 20))
+Sharpe: -0.69
+Turnover: 0.3107
+Fitness: -0.33
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPd6MapQ
+Expression: ts_decay_linear(rank(ts_decay_linear(group_neutralize(rank(ts_backfill(capex, 365) / ts_backfill(income, 365)), subindustry), 20) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 10), 120)), subindustry), 40)), 40)
+Sharpe: 0.35
+Turnover: 0.034
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwg3m5Zg
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(receivable, 365) / ts_backfill(sales, 365)), sector), 40)
+Sharpe: 0.59
+Turnover: 0.0145
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZ7k76
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(inventory, 365) / ts_backfill(working_capital, 365)), sector), 5) + ts_decay_linear(group_neutralize(rank(ts_zscore(rp_css_society, 60)), sector), 5)
+Sharpe: 0.8
+Turnover: 1.3578
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPd6Jkgp
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(sga_expense, 730) / ts_backfill(assets, 730)), industry), 5)
+Sharpe: -0.14
+Turnover: 0.0157
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: YPdYrnJW
+Expression: -1 * group_neutralize(rank((ts_backfill(income, 365) - ts_backfill(cashflow_op, 365)) / ts_backfill(assets, 365)), subindustry)
+Sharpe: 0.48
+Turnover: 0.0221
+Fitness: 0.28
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5wvXQqK
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_epsa, 90), 5)), industry), 5)
+Sharpe: -0.03
+Turnover: 0.3267
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 2rke0A0N
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_dividend_ps, 60) / close), subindustry), 40)
+Sharpe: 0.64
+Turnover: 0.009
+Fitness: 0.36
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: xAa56oPp
+Expression: group_neutralize(rank(ts_delta(ts_backfill(est_rd_expense, 60), 60)), industry)
+Sharpe: 0.66
+Turnover: 0.0682
+Fitness: 0.32
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3AZYgm
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(scl12_buzzvec), 20)), industry), 10)
+Sharpe: -0.24
+Turnover: 0.0719
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3GZXJ6
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(capex, 180) / ts_backfill(sales, 180)), industry), 40)
+Sharpe: -0.33
+Turnover: 0.0129
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78Vlba52
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_tbv_ps, 60) / close), subindustry), 20)
+Sharpe: 0.68
+Turnover: 0.0108
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: QPd6kWoW
+Expression: group_neutralize(rank(ts_sum(returns, 60)), sector)
+Sharpe: -0.75
+Turnover: 0.1736
+Fitness: -0.55
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dEZ5jd
+Expression: ts_decay_linear(rank(ts_decay_linear(group_neutralize(rank(ts_backfill(receivable, 180) / ts_backfill(assets, 180)), industry), 40) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 10), 120)), industry), 20)), 5)
+Sharpe: 1.02
+Turnover: 0.088
+Fitness: 0.69
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EKdJYW
+Expression: group_neutralize(rank(ts_backfill(equity, 180) / ts_backfill(capex, 180)), industry)
+Sharpe: -1.41
+Turnover: 0.0152
+Fitness: -0.96
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZVoz02
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(ebitda, 365) / ts_backfill(inventory, 365)), sector), 20)
+Sharpe: 0.16
+Turnover: 0.0124
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZVoARZ
+Expression: group_neutralize(rank(ts_corr(returns, volume, 120)), subindustry)
+Sharpe: -0.35
+Turnover: 0.0722
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vkoeg0AA
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(working_capital, 180) / ts_backfill(sga_expense, 180)), subindustry), 10)
+Sharpe: -0.67
+Turnover: 0.0161
+Fitness: -0.33
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW505JK
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(scl12_buzz, 60)), industry), 5)
+Sharpe: -0.56
+Turnover: 0.7289
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omeZOm5b
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_epsa, 30) / close), subindustry), 5)
+Sharpe: 0.2
+Turnover: 0.0202
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVWgV1Y
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_tbv_ps, 60) / close), industry), 10)
+Sharpe: 0.71
+Turnover: 0.0129
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 58VYWGxz
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_dividend_ps, 90) / close), sector), 20)
+Sharpe: 0.66
+Turnover: 0.0102
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5AxJn1R
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_norec), 5)), sector), 40)
+Sharpe: 0.06
+Turnover: 0.5239
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwg3gOo6
+Expression: group_neutralize(rank(ts_mean(vec_avg(nws12_prez_01p), 20)), sector)
+Sharpe: 0.22
+Turnover: 0.2289
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVWV5nd
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_guiafv4_est), 60)), industry), 40)
+Sharpe: 0.19
+Turnover: 0.012
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: wpVWVa62
+Expression: group_neutralize(rank(ts_mean(vec_avg(anl4_eaz2lafv110_prevval), 5)), subindustry)
+Sharpe: 0.14
+Turnover: 0.5205
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qXqRev
+Expression: group_neutralize(rank(ts_backfill(assets, 730) / ts_backfill(liabilities, 730)), sector)
+Sharpe: -1.36
+Turnover: 0.0138
+Fitness: -1.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vkoeo5m0
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(debt_st, 730) / ts_backfill(inventory, 730)), industry), 20) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 5), 120)), industry), 40)
+Sharpe: 0.82
+Turnover: 0.061
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLx3x0En
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_guiqfv4_est), 20)), industry), 40)
+Sharpe: 0.32
+Turnover: 0.01
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dE6KOQ
+Expression: group_neutralize(rank(ts_backfill(income, 365) / ts_backfill(sales, 365)), sector) * rank(-ts_std_dev(returns, 120))
+Sharpe: 0.08
+Turnover: 0.0343
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: pwg30Vd6
+Expression: ts_decay_linear(-1 * group_neutralize(rank((ts_backfill(income, 180) - ts_backfill(cashflow_op, 180)) / ts_backfill(assets, 180)), sector), 20)
+Sharpe: 0.43
+Turnover: 0.0172
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq59RjkP
+Expression: group_neutralize(rank(ts_backfill(cashflow_op, 180) / ts_backfill(assets, 180)), sector) * rank(-ts_std_dev(returns, 60))
+Sharpe: 0.45
+Turnover: 0.0326
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: E5Ax3QYL
+Expression: group_neutralize(rank(ts_zscore(rp_css_credit_ratings, 20)), subindustry) * rank(ts_sum(returns, 20))
+Sharpe: -0.27
+Turnover: 1.4926
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJkJWQ
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(liabilities, 730) / ts_backfill(assets, 730)), subindustry), 5)
+Sharpe: 1.37
+Turnover: 0.0125
+Fitness: 1.07
+Grade: AVERAGE
+--------------------------------------------------
+Alpha ID: WjmJKE2Q
+Expression: -1 * group_neutralize(rank(ts_backfill(receivable, 180) / ts_backfill(assets, 180)), subindustry)
+Sharpe: -0.88
+Turnover: 0.0173
+Fitness: -0.61
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: WjmJK92d
+Expression: ts_decay_linear(group_neutralize(rank(ts_delta(ts_backfill(est_bookvalue_ps, 90), 20)), industry), 20)
+Sharpe: 0.11
+Turnover: 0.1016
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dEqe0W
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(nws12_prez_02l), 5)), industry), 40)
+Sharpe: 0.05
+Turnover: 0.4441
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: P0EKrngK
+Expression: ts_decay_linear(group_neutralize(rank(ts_corr(returns, volume, 120)), subindustry), 20)
+Sharpe: -0.23
+Turnover: 0.0325
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYLNwb3Q
+Expression: group_neutralize(rank(ts_delta(ts_backfill(est_ffo, 60), 60)), subindustry) + rank(ts_sum(returns, 20))
+Sharpe: -0.53
+Turnover: 0.1748
+Fitness: -0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: rKm8699j
+Expression: -1 * group_neutralize(rank(ts_backfill(capex, 730) / ts_backfill(assets, 730)), subindustry)
+Sharpe: -1.18
+Turnover: 0.015
+Fitness: -0.73
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 0mW60OR2
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(ebitda, 180) / ts_backfill(cap, 180)), subindustry), 20)
+Sharpe: 0.64
+Turnover: 0.0146
+Fitness: 0.52
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vVEaeg
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(rp_ess_revenue, 120)), industry), 40)
+Sharpe: -0.02
+Turnover: 1.4796
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7Jvo87d
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(working_capital, 180) / ts_backfill(gross_income_total, 180)), industry), 10) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 10), 120)), industry), 5)
+Sharpe: 0.62
+Turnover: 0.1777
+Fitness: 0.34
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ak3wqbex
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_tbv_ps, 90) / cap), subindustry), 20)
+Sharpe: 0.55
+Turnover: 0.0091
+Fitness: 0.28
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dmMQQE
+Expression: group_neutralize(rank(ts_backfill(income, 730) / ts_backfill(equity, 730)), sector) * rank(-ts_std_dev(returns, 120))
+Sharpe: 0.31
+Turnover: 0.0353
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: XgEe6jWz
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(anl4_basicconafv110_low), 60)), sector), 40)
+Sharpe: 0.42
+Turnover: 0.0126
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: e7JvoYN6
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(cogs, 730) / ts_backfill(assets, 730)), industry), 40)
+Sharpe: -1.05
+Turnover: 0.0135
+Fitness: -0.67
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 78VM9gmv
+Expression: ts_decay_linear(-1 * group_neutralize(rank((ts_backfill(income, 365) - ts_backfill(cashflow_op, 365)) / ts_backfill(assets, 365)), subindustry), 40)
+Sharpe: 0.42
+Turnover: 0.0157
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vVaxrv
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(scl12_buzz, 20)), sector), 20)
+Sharpe: -0.28
+Turnover: 0.7122
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: bl3nE9Rl
+Expression: -1 * group_neutralize(rank(ts_backfill(liabilities, 365) / ts_backfill(cashflow_op, 365)), subindustry)
+Sharpe: -0.72
+Turnover: 0.0153
+Fitness: -0.43
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 6XbJOAbO
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(cogs, 180) / ts_backfill(receivable, 180)), subindustry), 20) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 3), 60)), subindustry), 5)
+Sharpe: 1.26
+Turnover: 0.3291
+Fitness: 0.62
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dmKp8R
+Expression: -1 * group_neutralize(rank((close - vwap) / ts_std_dev(close, 60)), industry)
+Sharpe: 1.78
+Turnover: 1.3387
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Vko5okxG
+Expression: ts_decay_linear(rank(ts_decay_linear(group_neutralize(rank(ts_backfill(debt_st, 180) / ts_backfill(sga_expense, 180)), subindustry), 40) + ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 5), 120)), subindustry), 40)), 5)
+Sharpe: 0.85
+Turnover: 0.0461
+Fitness: 0.5
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dmdgaQ
+Expression: group_neutralize(rank(ts_zscore(rp_nip_legal, 120)), industry) * rank(ts_sum(returns, 60))
+Sharpe: -0.7
+Turnover: 1.5971
+Fitness: -0.17
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: gJzdz9bJ
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_backfill(inventory, 180) / ts_backfill(assets, 180)), industry), 20)
+Sharpe: -0.68
+Turnover: 0.0119
+Fitness: -0.38
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: ZYLMLvm8
+Expression: group_neutralize(rank(ts_backfill(income, 180) / ts_backfill(debt_lt, 180)), industry)
+Sharpe: 0.18
+Turnover: 0.0279
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: LLxre6oL
+Expression: group_neutralize(rank(ts_mean(vec_avg(nws12_prez_prevwap), 5)), sector) * rank(-ts_std_dev(returns, 20))
+Sharpe: 0.13
+Turnover: 0.2842
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 88qYAp9o
+Expression: -1 * group_neutralize(rank(ts_backfill(cogs, 180) / ts_backfill(sales, 180)), subindustry) * rank(-ts_zscore(returns, 20))
+Sharpe: 0.16
+Turnover: 0.6572
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vVe2wb
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(est_epsa, 90) / cap), subindustry), 40)
+Sharpe: 0.18
+Turnover: 0.0102
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5OeRVd
+Expression: ts_decay_linear(-1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 10), 60)), industry), 20)
+Sharpe: 0.59
+Turnover: 0.1476
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: O0vVelRR
+Expression: -1 * group_neutralize(rank(ts_zscore(ts_sum(returns, 3), 60)), sector)
+Sharpe: 1.56
+Turnover: 0.8012
+Fitness: 0.61
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: omerQlj6
+Expression: ts_decay_linear(group_neutralize(rank(ts_backfill(equity, 365) / ts_backfill(cashflow_op, 365)), subindustry), 5) + ts_decay_linear(group_neutralize(rank(ts_zscore(rp_nip_labor, 60)), subindustry), 5)
+Sharpe: 0.56
+Turnover: 1.5215
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: d5woez3j
+Expression: ts_decay_linear(group_neutralize(rank(ts_mean(vec_avg(scl12_buzzvec), 5)), subindustry), 20)
+Sharpe: -0.01
+Turnover: 0.1265
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 9qQmPYVK
+Expression: group_neutralize(rank(ts_backfill(cashflow_op, 180) / ts_backfill(sales, 180)), sector)
+Sharpe: 0.37
+Turnover: 0.0176
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: kq5Oklel
+Expression: -1 * group_neutralize(rank(ts_backfill(liabilities, 365) / ts_backfill(equity, 365)), industry)
+Sharpe: -1.09
+Turnover: 0.0146
+Fitness: -0.77
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: 1Y5PVmE6
+Expression: -1 * group_neutralize(rank(ts_backfill(debt_st, 730) / ts_backfill(cashflow_op, 730)), industry) + rank(ts_sum(returns, 20))
+Sharpe: -0.92
+Turnover: 0.2278
+Fitness: -0.5
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: qMZ3kNKj
+Expression: group_neutralize(rank(ts_backfill(est_dividend_ps, 30) / enterprise_value), industry)
+Sharpe: 0.33
+Turnover: 0.0308
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: A1dmJVPR
+Expression: ts_decay_linear(group_neutralize(rank(ts_zscore(rp_ess_labor, 60)), industry), 20)
+Sharpe: 1.22
+Turnover: 1.4949
+Fitness: 0.33
+Grade: INFERIOR
+--------------------------------------------------
+Alpha ID: Grvx0Rdx
+Expression: group_neutralize(rank(ts_backfill(est_bookvalue_ps, 90) / enterprise_value), industry)
+Sharpe: 0.26
+Turnover: 0.0361
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------

@@ -70,7 +70,7 @@ import re
 # for expr in alpha_expressions:
 #     print(expr)
 
-from qr.worldquant.main_part.load_alpha_expressions import load_alpha_expressions
+from qr.worldquant.io.load_alpha_expressions import load_alpha_expressions
 alpha_expressions = load_alpha_expressions()
 print('total alpha expressions:', len(alpha_expressions))
 for expr in alpha_expressions:
