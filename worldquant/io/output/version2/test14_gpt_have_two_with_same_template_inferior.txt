@@ -1,0 +1,4792 @@
+--------------------------------------------------
+Alpha ID: mLOeGleW, Author: niuaoyula
+Expression: rank(zscore(ts_mean(unsystematic_risk_last_360_days,5)-ts_mean(cogs,5)))
+Sharpe: -0.5
+Turnover: 0.0207
+Fitness: -0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0aE6zb, Author: niuaoyula
+Expression: rank(zscore(ts_mean(systematic_risk_last_360_days,30)/min_net_profit_guidance))
+Sharpe: -0.28
+Turnover: 0.0207
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJX0zg2, Author: niuaoyula
+Expression: rank(zscore(ts_mean(stock_option_expense_max_guidance_qtr,150)/fnd6_cptnewqv1300_epsx12))
+Sharpe: -0.13
+Turnover: 0.0197
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw9EeRr, Author: niuaoyula
+Expression: rank(zscore(ts_mean(selling_general_admin_expense,150)/fnd6_cshtr))
+Sharpe: -0.04
+Turnover: 0.0116
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7maAm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(selling_general_admin_expense_reported_value,3)-ts_mean(fnd2_propplteqmuflmblgland,3)))
+Sharpe: 0.09
+Turnover: 0.0141
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdgK0MQ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(selling_general_admin_expense_actual_value,3)-ts_mean(fnd6_newqv1300_xintq,3)))
+Sharpe: 0.18
+Turnover: 0.0269
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qpQaR, Author: niuaoyula
+Expression: rank(zscore(ts_mean(sales_min_guidance_quarterly,60)-ts_mean(fnd6_mfma1_at,60)))
+Sharpe: -0.51
+Turnover: 0.0095
+Fitness: -0.34
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRAN2e, Author: niuaoyula
+Expression: rank(zscore(ts_mean(sales_estimate_minimum,120)/fnd6_cptnewqv1300_nopiq))
+Sharpe: 0.58
+Turnover: 0.0392
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0ObXg, Author: niuaoyula
+Expression: rank(zscore(ts_mean(sales_min_guidance_quarterly,10)-ts_mean(fn_interest_payable_a,10)))
+Sharpe: -0.33
+Turnover: 0.0098
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88Ag0jAq, Author: niuaoyula
+Expression: rank(zscore(ts_mean(sales_estimate_minimum,150)/fnd6_mfma2_opeps))
+Sharpe: -0.03
+Turnover: 0.0121
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRA7lW, Author: niuaoyula
+Expression: rank(zscore(ts_mean(sales_estimate_maximum,120)/fnd6_newqv1300_ivstq))
+Sharpe: 0.17
+Turnover: 0.0317
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXLjMm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(sales_estimate_median_value,180)/news_pct_30min))
+Sharpe: 0.37
+Turnover: 1.8945
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZXV03J, Author: niuaoyula
+Expression: rank(zscore(ts_mean(sales_estimate_count_quarterly,252)/fnd6_newqv1300_mibnq))
+Sharpe: -0.4
+Turnover: 0.0244
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbealGv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(sales_estimate_count_quarterly,180)/fnd6_txdfo))
+Sharpe: -0.24
+Turnover: 0.0239
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6Xdekp, Author: niuaoyula
+Expression: rank(zscore(ts_mean(research_development_expense,60)/fnd2_a_sbcpnatqsttotnsvdptfv))
+Sharpe: -0.08
+Turnover: 0.0129
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXLn1m, Author: niuaoyula
+Expression: rank(zscore(ts_mean(pretax_income_total,150)/fnd2_a_flintasacmamtzcsrld))
+Sharpe: -0.11
+Turnover: 0.0112
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MkdOAp, Author: niuaoyula
+Expression: rank(zscore(ts_mean(sales,90)/fnd6_newqv1300_oepsxq))
+Sharpe: 0.33
+Turnover: 0.0259
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qpn6W, Author: niuaoyula
+Expression: rank(zscore(ts_mean(revenue,20)-ts_mean(max_gross_income_guidance_2,20)))
+Sharpe: 0.56
+Turnover: 0.0112
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbeazaK, Author: niuaoyula
+Expression: rank(zscore(ts_mean(pretax_income_reported,3)-ts_mean(fnd2_itxreclstatelocalitxes,3)))
+Sharpe: -0.36
+Turnover: 0.0138
+Fitness: -0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKLmMp, Author: niuaoyula
+Expression: rank(zscore(ts_mean(pretax_income_reported_min_guidance_qtr,90)-ts_mean(fnd6_txndbr,90)))
+Sharpe: -0.29
+Turnover: 0.0097
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogebWq, Author: niuaoyula
+Expression: rank(zscore(ts_mean(operating_profit_before_interest_tax,90)/fnd6_newqv1300_oepf12))
+Sharpe: -0.26
+Turnover: 0.0181
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeMggg, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_vol_stddev,5)-ts_mean(fnd6_newa1v1300_bkvlps,5)))
+Sharpe: -0.21
+Turnover: 0.2285
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MkdMXe, Author: niuaoyula
+Expression: rank(zscore(ts_mean(operating_profit_before_depr_amort_max_guidance_qtr,90)/fn_entity_common_stock_shares_out_q))
+Sharpe: 0.38
+Turnover: 0.0097
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0OW70, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_prev_close,45)-ts_mean(anl4_dts_rspe,45)))
+Sharpe: -0.08
+Turnover: 0.0261
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXx12V, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_pct_10min,30)/fn_treasury_stock_shares_a))
+Sharpe: 0.18
+Turnover: 0.1614
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogeL0o, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_prev_close,180)/earnings_per_share_median_value))
+Sharpe: 0.2
+Turnover: 0.0233
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQqgQJ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_pct_5_min,15)-ts_mean(fn_comp_options_grants_fair_value_q,15)))
+Sharpe: 0.25
+Turnover: 0.1067
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZk861Y, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_mins_4_pct_up,10)-ts_mean(anl4_afv4_div_median,10)))
+Sharpe: -0.64
+Turnover: 0.3983
+Fitness: -0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ejRQk7, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_open_gap,252)/fnd6_pnrsho))
+Sharpe: 0.35
+Turnover: 0.0406
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53ojO10, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_mins_4_pct_up,10)-ts_mean(fnd6_newa1v1300_dlc,10)))
+Sharpe: -0.66
+Turnover: 0.362
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0OJwa, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_mins_3_pct_up,90)-ts_mean(ebitda_reported_value,90)))
+Sharpe: -0.29
+Turnover: 0.0454
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPemRwYp, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_mins_2_pct_up,3)-ts_mean(fnd6_pstkc,3)))
+Sharpe: -0.19
+Turnover: 0.9235
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RNKXNk, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_mins_4_pct_dn,10)-ts_mean(lowest_sales_estimate,10)))
+Sharpe: -0.21
+Turnover: 0.3293
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexAMok, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_mins_20_chg,5)-ts_mean(fn_interest_paid_net_a,5)))
+Sharpe: -0.15
+Turnover: 0.6691
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monZLRv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_mins_20_chg,180)/anl4_afv4_div_median))
+Sharpe: 0.01
+Turnover: 0.0552
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6Xxg62lL, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_mins_1_chg,30)/fn_def_income_tax_expense_q))
+Sharpe: -0.31
+Turnover: 0.0768
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OgP2dZ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_max_up_ret,10)-ts_mean(fnd6_txdbca,10)))
+Sharpe: -0.35
+Turnover: 0.322
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeJvRv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_low_exc_stddev,30)-ts_mean(anl4_gric_value,30)))
+Sharpe: -0.33
+Turnover: 0.0274
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEPVWq8, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_ls,180)/min_adjusted_funds_from_operations_guidance_2))
+Sharpe: -0.18
+Turnover: 0.0798
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wGq7M, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_eod_close,45)-ts_mean(unsystematic_risk_last_90_days,45)))
+Sharpe: 0.17
+Turnover: 0.0131
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MkEJoE, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_atr_ratio,15)-ts_mean(news_mins_5_pct_dn,15)))
+Sharpe: -0.1
+Turnover: 0.2844
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QbxJX, Author: niuaoyula
+Expression: rank(zscore(ts_mean(net_debt_min_guidance_qtr,252)/fscore_quality))
+Sharpe: -0.07
+Turnover: 0.1019
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7Nr2O, Author: niuaoyula
+Expression: rank(zscore(ts_mean(news_dividend_yield,5)-ts_mean(fnd6_dd5,5)))
+Sharpe: -0.23
+Turnover: 0.2967
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AeM5GE, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_total_assets_guidance_2,20)-ts_mean(fnd6_txpd,20)))
+Sharpe: -0.27
+Turnover: 0.0126
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0Qbda6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_tangible_book_value_per_share_guidance,15)-ts_mean(employee,15)))
+Sharpe: -0.52
+Turnover: 0.0143
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0a72Jv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_stock_option_expense_guidance_2,150)/total_assets_amount))
+Sharpe: 0.37
+Turnover: 0.0122
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wGd2d, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_sg_and_a_expense_guidance,30)/fnd6_newa1v1300_capx))
+Sharpe: 0.49
+Turnover: 0.0135
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7NQNv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_shareholders_equity_guidance,180)/fnd6_pifo))
+Sharpe: 0.07
+Turnover: 0.0226
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdgmloX, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_stock_option_expense_guidance,252)/min_ebit_guidance_2))
+Sharpe: -0.61
+Turnover: 0.0123
+Fitness: -0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv63zEQ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_share_buyback_guidance,45)/anl4_fcfps_number))
+Sharpe: 0.57
+Turnover: 0.048
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPemRazM, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_share_buyback_guidance,30)-ts_mean(fnd6_newa1v1300_lt,30)))
+Sharpe: -0.63
+Turnover: 0.0095
+Fitness: -0.46
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeOoRz1, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_research_development_expense_guidance_2,60)-ts_mean(fnd6_newqv1300_drltq,60)))
+Sharpe: -1.09
+Turnover: 0.0118
+Fitness: -0.72
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeJdEX, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_investing_cashflow_guidance_2,30)-ts_mean(fnd6_dlto,30)))
+Sharpe: -0.77
+Turnover: 0.0119
+Fitness: -0.56
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monZzep, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_research_development_expense_guidance_2,20)-ts_mean(fn_repurchased_shares_value_a,20)))
+Sharpe: -0.16
+Turnover: 0.0083
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wGnwq, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_gross_income_guidance,20)-ts_mean(fnd6_txtubposdec,20)))
+Sharpe: -0.3
+Turnover: 0.0142
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPemR2kG, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_adjusted_funds_from_operations_guidance,90)/fnd2_a_bnscbmacqrcsts))
+Sharpe: 0.06
+Turnover: 0.0103
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AeMqwd, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_free_cash_flow_per_share_guidance,90)-ts_mean(est_ebit,90)))
+Sharpe: -0.32
+Turnover: 0.0094
+Fitness: -0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0xqKe, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_tangible_book_value_per_share_guidance,60)/fnd2_propplteqmuflmblgland))
+Sharpe: 0.47
+Turnover: 0.0156
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QjA95, Author: niuaoyula
+Expression: rank(zscore(ts_mean(min_adjusted_funds_from_operations_guidance,3)-ts_mean(fnd6_intc,3)))
+Sharpe: -0.37
+Turnover: 0.0189
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXZXgz, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_stock_option_expense_guidance,5)-ts_mean(anl4_ebit_high,5)))
+Sharpe: -0.34
+Turnover: 0.0116
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOenO0X, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_share_buyback_guidance,60)-ts_mean(news_range_stddev,60)))
+Sharpe: 0.25
+Turnover: 0.0988
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0xXLo, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_tangible_book_value_per_share_guidance,15)-ts_mean(fnd6_txdi,15)))
+Sharpe: 0.67
+Turnover: 0.0152
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknKQjKV, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_reported_pretax_income_guidance_2,30)/fnd6_newqv1300_icaptq))
+Sharpe: 0.45
+Turnover: 0.0173
+Fitness: 0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6X7m8d, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_reported_pretax_income_guidance_2,15)-ts_mean(fnd6_newa2v1300_oibdp,15)))
+Sharpe: -0.29
+Turnover: 0.0105
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexA301, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_operating_cashflow_guidance_2,360)/fnd2_a_stkdrgprdvalnewissues))
+Sharpe: 0.54
+Turnover: 0.015
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJweN7, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_net_debt_guidance,180)/fnd6_mfma2_recch))
+Sharpe: -0.55
+Turnover: 0.0195
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXnV9V, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_gross_income_guidance,60)/news_eps_actual))
+Sharpe: -0.32
+Turnover: 1.2606
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexMMol, Author: niuaoyula
+Expression: rank(zscore(ts_mean(liabilities_curr,10)-ts_mean(earnings_per_share_maximum,10)))
+Sharpe: 0.53
+Turnover: 0.0134
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16q885W, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_financing_cashflow_guidance,30)-ts_mean(est_ebit,30)))
+Sharpe: -0.31
+Turnover: 0.0103
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0w55ez, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_ebit_guidance,30)/fnd6_newqv1300_lul3q))
+Sharpe: 0.4
+Turnover: 0.0731
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qerP0J, Author: niuaoyula
+Expression: rank(zscore(ts_mean(max_book_value_per_share_guidance_2,60)/fn_comp_non_opt_grants_a))
+Sharpe: 0.34
+Turnover: 0.0104
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknKbRoG, Author: niuaoyula
+Expression: rank(zscore(ts_mean(income_tax,90)-ts_mean(fnd2_dbplanepdfbnfpy5,90)))
+Sharpe: -0.13
+Turnover: 0.0059
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qerogw, Author: niuaoyula
+Expression: rank(zscore(ts_mean(invested_capital,60)-ts_mean(fnd6_newqv1300_intanoq,60)))
+Sharpe: 0.48
+Turnover: 0.012
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0aXZow, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fscore_total,30)-ts_mean(fnd6_tfva,30)))
+Sharpe: 0.19
+Turnover: 0.012
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOeWdg6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(income_beforeextra,3)-ts_mean(anl4_netprofit_std,3)))
+Sharpe: 0.28
+Turnover: 0.0441
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mon2xnp, Author: niuaoyula
+Expression: rank(zscore(ts_mean(goodwill_min_guidance_qtr,60)/fnd6_reajo))
+Sharpe: -0.05
+Turnover: 0.0194
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6AN0J, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fscore_surface,30)-ts_mean(employee,30)))
+Sharpe: 0.31
+Turnover: 0.0105
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxgLAxO, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fscore_growth,10)-ts_mean(fn_line_of_credit_facility_max_borrowing_capacity_a,10)))
+Sharpe: -0.12
+Turnover: 0.0977
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AeZ6wN, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fscore_bfl_surface,45)-ts_mean(anl4_totassets_flag,45)))
+Sharpe: -0.67
+Turnover: 0.0229
+Fitness: -0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogOWJV, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fscore_bfl_quality,3)-ts_mean(fnd6_txfed,3)))
+Sharpe: 0.36
+Turnover: 0.018
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQM5dJ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(free_cash_flow_per_share,30)-ts_mean(ebit,30)))
+Sharpe: 0.06
+Turnover: 0.0112
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknKb3aY, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fscore_bfl_growth,90)-ts_mean(max_book_value_per_share_guidance_2,90)))
+Sharpe: -0.52
+Turnover: 0.0131
+Fitness: -0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53oPEqL, Author: niuaoyula
+Expression: rank(zscore(ts_mean(free_cash_flow_per_share_max_guidance,3)-ts_mean(news_mins_3_pct_dn,3)))
+Sharpe: -0.52
+Turnover: 0.9623
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88Agxz7o, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_txtubsoflimit,5)-ts_mean(min_free_cash_flow_guidance,5)))
+Sharpe: 0.25
+Turnover: 0.0183
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qerdG2, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_xaccq,5)-ts_mean(est_ptp,5)))
+Sharpe: 0.73
+Turnover: 0.0368
+Fitness: 0.38
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6Ao8W, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_xacc,180)/fnd6_recta))
+Sharpe: -0.36
+Turnover: 0.0207
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AgxaOv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_txtubsoflimit,360)/news_mins_20_pct_dn))
+Sharpe: -0.55
+Turnover: 0.0332
+Fitness: -0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16q8O3W, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_txo,20)-ts_mean(investing_cashflow_reported_value,20)))
+Sharpe: 0.24
+Turnover: 0.0376
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16q8OlX, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_txtubsoflimit,15)-ts_mean(fn_comp_fair_value_assumptions_weighted_avg_vol_rate_a,15)))
+Sharpe: 0.17
+Turnover: 0.0145
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1Mkl6ep, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_txndbr,90)/fnd2_a_dbplannpicbnfcst))
+Sharpe: -0.24
+Turnover: 0.0122
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16q8YGE, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_txndba,45)-ts_mean(fnd6_dc,45)))
+Sharpe: 0.54
+Turnover: 0.0109
+Fitness: 0.34
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXAq70, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_txndbl,3)-ts_mean(fn_liab_fair_val_l1_q,3)))
+Sharpe: 0.17
+Turnover: 0.0224
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxgLO1G, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_recd,3)-ts_mean(fn_comp_options_forfeitures_and_expirations_q,3)))
+Sharpe: 0.47
+Turnover: 0.0232
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qerLLj, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_txdbcl,150)/eps_guidance_value_quarterly))
+Sharpe: 0.62
+Turnover: 0.011
+Fitness: 0.53
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0w5Mex, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_tfva,45)/anl4_af_eps_value))
+Sharpe: 0.25
+Turnover: 0.0129
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QeY5g, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_txc,252)/fnd6_newa1v1300_icapt))
+Sharpe: 0.39
+Turnover: 0.0127
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRJV0W, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_pstkrv,20)-ts_mean(news_mins_20_pct_up,20)))
+Sharpe: -0.77
+Turnover: 0.2697
+Fitness: -0.8
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZXORxv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_pstkrv,150)/min_gross_income_guidance_2))
+Sharpe: 0.33
+Turnover: 0.0114
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw9nrqo, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_pifo,45)-ts_mean(fnd2_a_sbcpnargmpmtwopsffesip,45)))
+Sharpe: -0.08
+Turnover: 0.011
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monLVpk, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_optvol,3)-ts_mean(anl4_ebitda_std,3)))
+Sharpe: -0.04
+Turnover: 0.0518
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QkbKq, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_optvolq,252)/net_debt_min_guidance_qtr))
+Sharpe: 0.28
+Turnover: 0.0127
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXopen, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_optfvgr,90)/revenue))
+Sharpe: -0.35
+Turnover: 0.0155
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEPx2J6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_optosby,150)/fnd6_newqv1300_cicurrq))
+Sharpe: 0.45
+Turnover: 0.0729
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeOw3k2, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_optex,360)/min_free_cashflow_per_share_guidance))
+Sharpe: -0.11
+Turnover: 0.0086
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv75dOK, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_niadj,252)/fnd6_optprcca))
+Sharpe: 0.17
+Turnover: 0.0221
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Ogr3ab, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_optdrq,45)-ts_mean(fnd6_txc,45)))
+Sharpe: -0.63
+Turnover: 0.042
+Fitness: -0.53
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0oEw0, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_xrdq,5)-ts_mean(fnd6_newqv1300_tfvaq,5)))
+Sharpe: -0.14
+Turnover: 0.0508
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0Qkvrj, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_xrdq,252)/operating_profit_before_depr_amort_max_guidance_qtr))
+Sharpe: -0.56
+Turnover: 0.0125
+Fitness: -0.39
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJX8xmx, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_txpq,90)/anl4_netdebt_flag))
+Sharpe: 0.17
+Turnover: 0.0225
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJYK3x, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_tfvlq,90)-ts_mean(fnd6_newa1v1300_acominc,90)))
+Sharpe: 0.24
+Turnover: 0.0118
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXxWpb, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_txpq,45)-ts_mean(anl4_tbvps_high,45)))
+Sharpe: -0.32
+Turnover: 0.0139
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6Rzzm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_teqq,30)/anl4_netprofit_flag))
+Sharpe: 0.25
+Turnover: 0.0113
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknKL8zw, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_teqq,252)/cashflow_per_share_max_guidance_quarterly))
+Sharpe: -0.32
+Turnover: 0.0093
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxgQEp5, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_rdipq,150)/anl4_totassets_std))
+Sharpe: -0.34
+Turnover: 0.0412
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6XAzWl, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_recdq,15)-ts_mean(est_tot_assets,15)))
+Sharpe: -0.36
+Turnover: 0.0279
+Fitness: -0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6Rmn6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_rdipepsq,360)/fnd6_mfma2_oancf))
+Sharpe: -0.05
+Turnover: 0.0172
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOeN2EK, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_prcraq,45)-ts_mean(fnd2_a_gwllimrml,45)))
+Sharpe: -0.29
+Turnover: 0.0395
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ejbrkE, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_rdipaq,5)-ts_mean(free_cash_flow_per_share_max_guidance,5)))
+Sharpe: -0.09
+Turnover: 0.0237
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXoMwn, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_oepsxq,60)/fnd6_newqv1300_recdq))
+Sharpe: 0.31
+Turnover: 0.0641
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZXOdzA, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_lul3q,5)-ts_mean(anl4_ebitda_high,5)))
+Sharpe: -0.48
+Turnover: 0.0483
+Fitness: -0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOeNMxE, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_msaq,30)-ts_mean(fn_proceeds_from_lt_debt_q,30)))
+Sharpe: 0.4
+Turnover: 0.0187
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexpjj8, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_msaq,60)/net_income_adjusted))
+Sharpe: -0.97
+Turnover: 0.0198
+Fitness: -0.59
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6XAqNv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_lqpl1q,30)-ts_mean(anl4_ebit_median,30)))
+Sharpe: -0.37
+Turnover: 0.0154
+Fitness: -0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Ogr732, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_lnoq,180)/inventory))
+Sharpe: -0.64
+Turnover: 0.0342
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AeP75N, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_ivstq,5)-ts_mean(cash_flow_from_investing,5)))
+Sharpe: 0.2
+Turnover: 0.0216
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOeNPQ1, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_lcoq,90)/news_ton_low))
+Sharpe: 0.45
+Turnover: 1.2314
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQw1LJ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_invfgq,10)-ts_mean(fnd6_recco,10)))
+Sharpe: 0.48
+Turnover: 0.0291
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkKx5wO, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_fcaq,20)-ts_mean(fn_line_of_credit_facility_amount_out_q,20)))
+Sharpe: -1.23
+Turnover: 0.0301
+Fitness: -0.81
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXLx0d, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_invtq,252)/anl4_fcfps_high))
+Sharpe: 0.31
+Turnover: 0.014
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wXln8, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_epsfiq,150)/anl4_ebit_number))
+Sharpe: 0.15
+Turnover: 0.021
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wXrNa, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_aocisecglq,5)-ts_mean(cash_flow_financing_max_guidance,5)))
+Sharpe: 0.31
+Turnover: 0.0481
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QkrE6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_cshprq,10)-ts_mean(fnd6_ds,10)))
+Sharpe: -0.21
+Turnover: 0.0164
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeP3mX, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_chq,60)/anl4_afv4_median_eps))
+Sharpe: 0.45
+Turnover: 0.0177
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkKxOrG, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_anoq,20)-ts_mean(fnd6_itci,20)))
+Sharpe: -1.49
+Turnover: 0.0203
+Fitness: -1.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkKxexP, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_aociderglq,120)/news_atr14))
+Sharpe: -0.09
+Turnover: 1.2095
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RN2QoM, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newqv1300_ancq,150)/fn_excess_tax_benefit_from_share_based_comp_fin_activities_q))
+Sharpe: -0.28
+Turnover: 0.0057
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6XvaY6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_txp,5)-ts_mean(fnd2_q_flintasamt1expytwo,5)))
+Sharpe: -0.08
+Turnover: 0.0126
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv62aAz, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_txach,45)-ts_mean(beta_last_30_days_spy,45)))
+Sharpe: -0.21
+Turnover: 0.0332
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eK25Rv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_recch,3)-ts_mean(anl4_epsr_high,3)))
+Sharpe: 0.03
+Turnover: 0.0168
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53o2b6J, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_spceeps,360)/fnd6_acox))
+Sharpe: 0.63
+Turnover: 0.0357
+Fitness: 0.78
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNMlZZ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_rdip,45)/fnd6_newqv1300_epsfiq))
+Sharpe: -0.34
+Turnover: 0.0269
+Fitness: -0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6Xxg2glO, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_optexd,150)/fnd6_newa1v1300_dv))
+Sharpe: -0.86
+Turnover: 0.0151
+Fitness: -0.39
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZX9ZLA, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_oibdp,45)-ts_mean(min_shares_outstanding_guidance,45)))
+Sharpe: 0.28
+Turnover: 0.0095
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1Mk2o0q, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_oibdp,60)-ts_mean(fn_payments_for_repurchase_of_common_stock_a,60)))
+Sharpe: -0.2
+Turnover: 0.0098
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6Xxg2vgp, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_opeps,120)/anl4_adjusted_netincome_ft))
+Sharpe: 0.19
+Turnover: 0.0127
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wXxn3, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_ibadj,45)-ts_mean(sales_max_guidance_value,45)))
+Sharpe: 0.02
+Turnover: 0.0099
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0vRW0, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa2v1300_nopi,90)-ts_mean(operating_expense,90)))
+Sharpe: -0.57
+Turnover: 0.0105
+Fitness: -0.38
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXM0xz, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_gdwl,20)-ts_mean(fn_debt_instrument_face_amount_q,20)))
+Sharpe: -0.09
+Turnover: 0.0099
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qevGLK, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_gdwl,90)-ts_mean(fnd2_a_unrgtxbnfitxpenlintacd,90)))
+Sharpe: 0.04
+Turnover: 0.0089
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkKJ5nP, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_ib,15)-ts_mean(fn_assets_fair_val_q,15)))
+Sharpe: -0.34
+Turnover: 0.0097
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wr5Oz, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_epsfx,20)-ts_mean(fn_op_lease_min_pay_due_a,20)))
+Sharpe: -0.6
+Turnover: 0.0094
+Fitness: -0.36
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AeEZkO, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_fca,30)/fnd6_newqv1300_ppentq))
+Sharpe: -0.03
+Turnover: 0.0241
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7L5vl, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_epspi,45)-ts_mean(unsystematic_risk_last_360_days,45)))
+Sharpe: 0.07
+Turnover: 0.0106
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVE993G, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_epspi,252)/fn_effect_of_exchange_rate_on_cash_and_equiv_q))
+Sharpe: 0.42
+Turnover: 0.0222
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7AnYq, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_dlc,20)-ts_mean(anl4_fcf_value,20)))
+Sharpe: -0.15
+Turnover: 0.028
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53ox8LK, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_dvc,252)/fnd6_newa1v1300_epsfi))
+Sharpe: -0.06
+Turnover: 0.0105
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1Mk8JPo, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_dlc,15)-ts_mean(fn_entity_common_stock_shares_out_q,15)))
+Sharpe: -0.02
+Turnover: 0.0089
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QZab5, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_dlc,60)/fscore_total))
+Sharpe: 0.8
+Turnover: 0.1018
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknKe0Nw, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_ano,5)-ts_mean(fnd6_newa2v1300_tstk,5)))
+Sharpe: -0.51
+Turnover: 0.0167
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qEvVX, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_caps,180)/fnd2_oprlsfmpdcurr))
+Sharpe: -0.48
+Turnover: 0.0102
+Fitness: -0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRe9oaK, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_bkvlps,60)/anl4_rd_exp_flag))
+Sharpe: 0.28
+Turnover: 0.0112
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkN7aj, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_at,3)-ts_mean(max_financing_cashflow_guidance,3)))
+Sharpe: 0.5
+Turnover: 0.0101
+Fitness: 0.33
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7L9gm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_apalch,5)-ts_mean(anl4_netdebt_median,5)))
+Sharpe: 0.18
+Turnover: 0.015
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv60dGz, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_newa1v1300_ao,15)-ts_mean(fn_op_lease_min_pay_due_in_2y_a,15)))
+Sharpe: -0.63
+Turnover: 0.0093
+Fitness: -0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw9VkG9, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_msa,45)/fnd2_a_eplsbvdcpcstnrgprg))
+Sharpe: 0.21
+Turnover: 0.0131
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPem6n1w, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_mfma2_txach,120)/sales_growth))
+Sharpe: -0.18
+Turnover: 0.0445
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKgbVg, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_mfmq_piq,30)/fn_business_acq_ppne_q))
+Sharpe: -0.1
+Turnover: 0.0185
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXeJPV, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_mfmq_mibtq,120)/debt_st))
+Sharpe: 0.26
+Turnover: 0.0249
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPem6jYw, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_mfma1_invch,30)/fnd2_dbplanepdfbnfpy5))
+Sharpe: 0.6
+Turnover: 0.0146
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXGM22, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_mfma2_revt,30)-ts_mean(fnd6_rea,30)))
+Sharpe: 0.44
+Turnover: 0.0111
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0Q3QG6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_mfma1_dp,60)-ts_mean(fnd6_optca,60)))
+Sharpe: 0.44
+Turnover: 0.0103
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKgewR, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_mfma1_dp,150)/fnd6_newqv1300_invoq))
+Sharpe: -0.45
+Turnover: 0.0899
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv60EaM, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_lul3,90)-ts_mean(fn_business_combination_assets_aquired_goodwill_a,90)))
+Sharpe: 0.24
+Turnover: 0.008
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qEMgl, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_lno,150)/fn_liab_fair_val_q))
+Sharpe: -0.13
+Turnover: 0.0057
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVE9pEG, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_lifr,30)-ts_mean(fn_comprehensive_income_net_of_tax_a,30)))
+Sharpe: -0.04
+Turnover: 0.0109
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJ1qke, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_lcox,20)-ts_mean(depre_amort,20)))
+Sharpe: 0.6
+Turnover: 0.0125
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQ8YLo, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_ibmii,90)/inventory))
+Sharpe: 0.08
+Turnover: 0.0226
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQ8pqj, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_itcb,45)-ts_mean(anl4_afv4_median_eps,45)))
+Sharpe: -0.25
+Turnover: 0.011
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7AYxN, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_invrm,90)-ts_mean(anl4_qf_az_eps_mean,90)))
+Sharpe: -0.18
+Turnover: 0.0106
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOe1E8E, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_invo,120)/max_book_value_per_share_guidance))
+Sharpe: 0.51
+Turnover: 0.0086
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXWLqm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_ibmii,90)/selling_general_admin_expense_reported_value))
+Sharpe: 0.09
+Turnover: 0.0208
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0KoNn, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_fyrc,30)/fnd2_a_ptoacqbnsesg))
+Sharpe: -0.47
+Turnover: 0.0086
+Fitness: -0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AgY2Ya, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_fopo,10)-ts_mean(cash_flow_financing_max_guidance,10)))
+Sharpe: 0.76
+Turnover: 0.0144
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RNeYpX, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_fopo,360)/dividend_estimate_median_value))
+Sharpe: 0.57
+Turnover: 0.0098
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7nnk6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_fate,90)-ts_mean(fnd2_propplteqmuflmfrt,90)))
+Sharpe: 0.39
+Turnover: 0.0112
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6XP2n1, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_fate,15)-ts_mean(fnd2_a_ltrmdmrepopliny5,15)))
+Sharpe: -0.25
+Turnover: 0.0165
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OgMvAb, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_exre,10)-ts_mean(cashflow,10)))
+Sharpe: 0.49
+Turnover: 0.0156
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEPWGpx, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_dxd5,150)/news_pre_vwap))
+Sharpe: 0.73
+Turnover: 1.2663
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw9ZYVa, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_ein,5)-ts_mean(fnd6_lul3,5)))
+Sharpe: 0.07
+Turnover: 0.0198
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqReOV86, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_dvpa,30)/anl4_cfi_median))
+Sharpe: -0.22
+Turnover: 0.0209
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7njnZ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_dpvieb,10)-ts_mean(interest_expense,10)))
+Sharpe: 0.57
+Turnover: 0.0201
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QZNro, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_drlt,20)-ts_mean(fnd6_mfma1_aoloch,20)))
+Sharpe: 0.44
+Turnover: 0.0134
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mon6Mk8, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_drlt,150)/cashflow_fin))
+Sharpe: 0.12
+Turnover: 0.0142
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkK0g5N, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_dm,30)/fnd6_cptnewqv1300_dlttq))
+Sharpe: 0.6
+Turnover: 0.0194
+Fitness: 0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6XPL2x, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_dltr,10)-ts_mean(fnd6_txo,10)))
+Sharpe: 0.62
+Turnover: 0.0172
+Fitness: 0.39
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OgMxnv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_dd,60)/anl4_netprofita_mean))
+Sharpe: 0.1
+Turnover: 0.0092
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXwAgv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_dcvsub,252)/anl4_afv4_div_mean))
+Sharpe: -0.3
+Turnover: 0.0081
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6PnpW, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_cshtrq,15)-ts_mean(fnd6_newa1v1300_dlc,15)))
+Sharpe: 0.16
+Turnover: 0.014
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RNe7K1, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_cptnewqv1300_actq,150)/fnd6_newqv1300_ivstq))
+Sharpe: 0.07
+Turnover: 0.0317
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZXJGZR, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_cptmfmq_atq,20)-ts_mean(fnd6_newa1v1300_ivncf,20)))
+Sharpe: 0.45
+Turnover: 0.0123
+Fitness: 0.28
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AgY9gl, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_cptmfmq_saleq,360)/fn_def_tax_assets_liab_net_q))
+Sharpe: -0.44
+Turnover: 0.008
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexQde8, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_cptmfmq_ceqq,20)-ts_mean(fn_comp_options_forfeitures_and_expirations_a,20)))
+Sharpe: -0.07
+Turnover: 0.01
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLexoR5m, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_cld4,30)/fn_comp_fair_value_assumptions_weighted_avg_vol_rate_a))
+Sharpe: 0.64
+Turnover: 0.0134
+Fitness: 0.38
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0a6RLw, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_cld3,120)/fn_accrued_liab_a))
+Sharpe: 0.51
+Turnover: 0.0162
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXWKOW, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_citotal,90)-ts_mean(fnd6_txtubend,90)))
+Sharpe: -0.02
+Turnover: 0.0105
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNGq55, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_cisecgl,90)-ts_mean(fnd6_newqv1300_aociotherq,90)))
+Sharpe: -0.2
+Turnover: 0.0163
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbeGaPP, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_beta,45)/fnd6_newa2v1300_ppent))
+Sharpe: -0.09
+Turnover: 0.0088
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeOzvWe, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_cisecgl,45)/fnd6_txbcof))
+Sharpe: -0.93
+Turnover: 0.0535
+Fitness: -0.79
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53ozPEm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_ciother,252)/fnd6_newa1v1300_aoloch))
+Sharpe: -0.15
+Turnover: 0.0196
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQGnEm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_aqs,60)/anl4_netprofita_median))
+Sharpe: 0.25
+Turnover: 0.026
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qzmAW, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_aodo,120)/fn_new_shares_options_a))
+Sharpe: 0.06
+Turnover: 0.0255
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RN5eN5, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_aldo,360)/fnd6_newa1v1300_acominc))
+Sharpe: -0.98
+Turnover: 0.0156
+Fitness: -0.69
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6KlgM, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_aqc,360)/fnd6_mfma1_at))
+Sharpe: 0.45
+Turnover: 0.0111
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXGdPo, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd6_acqgdwl,120)/fnd6_mfma1_aoloch))
+Sharpe: 0.49
+Turnover: 0.0246
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0aGOgQ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_unrgtxbnfdecresfsttwtxauth,360)/fnd6_newqv1300_lcoq))
+Sharpe: 0.34
+Turnover: 0.027
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QGoMb, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_unrgtxbnfinregfcrps,30)/fnd6_tfvl))
+Sharpe: 0.21
+Turnover: 0.0219
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPemzbLr, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_q_inventoryrawmaterials,30)/systematic_risk_last_90_days))
+Sharpe: 0.16
+Turnover: 0.1522
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogMXno, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_q_bnsacqproformarvn,30)/fnd6_txtubpospinc))
+Sharpe: -0.11
+Turnover: 0.0252
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0aGjPa, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_q_flintasamt1expytwo,20)-ts_mean(cashflow_per_share_median_value,20)))
+Sharpe: -0.06
+Turnover: 0.0083
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkzKlj, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_q_bnsacqproformarvn,45)/fn_payments_for_repurchase_of_common_stock_q))
+Sharpe: 0.39
+Turnover: 0.0313
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AgJQgV, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_itxreclnondeductibleexp,90)-ts_mean(fn_unrecognized_tax_benefits_a,90)))
+Sharpe: 0.05
+Turnover: 0.0091
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkzol0, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_ebitfr,45)/fnd6_newqv1300_invoq))
+Sharpe: -0.04
+Turnover: 0.0981
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqReGQkk, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_dfdlocalitxexp,10)-ts_mean(fnd2_a_lineofcrfcyrmbrgcap,10)))
+Sharpe: -0.45
+Turnover: 0.0082
+Fitness: -0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexznYz, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_dfdfritxexp,60)-ts_mean(book_value_per_share_2,60)))
+Sharpe: -0.35
+Turnover: 0.0115
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qzOed, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_dbplanfvalpnas,180)/fnd2_a_stkrpeprogramardamt))
+Sharpe: 0.25
+Turnover: 0.0088
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qzaAW, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_dfdfritxexp,180)/fnd6_newa1v1300_ivncf))
+Sharpe: -0.28
+Turnover: 0.017
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53ozaXL, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_dbplanepdfbnfp5ytherea,90)-ts_mean(tangible_book_value_per_share_max_guidance,90)))
+Sharpe: 0.21
+Turnover: 0.0058
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqR5peO8, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_dbplanepdfbnfpyfour,252)/fnd6_newa2v1300_seqo))
+Sharpe: 0.66
+Turnover: 0.0024
+Fitness: 0.84
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6Xxb6Y87, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_dbplanamtsrginblsh,45)-ts_mean(max_net_debt_guidance,45)))
+Sharpe: -0.01
+Turnover: 0.0064
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QGOG2, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_dbplanactuarialgl,5)-ts_mean(fnd6_txndba,5)))
+Sharpe: 0.12
+Turnover: 0.0206
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1Mkzm2L, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_currstatelocaltxexp,90)/fnd2_a_provisionfordbflact))
+Sharpe: 0.65
+Turnover: 0.0128
+Fitness: 0.33
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wqR33, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_currstatelocaltxexp,90)/fnd2_a_inventoryfinishedgoods))
+Sharpe: 0.29
+Turnover: 0.0121
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AgJozo, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_currstatelocaltxexp,90)/anl4_qfv4_cfps_high))
+Sharpe: -0.04
+Turnover: 0.0116
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53ozOvm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_unrgtxbnfthatwdiptetxr,3)-ts_mean(fnd6_newa1v1300_lt,3)))
+Sharpe: 0.07
+Turnover: 0.0075
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXGKzd, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_unrgtxbnfitxpenlintacd,20)-ts_mean(fn_assets_fair_val_q,20)))
+Sharpe: -0.2
+Turnover: 0.0094
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqReGxJk, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_sbcpnatqsttotnsvdptfv,45)-ts_mean(fn_accrued_liab_a,45)))
+Sharpe: -0.18
+Turnover: 0.0078
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXQp12, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_restructuringcharges,120)/fnd6_exre))
+Sharpe: 0.19
+Turnover: 0.021
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monNJEr, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_sbcpnargmsawpfipwerpr,120)/anl4_af_eps_value))
+Sharpe: 0.22
+Turnover: 0.0135
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53o8xeL, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_ptoacqbnsesg,10)-ts_mean(fnd2_a_flintasgcsrld,10)))
+Sharpe: 0.32
+Turnover: 0.0079
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaX20n1, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_provisionfordbflact,3)-ts_mean(total_goodwill_reported_value,3)))
+Sharpe: -0.16
+Turnover: 0.0239
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdgk1kZ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_ltrmdmrepoplinytwo,90)-ts_mean(sales_estimate_maximum_quarterly,90)))
+Sharpe: 0.08
+Turnover: 0.0094
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MkJLMp, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_ltrmdmrepoplinytwo,30)-ts_mean(fnd6_newa2v1300_txditc,30)))
+Sharpe: 0.07
+Turnover: 0.0115
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqReWJNz, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_flintasgcsrld,150)/est_epsr))
+Sharpe: 0.0
+Turnover: 0.0141
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ejYM3M, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_flintasamt1expyfour,150)/fnd6_beta))
+Sharpe: 0.26
+Turnover: 0.0069
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPemNK0M, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_lineofcrfcyrmbrgcap,180)/dividend_max_guidance_value))
+Sharpe: -0.41
+Turnover: 0.0083
+Fitness: -0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVEKG9o, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_inventoryrawmaterials,30)-ts_mean(news_open,30)))
+Sharpe: 0.27
+Turnover: 0.0114
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQNWMm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_atdlsecexfcepsastkos,5)-ts_mean(anl4_epsr_high,5)))
+Sharpe: -0.23
+Turnover: 0.0117
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AeVr0g, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_dbplanepdrtnplas,90)-ts_mean(fnd6_intan,90)))
+Sharpe: 0.02
+Turnover: 0.0062
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QJYqm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_curritxexp,20)-ts_mean(anl4_ptpr_median,20)))
+Sharpe: 0.07
+Turnover: 0.0086
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJ5Rw8, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_repurchased_shares_value_q,252)/fnd6_newa1v1300_capx))
+Sharpe: -0.01
+Turnover: 0.0151
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qraXe, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_taxes_payable_q,10)-ts_mean(anl4_fcfps_number,10)))
+Sharpe: 0.31
+Turnover: 0.0105
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXvw85, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fnd2_a_atdlsecexfcepsastkos,180)/anl4_cfo_median))
+Sharpe: 0.94
+Turnover: 0.0181
+Fitness: 0.66
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogd0R9, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_proceeds_from_lt_debt_q,10)-ts_mean(liabilities_curr,10)))
+Sharpe: -0.68
+Turnover: 0.0204
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6X2Mkd, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_payments_to_acquire_businesses_net_of_cash_acquired_q,90)/fnd6_exre))
+Sharpe: 0.07
+Turnover: 0.0245
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkd5md, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_oth_comp_forfeitures_fair_value_a,10)-ts_mean(fnd6_cld2,10)))
+Sharpe: -0.23
+Turnover: 0.0177
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRWqpW, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_payments_to_acquire_businesses_net_of_cash_acquired_q,180)/min_sg_and_a_expense_guidance))
+Sharpe: 0.23
+Turnover: 0.0125
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQNpq9, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_oth_income_loss_net_of_tax_a,3)-ts_mean(news_mins_3_chg,3)))
+Sharpe: -0.04
+Turnover: 0.8174
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QRxnE, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_mne_a,252)/fn_oth_comp_grants_weighted_avg_grant_date_fair_value_a))
+Sharpe: 0.55
+Turnover: 0.0089
+Fitness: 0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeYNkv, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_op_lease_min_pay_due_in_5y_a,30)-ts_mean(fnd6_newqv1300_ciderglq,30)))
+Sharpe: 0.72
+Turnover: 0.0117
+Fitness: 0.44
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVEXj23, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_liab_fair_val_q,20)-ts_mean(fnd2_a_flintasgcsrld,20)))
+Sharpe: -0.25
+Turnover: 0.0078
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXgnk1, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_op_lease_min_pay_due_a,252)/capital_expenditure_amount))
+Sharpe: 0.48
+Turnover: 0.0143
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKRVLq, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_line_of_credit_facility_max_borrowing_capacity_q,20)-ts_mean(earnings_per_share_estimate_count,20)))
+Sharpe: 0.38
+Turnover: 0.0087
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6OKoJ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_liab_fair_val_l3_a,90)-ts_mean(sales_max_guidance_value,90)))
+Sharpe: -0.54
+Turnover: 0.0078
+Fitness: -0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6OOZR, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_liab_fair_val_l1_q,5)-ts_mean(fnd6_newqv1300_cshopq,5)))
+Sharpe: 0.17
+Turnover: 0.0454
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53oNQeL, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_liab_fair_val_a,360)/min_adjusted_funds_from_operations_guidance_2))
+Sharpe: -0.1
+Turnover: 0.0077
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNoeg9, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_interest_payable_q,10)-ts_mean(fnd6_newa1v1300_apalch,10)))
+Sharpe: 0.57
+Turnover: 0.0192
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKRJKd, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_incremental_shares_attributable_to_share_based_payment_q,90)/fnd2_a_unrgtxbnfthatwdiptetxr))
+Sharpe: -0.2
+Turnover: 0.0112
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeOENvm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_interest_payable_a,15)-ts_mean(fnd6_sppe,15)))
+Sharpe: 0.36
+Turnover: 0.0145
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQ95Y3, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_income_from_equity_investments_q,60)-ts_mean(est_tbv_ps,60)))
+Sharpe: -0.08
+Turnover: 0.0177
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXVool, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_def_tax_liab_a,60)/cash_st))
+Sharpe: 0.65
+Turnover: 0.0199
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qePZW, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_employee_related_liab_q,150)/fnd2_a_lhdiprtsg))
+Sharpe: -0.97
+Turnover: 0.014
+Fitness: -0.62
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexv9Rz, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_finite_lived_intangible_assets_gross_q,120)/fnd6_mrc5))
+Sharpe: -0.58
+Turnover: 0.0216
+Fitness: -0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeYn3x, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_effect_of_exchange_rate_on_cash_and_equiv_q,60)/fn_repayments_of_lt_debt_q))
+Sharpe: -0.09
+Turnover: 0.0285
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AeNnlE, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_def_income_tax_expense_a,120)/capital_expenditure_amount))
+Sharpe: -0.18
+Turnover: 0.0145
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monxQlp, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_debt_issuance_costs_a,60)/fn_allowance_for_doubtful_accounts_receivable_q))
+Sharpe: -0.4
+Turnover: 0.0135
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qog8KVo, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_debt_issuance_costs_a,45)/fnd6_newa2v1300_ppent))
+Sharpe: -0.88
+Turnover: 0.0128
+Fitness: -0.43
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeYmdj, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_debt_instrument_interest_rate_stated_percentage_q,150)/fn_assets_fair_val_a))
+Sharpe: -0.36
+Turnover: 0.0094
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MkLkb8, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_debt_instrument_interest_rate_stated_percentage_a,30)/fn_comp_options_exercisable_number_q))
+Sharpe: -0.09
+Turnover: 0.0183
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXeZd6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_debt_instrument_face_amount_q,5)-ts_mean(systematic_risk_last_360_days,5)))
+Sharpe: 0.12
+Turnover: 0.0162
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0Qxmex, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_options_out_intrinsic_value_a,60)-ts_mean(fnd6_txtubpospinc,60)))
+Sharpe: -0.27
+Turnover: 0.0103
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxgZ7aG, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comprehensive_income_net_of_tax_a,150)/fn_oth_income_loss_fx_transaction_and_tax_translation_adj_q))
+Sharpe: -0.33
+Turnover: 0.0402
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJEeVN, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_options_grants_weighted_avg_a,150)/news_max_up_ret))
+Sharpe: 0.24
+Turnover: 1.4664
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QPb2k, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_options_grants_weighted_avg_a,252)/anl4_netprofita_median))
+Sharpe: 0.1
+Turnover: 0.0135
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeO8op2, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_options_out_intrinsic_value_a,60)-ts_mean(fnd6_teq,60)))
+Sharpe: -0.21
+Turnover: 0.0098
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNVxZE, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_number_of_shares_authorized_q,45)/fnd6_mfmq_cshprq))
+Sharpe: -0.96
+Turnover: 0.011
+Fitness: -0.53
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknKMzM5, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_not_rec_stock_options_q,5)-ts_mean(fnd6_cld5,5)))
+Sharpe: 0.09
+Turnover: 0.0243
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0aYpVr, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_not_rec_stock_options_q,150)/actual_sales_value_quarterly))
+Sharpe: -0.31
+Turnover: 0.014
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A166697e, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_not_rec_a,30)/cashflow))
+Sharpe: -0.37
+Turnover: 0.018
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZZLVPn, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_non_opt_forfeited_q,5)-ts_mean(max_adjusted_eps_guidance,5)))
+Sharpe: 0.21
+Turnover: 0.0138
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXXXJve, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_comp_not_rec_a,120)/fn_allocated_share_based_compensation_expense_q))
+Sharpe: 0.57
+Turnover: 0.0227
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXXLEgn, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_accum_oth_income_loss_net_of_tax_q,60)-ts_mean(fn_oth_income_loss_derivatives_qualifying_as_hedges_of_tax_q,60)))
+Sharpe: -0.0
+Turnover: 0.0085
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blpp3K2M, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_avg_diluted_sharesout_adj_q,252)/fnd6_txtubxintis))
+Sharpe: -0.41
+Turnover: 0.0237
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qooQ8E9, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_assets_fair_val_l1_q,20)-ts_mean(fnd6_newa2v1300_ni,20)))
+Sharpe: -0.22
+Turnover: 0.0098
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbbZOe2, Author: niuaoyula
+Expression: rank(zscore(ts_mean(fn_accrued_liab_q,360)/fscore_bfl_value))
+Sharpe: -0.02
+Turnover: 0.0078
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXXL8jg, Author: niuaoyula
+Expression: rank(zscore(ts_mean(financing_cashflow_reported_value,150)/est_tot_assets))
+Sharpe: -0.46
+Turnover: 0.0212
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OOVKO5, Author: niuaoyula
+Expression: rank(zscore(ts_mean(financing_cashflow_reported_value,10)-ts_mean(fn_debt_instrument_face_amount_q,10)))
+Sharpe: 0.07
+Turnover: 0.0229
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LLQ2JZ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(est_sales,45)/fn_comp_options_exercisable_number_q))
+Sharpe: 0.34
+Turnover: 0.0132
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eeagKg, Author: niuaoyula
+Expression: rank(zscore(ts_mean(est_ptp,5)-ts_mean(min_gross_income_guidance,5)))
+Sharpe: 0.32
+Turnover: 0.0118
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A166dbzg, Author: niuaoyula
+Expression: rank(zscore(ts_mean(est_ptp,90)/cashflow_efficiency_rank_derivative))
+Sharpe: 0.32
+Turnover: 0.0095
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvvp5ov, Author: niuaoyula
+Expression: rank(zscore(ts_mean(est_dividend_ps,20)-ts_mean(fnd6_newqv1300_txdbaq,20)))
+Sharpe: -0.42
+Turnover: 0.0164
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A166Kp5g, Author: niuaoyula
+Expression: rank(zscore(ts_mean(est_netdebt,120)/fnd6_aldo))
+Sharpe: 0.3
+Turnover: 0.0149
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RNGVY6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_qfd1_az_div_median,30)/sales_estimate_count_quarterly))
+Sharpe: -0.07
+Turnover: 0.0186
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6GQPJ, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_qfd1_az_cfps_median,45)/fnd6_newa1v1300_at))
+Sharpe: 0.08
+Turnover: 0.0103
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlR3EGA, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_qf_az_eps,45)-ts_mean(eps_min_guidance_quarterly,45)))
+Sharpe: 0.11
+Turnover: 0.009
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQ0gpm, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_qf_az_hgih_spfc,90)-ts_mean(pretax_income_reported_value,90)))
+Sharpe: 0.17
+Turnover: 0.0188
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7xlL6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_ptpr_low,252)/fnd2_itxreclchgdfdtxava))
+Sharpe: 0.29
+Turnover: 0.0129
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6Gql6, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_qf_az_dts_spe,30)-ts_mean(pretax_income_reported_value,30)))
+Sharpe: -0.01
+Turnover: 0.039
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QWqEj, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_qf_az_cfps_mean,30)-ts_mean(fnd6_newa1v1300_dltt,30)))
+Sharpe: -0.28
+Turnover: 0.0104
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxgM6kp, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_ptp_mean,5)-ts_mean(anl4_cff_low,5)))
+Sharpe: 0.32
+Turnover: 0.012
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OgYPYL, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_ptpr_number,20)-ts_mean(fnd6_newqv1300_tfvlq,20)))
+Sharpe: 0.55
+Turnover: 0.0222
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeav8E, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_netprofita_mean,180)/news_all_vwap))
+Sharpe: 0.24
+Turnover: 1.2185
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7anrN, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_netprofita_high,30)/anl4_capex_std))
+Sharpe: 0.31
+Turnover: 0.0454
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AgNJdz, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_netprofit_value,20)-ts_mean(fnd6_mfma2_revt,20)))
+Sharpe: -0.5
+Turnover: 0.0103
+Fitness: -0.34
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wa6rd, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_netprofit_mean,150)/fnd2_unrgtxbnfdecresfsttwtxauth))
+Sharpe: -0.26
+Turnover: 0.0125
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogllLK, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_medianepsbfam,3)-ts_mean(news_mins_4_pct_up,3)))
+Sharpe: -0.63
+Turnover: 0.97
+Fitness: -0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RVK8R5, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_ffo_flag,90)/fnd6_optprcgr))
+Sharpe: -0.44
+Turnover: 0.0217
+Fitness: -0.28
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MkPVvE, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fscore_bfl_quality,15)/ts_mean(max_free_cash_flow_guidance,30)))
+Sharpe: 0.35
+Turnover: 0.0988
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OVRp3b, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_gric_mean,30)/fnd6_cptnewqv1300_atq))
+Sharpe: 1.0
+Turnover: 0.0183
+Fitness: 0.63
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbe768Z, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fscore_bfl_quality,30)/ts_mean(anl4_epsr_value,252)))
+Sharpe: -0.39
+Turnover: 0.079
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LQkb2Z, Author: niuaoyula
+Expression: rank(zscore(ts_mean(anl4_fcf_median,30)-ts_mean(anl4_afv4_div_high,30)))
+Sharpe: 0.11
+Turnover: 0.0111
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkKl9Mo, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_txtubxintis,10)/ts_mean(fnd6_newa2v1300_txach,60)))
+Sharpe: -0.18
+Turnover: 0.1759
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqReabNL, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fscore_bfl_growth,60)/ts_mean(min_total_assets_guidance_2,90)))
+Sharpe: -0.24
+Turnover: 0.0539
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXaENb, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_txtubsoflimit,60)/ts_mean(interest_expense,180)))
+Sharpe: -0.59
+Turnover: 0.093
+Fitness: -0.28
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJaZlx, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_txtubbegin,30)/ts_mean(anl4_qf_az_wol_spfc,90)))
+Sharpe: -0.2
+Turnover: 0.1942
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJaXml, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_txds,45)/ts_mean(anl4_fcf_flag,180)))
+Sharpe: 0.52
+Turnover: 0.1257
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXarL5, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_txndb,45)/ts_mean(fnd6_newqv1300_aqpl1q,180)))
+Sharpe: 0.43
+Turnover: 0.1215
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OgYAEZ, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_txndbl,3)/ts_mean(fnd6_cptmfmq_opepsq,120)))
+Sharpe: -0.07
+Turnover: 0.7975
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OgLeRO, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_recco,15)/ts_mean(fnd6_xad,180)))
+Sharpe: -0.02
+Turnover: 0.2739
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXrJQn, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_txfo,10)/ts_mean(anl4_cfi_high,120)))
+Sharpe: -0.5
+Turnover: 0.4152
+Fitness: -0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qVzNd, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_tfva,3)/ts_mean(min_capex_guidance,252)))
+Sharpe: -0.28
+Turnover: 0.7568
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNYGYW, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_tlcf,30)/ts_mean(max_book_value_per_share_guidance,252)))
+Sharpe: 0.2
+Turnover: 0.1703
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RNEJ75, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_pnrsho,60)/ts_mean(fnd6_newa1v1300_dp,120)))
+Sharpe: 0.25
+Turnover: 0.0918
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbeL0JE, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_optdrq,5)/ts_mean(fnd6_intan,45)))
+Sharpe: -0.0
+Turnover: 0.2997
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJAvpN, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_optfvgr,5)/ts_mean(min_investing_cashflow_guidance_2,30)))
+Sharpe: 1.04
+Turnover: 0.5433
+Fitness: 0.72
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wvWPl, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_oepsxq,45)/ts_mean(anl4_epsr_value,150)))
+Sharpe: -1.04
+Turnover: 0.1165
+Fitness: -0.44
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkKOarN, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_prcraq,45)/ts_mean(min_research_development_expense_guidance_2,180)))
+Sharpe: 0.53
+Turnover: 0.1438
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQRJAo, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_ppegtq,45)/ts_mean(anl4_afv4_div_high,45)))
+Sharpe: -0.46
+Turnover: 0.1615
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6Xxgd1OE, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_invwipq,3)/ts_mean(operating_income,120)))
+Sharpe: -0.46
+Turnover: 0.9063
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJAkMn, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_loq,20)/ts_mean(fnd6_newa2v1300_txp,30)))
+Sharpe: -1.39
+Turnover: 0.2272
+Fitness: -0.69
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0a10qv, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_invwipq,3)/ts_mean(fn_repurchased_shares_value_a,60)))
+Sharpe: -0.74
+Turnover: 0.8697
+Fitness: -0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeWLrg, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_ibmiiq,60)/ts_mean(fnd2_a_ltrmdmrepoplinythree,150)))
+Sharpe: 0.14
+Turnover: 0.0748
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKAEbp, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_cisecglq,60)/ts_mean(anl4_ptpr_low,360)))
+Sharpe: -0.36
+Turnover: 0.1113
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNYRLO, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_epspiq,10)/ts_mean(fnd6_newqv1300_aociderglq,360)))
+Sharpe: 0.71
+Turnover: 0.3422
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0EM91, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_ciq,15)/ts_mean(fnd6_newa2v1300_pi,45)))
+Sharpe: -0.51
+Turnover: 0.2968
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogxq1x, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_aociotherq,45)/ts_mean(relative_valuation_rank_derivative,180)))
+Sharpe: 0.14
+Turnover: 0.1444
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monYbOk, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_aocipenq,3)/ts_mean(anl4_qfv4_eps_low,180)))
+Sharpe: 0.36
+Turnover: 0.9166
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53oVnMJ, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_aociderglq,15)/ts_mean(systematic_risk_last_90_days,360)))
+Sharpe: 0.47
+Turnover: 0.3273
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6j3G6, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newqv1300_acoq,45)/ts_mean(fn_debt_instrument_interest_rate_stated_percentage_q,60)))
+Sharpe: -0.16
+Turnover: 0.1296
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNeJKW, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newa2v1300_txp,15)/ts_mean(anl4_cfo_value,90)))
+Sharpe: -0.14
+Turnover: 0.27
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkmdv0, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newa2v1300_optexd,10)/ts_mean(fnd6_newqv1300_ibadj12,60)))
+Sharpe: -0.09
+Turnover: 0.4001
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkmdwY, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newa1v1300_ib,15)/ts_mean(fn_business_acq_ppne_q,150)))
+Sharpe: -0.54
+Turnover: 0.2451
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp78apq, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newa2v1300_nopi,20)/ts_mean(anl4_tbvps_mean,45)))
+Sharpe: 0.31
+Turnover: 0.1924
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Ogo6Vv, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newa1v1300_cstk,5)/ts_mean(fn_comp_number_of_shares_authorized_a,45)))
+Sharpe: 0.41
+Turnover: 0.5504
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp78bjZ, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newa1v1300_caps,3)/ts_mean(fn_liab_fair_val_l2_q,120)))
+Sharpe: -0.54
+Turnover: 0.7237
+Fitness: -0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexmG0g, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newa1v1300_ceqt,10)/ts_mean(fnd6_newqv1300_xsgaq,60)))
+Sharpe: 0.01
+Turnover: 0.3572
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ejMvAW, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newa1v1300_aco,90)/ts_mean(news_mins_3_pct_up,360)))
+Sharpe: 0.24
+Turnover: 0.0671
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monjQMk, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_newa1v1300_bkvlps,5)/ts_mean(fnd6_newa1v1300_csho,252)))
+Sharpe: -0.23
+Turnover: 0.593
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbeEk2K, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_mrcta,90)/ts_mean(fnd6_ci,252)))
+Sharpe: 0.44
+Turnover: 0.0727
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0A0L0, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_lul3,60)/ts_mean(max_adjusted_net_profit_guidance,252)))
+Sharpe: 0.33
+Turnover: 0.0956
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeKqGv, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_mrc2,30)/ts_mean(fnd2_a_sbcpnargmtwfsptepddvdrt,45)))
+Sharpe: -0.04
+Turnover: 0.1926
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0AWMo, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_mrc2,20)/ts_mean(fscore_momentum,90)))
+Sharpe: 0.61
+Turnover: 0.2907
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKJOAJ, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_lno,10)/ts_mean(fscore_bfl_surface_accel,360)))
+Sharpe: 0.51
+Turnover: 0.0795
+Fitness: 0.38
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkKL1ZQ, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_ivst,20)/ts_mean(fnd2_a_provisionfordbflact,120)))
+Sharpe: -0.49
+Turnover: 0.2107
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0aOwNG, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_itcb,60)/ts_mean(min_stock_option_expense_guidance_2,120)))
+Sharpe: 0.37
+Turnover: 0.0581
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AeQXxJ, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_fato,90)/ts_mean(min_basic_shares_guidance,30)))
+Sharpe: -0.45
+Turnover: 0.0714
+Fitness: -0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZXMY6R, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_idit,45)/ts_mean(anl4_qf_az_cfps_mean,180)))
+Sharpe: -0.53
+Turnover: 0.1134
+Fitness: -0.36
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRQrYj, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_invwip,45)/ts_mean(anl4_capex_value,150)))
+Sharpe: -0.05
+Turnover: 0.1255
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monrxnG, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_fatl,10)/ts_mean(news_mins_7_5_pct_dn,180)))
+Sharpe: -0.24
+Turnover: 0.3876
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qe1KZK, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_dxd3,3)/ts_mean(fnd6_lcoxdr,45)))
+Sharpe: 0.03
+Turnover: 0.5949
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXb81V, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_dxd5,10)/ts_mean(fn_finite_lived_intangible_assets_acq_q,120)))
+Sharpe: 0.14
+Turnover: 0.3729
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknK0GRV, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_dn,10)/ts_mean(max_free_cash_flow_guidance,60)))
+Sharpe: 0.03
+Turnover: 0.4015
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ejg3dJ, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_dltp,3)/ts_mean(fnd2_a_curritxexp,60)))
+Sharpe: -0.28
+Turnover: 0.596
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QWY65, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_dilavx,5)/ts_mean(est_ebitda,120)))
+Sharpe: 0.27
+Turnover: 0.5478
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZXMWqv, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_dcpstk,15)/ts_mean(research_development_expense_actual_value,90)))
+Sharpe: -0.37
+Turnover: 0.2268
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wPkR3, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_dd,10)/ts_mean(fnd2_dbplanepdfbnfpy5,90)))
+Sharpe: -0.03
+Turnover: 0.1541
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7O3Jm, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_dclo,30)/ts_mean(fn_debt_issuance_costs_a,180)))
+Sharpe: -0.77
+Turnover: 0.1904
+Fitness: -0.55
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXxqOR, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_unrgtxbnfinregfcrps,45)/ts_mean(news_mins_1_pct_dn,180)))
+Sharpe: 0.61
+Turnover: 0.1098
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qe1AlK, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_cstkcvq,60)/ts_mean(retained_earnings,60)))
+Sharpe: -0.52
+Turnover: 0.0852
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXb67q, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_cld5,60)/ts_mean(composite_factor_score_derivative,150)))
+Sharpe: -0.14
+Turnover: 0.0997
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AgP5Kv, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd6_cipen,10)/ts_mean(anl4_gric_value,252)))
+Sharpe: 0.3
+Turnover: 0.3694
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0arQ6G, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_propplteqmuflmameqmt,10)/ts_mean(fn_liab_fair_val_l3_a,30)))
+Sharpe: -0.11
+Turnover: 0.0464
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXb3Ea, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_dfdtxlbspropplteqm,15)/ts_mean(min_adjusted_funds_from_operations_guidance_2,45)))
+Sharpe: 0.21
+Turnover: 0.2768
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7b0QK, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_dfdtxlbsgwllandintas,3)/ts_mean(fnd6_xopr,90)))
+Sharpe: 0.8
+Turnover: 0.7508
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53opxV1, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_dfdtxasoprlcarryfwd,30)/ts_mean(min_funds_from_operations_guidance,180)))
+Sharpe: 0.81
+Turnover: 0.1571
+Fitness: 0.48
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPemb6VQ, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_dbplanartonplas,20)/ts_mean(fn_oth_income_loss_available_for_sale_securities_adj_of_tax_a,180)))
+Sharpe: -0.05
+Turnover: 0.1962
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRNW02, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_dbplanepdfbnfpy5,10)/ts_mean(fnd6_newa2v1300_ni,90)))
+Sharpe: 0.36
+Turnover: 0.3657
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeONEP2, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_dbplanepdfbnfpy5,90)/ts_mean(news_mins_3_pct_up,30)))
+Sharpe: 0.38
+Turnover: 0.1723
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRNQRA, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_dbplanamtsrginblsh,60)/ts_mean(fnd6_newqv1300_fcaq,30)))
+Sharpe: 0.46
+Turnover: 0.1085
+Fitness: 0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qNNqd, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_dbplanbnfpaid,90)/ts_mean(fn_interest_paid_net_a,180)))
+Sharpe: -0.08
+Turnover: 0.0634
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKN9YR, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_a_unrgtxbnfthatwdiptetxr,10)/ts_mean(sales_estimate_count_quarterly,90)))
+Sharpe: 0.49
+Turnover: 0.369
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJvrA5, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_currfrtxexp,45)/ts_mean(anl4_qf_az_wol_spe,45)))
+Sharpe: 0.08
+Turnover: 0.1102
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6XLlJ, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_a_ltrmdmrepoplay5,20)/ts_mean(fnd6_newa2v1300_ppent,360)))
+Sharpe: 0.42
+Turnover: 0.2198
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6XZXX5, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_a_seniornotes,60)/ts_mean(news_max_dn_amt,30)))
+Sharpe: -0.86
+Turnover: 0.0957
+Fitness: -0.54
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0b0Mg, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_a_seniornotes,3)/ts_mean(fnd6_newqv1300_dlcq,252)))
+Sharpe: -0.44
+Turnover: 0.6671
+Fitness: -0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkb3zn, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_a_bnsacqproformarvn,45)/ts_mean(shareholders_equity_reported_value,45)))
+Sharpe: 0.32
+Turnover: 0.1247
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qNZ0W, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_a_lhdiprtsg,5)/ts_mean(max_book_value_per_share_guidance_2,30)))
+Sharpe: -0.4
+Turnover: 0.5489
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKN1Md, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_a_lhdiprtsg,45)/ts_mean(max_total_goodwill_guidance_2,45)))
+Sharpe: -0.64
+Turnover: 0.1112
+Fitness: -0.39
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPemb1Nw, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_a_flintasamt1expy5,15)/ts_mean(fnd6_txw,120)))
+Sharpe: 0.3
+Turnover: 0.0378
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeO9oXa, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_repurchased_shares_value_a,5)/ts_mean(cash_flow_from_financing,150)))
+Sharpe: -0.23
+Turnover: 0.5443
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0akXXb, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fnd2_a_acmopclcchngcfectnt,45)/ts_mean(pretax_income_reported_value,252)))
+Sharpe: 0.23
+Turnover: 0.1125
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOegQPx, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_oth_comp_grants_weighted_avg_grant_date_fair_value_q,3)/ts_mean(fnd2_dfdtxastxcrcarryfwd,45)))
+Sharpe: 0.33
+Turnover: 0.6087
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monRgj6, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_prepaid_expense_q,45)/ts_mean(anl4_qf_az_wol_spfc,60)))
+Sharpe: 0.04
+Turnover: 0.1318
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXLeXW, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_liab_fair_val_a,30)/ts_mean(news_mins_5_pct_up,30)))
+Sharpe: -0.11
+Turnover: 0.246
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogVE3e, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_new_shares_options_q,10)/ts_mean(fnd6_mkvaltq,90)))
+Sharpe: -0.64
+Turnover: 0.4296
+Fitness: -0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeO97W1, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_derivative_notional_amount_a,10)/ts_mean(selling_general_admin_expense_max_guidance_qtr,252)))
+Sharpe: -0.58
+Turnover: 0.351
+Fitness: -0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbeWNGE, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_intangible_assets_accum_amort_a,10)/ts_mean(pretax_income_max_guidance_qtr,120)))
+Sharpe: 0.34
+Turnover: 0.3545
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKrxjq, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_def_tax_assets_net_q,30)/ts_mean(anl4_qf_az_eps,45)))
+Sharpe: 0.44
+Turnover: 0.1845
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OgZQdb, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_def_tax_assets_liab_net_a,30)/ts_mean(fn_repayments_of_debt_q,120)))
+Sharpe: -0.05
+Turnover: 0.165
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQ5LYj, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_def_income_tax_expense_q,20)/ts_mean(fnd6_newqv1300_ibadj12,45)))
+Sharpe: 0.69
+Turnover: 0.2336
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6x12Q, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_debt_instrument_interest_rate_stated_percentage_a,3)/ts_mean(fnd6_newqv1300_acomincq,120)))
+Sharpe: 0.07
+Turnover: 0.6081
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZk0ZYx, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_comp_options_exercisable_weighted_avg_a,10)/ts_mean(news_eod_close,45)))
+Sharpe: 0.05
+Turnover: 0.3614
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVEdv6Z, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_comp_options_exercisable_number_a,10)/ts_mean(fnd2_q_bnsacqproformarvn,45)))
+Sharpe: -0.03
+Turnover: 0.3668
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88Ag310v, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_comp_non_opt_forfeited_a,90)/ts_mean(pretax_income_reported,30)))
+Sharpe: 0.17
+Turnover: 0.0715
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MM0pPX, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_business_acq_ppne_a,15)/ts_mean(min_adjusted_funds_from_operations_guidance,90)))
+Sharpe: 0.04
+Turnover: 0.222
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPee3V1x, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_business_combination_assets_aquired_goodwill_q,90)/ts_mean(operating_profit_before_depr_amort_min_guidance_qtr,45)))
+Sharpe: 0.19
+Turnover: 0.0436
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknK61GA, Author: niuaoyula
+Expression: rank(zscore(ts_delta(fn_allowance_for_doubtful_accounts_receivable_a,20)/ts_mean(anl4_af_div_value,150)))
+Sharpe: -0.35
+Turnover: 0.2177
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AezXqg, Author: niuaoyula
+Expression: rank(zscore(ts_delta(est_netprofit,5)/ts_mean(fn_comp_non_opt_grants_a,45)))
+Sharpe: -0.0
+Turnover: 0.4989
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0ajWew, Author: niuaoyula
+Expression: rank(zscore(ts_delta(est_ffo,20)/ts_mean(fnd6_newa2v1300_oancf,252)))
+Sharpe: 0.13
+Turnover: 0.1786
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNjpYO, Author: niuaoyula
+Expression: rank(zscore(ts_delta(eps_min_guidance_quarterly,10)/ts_mean(news_vol_stddev,360)))
+Sharpe: -0.07
+Turnover: 0.2701
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJjY2n, Author: niuaoyula
+Expression: rank(zscore(ts_delta(correlation_last_30_days_spy,15)/ts_mean(fnd2_a_bnsacqproformarvn,150)))
+Sharpe: -0.14
+Turnover: 0.4379
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZk796Z, Author: niuaoyula
+Expression: rank(zscore(ts_delta(debt,3)/ts_mean(fnd2_a_frtandfixturesg,360)))
+Sharpe: -0.14
+Turnover: 0.8234
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E5331RQ0, Author: niuaoyula
+Expression: rank(zscore(ts_delta(cashflow_per_share_min_guidance_quarterly,3)/ts_mean(fnd2_a_lineofcrfcyrmbrgcap,30)))
+Sharpe: -0.21
+Turnover: 0.86
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeO7mW2, Author: niuaoyula
+Expression: rank(zscore(ts_delta(capital_expenditure_guidance_value,10)/ts_mean(max_reported_pretax_income_guidance_2,60)))
+Sharpe: 0.02
+Turnover: 0.2914
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6wO3R, Author: niuaoyula
+Expression: rank(zscore(ts_delta(cash_flow_from_operations,5)/ts_mean(fn_finite_lived_intangible_assets_gross_a,180)))
+Sharpe: -0.16
+Turnover: 0.5231
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogX8A2, Author: niuaoyula
+Expression: rank(zscore(ts_delta(capital_expenditure_max_guidance_qtr,60)/ts_mean(fnd6_txtubsettle,30)))
+Sharpe: 0.55
+Turnover: 0.0854
+Fitness: 0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Ogj6N1, Author: niuaoyula
+Expression: rank(zscore(ts_delta(assets,45)/ts_mean(min_ebitda_guidance,60)))
+Sharpe: 0.18
+Turnover: 0.1105
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw97LMr, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_totgw_mean,90)/ts_mean(fnd2_a_flintasamt1expy5,120)))
+Sharpe: -0.71
+Turnover: 0.0392
+Fitness: -0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AglLwX, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_totassets_flag,10)/ts_mean(fnd6_newa1v1300_ao,120)))
+Sharpe: 0.02
+Turnover: 0.3063
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53olgAR, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_qf_az_eps_mean,20)/ts_mean(news_pct_5_min,45)))
+Sharpe: 0.58
+Turnover: 0.6154
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPem75qp, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_tbvps_high,10)/ts_mean(fnd6_newqv1300_prcraq,30)))
+Sharpe: -0.23
+Turnover: 0.3243
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQjzw9, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_qfv4_cfps_number,60)/ts_mean(fnd2_itxreexftfedstyitxrt,90)))
+Sharpe: -0.07
+Turnover: 0.0765
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVElE2G, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_qfv4_cfps_mean,90)/ts_mean(max_adjusted_eps_guidance_2,120)))
+Sharpe: -0.15
+Turnover: 0.0509
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeO7ez9, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_qf_az_div_median,20)/ts_mean(fnd6_pifo,360)))
+Sharpe: -0.45
+Turnover: 0.1756
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qejXNw, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_ptpr_mean,10)/ts_mean(pretax_income_total,30)))
+Sharpe: 0.07
+Turnover: 0.2942
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEPlzz6, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_qf_az_cfps_number,15)/ts_mean(fnd6_newqv1300_aul3q,30)))
+Sharpe: 0.03
+Turnover: 0.2096
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqX7rz0, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_ptpr_number,45)/ts_mean(fn_oth_income_loss_net_of_tax_q,180)))
+Sharpe: 0.42
+Turnover: 0.0939
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw97jWM, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_epsr_number,30)/ts_mean(fnd6_rea,60)))
+Sharpe: 0.33
+Turnover: 0.1485
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0aNWQA, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_fcfps_high,60)/ts_mean(unsystematic_risk_last_360_days,360)))
+Sharpe: -0.05
+Turnover: 0.0643
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdgpNPN, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_ptp_high,30)/ts_mean(fnd6_zipcode,360)))
+Sharpe: -0.06
+Turnover: 0.1303
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53oGx60, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_fcf_value,15)/ts_mean(anl4_afv4_eps_high,360)))
+Sharpe: -0.42
+Turnover: 0.2946
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QN3M6, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_fcf_median,10)/ts_mean(sales_estimate_minimum_quarterly,60)))
+Sharpe: -0.02
+Turnover: 0.2968
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJX1Rzv, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_ebit_value,60)/ts_mean(free_cash_flow_per_share_reported_value,60)))
+Sharpe: -0.53
+Turnover: 0.1216
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkEX93, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_ebitda_low,60)/ts_mean(fn_def_tax_assets_liab_net_q,60)))
+Sharpe: -0.17
+Turnover: 0.0695
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexGVPp, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_ebitda_std,10)/ts_mean(cashflow_per_share_min_guidance_quarterly,120)))
+Sharpe: 0.14
+Turnover: 0.328
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0mbjn, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_cfi_median,45)/ts_mean(anl4_afv4_eps_high,150)))
+Sharpe: 0.62
+Turnover: 0.0912
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEPpl8N, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_ebit_std,60)/ts_mean(min_basic_shares_guidance,30)))
+Sharpe: -0.25
+Turnover: 0.1125
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXoKza, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_cfo_high,20)/ts_mean(goodwill_min_guidance_qtr,60)))
+Sharpe: -0.41
+Turnover: 0.1725
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRGn9j, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_cff_mean,3)/ts_mean(news_range_stddev,360)))
+Sharpe: 0.06
+Turnover: 0.8027
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQ2z7j, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_capex_flag,30)/ts_mean(fnd6_newqv1300_rcpq,180)))
+Sharpe: 0.52
+Turnover: 0.1947
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monpdPK, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_afv4_div_number,20)/ts_mean(fnd6_optfvgr,252)))
+Sharpe: -0.35
+Turnover: 0.162
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKGkvq, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_bvps_median,15)/ts_mean(fn_accum_oth_income_loss_fx_adj_net_of_tax_a,120)))
+Sharpe: -0.47
+Turnover: 0.2208
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eeOKL1, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_adjusted_netincome_ft,3)/ts_mean(fnd6_optprcwa,180)))
+Sharpe: -0.6
+Turnover: 0.8388
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QNek2, Author: niuaoyula
+Expression: rank(zscore(ts_delta(anl4_bvps_median,10)/ts_mean(selling_general_admin_expense_actual_value,90)))
+Sharpe: -0.41
+Turnover: 0.3023
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw00mQMx, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(working_capital/est_capex,45))*rank(ts_delta(est_capex,60)))
+Sharpe: -0.22
+Turnover: 0.0564
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7Ae3kZd, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(unsystematic_risk_last_90_days/fnd6_newqv1300_prcraq,90))*rank(ts_delta(fnd6_newqv1300_prcraq,15)))
+Sharpe: 0.29
+Turnover: 0.2867
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQ21vd, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(shareholders_equity_total_2/fnd6_mrc1,60))*rank(ts_delta(fnd6_mrc1,5)))
+Sharpe: -1.16
+Turnover: 0.0346
+Fitness: -0.77
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXEpn1, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(selling_general_admin_expense/earnings_per_share_guidance_value,90))*rank(ts_delta(earnings_per_share_guidance_value,45)))
+Sharpe: -0.29
+Turnover: 0.0581
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88Age0Eq, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(ppent/fn_comp_options_grants_q,45))*rank(ts_delta(fn_comp_options_grants_q,10)))
+Sharpe: 0.39
+Turnover: 0.0442
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2Qg01n, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(sales_estimate_minimum/fnd6_acqintan,30))*rank(ts_delta(fnd6_acqintan,5)))
+Sharpe: 0.41
+Turnover: 0.0353
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv79LXg, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(sales_ps/news_curr_vol,45))*rank(ts_delta(news_curr_vol,5)))
+Sharpe: 0.24
+Turnover: 1.6754
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKx6r1, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(revenue/min_free_cashflow_guidance,90))*rank(ts_delta(min_free_cashflow_guidance,45)))
+Sharpe: -0.44
+Turnover: 0.0407
+Fitness: -0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZXgaZW, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(research_development_expense_reported_value/fnd6_newa2v1300_pi,30))*rank(ts_delta(fnd6_newa2v1300_pi,20)))
+Sharpe: -0.34
+Turnover: 0.031
+Fitness: -0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qog7VEe, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(operating_profit_before_depr_amort_min_guidance_qtr/fnd2_a_flintasamt1expyfour,60))*rank(ts_delta(fnd2_a_flintasamt1expyfour,45)))
+Sharpe: 0.14
+Turnover: 0.0347
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2Qg626, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_spy_last/anl4_fcf_value,30))*rank(ts_delta(anl4_fcf_value,15)))
+Sharpe: 0.36
+Turnover: 1.3973
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXRRaO, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_pct_10min/fn_unrecognized_tax_benefits_a,30))*rank(ts_delta(fn_unrecognized_tax_benefits_a,10)))
+Sharpe: -0.24
+Turnover: 1.6004
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qog7RVd, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_mov_vol/fnd6_donr,45))*rank(ts_delta(fnd6_donr,90)))
+Sharpe: -0.39
+Turnover: 1.2726
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0w8We3, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_mins_2_pct_dn/fnd2_currfrtxexp,45))*rank(ts_delta(fnd2_currfrtxexp,90)))
+Sharpe: 0.93
+Turnover: 1.7885
+Fitness: 0.33
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeRnOg, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_mins_5_pct_up/fnd6_newa1v1300_dvc,30))*rank(ts_delta(fnd6_newa1v1300_dvc,15)))
+Sharpe: -0.11
+Turnover: 0.8458
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXdzAN, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_mins_5_chg/min_total_assets_guidance_2,45))*rank(ts_delta(min_total_assets_guidance_2,45)))
+Sharpe: -1.21
+Turnover: 1.8056
+Fitness: -0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXRMeG, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_high_exc_stddev/fnd6_pstkl,90))*rank(ts_delta(fnd6_pstkl,60)))
+Sharpe: -0.56
+Turnover: 1.3445
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqX8gJb, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_eps_actual/fnd6_newa1v1300_gdwl,60))*rank(ts_delta(fnd6_newa1v1300_gdwl,60)))
+Sharpe: -0.31
+Turnover: 1.07
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0avKYw, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_dividend_yield/fnd6_zipcode,30))*rank(ts_delta(fnd6_zipcode,15)))
+Sharpe: 0.02
+Turnover: 1.1751
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXm7xK, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_eod_high/anl4_netprofita_median,60))*rank(ts_delta(anl4_netprofita_median,20)))
+Sharpe: 0.27
+Turnover: 1.3773
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0alXMr, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(news_close_vol/fn_comp_options_out_intrinsic_value_a,60))*rank(ts_delta(fn_comp_options_out_intrinsic_value_a,45)))
+Sharpe: -0.69
+Turnover: 1.5472
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6XlPp2, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(min_shareholders_equity_guidance/pretax_income_reported_min_guidance,60))*rank(ts_delta(pretax_income_reported_min_guidance,45)))
+Sharpe: -0.53
+Turnover: 0.1171
+Fitness: -0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQlGlE, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(min_research_development_expense_guidance_2/fnd6_newa1v1300_ap,60))*rank(ts_delta(fnd6_newa1v1300_ap,45)))
+Sharpe: 0.36
+Turnover: 0.0376
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ej3YVx, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(min_reported_eps_guidance/fnd6_am,60))*rank(ts_delta(fnd6_am,10)))
+Sharpe: 0.39
+Turnover: 0.0335
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0alObr, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(min_financing_cashflow_guidance_2/unsystematic_risk_last_60_days,90))*rank(ts_delta(unsystematic_risk_last_60_days,30)))
+Sharpe: 0.12
+Turnover: 0.3064
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVELgOZ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(min_financing_cashflow_guidance_2/anl4_qfv4_median_eps,90))*rank(ts_delta(anl4_qfv4_median_eps,5)))
+Sharpe: -0.76
+Turnover: 0.0875
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7MZ9Q, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(min_net_income_guidance/fnd6_newqv1300_ibcomq,30))*rank(ts_delta(fnd6_newqv1300_ibcomq,10)))
+Sharpe: -0.54
+Turnover: 0.0697
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXnn59, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(interest_expense/fnd6_newa1v1300_ceqt,60))*rank(ts_delta(fnd6_newa1v1300_ceqt,5)))
+Sharpe: 0.37
+Turnover: 0.0359
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53oEEpJ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(max_total_goodwill_guidance/fnd6_newqv1300_invoq,30))*rank(ts_delta(fnd6_newqv1300_invoq,10)))
+Sharpe: 0.62
+Turnover: 0.1725
+Fitness: 0.39
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7M1ll, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(max_adjusted_funds_from_operations_guidance/fnd6_newa1v1300_chech,45))*rank(ts_delta(fnd6_newa1v1300_chech,15)))
+Sharpe: 1.26
+Turnover: 0.0318
+Fitness: 0.66
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQlrqJ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(goodwill/fn_finite_lived_intangible_assets_net_q,45))*rank(ts_delta(fn_finite_lived_intangible_assets_net_q,60)))
+Sharpe: 0.19
+Turnover: 0.0669
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ej3XYx, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(income_beforeextra/anl4_netprofita_value,30))*rank(ts_delta(anl4_netprofita_value,30)))
+Sharpe: 0.26
+Turnover: 0.0835
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7MPzv, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(growth_potential_rank_derivative/fn_repurchased_shares_a,30))*rank(ts_delta(fn_repurchased_shares_a,30)))
+Sharpe: -0.06
+Turnover: 0.027
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeO1Oom, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(goodwill/fnd6_newqv1300_cogsq,90))*rank(ts_delta(fnd6_newqv1300_cogsq,3)))
+Sharpe: -0.12
+Turnover: 0.0956
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7Mv7J, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_txpd/fn_comp_not_rec_a,30))*rank(ts_delta(fn_comp_not_rec_a,20)))
+Sharpe: -0.08
+Turnover: 0.0382
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1Mkr0dp, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(free_cash_flow_per_share_max_guidance/capex,45))*rank(ts_delta(capex,10)))
+Sharpe: 0.45
+Turnover: 0.0382
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlROVoO, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_txtubpospinc/sales_estimate_average_quarterly,45))*rank(ts_delta(sales_estimate_average_quarterly,30)))
+Sharpe: 0.5
+Turnover: 0.1111
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0Q62Yq, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_txo/fscore_bfl_quality,90))*rank(ts_delta(fscore_bfl_quality,30)))
+Sharpe: -0.56
+Turnover: 0.0937
+Fitness: -0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0poKe, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_txdbcl/fn_assets_fair_val_l2_q,90))*rank(ts_delta(fn_assets_fair_val_l2_q,60)))
+Sharpe: 0.0
+Turnover: 0.0785
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXpxpl, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_state/news_mins_1_chg,60))*rank(ts_delta(news_mins_1_chg,45)))
+Sharpe: -0.84
+Turnover: 1.7517
+Fitness: -0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxgwJW5, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_reajo/fnd6_newqv1300_loxdrq,45))*rank(ts_delta(fnd6_newqv1300_loxdrq,20)))
+Sharpe: 0.06
+Turnover: 0.1177
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eKpMKq, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_optvolq/fnd6_dilavx,45))*rank(ts_delta(fnd6_dilavx,5)))
+Sharpe: 0.61
+Turnover: 0.0879
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7Lr5N, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_rea/fnd6_tfva,60))*rank(ts_delta(fnd6_tfva,15)))
+Sharpe: 0.17
+Turnover: 0.0869
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0wgvLa, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_pstkc/sales_min_guidance_quarterly,60))*rank(ts_delta(sales_min_guidance_quarterly,30)))
+Sharpe: 0.49
+Turnover: 0.0966
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7LOOp, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_pstkc/fn_oth_income_loss_available_for_sale_securities_adj_of_tax_q,60))*rank(ts_delta(fn_oth_income_loss_available_for_sale_securities_adj_of_tax_q,60)))
+Sharpe: -0.69
+Turnover: 0.1041
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qwlEQ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_prchq/news_mins_2_chg,45))*rank(ts_delta(news_mins_2_chg,20)))
+Sharpe: 0.6
+Turnover: 1.7484
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ejpOEE, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_optprcey/fnd6_newa2v1300_ppent,45))*rank(ts_delta(fnd6_newa2v1300_ppent,5)))
+Sharpe: 0.02
+Turnover: 0.0371
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qexQdE, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_xintq/fnd6_newa1v1300_aocidergl,45))*rank(ts_delta(fnd6_newa1v1300_aocidergl,10)))
+Sharpe: -0.18
+Turnover: 0.0462
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogwJGx, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_optlife/fnd6_zipcode,30))*rank(ts_delta(fnd6_zipcode,15)))
+Sharpe: 0.73
+Turnover: 0.0219
+Fitness: 0.38
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv71mxJ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_npq/fnd6_newa1v1300_emp,45))*rank(ts_delta(fnd6_newa1v1300_emp,5)))
+Sharpe: 0.01
+Turnover: 0.0537
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVEw6vP, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_txtq/fnd6_cptmfmq_lctq,45))*rank(ts_delta(fnd6_cptmfmq_lctq,15)))
+Sharpe: 0.4
+Turnover: 0.0629
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEP7q5P, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_xintq/fnd2_a_lineofcrfcyrmbrgcap,60))*rank(ts_delta(fnd2_a_lineofcrfcyrmbrgcap,5)))
+Sharpe: 0.29
+Turnover: 0.0365
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ejpe9p, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_ppentq/fnd6_newa1v1300_at,30))*rank(ts_delta(fnd6_newa1v1300_at,10)))
+Sharpe: 1.1
+Turnover: 0.0392
+Fitness: 0.65
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv67Qzk, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_rdipq/fn_oth_income_loss_net_of_tax_a,60))*rank(ts_delta(fn_oth_income_loss_net_of_tax_a,10)))
+Sharpe: 0.39
+Turnover: 0.153
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOe8P5X, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_optrfrq/fnd2_dbplanepdfbnfpy5,45))*rank(ts_delta(fnd2_dbplanepdfbnfpy5,10)))
+Sharpe: 0.75
+Turnover: 0.1238
+Fitness: 0.54
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw9pjXr, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_lseq/est_tbv_ps,45))*rank(ts_delta(est_tbv_ps,15)))
+Sharpe: 0.1
+Turnover: 0.071
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eK9l9d, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_loxdrq/fn_ppne_gross_q,90))*rank(ts_delta(fn_ppne_gross_q,60)))
+Sharpe: -0.79
+Turnover: 0.0607
+Fitness: -0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNgKLQ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_lol2q/fnd6_newqv1300_dilavq,90))*rank(ts_delta(fnd6_newqv1300_dilavq,30)))
+Sharpe: -0.06
+Turnover: 0.1397
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxgEL8P, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_ivltq/fnd2_a_sbcpnatqsttotnsvdptfv,90))*rank(ts_delta(fnd2_a_sbcpnatqsttotnsvdptfv,5)))
+Sharpe: -0.15
+Turnover: 0.058
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaXW2pO, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_aoq/fnd2_dfctrbplancstrg,90))*rank(ts_delta(fnd2_dfctrbplancstrg,60)))
+Sharpe: -0.92
+Turnover: 0.0453
+Fitness: -0.47
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ej1xZL, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_drltq/fn_repayments_of_lines_of_credit_q,60))*rank(ts_delta(fn_repayments_of_lines_of_credit_q,60)))
+Sharpe: 0.59
+Turnover: 0.0771
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0r9Va, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_dpactq/fnd6_txndba,45))*rank(ts_delta(fnd6_txndba,45)))
+Sharpe: 0.14
+Turnover: 0.0847
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0Q7R3v, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_aoq/fn_def_tax_liab_a,45))*rank(ts_delta(fn_def_tax_liab_a,90)))
+Sharpe: -0.99
+Turnover: 0.0432
+Fitness: -0.48
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXKb7X, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_aocisecglq/fn_taxes_payable_q,90))*rank(ts_delta(fn_taxes_payable_q,60)))
+Sharpe: 0.51
+Turnover: 0.1106
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXOn5v, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newqv1300_anoq/fn_prepaid_expense_a,90))*rank(ts_delta(fn_prepaid_expense_a,10)))
+Sharpe: -0.34
+Turnover: 0.158
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRdnvn, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa2v1300_txdb/fnd2_dbplanbnfpaid_ast,90))*rank(ts_delta(fnd2_dbplanbnfpaid_ast,10)))
+Sharpe: 0.83
+Turnover: 0.0281
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEPKaxb, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa2v1300_revt/news_mins_2_pct_dn,30))*rank(ts_delta(news_mins_2_pct_dn,90)))
+Sharpe: -0.18
+Turnover: 1.3744
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2QYzgm, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa2v1300_pi/news_session_range_pct,30))*rank(ts_delta(news_session_range_pct,45)))
+Sharpe: 0.17
+Turnover: 1.5045
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16q36xg, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa2v1300_prsho/earnings_per_share_maximum,60))*rank(ts_delta(earnings_per_share_maximum,5)))
+Sharpe: 0.21
+Turnover: 0.3953
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknK8now, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa2v1300_recch/fn_comp_not_rec_a,60))*rank(ts_delta(fn_comp_not_rec_a,10)))
+Sharpe: 0.17
+Turnover: 0.0352
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogRzqV, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa1v1300_ibadj/fnd6_newa1v1300_dp,90))*rank(ts_delta(fnd6_newa1v1300_dp,20)))
+Sharpe: 0.18
+Turnover: 0.0377
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQAw98, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa1v1300_ib/earnings_per_share_estimate_count,90))*rank(ts_delta(earnings_per_share_estimate_count,15)))
+Sharpe: -0.04
+Turnover: 0.0889
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7vgXK, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa1v1300_ib/fn_oth_income_loss_fx_transaction_and_tax_translation_adj_a,90))*rank(ts_delta(fn_oth_income_loss_fx_transaction_and_tax_translation_adj_a,60)))
+Sharpe: 0.46
+Turnover: 0.0331
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0adZ2d, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa1v1300_capx/fn_debt_instrument_interest_rate_stated_percentage_a,30))*rank(ts_delta(fn_debt_instrument_interest_rate_stated_percentage_a,60)))
+Sharpe: -0.08
+Turnover: 0.0215
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogJln2, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_newa1v1300_aco/fn_treasury_stock_shares_a,45))*rank(ts_delta(fn_treasury_stock_shares_a,15)))
+Sharpe: -0.35
+Turnover: 0.0288
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexkJpl, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_mfmq_ibcomq/fnd2_a_sbcpnargmsawpfipwerpr,90))*rank(ts_delta(fnd2_a_sbcpnargmsawpfipwerpr,3)))
+Sharpe: -0.01
+Turnover: 0.0343
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRbQOe, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_mfma1_capx/fnd6_txdba,90))*rank(ts_delta(fnd6_txdba,5)))
+Sharpe: 0.25
+Turnover: 0.0355
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp7vRAp, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_mfma1_capx/cashflow_per_share_maximum,45))*rank(ts_delta(cashflow_per_share_maximum,3)))
+Sharpe: 0.46
+Turnover: 0.1045
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknKO7NM, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_lqpl1/fnd6_newa2v1300_prsho,60))*rank(ts_delta(fnd6_newa2v1300_prsho,90)))
+Sharpe: 0.09
+Turnover: 0.0636
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeOkdbM, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_mfma1_aoloch/est_capex,90))*rank(ts_delta(est_capex,3)))
+Sharpe: 0.28
+Turnover: 0.074
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LN1dYZ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_loc/fn_excess_tax_benefit_from_share_based_comp_fin_activities_a,90))*rank(ts_delta(fn_excess_tax_benefit_from_share_based_comp_fin_activities_a,5)))
+Sharpe: -0.35
+Turnover: 0.0081
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv6JL3R, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_ivao/anl4_netprofita_std,60))*rank(ts_delta(anl4_netprofita_std,5)))
+Sharpe: -0.35
+Turnover: 0.2505
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZXQwZJ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_fato/fnd6_newa2v1300_revt,60))*rank(ts_delta(fnd6_newa2v1300_revt,20)))
+Sharpe: 0.92
+Turnover: 0.0353
+Fitness: 0.48
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ejvjqx, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_intc/fscore_value,45))*rank(ts_delta(fscore_value,20)))
+Sharpe: -0.03
+Turnover: 0.0201
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVEkAN5, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_fatc/cash_flow_from_operations,30))*rank(ts_delta(cash_flow_from_operations,45)))
+Sharpe: -0.54
+Turnover: 0.0633
+Fitness: -0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw9kWd6, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_dltis/receivable,60))*rank(ts_delta(receivable,30)))
+Sharpe: 0.28
+Turnover: 0.1007
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkK91wG, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_fatb/fnd6_newa1v1300_dlc,90))*rank(ts_delta(fnd6_newa1v1300_dlc,10)))
+Sharpe: 0.17
+Turnover: 0.038
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxgR6oP, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_dd3/anl4_ebitda_high,60))*rank(ts_delta(anl4_ebitda_high,60)))
+Sharpe: 0.67
+Turnover: 0.0546
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRenYjg, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_dd4/fn_incremental_shares_attributable_to_share_based_payment_q,60))*rank(ts_delta(fn_incremental_shares_attributable_to_share_based_payment_q,45)))
+Sharpe: 0.77
+Turnover: 0.0836
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaX5gXG, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_cld2/fnd2_q_atdlsecexfcepsastkos,90))*rank(ts_delta(fnd2_q_atdlsecexfcepsastkos,60)))
+Sharpe: 0.28
+Turnover: 0.0616
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeOnK1M, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_adesinda_curcd/fnd6_newqv1300_optfvgrq,60))*rank(ts_delta(fnd6_newqv1300_optfvgrq,30)))
+Sharpe: 0.02
+Turnover: 0.1314
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qnVzR, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_adesinda_curcd/news_dividend_yield,90))*rank(ts_delta(news_dividend_yield,15)))
+Sharpe: -0.15
+Turnover: 1.1045
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlRnG9W, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_unrgtxbnfdcfpprdtxpss/anl4_cfi_low,45))*rank(ts_delta(anl4_cfi_low,5)))
+Sharpe: -0.68
+Turnover: 0.0613
+Fitness: -0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QnNx3, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd6_acodo/fnd6_newqv1300_ltmibq,30))*rank(ts_delta(fnd6_newqv1300_ltmibq,60)))
+Sharpe: 0.36
+Turnover: 0.0473
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0a5d7G, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_q_flintasamt1expythree/max_free_cashflow_per_share_guidance,60))*rank(ts_delta(max_free_cashflow_per_share_guidance,30)))
+Sharpe: -0.01
+Turnover: 0.0474
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QnnQ6, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_q_lineofcrfcyrmbrgcap/fnd6_newqv1300_txdiq,60))*rank(ts_delta(fnd6_newqv1300_txdiq,15)))
+Sharpe: 0.07
+Turnover: 0.2111
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7mRQQ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_oprlsfmpdcurr/fn_eff_income_tax_rate_continuing_operations_a,90))*rank(ts_delta(fn_eff_income_tax_rate_continuing_operations_a,5)))
+Sharpe: 0.25
+Turnover: 0.0238
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJXNMXv, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_q_atdlsecexfcepsastkos/fn_finite_lived_intangible_assets_net_q,90))*rank(ts_delta(fn_finite_lived_intangible_assets_net_q,60)))
+Sharpe: -0.16
+Turnover: 0.0634
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXe6mJ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_itxreexftfedstyitxrt/fnd6_txndba,90))*rank(ts_delta(fnd6_txndba,20)))
+Sharpe: -0.45
+Turnover: 0.0431
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPemnJYQ, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_a_inventoryfinishedgoods/fn_liab_fair_val_l1_a,45))*rank(ts_delta(fn_liab_fair_val_l1_a,90)))
+Sharpe: 0.17
+Turnover: 0.0212
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxgR8aP, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_itxreclnondeductibleexp/fnd6_sstk,45))*rank(ts_delta(fnd6_sstk,45)))
+Sharpe: 0.3
+Turnover: 0.0417
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AgaMaV, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_dfdtxastxcrcarryfwd/net_income_adjusted,30))*rank(ts_delta(net_income_adjusted,5)))
+Sharpe: 0.41
+Turnover: 0.0604
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexJQoxx, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_a_rvndm/anl4_qf_az_wol_spe,30))*rank(ts_delta(anl4_qf_az_wol_spe,30)))
+Sharpe: 0.19
+Turnover: 0.0739
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qg5RR, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_a_flintasacmamtzcsrld/fnd6_lol2,45))*rank(ts_delta(fnd6_lol2,90)))
+Sharpe: -0.32
+Turnover: 0.0497
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QVp26, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_a_excesstxbnffsbcpnoprat/anl4_qfd1_az_wol_vid,90))*rank(ts_delta(anl4_qfd1_az_wol_vid,15)))
+Sharpe: -0.75
+Turnover: 0.032
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkQJ8zj, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_profit_loss_q/fnd2_dbplanfvalpnas,45))*rank(ts_delta(fnd2_dbplanfvalpnas,60)))
+Sharpe: -0.55
+Turnover: 0.0402
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoga8VV, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_a_flintasacmamtzcsrld/fnd6_adesinda_curcd,60))*rank(ts_delta(fnd6_adesinda_curcd,45)))
+Sharpe: 0.16
+Turnover: 0.0079
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Oga6av, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_profit_loss_a/assets_curr,30))*rank(ts_delta(assets_curr,3)))
+Sharpe: -0.16
+Turnover: 0.075
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0QVRo3, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fnd2_a_alsbcmpexrsus/fnd6_newqv1300_aociotherq,30))*rank(ts_delta(fnd6_newqv1300_aociotherq,90)))
+Sharpe: -0.33
+Turnover: 0.2124
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMXPxvW, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_ppne_gross_q/fnd6_newqv1300_dlcq,30))*rank(ts_delta(fnd6_newqv1300_dlcq,60)))
+Sharpe: -0.41
+Turnover: 0.0775
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPem2aEr, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_ppne_gross_a/fn_accum_oth_income_loss_net_of_tax_a,60))*rank(ts_delta(fn_accum_oth_income_loss_net_of_tax_a,30)))
+Sharpe: -0.26
+Turnover: 0.0342
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeOgg51, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_payments_to_acquire_businesses_net_of_cash_acquired_a/fnd6_stkcpa,60))*rank(ts_delta(fnd6_stkcpa,3)))
+Sharpe: -0.1
+Turnover: 0.0306
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbePmk2, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_payments_for_repurchase_of_common_stock_a/anl4_ebit_number,90))*rank(ts_delta(anl4_ebit_number,10)))
+Sharpe: 0.2
+Turnover: 0.0633
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkKaX5x, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_interest_payable_a/anl4_medianepsbfam,30))*rank(ts_delta(anl4_medianepsbfam,90)))
+Sharpe: 0.03
+Turnover: 0.0445
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0monekp2, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_mne_a/fnd2_q_flintasamt1expyfour,45))*rank(ts_delta(fnd2_q_flintasamt1expyfour,30)))
+Sharpe: 0.78
+Turnover: 0.0537
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2Q3QVn, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_liab_fair_val_l3_a/fn_def_income_tax_expense_a,30))*rank(ts_delta(fn_def_income_tax_expense_a,45)))
+Sharpe: 0.59
+Turnover: 0.0376
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qeEXP2, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_excess_tax_benefit_from_share_based_comp_fin_activities_a/anl4_capex_flag,45))*rank(ts_delta(anl4_capex_flag,30)))
+Sharpe: -0.42
+Turnover: 0.0388
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qogavxK, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_debt_issuance_costs_q/fnd6_am,60))*rank(ts_delta(fnd6_am,3)))
+Sharpe: -0.17
+Turnover: 0.0453
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX0kG1g, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_comp_options_out_intrinsic_value_a/anl4_dts_rspe,45))*rank(ts_delta(anl4_dts_rspe,15)))
+Sharpe: 0.43
+Turnover: 0.1784
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbemRxV, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_comp_not_rec_a/fnd6_mfma2_txach,90))*rank(ts_delta(fnd6_mfma2_txach,90)))
+Sharpe: 0.05
+Turnover: 0.052
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53orPk1, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_comp_fair_value_assumptions_weighted_avg_vol_rate_q/news_eod_vwap,30))*rank(ts_delta(news_eod_vwap,30)))
+Sharpe: 0.15
+Turnover: 1.6274
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZdzVbw, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_comp_fair_value_assumptions_weighted_avg_vol_rate_a/gross_income_reported_value,60))*rank(ts_delta(gross_income_reported_value,10)))
+Sharpe: 0.25
+Turnover: 0.1773
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AJGWEg, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_assets_fair_val_l1_a/fn_interest_paid_net_q,60))*rank(ts_delta(fn_interest_paid_net_q,90)))
+Sharpe: -0.17
+Turnover: 0.0542
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2eGb0m, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(fn_comp_fair_value_assumptions_weighted_avg_vol_rate_a/fn_def_tax_assets_net_q,30))*rank(ts_delta(fn_def_tax_assets_net_q,3)))
+Sharpe: -0.26
+Turnover: 0.021
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv7oXdg, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(est_ptp/fn_comp_options_exercises_weighted_avg_q,90))*rank(ts_delta(fn_comp_options_exercises_weighted_avg_q,30)))
+Sharpe: 0.58
+Turnover: 0.0274
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkKWLeo, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(est_cashflow_ps/fnd6_lcox,90))*rank(ts_delta(fnd6_lcox,10)))
+Sharpe: 0.02
+Turnover: 0.0441
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AgKPg7, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(est_fcf_ps/fn_proceeds_from_stock_options_exercised_q,30))*rank(ts_delta(fn_proceeds_from_stock_options_exercised_q,3)))
+Sharpe: 0.49
+Turnover: 0.0831
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOexjQp, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(equity/fn_accum_depr_depletion_and_amortization_ppne_a,30))*rank(ts_delta(fn_accum_depr_depletion_and_amortization_ppne_a,30)))
+Sharpe: -1.05
+Turnover: 0.0417
+Fitness: -0.77
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPem5VYW, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(correlation_last_30_days_spy/beta_last_90_days_spy,30))*rank(ts_delta(beta_last_90_days_spy,15)))
+Sharpe: -0.1
+Turnover: 0.264
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqXYngx, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(correlation_last_30_days_spy/fnd6_city,60))*rank(ts_delta(fnd6_city,45)))
+Sharpe: 0.43
+Turnover: 0.1018
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2Q93bn, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(cashflow_per_share_average/fnd6_newa1v1300_lt,45))*rank(ts_delta(fnd6_newa1v1300_lt,15)))
+Sharpe: -0.09
+Turnover: 0.0299
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPexwXJk, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(cogs/anl4_qf_az_hgih_vid,90))*rank(ts_delta(anl4_qf_az_hgih_vid,3)))
+Sharpe: 0.31
+Turnover: 0.0687
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkWqRd, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(cashflow_invst/fscore_total,30))*rank(ts_delta(fscore_total,10)))
+Sharpe: -13.05
+Turnover: 1.0
+Fitness: -7.98
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdgngAX, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(cashflow_fin/fnd6_newqv1300_ciotherq,30))*rank(ts_delta(fnd6_newqv1300_ciotherq,30)))
+Sharpe: -0.17
+Turnover: 0.1587
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZkWL13, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(capital_expenditure_reported_value/fnd2_a_gwllimrml,90))*rank(ts_delta(fnd2_a_gwllimrml,10)))
+Sharpe: -0.52
+Turnover: 0.0301
+Fitness: -0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlR5ZWl, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(basic_shares_max_guidance_qtr/fnd6_newa1v1300_intano,30))*rank(ts_delta(fnd6_newa1v1300_intano,30)))
+Sharpe: 0.12
+Turnover: 0.0366
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LNdRo5, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(anl4_rd_exp_high/fnd6_optdr,30))*rank(ts_delta(fnd6_optdr,15)))
+Sharpe: -0.8
+Turnover: 0.0366
+Fitness: -0.51
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16qOj2d, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(anl4_qfv4_div_mean/news_mins_4_pct_dn,90))*rank(ts_delta(news_mins_4_pct_dn,30)))
+Sharpe: 0.05
+Turnover: 0.1572
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw95PO9, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(anl4_rd_exp_high/debt,30))*rank(ts_delta(debt,5)))
+Sharpe: -0.21
+Turnover: 0.1293
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MkjdWw, Author: niuaoyula
+Expression: rank(zscore(fnd6_newqv1300_cicurrq/anl4_ebitda_high))
+Sharpe: -0.61
+Turnover: 0.0718
+Fitness: -0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw00mzJq, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(anl4_qf_az_eps_mean/fnd6_cptmfmq_saleq,60))*rank(ts_delta(fnd6_cptmfmq_saleq,30)))
+Sharpe: 0.35
+Turnover: 0.1118
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknnVknb, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(anl4_qf_az_eps/ebitda,90))*rank(ts_delta(ebitda,20)))
+Sharpe: -0.03
+Turnover: 0.0297
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53AzNWL, Author: niuaoyula
+Expression: rank(zscore(fnd6_newqv1300_ancq/anl4_ptpr_number))
+Sharpe: -0.07
+Turnover: 0.0174
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E533O2G9, Author: niuaoyula
+Expression: rank(zscore(ts_decay_linear(anl4_qf_az_div_mean/anl4_ptpr_mean,45))*rank(ts_delta(anl4_ptpr_mean,60)))
+Sharpe: 0.2
+Turnover: 0.0423
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qog6j91, Author: niuaoyula
+Expression: rank(zscore(fnd6_newqv1300_anoq/fn_oth_income_loss_fx_transaction_and_tax_translation_adj_q))
+Sharpe: -0.23
+Turnover: 0.1015
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoQMG7x, Author: niuaoyula
+Expression: rank(zscore(fnd6_newqv1300_acoq/cashflow_dividends))
+Sharpe: 0.28
+Turnover: 0.0335
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------

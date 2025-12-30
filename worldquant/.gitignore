@@ -1,0 +1,26 @@
+# 环境变量（敏感信息）
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 数据库文件
+*.db
+*.sqlite3
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 备份文件
+data/backup/
+*_old.py
+
+# 临时文件
+*.tmp
+*.log

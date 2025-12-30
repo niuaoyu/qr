@@ -15,4 +15,17 @@ echo $ANTHROPIC_AUTH_TOKEN
 
 在 VS Code 中配置 Claude Code 插件
 https://xaixapi.com/blog/vscode-claude-code-config/
-asdas
+
+
+
+修改智谱的api：https://linux.do/t/topic/1114315
+终端输入：code $profile
+弹出：C:\Users\用户名\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+    # 禁止claude code 自动升级
+    $env:DISABLE_AUTOUPDATER = 1
+    # 禁用不必要的流量
+    $env:CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC = 1
+    # 智谱AI (个人)
+    $env:ANTHROPIC_AUTH_TOKEN = "替换引号内的内容"
+    $env:ANTHROPIC_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
+    $env:ANTHROPIC_MODEL = "glm-4.6"

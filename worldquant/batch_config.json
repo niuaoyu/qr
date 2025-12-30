@@ -1,0 +1,30 @@
+{
+    "user_choice": "lab",
+    "max_workers": 3,
+    "alpha_templates": [
+        "group_rank(ts_delta({field}, {days}), industry)",
+        "-1 * group_zscore(ts_corr(volume, close, {days}), sector)"
+    ],
+    "template_params": {
+        "field": ["close", "vwap", "volume"],
+        "days": [5, 10, 20, 30]
+    },
+    "settings_base": {
+        "instrumentType": "EQUITY",
+        "region": "USA",
+        "universe": "TOP3000",
+        "delay": 1,
+        "decay": 0,
+        "neutralization": "INDUSTRY",
+        "truncation": 0.01,
+        "pasteurization": "ON",
+        "unitHandling": "VERIFY",
+        "nanHandling": "ON",
+        "language": "FASTEXPR",
+        "visualization": false
+    },
+    "settings_params": {
+        "decay": [0, 3, 5],
+        "truncation": [0.01, 0.05]
+    }
+}
