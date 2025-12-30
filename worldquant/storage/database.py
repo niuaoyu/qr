@@ -1,13 +1,20 @@
 """
 数据库操作模块 - 负责 Alpha 数据的存储和查询
-支持：自动备份、版本轮转、恢复功能
+支持：SQLite 和 MySQL，自动备份、版本轮转、恢复功能
 """
 import sqlite3
 import os
 import shutil
 import glob
 from datetime import datetime
-from config import DEFAULT_DB_PATH
+from config import DEFAULT_DB_PATH, DB_TYPE, DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME
+
+# MySQL 支持（可选）
+try:
+    import pymysql
+    MYSQL_AVAILABLE = True
+except ImportError:
+    MYSQL_AVAILABLE = False
 
 # ============ 备份配置 ============
 MAX_BACKUPS = 5  # 保留最近5个备份
@@ -108,80 +115,129 @@ def list_backups(db_path=None):
 
 def get_connection(db_path=None):
     """
-    获取数据库连接
+    获取数据库连接（支持 SQLite 和 MySQL）
 
     Args:
-        db_path: 数据库路径，默认使用配置中的路径
+        db_path: SQLite 数据库路径（MySQL 模式下忽略）
 
     Returns:
-        sqlite3.Connection: 数据库连接对象
+        数据库连接对象
     """
-    path = db_path or DEFAULT_DB_PATH
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    conn = sqlite3.connect(path, timeout=10)
-    conn.row_factory = sqlite3.Row
-    # 性能优化
-    conn.execute("PRAGMA journal_mode=WAL;")
-    conn.execute("PRAGMA synchronous=NORMAL;")
-    return conn
+    if DB_TYPE == 'mysql':
+        if not MYSQL_AVAILABLE:
+            raise ImportError("请安装 pymysql: pip install pymysql")
+        conn = pymysql.connect(
+            host=DB_HOST,
+            port=DB_PORT,
+            user=DB_USER,
+            password=DB_PASSWORD,
+            database=DB_NAME,
+            charset='utf8mb4',
+            cursorclass=pymysql.cursors.DictCursor
+        )
+        return conn
+    else:
+        # SQLite 模式
+        path = db_path or DEFAULT_DB_PATH
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        conn = sqlite3.connect(path, timeout=10)
+        conn.row_factory = sqlite3.Row
+        conn.execute("PRAGMA journal_mode=WAL;")
+        conn.execute("PRAGMA synchronous=NORMAL;")
+        return conn
 
 
 def init_db(db_path=None):
     """
-    初始化数据库表和索引（启动时自动备份）
+    初始化数据库表和索引
 
     Args:
-        db_path: 数据库路径
+        db_path: SQLite 数据库路径（MySQL 模式下忽略）
 
     Returns:
-        sqlite3.Connection: 数据库连接对象
+        数据库连接对象
     """
-    path = db_path or DEFAULT_DB_PATH
-
-    # 自动备份（如果数据库已存在）
-    if BACKUP_ON_INIT and os.path.exists(path):
-        backup_database(path)
+    # SQLite 自动备份
+    if DB_TYPE == 'sqlite':
+        path = db_path or DEFAULT_DB_PATH
+        if BACKUP_ON_INIT and os.path.exists(path):
+            backup_database(path)
 
     conn = get_connection(db_path)
     cursor = conn.cursor()
 
-    # 创建表
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS alpha_is (
-            id              TEXT NOT NULL,
-            expression      TEXT NOT NULL,
-            grade           TEXT,
-            neutralization  TEXT,
-            delay           INTEGER,
-            decay           INTEGER,
-            universe        TEXT,
-            truncation      REAL,
-            region          TEXT,
-            nan_handling    TEXT,
-            instrument_type TEXT,
-            unit_handling   TEXT,
-            pasteurization  INTEGER,
-            sharpe          REAL,
-            fitness         REAL,
-            returns         REAL,
-            turnover        REAL,
-            margin          REAL,
-            pnl             INTEGER,
-            drawdown        REAL,
-            book_size       INTEGER,
-            long_count      INTEGER,
-            short_count     INTEGER,
-            author          TEXT,
-            date_created    TEXT,
-            date_modified   TEXT,
-            fingerprint     TEXT NOT NULL PRIMARY KEY
-        )
-    ''')
-
-    # 创建索引
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_grade ON alpha_is(grade)')
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_sharpe ON alpha_is(sharpe DESC)')
-    cursor.execute('CREATE INDEX IF NOT EXISTS idx_fitness ON alpha_is(fitness DESC)')
+    if DB_TYPE == 'mysql':
+        # MySQL 建表语句
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS alpha_is (
+                id              VARCHAR(64) NOT NULL,
+                expression      TEXT NOT NULL,
+                grade           VARCHAR(32),
+                neutralization  VARCHAR(32),
+                delay           INT,
+                decay           INT,
+                universe        VARCHAR(32),
+                truncation      FLOAT,
+                region          VARCHAR(32),
+                nan_handling    VARCHAR(32),
+                instrument_type VARCHAR(32),
+                unit_handling   VARCHAR(32),
+                pasteurization  INT,
+                sharpe          FLOAT,
+                fitness         FLOAT,
+                returns         FLOAT,
+                turnover        FLOAT,
+                margin          FLOAT,
+                pnl             BIGINT,
+                drawdown        FLOAT,
+                book_size       BIGINT,
+                long_count      INT,
+                short_count     INT,
+                author          VARCHAR(128),
+                date_created    VARCHAR(64),
+                date_modified   VARCHAR(64),
+                fingerprint     VARCHAR(128) NOT NULL PRIMARY KEY
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+        ''')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_grade ON alpha_is(grade)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_sharpe ON alpha_is(sharpe DESC)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_fitness ON alpha_is(fitness DESC)')
+    else:
+        # SQLite 建表语句
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS alpha_is (
+                id              TEXT NOT NULL,
+                expression      TEXT NOT NULL,
+                grade           TEXT,
+                neutralization  TEXT,
+                delay           INTEGER,
+                decay           INTEGER,
+                universe        TEXT,
+                truncation      REAL,
+                region          TEXT,
+                nan_handling    TEXT,
+                instrument_type TEXT,
+                unit_handling   TEXT,
+                pasteurization  INTEGER,
+                sharpe          REAL,
+                fitness         REAL,
+                returns         REAL,
+                turnover        REAL,
+                margin          REAL,
+                pnl             INTEGER,
+                drawdown        REAL,
+                book_size       INTEGER,
+                long_count      INTEGER,
+                short_count     INTEGER,
+                author          TEXT,
+                date_created    TEXT,
+                date_modified   TEXT,
+                fingerprint     TEXT NOT NULL PRIMARY KEY
+            )
+        ''')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_grade ON alpha_is(grade)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_sharpe ON alpha_is(sharpe DESC)')
+        cursor.execute('CREATE INDEX IF NOT EXISTS idx_fitness ON alpha_is(fitness DESC)')
 
     conn.commit()
     return conn
@@ -199,7 +255,10 @@ def check_exists(conn, fingerprint):
         bool: 是否存在
     """
     cursor = conn.cursor()
-    cursor.execute('SELECT 1 FROM alpha_is WHERE fingerprint = ? LIMIT 1', (fingerprint,))
+    if DB_TYPE == 'mysql':
+        cursor.execute('SELECT 1 FROM alpha_is WHERE fingerprint = %s LIMIT 1', (fingerprint,))
+    else:
+        cursor.execute('SELECT 1 FROM alpha_is WHERE fingerprint = ? LIMIT 1', (fingerprint,))
     return cursor.fetchone() is not None
 
 
@@ -263,9 +322,15 @@ def save_alpha(conn, alpha_data, fingerprint):
     )
 
     try:
-        placeholders = ','.join(['?'] * len(columns))
-        sql = f"INSERT OR REPLACE INTO alpha_is ({','.join(columns)}) VALUES ({placeholders})"
-        conn.execute(sql, values)
+        cursor = conn.cursor()
+        if DB_TYPE == 'mysql':
+            placeholders = ','.join(['%s'] * len(columns))
+            sql = f"REPLACE INTO alpha_is ({','.join(columns)}) VALUES ({placeholders})"
+            cursor.execute(sql, values)
+        else:
+            placeholders = ','.join(['?'] * len(columns))
+            sql = f"INSERT OR REPLACE INTO alpha_is ({','.join(columns)}) VALUES ({placeholders})"
+            conn.execute(sql, values)
         return True
     except Exception as e:
         print(f"[save_alpha] 保存失败: {e}")

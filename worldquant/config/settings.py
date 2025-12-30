@@ -26,6 +26,14 @@ DEFAULT_RESULT_PATH = os.path.join(OUTPUT_DIR, 'alpha_list.txt')
 # ============ 并发配置 ============
 MAX_WORKERS = 3  # WorldQuant 平台支持最多 3 个并发
 
+# ============ 数据库配置 ============
+DB_TYPE = os.getenv('DB_TYPE', 'sqlite')  # sqlite 或 mysql
+DB_HOST = os.getenv('DB_HOST', 'localhost')
+DB_PORT = int(os.getenv('DB_PORT', '3306'))
+DB_USER = os.getenv('DB_USER', 'root')
+DB_PASSWORD = os.getenv('DB_PASSWORD', '')
+DB_NAME = os.getenv('DB_NAME', 'worldquant')
+
 # ============ 用户账户（从环境变量加载） ============
 def _get_user_config():
     """从环境变量加载用户配置"""

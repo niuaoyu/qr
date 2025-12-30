@@ -9,13 +9,16 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from config import SYSTEM_NAME, MAX_WORKERS
 from core.backtest_engine import BacktestEngine
 from loaders import load_from_json
 
 
 # ============ 运行时配置 ============
-USER_CHOICE = 'lab'  # 账户选择: lab, mylab, ubuntu, backup
+USER_CHOICE = os.getenv('USER_CHOICE', 'lab')  # 从 .env 读取
 CONFIG_FILE = os.path.join(os.path.dirname(__file__), 'batch_config.json')
 
 

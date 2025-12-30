@@ -123,6 +123,25 @@ LAB_USERNAME=xxx@xxx.com
 LAB_PASSWORD=xxx
 ```
 
+### 配置数据库（多机协作）
+
+**SQLite 模式（默认，单机）**
+```
+DB_TYPE=sqlite
+```
+
+**MySQL 模式（多机协作）**
+```
+DB_TYPE=mysql
+DB_HOST=192.168.1.100  # 主电脑IP
+DB_PORT=3306
+DB_USER=wq_user
+DB_PASSWORD=xxx
+DB_NAME=worldquant
+```
+
+需要先安装 pymysql：`pip install pymysql`
+
 ### 查看结果
 - 数据库：`io/sqlite/alphas.db`
 - 优质结果：`io/output/alpha_list.txt`
