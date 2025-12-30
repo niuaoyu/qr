@@ -1,4 +1,84 @@
 --------------------------------------------------
+Alpha ID: Jjl0WZYx, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 12.2
+Turnover: 1.0
+Fitness: 6.39
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPdZl1, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 16.05
+Turnover: 1.0
+Fitness: 7.07
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqgYqg, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 16.05
+Turnover: 1.0
+Fitness: 7.07
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6w30ap, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 16.0
+Turnover: 1.0
+Fitness: 5.66
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7A8NPVN, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 12.2
+Turnover: 1.0
+Fitness: 6.39
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7r5n1, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 16.05
+Turnover: 1.0
+Fitness: 7.07
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknwZdQM, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 16.0
+Turnover: 1.0
+Fitness: 5.66
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk69Pkm, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 12.2
+Turnover: 1.0
+Fitness: 6.39
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0Xk9Q, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 16.05
+Turnover: 1.0
+Fitness: 7.07
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVOn9z, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 10))
+Sharpe: 12.2
+Turnover: 1.0
+Fitness: 6.39
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: 9qog56d1, Author: niuaoyula
 Expression: rank(zscore(ts_mean(min_basic_shares_guidance,150)/anl4_bvps_flag))
 Sharpe: 1.34

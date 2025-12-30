@@ -1,0 +1,4632 @@
+--------------------------------------------------
+Alpha ID: QPerpm6X, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwlNoPo, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -34.64
+Turnover: 1.0
+Fitness: -15.93
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlKEz5, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjkw2MQo, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwoZPm, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530MjJ9, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -34.64
+Turnover: 1.0
+Fitness: -15.93
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZovva, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk6w9Oa, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -34.64
+Turnover: 1.0
+Fitness: -15.93
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRkMa1g, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0klPvw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_stkco, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -0.01
+Turnover: 0.0144
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0erb7zL, Author: niuaoyula
+Expression: group_neutralize(rank(ts_delta(fscore_growth, 10)), industry)
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawE9vK, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_stkco, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -0.08
+Turnover: 0.0107
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZw921d, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_stkco, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -0.01
+Turnover: 0.0144
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wXzMm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_stkco, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -0.06
+Turnover: 0.0128
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebwqAm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_stkco, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -0.08
+Turnover: 0.0107
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8Pjvw, Author: niuaoyula
+Expression: rank(ts_decay_linear(snt_social_value, 5) * ts_rank(returns, 20))
+Sharpe: 0.45
+Turnover: 0.517
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkwxGWd, Author: niuaoyula
+Expression: rank(ts_decay_linear(snt_social_value, 5) * ts_rank(returns, 20))
+Sharpe: 0.46
+Turnover: 0.4965
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEq2vl6, Author: niuaoyula
+Expression: rank(ts_decay_linear(snt_social_value, 5) * ts_rank(returns, 20))
+Sharpe: 0.4
+Turnover: 0.5035
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16J2nOE, Author: niuaoyula
+Expression: rank(ts_decay_linear(snt_social_value, 5) * ts_rank(returns, 20))
+Sharpe: 0.45
+Turnover: 0.517
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex6N2OO, Author: niuaoyula
+Expression: rank(ts_decay_linear(snt_social_value, 5) * ts_rank(returns, 20))
+Sharpe: 0.4
+Turnover: 0.5035
+Fitness: 0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwEXwb, Author: niuaoyula
+Expression: rank(ts_decay_linear(snt_social_value, 5) * ts_rank(returns, 20))
+Sharpe: 0.46
+Turnover: 0.4965
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2KG7r, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.37
+Turnover: 0.9513
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeb2LvM, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.37
+Turnover: 0.9513
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JpwVq, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.48
+Turnover: 0.8806
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYZMg1, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.46
+Turnover: 0.9014
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0krXGq, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.48
+Turnover: 0.8806
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkV5AV, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.41
+Turnover: 1.0579
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wZP3E, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.46
+Turnover: 0.9014
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYJ06g, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.28
+Turnover: 1.124
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7A8Ezrd, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.41
+Turnover: 1.0782
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRk9QMd, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.77
+Turnover: 0.0168
+Fitness: 0.62
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwYQWw, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.41
+Turnover: 1.0579
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2AoeN, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.28
+Turnover: 1.124
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYJdOg, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_allz_result1), 10) * ts_rank(volume, 20))
+Sharpe: -0.42
+Turnover: 1.0782
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZPWLo, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.75
+Turnover: 0.015
+Fitness: 0.63
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRk9qw6, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.61
+Turnover: 0.013
+Fitness: 0.51
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaw0V98, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.77
+Turnover: 0.0168
+Fitness: 0.62
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkYZNo, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.61
+Turnover: 0.013
+Fitness: 0.51
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwJ8Jw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.75
+Turnover: 0.015
+Fitness: 0.63
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPml8e, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.77
+Turnover: 0.0173
+Fitness: 0.66
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6wPbqx, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.8
+Turnover: 0.0194
+Fitness: 0.65
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JZN2x, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.64
+Turnover: 0.015
+Fitness: 0.55
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjkw0gmN, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.8
+Turnover: 0.0194
+Fitness: 0.65
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVPovK, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.77
+Turnover: 0.0173
+Fitness: 0.66
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mok6ebp, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa1v1300_lct, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.64
+Turnover: 0.015
+Fitness: 0.55
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO21e09, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.34
+Turnover: 0.0149
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwMZjj, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.51
+Turnover: 0.0124
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mok6lnK, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.36
+Turnover: 0.0099
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqdkvQ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.36
+Turnover: 0.0099
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwlzNRk, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.34
+Turnover: 0.0149
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVK23z, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.51
+Turnover: 0.0124
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYP0nP, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.34
+Turnover: 0.0158
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mokgYe6, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.34
+Turnover: 0.0158
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWzrde, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.35
+Turnover: 0.0104
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwlzx5r, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.5
+Turnover: 0.0131
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nGxVv, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.5
+Turnover: 0.0131
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk6G67E, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(sales, 20), 10))
+Sharpe: 0.35
+Turnover: 0.0104
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZzXko, Author: niuaoyula
+Expression: rank(ts_corr(fscore_quality, returns, 30))
+Sharpe: -0.34
+Turnover: 0.0978
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0zae5, Author: niuaoyula
+Expression: rank(ts_corr(fscore_quality, returns, 30))
+Sharpe: -0.2
+Turnover: 0.0982
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawGZdd, Author: niuaoyula
+Expression: rank(ts_corr(fscore_quality, returns, 30))
+Sharpe: 0.01
+Turnover: 0.0977
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7AdPz, Author: niuaoyula
+Expression: rank(ts_corr(fscore_quality, returns, 30))
+Sharpe: -0.34
+Turnover: 0.0978
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkExNX, Author: niuaoyula
+Expression: rank(ts_corr(fscore_quality, returns, 30))
+Sharpe: -0.2
+Turnover: 0.0982
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebmr2n, Author: niuaoyula
+Expression: rank(ts_corr(fscore_quality, returns, 30))
+Sharpe: 0.01
+Turnover: 0.0977
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjkwodmj, Author: niuaoyula
+Expression: rank(ts_corr(fscore_quality, returns, 30))
+Sharpe: 0.01
+Turnover: 0.0981
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2J2Nq, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 1.12
+Turnover: 0.0147
+Fitness: 0.76
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwlLvN, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 1.12
+Turnover: 0.0147
+Fitness: 0.76
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wPjRl, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.84
+Turnover: 0.0109
+Fitness: 0.6
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wPGov, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 1.11
+Turnover: 0.0154
+Fitness: 0.75
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknwMmdJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.84
+Turnover: 0.0115
+Fitness: 0.6
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nYYVw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 1.11
+Turnover: 0.0154
+Fitness: 0.75
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeb8Zgv, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 1.12
+Turnover: 0.0137
+Fitness: 0.79
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkGjpX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.84
+Turnover: 0.0115
+Fitness: 0.6
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2RdWx, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.59
+Turnover: 0.0231
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl03X5e, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 1.12
+Turnover: 0.0137
+Fitness: 0.79
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwXwA8, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.43
+Turnover: 0.0163
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEqGz5b, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.57
+Turnover: 0.0197
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16JLWAw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.59
+Turnover: 0.0231
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwlgPpL, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.43
+Turnover: 0.0163
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwl6r0z, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.57
+Turnover: 0.0197
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwa82Q, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.63
+Turnover: 0.0268
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPl36r, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.46
+Turnover: 0.0187
+Fitness: 0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlaGOj, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.6
+Turnover: 0.0228
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPlMv1, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.6
+Turnover: 0.0228
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebKKr9, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.63
+Turnover: 0.0268
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawd8oV, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_rectq, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.46
+Turnover: 0.0187
+Fitness: 0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2aqYr, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 1.0
+Turnover: 0.0155
+Fitness: 0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdY0z6Q, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.61
+Turnover: 0.0109
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRkaQ7d, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.83
+Turnover: 0.0135
+Fitness: 0.59
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwaqVj, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 1.0
+Turnover: 0.0155
+Fitness: 0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRkak2P, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 1.0
+Turnover: 0.0163
+Fitness: 0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwvwqn, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.61
+Turnover: 0.0109
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebKaGe, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.61
+Turnover: 0.0114
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkwlMGZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.83
+Turnover: 0.0135
+Fitness: 0.59
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPervzEW, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.83
+Turnover: 0.0143
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OqLmO8, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.66
+Turnover: 0.5066
+Fitness: -0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPxxvK, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.61
+Turnover: 0.4981
+Fitness: -0.28
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8W17J, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.66
+Turnover: 0.488
+Fitness: -0.33
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7A85b0l, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.66
+Turnover: 0.488
+Fitness: -0.33
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZEded, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.66
+Turnover: 0.5066
+Fitness: -0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ewAwLR, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.62
+Turnover: 0.4981
+Fitness: -0.28
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2KJqR, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.64
+Turnover: 1.1464
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxPdbG7, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.66
+Turnover: 1.0917
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYowGe, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.59
+Turnover: 1.1193
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2KjYx, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.65
+Turnover: 1.1464
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqWLLJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.67
+Turnover: 1.0917
+Fitness: -0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwxYgM, Author: niuaoyula
+Expression: rank(ts_decay_linear(implied_volatility_call_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.59
+Turnover: 1.1193
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMw121g, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.61
+Turnover: 0.0192
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkwLL2N, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.61
+Turnover: 0.0192
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530Vpvm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.05
+Turnover: 0.0129
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkvjJo, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.58
+Turnover: 0.0172
+Fitness: 0.38
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVjgdz, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.58
+Turnover: 0.0172
+Fitness: 0.38
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nOmlw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.05
+Turnover: 0.0129
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwxNaW, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.07
+Turnover: 0.0147
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkEkQP, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.64
+Turnover: 0.0223
+Fitness: 0.44
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwl09mL, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.61
+Turnover: 0.0199
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OqoAVO, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.64
+Turnover: 0.0223
+Fitness: 0.44
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wWEWn, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.27
+Turnover: 0.7396
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vknw00Zb, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.31
+Turnover: 0.7656
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2x1A2, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.27
+Turnover: 0.7396
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530RENm, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.3
+Turnover: 0.8207
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZ6prg, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.31
+Turnover: 0.7656
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ergle7, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.32
+Turnover: 0.941
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16Jvb8w, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.29
+Turnover: 0.8644
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxPK38Y, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.35
+Turnover: 0.8899
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO269RX, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.35
+Turnover: 0.8899
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkPdOm, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.32
+Turnover: 0.941
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16JvWae, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_business, 20) * ts_rank(close, 20))
+Sharpe: -0.29
+Turnover: 0.8644
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlAMVe, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.05
+Turnover: 0.9313
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlAxo5, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.1
+Turnover: 0.918
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZbzeo, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.07
+Turnover: 0.9212
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwlaYJL, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.05
+Turnover: 0.9313
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wL6qJ, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.1
+Turnover: 0.918
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8bQzg, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.07
+Turnover: 0.9212
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO2mxEE, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.48
+Turnover: 1.3266
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwbxd0, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.48
+Turnover: 1.3266
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8be1Y, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.71
+Turnover: 1.2853
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknwaoV0, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.65
+Turnover: 1.2963
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mokXll6, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.71
+Turnover: 1.2853
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7z875, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.2
+Turnover: 0.0173
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebNPOv, Author: niuaoyula
+Expression: rank(ts_delta(scl12_sentiment, 30))
+Sharpe: -0.65
+Turnover: 1.2963
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7A89PQM, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: -0.14
+Turnover: 0.0116
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mokR52r, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.17
+Turnover: 0.0154
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPer3NwM, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.2
+Turnover: 0.0173
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO2gdP9, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: -0.14
+Turnover: 0.0116
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16J0NQW, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.17
+Turnover: 0.0154
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530vvxL, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.23
+Turnover: 0.0184
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWQrZE, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: -0.13
+Turnover: 0.0123
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPer3QeM, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.19
+Turnover: 0.0164
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OqZJwL, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.47
+Turnover: 1.1756
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWQjQE, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.23
+Turnover: 0.0184
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk65Eb3, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: -0.13
+Turnover: 0.0123
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0dpRZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xrd, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.19
+Turnover: 0.0164
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JPXab, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.54
+Turnover: 1.2542
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0er7kn7, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.47
+Turnover: 1.1755
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPXeEq, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.55
+Turnover: 1.1999
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0er7m6J, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.54
+Turnover: 1.2
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OqjGRO, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.55
+Turnover: 1.254
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JjNab, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.39
+Turnover: 1.3623
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ew7pgY, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.39
+Turnover: 1.2938
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPer7arX, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.43
+Turnover: 1.316
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRkj1JP, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.39
+Turnover: 1.3621
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0l6bG, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.38
+Turnover: 1.2938
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530lYkL, Author: niuaoyula
+Expression: rank(ts_decay_linear(rp_ess_earnings, 20) * ts_rank(returns, 20))
+Sharpe: -0.43
+Turnover: 1.3159
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk6jmzm, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.33
+Turnover: 0.2518
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEqlzwZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.25
+Turnover: 0.256
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO2j3Qx, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.31
+Turnover: 0.2521
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvq82jg, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.25
+Turnover: 0.256
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530Gj0R, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.31
+Turnover: 0.2521
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwEzZd, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.33
+Turnover: 0.2518
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwN1Ap, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.47
+Turnover: 0.7447
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2QOXN, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.39
+Turnover: 0.7744
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nNjva, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.44
+Turnover: 0.7544
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkpL07, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.44
+Turnover: 0.7544
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JN7Lb, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.39
+Turnover: 0.7744
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvq8RNM, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 5) * ts_rank(returns, 20))
+Sharpe: -0.47
+Turnover: 0.7447
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkNvpA, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.03
+Turnover: 0.2699
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ewGKY1, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.48
+Turnover: 0.2761
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8Zqvj, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.03
+Turnover: 0.2699
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wN7zn, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.48
+Turnover: 0.2761
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZmjW0, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.38
+Turnover: 0.272
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0vJjj, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.55
+Turnover: 0.4863
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex631ON, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.38
+Turnover: 0.272
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0egQQ, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.11
+Turnover: 0.4641
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Xgqw8ba0, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.11
+Turnover: 0.4641
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0k8dK8, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.55
+Turnover: 0.4863
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvq9MoQ, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.46
+Turnover: 0.4717
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebdXkm, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 10))
+Sharpe: -0.46
+Turnover: 0.4717
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwKq2Y, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.36
+Turnover: 0.1836
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZ1Loa, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: 0.13
+Turnover: 0.1769
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYeLpz, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.36
+Turnover: 0.1836
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JKrZ3, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.26
+Turnover: 0.1791
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwdAow, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: 0.13
+Turnover: 0.1769
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0O922, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.26
+Turnover: 0.1791
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0L2Zo, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.61
+Turnover: 0.3304
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2ngzO, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.61
+Turnover: 0.3304
+Fitness: -0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wlrRE, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.02
+Turnover: 0.3128
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawmGd1, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.47
+Turnover: 0.3188
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxP9AWY, Author: niuaoyula
+Expression: rank(ts_decay_linear(scl12_sentiment, 5) * ts_rank(close, 20))
+Sharpe: -1.1
+Turnover: 0.5258
+Fitness: -0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6wlbQv, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.02
+Turnover: 0.3128
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZ8mGo, Author: niuaoyula
+Expression: rank(ts_corr(implied_volatility_call_30, returns, 20))
+Sharpe: -0.47
+Turnover: 0.3188
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex6lrNO, Author: niuaoyula
+Expression: rank(ts_decay_linear(scl12_sentiment, 5) * ts_rank(close, 20))
+Sharpe: -0.84
+Turnover: 0.4915
+Fitness: -0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYRxJ6, Author: niuaoyula
+Expression: rank(ts_decay_linear(scl12_sentiment, 5) * ts_rank(close, 20))
+Sharpe: -0.84
+Turnover: 0.4915
+Fitness: -0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wlvmb, Author: niuaoyula
+Expression: rank(ts_decay_linear(scl12_sentiment, 5) * ts_rank(close, 20))
+Sharpe: -1.03
+Turnover: 0.5018
+Fitness: -0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqMqRQ, Author: niuaoyula
+Expression: rank(ts_decay_linear(scl12_sentiment, 5) * ts_rank(close, 20))
+Sharpe: -1.1
+Turnover: 0.5258
+Fitness: -0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0k2RQ8, Author: niuaoyula
+Expression: rank(ts_decay_linear(scl12_sentiment, 5) * ts_rank(close, 20))
+Sharpe: -1.03
+Turnover: 0.5018
+Fitness: -0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7A80mbz, Author: niuaoyula
+Expression: rank(ts_decay_linear(scl12_sentiment, 5) * ts_rank(close, 20))
+Sharpe: -1.0
+Turnover: 0.6776
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlZ7oQ, Author: niuaoyula
+Expression: rank(ts_decay_linear(scl12_sentiment, 5) * ts_rank(close, 20))
+Sharpe: -1.04
+Turnover: 0.7186
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ewpMnv, Author: niuaoyula
+Expression: rank(ts_delta(ts_backfill(fnd6_newa2v1300_ppent, 20), 20))
+Sharpe: -0.39
+Turnover: 0.1433
+Fitness: -0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7wpWk, Author: niuaoyula
+Expression: rank(ts_delta(ts_backfill(fnd6_newa2v1300_ppent, 20), 20))
+Sharpe: -0.57
+Turnover: 0.1816
+Fitness: -0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex6VWpO, Author: niuaoyula
+Expression: rank(ts_delta(ts_backfill(fnd6_newa2v1300_ppent, 20), 20))
+Sharpe: -0.75
+Turnover: 0.1378
+Fitness: -0.47
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebRw59, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.37
+Turnover: 0.0096
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqwKegm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.53
+Turnover: 0.0117
+Fitness: 0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8Q3rx, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.53
+Turnover: 0.0117
+Fitness: 0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nmZ33, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.56
+Turnover: 0.0134
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex60Mxe, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.37
+Turnover: 0.0096
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZr7eg, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.56
+Turnover: 0.0141
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebRdWL, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.37
+Turnover: 0.01
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYLkAg, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.53
+Turnover: 0.0123
+Fitness: 0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRkKmdL, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.56
+Turnover: 0.0141
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwAm16, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.37
+Turnover: 0.01
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerQm1K, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.53
+Turnover: 0.0123
+Fitness: 0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWO93q, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.82
+Turnover: 0.0154
+Fitness: 0.53
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0dj22, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.82
+Turnover: 0.0154
+Fitness: 0.53
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwoYLY, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.6
+Turnover: 0.0116
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2Ll1KXZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.6
+Turnover: 0.0116
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0k7pZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.59
+Turnover: 0.0121
+Fitness: 0.39
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknwOe28, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.8
+Turnover: 0.0137
+Fitness: 0.52
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0kKJZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.82
+Turnover: 0.0161
+Fitness: 0.52
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88Aknvnz, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.59
+Turnover: 0.0121
+Fitness: 0.39
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVJxQQ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.79
+Turnover: 0.0144
+Fitness: 0.51
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2vdVq, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.82
+Turnover: 0.0161
+Fitness: 0.52
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0kn2G, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.79
+Turnover: 0.0144
+Fitness: 0.51
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYznmz, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.22
+Turnover: 0.0266
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2Ll1dwk, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.3
+Turnover: 0.0306
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0J80Vg, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.22
+Turnover: 0.0259
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2oYdO, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.32
+Turnover: 0.0339
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8dk8w, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.3
+Turnover: 0.0306
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEqvgpx, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.22
+Turnover: 0.0259
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wnX6l, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.22
+Turnover: 0.0266
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7LG2k, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.24
+Turnover: 0.0294
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530q6j9, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.24
+Turnover: 0.0294
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwN17W, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.24
+Turnover: 0.0294
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebLYLm, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.32
+Turnover: 0.0339
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16JngAw, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(cap, 20), 5)), industry)
+Sharpe: 0.24
+Turnover: 0.0294
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkwNXwG, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.14
+Turnover: 0.0099
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0nYOm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.06
+Turnover: 0.0155
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530qXgR, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.04
+Turnover: 0.0135
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknwXj9V, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.07
+Turnover: 0.0166
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO2q3VX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.06
+Turnover: 0.0155
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO2rG69, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.04
+Turnover: 0.0135
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mokeVY1, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.14
+Turnover: 0.0099
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPadE9, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.07
+Turnover: 0.0166
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPer2N9K, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.04
+Turnover: 0.0144
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0MQ2Z, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.14
+Turnover: 0.0105
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0MGNJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.14
+Turnover: 0.0105
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZw2r8d, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(sales, 20), 10))
+Sharpe: -0.04
+Turnover: 0.0144
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mokezrK, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.8
+Turnover: 0.0163
+Fitness: 0.67
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nee2a, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.55
+Turnover: 0.0115
+Fitness: 0.44
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nex2a, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.55
+Turnover: 0.0115
+Fitness: 0.44
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex6QkpN, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.69
+Turnover: 0.014
+Fitness: 0.56
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO2re26, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.8
+Turnover: 0.0163
+Fitness: 0.67
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7A8doR6, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.69
+Turnover: 0.014
+Fitness: 0.56
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2w3pob, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.82
+Turnover: 0.0175
+Fitness: 0.69
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk6J3pm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.57
+Turnover: 0.0122
+Fitness: 0.46
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7aZGJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.57
+Turnover: 0.0122
+Fitness: 0.46
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkKwO7, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.7
+Turnover: 0.015
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530rd3J, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(cap, 20), 15))
+Sharpe: 0.7
+Turnover: 0.015
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8lvL2, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.17
+Turnover: 1.4369
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV03KaO, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.17
+Turnover: 1.4369
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8lbGx, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.08
+Turnover: 1.4839
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2w9gwk, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.01
+Turnover: 1.4114
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OqKxG1, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.07
+Turnover: 1.4835
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2WNvR, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.01
+Turnover: 1.4114
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwl5qpa, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.12
+Turnover: 1.563
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPAbax, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.15
+Turnover: 1.5271
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2w929E, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.02
+Turnover: 1.5098
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex6Reme, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.12
+Turnover: 1.5628
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknwYkob, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.02
+Turnover: 1.5098
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex6RL0O, Author: niuaoyula
+Expression: rank(ts_decay_linear(vec_avg(nws12_mainz_1_minute), 5) * ts_rank(returns, 20))
+Sharpe: -0.15
+Turnover: 1.5271
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEqZVzJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.03
+Turnover: 0.0192
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R76KRz, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: -0.01
+Turnover: 0.0141
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdY65jz, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.03
+Turnover: 0.0192
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0kze23, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.03
+Turnover: 0.0165
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV08KJx, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: -0.01
+Turnover: 0.0141
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawo8NG, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.03
+Turnover: 0.0165
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVmwbz, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.05
+Turnover: 0.0207
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawoR5V, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.0
+Turnover: 0.0152
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeY8Ejl, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.0
+Turnover: 0.0152
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZarmn, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.05
+Turnover: 0.0178
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwl8bnn, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.05
+Turnover: 0.0178
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVmnoQ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.05
+Turnover: 0.0207
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawowAR, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 1.36
+Turnover: 0.0141
+Fitness: 0.87
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0erlrpL, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(equity, 20), 20))
+Sharpe: 0.79
+Turnover: 0.01
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerlmRW, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.79
+Turnover: 0.0194
+Fitness: 0.62
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwzggl, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.77
+Turnover: 0.0169
+Fitness: 0.65
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxPqvGJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.66
+Turnover: 0.0139
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdY6wdZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.79
+Turnover: 0.0194
+Fitness: 0.62
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZaje0, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.66
+Turnover: 0.0139
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxPqXkG, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.77
+Turnover: 0.0169
+Fitness: 0.65
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawovaV, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.8
+Turnover: 0.0214
+Fitness: 0.64
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2MeNq, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.68
+Turnover: 0.0152
+Fitness: 0.6
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwlXvw8, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.79
+Turnover: 0.0187
+Fitness: 0.67
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88Akrxxz, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.79
+Turnover: 0.0187
+Fitness: 0.67
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawjEWO, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.8
+Turnover: 0.0214
+Fitness: 0.64
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPK23x, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.68
+Turnover: 0.0152
+Fitness: 0.6
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530bLwm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 1.0
+Turnover: 0.0155
+Fitness: 0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MW63xw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 1.0
+Turnover: 0.0155
+Fitness: 0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwQVLl, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.61
+Turnover: 0.0109
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MW6Lw7, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.83
+Turnover: 0.0135
+Fitness: 0.59
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwQrng, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.61
+Turnover: 0.0109
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVLNbX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.83
+Turnover: 0.0135
+Fitness: 0.59
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZY6Eb, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 1.0
+Turnover: 0.0163
+Fitness: 0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeb6NR6, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 1.0
+Turnover: 0.0163
+Fitness: 0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2Mb36, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.61
+Turnover: 0.0114
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ewk78g, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.83
+Turnover: 0.0143
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEqRLYZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.61
+Turnover: 0.0114
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0n9l0A, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_saleq, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.83
+Turnover: 0.0143
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2ML6q, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -1.48
+Turnover: 0.0136
+Fitness: -1.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZYrYd, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -0.95
+Turnover: 0.0097
+Fitness: -0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlX165, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -0.95
+Turnover: 0.0097
+Fitness: -0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeb6nr1, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -1.4
+Turnover: 0.012
+Fitness: -1.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwQmrm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -1.48
+Turnover: 0.0136
+Fitness: -1.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0n9JMv, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -1.4
+Turnover: 0.012
+Fitness: -1.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYx3KQ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -1.47
+Turnover: 0.0142
+Fitness: -1.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwQ9Rg, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -0.94
+Turnover: 0.0101
+Fitness: -0.73
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkwdwJG, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -1.39
+Turnover: 0.0126
+Fitness: -1.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwxZJn, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -1.47
+Turnover: 0.0142
+Fitness: -1.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7A8KA1d, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -1.39
+Turnover: 0.0126
+Fitness: -1.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPKQ82, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_ceqq, 20) / ts_backfill(assets, 20), 10))
+Sharpe: -0.94
+Turnover: 0.0101
+Fitness: -0.73
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2MEoZ, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.36
+Turnover: 0.0132
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex62OlO, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.41
+Turnover: 0.0153
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88Akrbbm, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.36
+Turnover: 0.0136
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16Jb1xl, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.41
+Turnover: 0.0162
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0er603L, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.41
+Turnover: 0.0153
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JEqQV, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.36
+Turnover: 0.0132
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6wOra5, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.36
+Turnover: 0.0136
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wAb9n, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.36
+Turnover: 0.0145
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0YJkm, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.36
+Turnover: 0.0145
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjkwn2QQ, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.41
+Turnover: 0.0162
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0Jok5b, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.36
+Turnover: 0.0145
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ewqg6q, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.9
+Turnover: 0.316
+Fitness: -0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPbkzr, Author: niuaoyula
+Expression: group_neutralize(rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(equity, 20), 5)), industry)
+Sharpe: 0.36
+Turnover: 0.0145
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwqMkn, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.96
+Turnover: 0.325
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvV1OrJ, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.89
+Turnover: 0.3186
+Fitness: -0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkvOzV, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.96
+Turnover: 0.325
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWqPx7, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.9
+Turnover: 0.316
+Fitness: -0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8gWlw, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.89
+Turnover: 0.3186
+Fitness: -0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16JYvAe, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -1.08
+Turnover: 0.4808
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0Jo58x, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.95
+Turnover: 0.5142
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0kYdr8, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.95
+Turnover: 0.5142
+Fitness: -0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nxjYr, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.33
+Turnover: 0.0336
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPbX7x, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.97
+Turnover: 0.4917
+Fitness: -0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16JYPrR, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -1.08
+Turnover: 0.4808
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2VqkM, Author: niuaoyula
+Expression: rank(ts_corr(scl12_sentiment, close, 10))
+Sharpe: -0.97
+Turnover: 0.4917
+Fitness: -0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2VvwZ, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.72
+Turnover: 0.0337
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wAVab, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.72
+Turnover: 0.0337
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqwRmJ, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.66
+Turnover: 0.0337
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO2JxQ6, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.33
+Turnover: 0.0336
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Oq0Qw8, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.75
+Turnover: 0.0338
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vknwqqj0, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.66
+Turnover: 0.0337
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex6k6V7, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.34
+Turnover: 0.0337
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxP3xL5, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.67
+Turnover: 0.0337
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvV1veJ, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.75
+Turnover: 0.0338
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6wOVrx, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.67
+Turnover: 0.0337
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2MvdW, Author: niuaoyula
+Expression: rank(ts_corr(fscore_momentum, returns, 20))
+Sharpe: 0.34
+Turnover: 0.0337
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerqkxg, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: -0.09
+Turnover: 0.136
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebqaJ9, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: 0.15
+Turnover: 0.1256
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjkwnq0j, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: 0.11
+Turnover: 0.1289
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxP37zK, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: -0.06
+Turnover: 0.2161
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nxwoa, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: -0.09
+Turnover: 0.136
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPbqNd, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: 0.15
+Turnover: 0.1256
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0erqJQL, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: 0.11
+Turnover: 0.1289
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebb0Xm, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: 0.17
+Turnover: 0.1876
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16JJpgY, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 1.0
+Turnover: 0.0159
+Fitness: 0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebbo3n, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: 0.17
+Turnover: 0.1876
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nn7Jb, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: 0.16
+Turnover: 0.1981
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ22gRw, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: -0.06
+Turnover: 0.2161
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWWzYw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.84
+Turnover: 0.0139
+Fitness: 0.59
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV00zPO, Author: niuaoyula
+Expression: rank(ts_delta(pcr_oi_all, 30))
+Sharpe: 0.16
+Turnover: 0.1981
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxPPGdE, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.61
+Turnover: 0.0111
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxPPMwO, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 1.0
+Turnover: 0.0159
+Fitness: 0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkkveV, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 1.01
+Turnover: 0.0169
+Fitness: 0.75
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqwwJ60, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.61
+Turnover: 0.0111
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYYOrE, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.84
+Turnover: 0.0139
+Fitness: 0.59
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nnjdb, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.61
+Turnover: 0.0117
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwllLan, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.84
+Turnover: 0.0148
+Fitness: 0.59
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwwdkp, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.61
+Turnover: 0.0117
+Fitness: 0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Xgqwwnb8, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.84
+Turnover: 0.0148
+Fitness: 0.59
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mokkz6r, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.64
+Turnover: 0.029
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV00kKO, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.64
+Turnover: 0.029
+Fitness: 0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkkamV, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.51
+Turnover: 0.0257
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk66ra3, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.42
+Turnover: 0.0225
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPPKA9, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.42
+Turnover: 0.0225
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerrj1g, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.64
+Turnover: 0.0309
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwwq80, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.51
+Turnover: 0.0257
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6wwXld, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.42
+Turnover: 0.0237
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZZXz1, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.5
+Turnover: 0.0273
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxPPx7P, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.64
+Turnover: 0.0309
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwwqeA, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.42
+Turnover: 0.0237
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebbAvm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ni, 20) / ts_backfill(income, 20), 10))
+Sharpe: 0.5
+Turnover: 0.0273
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO22M92, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.32
+Turnover: 0.2525
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwllWba, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.23
+Turnover: 0.2567
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEqq8OZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.29
+Turnover: 0.2528
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2Lll2xQ, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.29
+Turnover: 0.2528
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JJwg3, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.23
+Turnover: 0.2567
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerr11M, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.36
+Turnover: 0.7747
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2XpEw, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.32
+Turnover: 0.2525
+Fitness: -0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JQe8o, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.42
+Turnover: 0.7547
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYxMYj, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.45
+Turnover: 0.7451
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlNOLZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.49
+Turnover: 0.0094
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ewKg1R, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.36
+Turnover: 0.7747
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex6J9W5, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.45
+Turnover: 0.7451
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkwKYVd, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30, 20) * ts_rank(returns, 20))
+Sharpe: -0.42
+Turnover: 0.7547
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7NJGN, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.5
+Turnover: 0.0127
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYxmN1, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.5
+Turnover: 0.0127
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0erjZMp, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.51
+Turnover: 0.0111
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JQN7q, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.51
+Turnover: 0.0133
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwXdGp, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.49
+Turnover: 0.0094
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0naljv, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.51
+Turnover: 0.0111
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7Nvl6, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.49
+Turnover: 0.0098
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkego1, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.51
+Turnover: 0.0117
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPg9dr, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.51
+Turnover: 0.0133
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ewKbvq, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.51
+Turnover: 0.0117
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16JqOdX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_xsga, 20) / ts_backfill(ebitda, 20), 5))
+Sharpe: 0.49
+Turnover: 0.0098
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawXjm8, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.14
+Turnover: 0.283
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8e80E, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: -0.03
+Turnover: 0.2726
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkwKkVQ, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.14
+Turnover: 0.283
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRkeRKd, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: -0.03
+Turnover: 0.2726
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRke5dz, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.02
+Turnover: 0.2757
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvV6bv6, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.12
+Turnover: 0.4165
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRkerR8, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.02
+Turnover: 0.2757
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvV6kGQ, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.2
+Turnover: 0.4538
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxPgmM7, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.15
+Turnover: 0.429
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerm1kr, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.15
+Turnover: 0.429
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwlwJp8, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.2
+Turnover: 0.4538
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16J6pze, Author: niuaoyula
+Expression: rank(ts_corr(scl12_buzz, volume, 10))
+Sharpe: 0.12
+Turnover: 0.4165
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqvNem, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 0.38
+Turnover: 0.0267
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqv5rJ, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 0.97
+Turnover: 0.0267
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2w2k36, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 1.47
+Turnover: 0.0267
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjkwkxgd, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 0.97
+Turnover: 0.0267
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWMJlE, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 0.38
+Turnover: 0.0267
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerevRr, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 0.38
+Turnover: 0.0267
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16J6V1Q, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 1.47
+Turnover: 0.0267
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkAvQm, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 0.97
+Turnover: 0.0267
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqvbZv, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 1.47
+Turnover: 0.0267
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0n0rNz, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 0.38
+Turnover: 0.0267
+Fitness: 0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7RQGM, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 0.97
+Turnover: 0.0267
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp2pQ9r, Author: niuaoyula
+Expression: rank(ts_corr(fscore_value, returns, 10))
+Sharpe: 1.47
+Turnover: 0.0267
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwMkNJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.22
+Turnover: 0.0298
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWMpMe, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.19
+Turnover: 0.0265
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPereakW, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.25
+Turnover: 0.0219
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlL1Zj, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.19
+Turnover: 0.0265
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWMnne, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.22
+Turnover: 0.0298
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYenb1, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.25
+Turnover: 0.0219
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVvm3Q, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.22
+Turnover: 0.0319
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqvPWl, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.22
+Turnover: 0.0319
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8q7E2, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.25
+Turnover: 0.0234
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E5303AEJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.19
+Turnover: 0.0283
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6w6gnv, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.56
+Turnover: 0.0148
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0moko3M6, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.25
+Turnover: 0.0234
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8qpZ2, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.62
+Turnover: 0.02
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebeLrm, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.19
+Turnover: 0.0283
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwaZEw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.64
+Turnover: 0.0174
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqwE3el, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.64
+Turnover: 0.0217
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebxvGn, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.62
+Turnover: 0.02
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwLvAn, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.56
+Turnover: 0.0148
+Fitness: 0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7V1pX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.64
+Turnover: 0.0174
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvV50RW, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.66
+Turnover: 0.019
+Fitness: 0.48
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530ALnR, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.58
+Turnover: 0.0161
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk6mGMJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.58
+Turnover: 0.0161
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlQoKW, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.64
+Turnover: 0.0217
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nVAka, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.66
+Turnover: 0.019
+Fitness: 0.48
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex6ZAP2, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.13
+Turnover: 0.0136
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerdKKp, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.13
+Turnover: 0.0136
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkZ0mZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.06
+Turnover: 0.0121
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530AvzJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.08
+Turnover: 0.0099
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0Lv2E, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.08
+Turnover: 0.0099
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ23dP6, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.06
+Turnover: 0.0121
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPQwK9, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.13
+Turnover: 0.0144
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0kbg9d, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.07
+Turnover: 0.0103
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqzm90, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.07
+Turnover: 0.0103
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7VLN6, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.06
+Turnover: 0.0127
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYWELO, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.13
+Turnover: 0.0144
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ewvmQb, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_txt, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.06
+Turnover: 0.0127
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMwawob, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.07
+Turnover: 0.1051
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwLw0j, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.05
+Turnover: 0.0848
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0erErJ7, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.1
+Turnover: 0.0929
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7VRZX, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.07
+Turnover: 0.1051
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqwEEMm, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.1
+Turnover: 0.0929
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjkwm6aj, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.05
+Turnover: 0.0848
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0kbMRE, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.09
+Turnover: 0.1238
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk6mYpJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.09
+Turnover: 0.1238
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JgYVq, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.06
+Turnover: 0.1023
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZWG9z, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.17
+Turnover: 0.2554
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MW9Y7o, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.12
+Turnover: 0.1107
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwlmvl6, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.06
+Turnover: 0.1023
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16JK88d, Author: niuaoyula
+Expression: rank(ts_decay_linear(forward_price_30 / close, 20))
+Sharpe: 0.12
+Turnover: 0.1107
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8LvAK, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.17
+Turnover: 0.2554
+Fitness: -0.05
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjkw8z2k, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.25
+Turnover: 0.2498
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawpGro, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.23
+Turnover: 0.2507
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlmVOZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.23
+Turnover: 0.2507
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLebJ85v, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.25
+Turnover: 0.2498
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoP0xbr, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.28
+Turnover: 0.7677
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0KejO, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.34
+Turnover: 0.7467
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknwJdWA, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.36
+Turnover: 0.7363
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530Jp6K, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.36
+Turnover: 0.7363
+Fitness: -0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVEXem, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: -0.02
+Turnover: 0.0883
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYaNal, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.28
+Turnover: 0.7677
+Fitness: -0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6wgEk6, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: -0.03
+Turnover: 0.1028
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZwGKE1, Author: niuaoyula
+Expression: rank(ts_decay_linear(put_breakeven_30, 10) * ts_rank(returns, 20))
+Sharpe: -0.34
+Turnover: 0.7467
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYabKN, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: 0.01
+Turnover: 0.0955
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawpWJ8, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: -0.03
+Turnover: 0.1028
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO29Z1W, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: 0.01
+Turnover: 0.0955
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYLaJO, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: -0.02
+Turnover: 0.0883
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoP0ar2, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: 0.04
+Turnover: 0.1269
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530Ja09, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: 0.04
+Turnover: 0.1269
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MW962g, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: 0.04
+Turnover: 0.109
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoP0PYo, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: 0.04
+Turnover: 0.109
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0KRJW, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: 0.08
+Turnover: 0.1179
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkqZoP, Author: niuaoyula
+Expression: rank(ts_decay_linear(call_breakeven_30 / close, 10))
+Sharpe: 0.08
+Turnover: 0.1179
+Fitness: 0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16JKKkX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.48
+Turnover: 0.0198
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7Wbk1, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.48
+Turnover: 0.0198
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknwJ9j5, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.44
+Turnover: 0.0145
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlmE2o, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.48
+Turnover: 0.0173
+Fitness: 0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MW91Gw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.44
+Turnover: 0.0145
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqawpqbK, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.48
+Turnover: 0.0173
+Fitness: 0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKk6vZaJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.5
+Turnover: 0.0214
+Fitness: 0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8AGgY, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.5
+Turnover: 0.0214
+Fitness: 0.32
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E530XjY0, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.46
+Turnover: 0.0156
+Fitness: 0.33
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2q81x, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.46
+Turnover: 0.0156
+Fitness: 0.33
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZno1b, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.5
+Turnover: 0.0188
+Fitness: 0.34
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0erd8V7, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.07
+Turnover: 0.11
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AkdYxq, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_dpq, 20) / ts_backfill(enterprise_value, 20), 20))
+Sharpe: 0.5
+Turnover: 0.0188
+Fitness: 0.34
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPLMvr, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.03
+Turnover: 0.1258
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Xgqw5VZa, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.11
+Turnover: 0.1185
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknwgM8M, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.03
+Turnover: 0.1258
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0erd53M, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.07
+Turnover: 0.11
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvqEa7v, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.11
+Turnover: 0.1185
+Fitness: -0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wMor2, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.09
+Turnover: 0.4257
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEqbmGZ, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.16
+Turnover: 0.3992
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdYZVeN, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.11
+Turnover: 0.3708
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoPLV22, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.09
+Turnover: 0.4257
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwG5jo, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.16
+Turnover: 0.3992
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO2Mj0W, Author: niuaoyula
+Expression: rank(ts_decay_linear(fnd6_newa2v1300_ni, 20) * ts_rank(returns, 20))
+Sharpe: -0.11
+Turnover: 0.3708
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7A8o3Ag, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -34.64
+Turnover: 1.0
+Fitness: -15.93
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp25qel, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -34.64
+Turnover: 1.0
+Fitness: -15.93
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerLQ9K, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYjLOl, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -22.34
+Turnover: 1.0
+Fitness: -12.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkoPEK, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -22.34
+Turnover: 1.0
+Fitness: -12.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwG27q, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -22.34
+Turnover: 1.0
+Fitness: -12.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6wMnOd, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkodNE, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -34.64
+Turnover: 1.0
+Fitness: -15.93
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0erdrWw, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2qX1w, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -22.34
+Turnover: 1.0
+Fitness: -12.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OqEV6v, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.27
+Turnover: 0.0139
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R7oVzn, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.22
+Turnover: 0.0099
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OqEVq2, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 10))
+Sharpe: -908.48
+Turnover: 1.0
+Fitness: -387.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2qZ1W, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.22
+Turnover: 0.0125
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OqE7d8, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.27
+Turnover: 0.0139
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkoMGA, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.22
+Turnover: 0.0099
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0erdJnL, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.27
+Turnover: 0.0154
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYdW2p, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.22
+Turnover: 0.011
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaw6VxR, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.22
+Turnover: 0.0125
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbkrJoj, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.23
+Turnover: 0.0139
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvVb2MX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.22
+Turnover: 0.011
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeYdZQz, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.27
+Turnover: 0.0154
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Oqbl1x, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_re, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.23
+Turnover: 0.0139
+Fitness: 0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0EzOe, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.06
+Turnover: 0.3163
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LlRGm5, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: -0.1
+Turnover: 0.32
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MWmLae, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.14
+Turnover: 0.3148
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q8VaLg, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: -0.1
+Turnover: 0.32
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkwQOrd, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.14
+Turnover: 0.3148
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2ZKO2, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.06
+Turnover: 0.3163
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZw3AQj, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.11
+Turnover: 0.5483
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88Ak9PKX, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.05
+Turnover: 0.5703
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mok3rmq, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.11
+Turnover: 0.5483
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRkrjGP, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.1
+Turnover: 0.5547
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R70kz1, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.05
+Turnover: 0.5703
+Fitness: 0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6wxEep, Author: niuaoyula
+Expression: rank(ts_corr(pcr_oi_all, returns, 10))
+Sharpe: 0.1
+Turnover: 0.5547
+Fitness: 0.01
+Grade: INFERIOR
+--------------------------------------------------

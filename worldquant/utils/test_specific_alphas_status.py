@@ -5,9 +5,9 @@ from requests.auth import HTTPBasicAuth
 import pandas as pd
 import sys
 import os
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+project_root = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, project_root)
-from qr.worldquant.global_config import DATA_PATH, USER
+from config import USER
 
 # def sign_in():
 #     with open(expanduser(r"C:\Users\nay\Desktop\qr\qr\worldquant\idcode.txt")) as f:

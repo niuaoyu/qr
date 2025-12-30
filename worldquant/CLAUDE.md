@@ -35,9 +35,9 @@
 worldquant/
 ├── .env                       # 敏感信息（用户密码）
 ├── .gitignore                 # Git 忽略配置
-├── main.py                    # 主入口（表达式列表回测）
-├── batch_backtest.py          # 批量回测（模板生成）
-├── batch_config.json          # 批量回测配置文件
+├── main.py                    # 统一入口（只读JSON配置）
+├── batch_backtest.py          # [已废弃]
+├── batch_config.json          # 回测配置文件
 ├── CLAUDE.md                  # 项目文档
 │
 ├── config/                    # 配置模块
@@ -48,9 +48,15 @@ worldquant/
 │   ├── __init__.py
 │   ├── auth.py                # 登录认证
 │   ├── fingerprint.py         # 指纹生成
-│   ├── simulation.py          # 回测引擎（含429重试）
+│   ├── simulation.py          # 回测API调用（含429重试）
+│   ├── backtest_engine.py     # 统一回测引擎
 │   ├── graceful_exit.py       # 优雅退出管理
 │   └── task_logger.py         # 任务日志（实时计时）
+│
+├── loaders/                   # 加载器模块
+│   ├── __init__.py
+│   ├── json_loader.py         # JSON配置加载器（唯一）
+│   └── txt_to_json.py         # TXT转JSON工具
 │
 ├── storage/                   # 存储模块
 │   ├── __init__.py
@@ -76,20 +82,38 @@ worldquant/
 
 ## 使用说明
 
-### 方式1：表达式列表回测（main.py）
+### 统一入口（main.py）
+
+```python
+# 编辑 main.py 中的配置
+USER_CHOICE = 'lab'  # 账户选择
+CONFIG_FILE = 'batch_config.json'  # 配置文件路径
+```
 
 ```bash
-# 1. 编辑 main.py 中的 INPUT_ALPHA_FILE 路径
-# 2. 运行
 python main.py
 ```
 
-### 方式2：模板批量回测（batch_backtest.py）
+### 两种使用方式
+
+**方式1：完整表达式模式**
+- 有大量完整表达式（TXT文件）
+- 用 `txt_to_json_templates()` 转换到 JSON
+- 只变 settings
+
+**方式2：模板挖空模式**
+- 少量模板表达式（有 `{field}` 占位符）
+- 字段从文件读取或直接写
+- 表达式 × 字段 × settings
+
+### TXT 转 JSON 工具
 
 ```bash
-# 1. 编辑 batch_config.json 配置模板和参数
-# 2. 运行
-python batch_backtest.py
+# 将 TXT 表达式转换到 JSON 配置
+python convert_txt.py io/input/alphas.txt batch_config.json
+
+# 然后执行回测
+python main.py
 ```
 
 ### 配置账号
@@ -102,6 +126,8 @@ LAB_PASSWORD=xxx
 ### 查看结果
 - 数据库：`io/sqlite/alphas.db`
 - 优质结果：`io/output/alpha_list.txt`
+- INFERIOR结果：`io/output/{配置文件名}_inferior.txt`
+- UNKNOWN结果：`io/output/{配置文件名}_unknown.txt`
 
 ---
 
@@ -121,17 +147,18 @@ LAB_PASSWORD=xxx
 
 | 文件 | 作用 |
 |------|------|
+| `main.py` | 统一入口，选择加载模式后调用回测引擎 |
 | `config/settings.py` | 所有配置项（路径、账号、默认设置） |
+| `core/backtest_engine.py` | 统一回测引擎，多线程执行回测任务 |
 | `core/auth.py` | 登录认证（HTTPBasicAuth） |
 | `core/simulation.py` | 回测提交、轮询、获取详情、429重试 |
 | `core/fingerprint.py` | 指纹生成算法（SHA256） |
 | `core/graceful_exit.py` | 优雅退出管理器 |
 | `core/task_logger.py` | 任务日志（实时计时、完整表达式） |
+| `loaders/txt_loader.py` | TXT加载器，支持表达式+Settings变体 |
+| `loaders/json_loader.py` | JSON加载器，支持模板参数组合 |
 | `storage/database.py` | SQLite 操作 + 备份功能 |
-| `main.py` | 主入口、多线程调度 |
-| `batch_backtest.py` | 批量回测、模板生成 |
 | `front_demonstration/server.py` | Flask API 服务 |
-| `front_demonstration/index.html` | 数据可视化页面 |
 
 ---
 
