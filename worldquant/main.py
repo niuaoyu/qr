@@ -115,7 +115,8 @@ def run_simulation_task(alpha_payload, config):
                 grade=grade,
                 success=True,
                 sharpe=is_data.get('sharpe'),
-                fitness=is_data.get('fitness')
+                fitness=is_data.get('fitness'),
+                turnover=is_data.get('turnover')
             )
 
         # 4. 写入结果（根据 grade 分类写入不同文件）

@@ -1,4 +1,228 @@
 --------------------------------------------------
+Alpha ID: XgqwgM7X, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(cashflow_op, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.81
+Turnover: 0.0165
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JwZLo, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(ebitda, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.66
+Turnover: 0.0158
+Fitness: 0.45
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZRKQj, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 1.01
+Turnover: 0.0169
+Fitness: 0.75
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6wpGLx, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(equity, 20), 10))
+Sharpe: 0.52
+Turnover: 0.0257
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl0jzqj, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(equity, 20), 5))
+Sharpe: 0.51
+Turnover: 0.0273
+Fitness: 0.29
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53058g9, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(retained_earnings, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 0.19
+Turnover: 0.0138
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0kpm7z, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(assets, 20), 5))
+Sharpe: -0.44
+Turnover: 0.0165
+Fitness: -0.24
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mokmxlr, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 0.92
+Turnover: 0.0181
+Fitness: 0.68
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPwlPgxo, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(cashflow_op, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.38
+Turnover: 0.0153
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wmorb, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(ebitda, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.28
+Turnover: 0.0146
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16J1QqX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(cashflow_op, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 0.38
+Turnover: 0.0158
+Fitness: 0.22
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88Ak8jwz, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(ebitda, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 0.28
+Turnover: 0.0151
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0JwRoq, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 0.25
+Turnover: 0.0266
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16J10oX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 0.26
+Turnover: 0.025
+Fitness: 0.13
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerP93X, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(retained_earnings, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.12
+Turnover: 0.0229
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerPaNK, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(cashflow_op, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.35
+Turnover: 0.0277
+Fitness: 0.2
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXZRr5z, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(ebitda, 20) / ts_backfill(enterprise_value, 20), 10))
+Sharpe: 0.37
+Turnover: 0.0251
+Fitness: 0.23
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZwPAAo, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(ebitda, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.39
+Turnover: 0.0283
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MW1AV7, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(enterprise_value, 20), 10))
+Sharpe: 0.66
+Turnover: 0.0251
+Fitness: 0.49
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Oq8xZx, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(sales, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.68
+Turnover: 0.0289
+Fitness: 0.51
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxPXRE7, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 10))
+Sharpe: 0.19
+Turnover: 0.0351
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vknwk2MJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(dividend, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.23
+Turnover: 0.0785
+Fitness: 0.04
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPerP5gX, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(income, 20) / ts_backfill(enterprise_value, 20), 5))
+Sharpe: 0.19
+Turnover: 0.0387
+Fitness: 0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2wm93J, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(working_capital, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.08
+Turnover: 0.0235
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mokmd6q, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(retained_earnings, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.29
+Turnover: 0.0165
+Fitness: 0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0nR9Gr, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(dividend, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.6
+Turnover: 0.0842
+Fitness: 0.17
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV0r6nJ, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(retained_earnings, 20) / ts_backfill(cap, 20), 5))
+Sharpe: 0.29
+Turnover: 0.0179
+Fitness: 0.15
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ2k20x, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(ebit, 20) / ts_backfill(cap, 20), 10))
+Sharpe: 0.52
+Turnover: 0.018
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: 88Ak8Axq, Author: niuaoyula
 Expression: rank(ts_decay_linear(ts_backfill(ebit, 20) / ts_backfill(cap, 20), 15))
 Sharpe: 0.51
