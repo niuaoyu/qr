@@ -1,4 +1,572 @@
 --------------------------------------------------
+Alpha ID: N1MVjnEg, Author: niuaoyula
+Expression: rank(ts_mean(returns, 22) / ts_mean(abs(returns), 66))
+Sharpe: -0.53
+Turnover: 0.1156
+Fitness: -0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMbzeAw, Author: niuaoyula
+Expression: rank(ts_mean(returns, 22) / ts_mean(abs(returns), 66))
+Sharpe: -0.64
+Turnover: 0.1507
+Fitness: -0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2L8wW19, Author: niuaoyula
+Expression: rank(ts_mean(ebitda / assets, 66))
+Sharpe: 0.22
+Turnover: 0.0108
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blpOP2Rl, Author: niuaoyula
+Expression: rank(ts_mean(ebitda / assets, 66))
+Sharpe: 0.22
+Turnover: 0.0102
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMb0zqrE, Author: niuaoyula
+Expression: rank(ts_mean(ebitda / assets, 66))
+Sharpe: 0.22
+Turnover: 0.0103
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMbz83J, Author: niuaoyula
+Expression: rank(ts_corr(returns, vwap, 66))
+Sharpe: -0.13
+Turnover: 0.1506
+Fitness: -0.03
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0e8m0Xb, Author: niuaoyula
+Expression: rank(ts_corr(returns, vwap, 66))
+Sharpe: -0.22
+Turnover: 0.1144
+Fitness: -0.08
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeZXLda, Author: niuaoyula
+Expression: rank(ts_corr(returns, vwap, 66))
+Sharpe: -0.02
+Turnover: 0.283
+Fitness: -0.0
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mordZW8, Author: niuaoyula
+Expression: rank(ts_mean(returns, 126))
+Sharpe: -0.16
+Turnover: 0.0465
+Fitness: -0.07
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRgXpbl, Author: niuaoyula
+Expression: rank(ts_mean(returns, 126))
+Sharpe: -0.26
+Turnover: 0.1147
+Fitness: -0.14
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6b1kax, Author: niuaoyula
+Expression: rank(ts_mean(returns, 126))
+Sharpe: -0.2
+Turnover: 0.0611
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6b1GQl, Author: niuaoyula
+Expression: rank(ts_zscore(returns, 66))
+Sharpe: -1.53
+Turnover: 0.5655
+Fitness: -0.79
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw3Xe9r, Author: niuaoyula
+Expression: rank(ts_zscore(returns, 66))
+Sharpe: -1.68
+Turnover: 0.7656
+Fitness: -0.78
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0291JQ, Author: niuaoyula
+Expression: rank(ts_zscore(returns, 66))
+Sharpe: -1.43
+Turnover: 1.3536
+Fitness: -0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvZLX1K, Author: niuaoyula
+Expression: rank(ts_quantile(volume, 22))
+Sharpe: 0.6
+Turnover: 0.3353
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexK28Mn, Author: niuaoyula
+Expression: rank(ts_quantile(volume, 22))
+Sharpe: 0.49
+Turnover: 0.4771
+Fitness: 0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoWKpao, Author: niuaoyula
+Expression: rank(ts_rank(returns, 252))
+Sharpe: -1.7
+Turnover: 0.7748
+Fitness: -0.81
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoWKwMV, Author: niuaoyula
+Expression: rank(ts_quantile(volume, 22))
+Sharpe: 0.42
+Turnover: 0.9945
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6b1eYv, Author: niuaoyula
+Expression: rank(ts_rank(returns, 252))
+Sharpe: -1.42
+Turnover: 1.3573
+Fitness: -0.42
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlQmX1x, Author: niuaoyula
+Expression: rank(ts_rank(returns, 252))
+Sharpe: -1.59
+Turnover: 0.5761
+Fitness: -0.86
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZAxLq8, Author: niuaoyula
+Expression: group_rank(ts_zscore(returns, 66), industry)
+Sharpe: -1.59
+Turnover: 0.5765
+Fitness: -0.81
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0e8kvvq, Author: niuaoyula
+Expression: rank(ts_mean(abs(returns), 22))
+Sharpe: -0.2
+Turnover: 0.0541
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO6AMYW, Author: niuaoyula
+Expression: rank(ts_mean(abs(returns), 22))
+Sharpe: -0.2
+Turnover: 0.0687
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53Rb1P0, Author: niuaoyula
+Expression: rank(ts_mean(abs(returns), 22))
+Sharpe: -0.2
+Turnover: 0.1189
+Fitness: -0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78O6Q835, Author: niuaoyula
+Expression: rank(ts_zscore(returns, 22))
+Sharpe: -1.58
+Turnover: 0.5708
+Fitness: -0.78
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78O60pOb, Author: niuaoyula
+Expression: rank(ts_zscore(returns, 22))
+Sharpe: -1.68
+Turnover: 0.7632
+Fitness: -0.74
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw3qNGn, Author: niuaoyula
+Expression: rank(ts_zscore(returns, 22))
+Sharpe: -1.33
+Turnover: 1.3507
+Fitness: -0.36
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkeEVNd, Author: niuaoyula
+Expression: group_rank(ts_zscore(returns, 66), industry)
+Sharpe: -1.72
+Turnover: 0.7761
+Fitness: -0.77
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqabQGpE, Author: niuaoyula
+Expression: rank(ts_zscore(eps, 252))
+Sharpe: 0.51
+Turnover: 0.0338
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blpOVrRq, Author: niuaoyula
+Expression: group_rank(ts_zscore(returns, 66), industry)
+Sharpe: -1.46
+Turnover: 1.3215
+Fitness: -0.41
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRgbNMz, Author: niuaoyula
+Expression: rank(ts_zscore(eps, 252))
+Sharpe: 0.46
+Turnover: 0.0361
+Fitness: 0.18
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeZqZwm, Author: niuaoyula
+Expression: rank(ts_zscore(eps, 252))
+Sharpe: 0.42
+Turnover: 0.0413
+Fitness: 0.16
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53RYlLr, Author: niuaoyula
+Expression: rank(ts_mean(abs(returns), 66))
+Sharpe: -0.18
+Turnover: 0.0477
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q1gZM2, Author: niuaoyula
+Expression: rank(ts_mean(abs(returns), 66))
+Sharpe: -0.18
+Turnover: 0.0295
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16vYwWe, Author: niuaoyula
+Expression: rank(ts_mean(abs(returns), 66))
+Sharpe: -0.18
+Turnover: 0.0243
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvZ1mWm, Author: niuaoyula
+Expression: rank(ts_zscore(implied_volatility_put_270, 66))
+Sharpe: 1.26
+Turnover: 0.1902
+Fitness: 0.77
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR02xnNa, Author: niuaoyula
+Expression: rank(ts_zscore(implied_volatility_put_270, 66))
+Sharpe: 1.33
+Turnover: 0.2632
+Fitness: 0.7
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53RY31K, Author: niuaoyula
+Expression: rank(ts_zscore(implied_volatility_put_270, 66))
+Sharpe: 1.38
+Turnover: 0.6155
+Fitness: 0.46
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw05ogzq, Author: niuaoyula
+Expression: rank(ts_delta(implied_volatility_call_120, 22))
+Sharpe: 0.9
+Turnover: 0.2598
+Fitness: 0.46
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AQgo0g, Author: niuaoyula
+Expression: rank(ts_delta(implied_volatility_call_120, 22))
+Sharpe: 1.08
+Turnover: 0.3391
+Fitness: 0.52
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2L8Wvej, Author: niuaoyula
+Expression: rank(ts_delta(implied_volatility_call_120, 22))
+Sharpe: 1.11
+Turnover: 0.7112
+Fitness: 0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16vYjgX, Author: niuaoyula
+Expression: rank(ts_mean(pcr_vol_30, 22))
+Sharpe: 0.59
+Turnover: 0.0635
+Fitness: 0.27
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPeKrwZW, Author: niuaoyula
+Expression: rank(ts_mean(pcr_vol_30, 22))
+Sharpe: 0.56
+Turnover: 0.0737
+Fitness: 0.25
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0e8wL2Y, Author: niuaoyula
+Expression: rank(ts_mean(pcr_vol_30, 22))
+Sharpe: 0.51
+Turnover: 0.1005
+Fitness: 0.21
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw3lvko, Author: niuaoyula
+Expression: rank(ts_mean(returns, 66) - ts_mean(returns, 22))
+Sharpe: 0.51
+Turnover: 0.1574
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdVY59g, Author: niuaoyula
+Expression: rank(ts_mean(returns, 66) - ts_mean(returns, 22))
+Sharpe: 0.43
+Turnover: 0.1225
+Fitness: 0.26
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeZb8Re, Author: niuaoyula
+Expression: rank(ts_rank(volume, 22))
+Sharpe: 0.61
+Turnover: 0.3353
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPerYm91, Author: niuaoyula
+Expression: rank(ts_mean(returns, 66) - ts_mean(returns, 22))
+Sharpe: 0.69
+Turnover: 0.2904
+Fitness: 0.35
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88APk3jv, Author: niuaoyula
+Expression: rank(ts_zscore(operating_income / assets, 126))
+Sharpe: 1.02
+Turnover: 0.0465
+Fitness: 0.56
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q180PY, Author: niuaoyula
+Expression: rank(ts_zscore(operating_income / assets, 126))
+Sharpe: 1.04
+Turnover: 0.0501
+Fitness: 0.58
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqabw9oO, Author: niuaoyula
+Expression: rank(ts_zscore(operating_income / assets, 126))
+Sharpe: 1.11
+Turnover: 0.057
+Fitness: 0.63
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vkn0w2LG, Author: niuaoyula
+Expression: rank(ts_rank(volume, 22))
+Sharpe: 0.5
+Turnover: 0.4771
+Fitness: 0.12
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2Wwzrv, Author: niuaoyula
+Expression: group_rank(ts_mean(returns, 22), sector)
+Sharpe: -0.81
+Turnover: 0.2794
+Fitness: -0.47
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0e8wqkY, Author: niuaoyula
+Expression: group_rank(ts_mean(returns, 22), sector)
+Sharpe: -0.52
+Turnover: 0.1148
+Fitness: -0.36
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blpO22kq, Author: niuaoyula
+Expression: rank(ts_rank(volume, 22))
+Sharpe: 0.43
+Turnover: 0.9945
+Fitness: 0.06
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO62Rzp, Author: niuaoyula
+Expression: group_rank(ts_mean(returns, 22), sector)
+Sharpe: -0.64
+Turnover: 0.1491
+Fitness: -0.45
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53R05jK, Author: niuaoyula
+Expression: rank(ts_delta(cash / assets, 22))
+Sharpe: 0.51
+Turnover: 0.1355
+Fitness: 0.19
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPeKm8wM, Author: niuaoyula
+Expression: rank(ts_delta(cash / assets, 22))
+Sharpe: 0.14
+Turnover: 0.1963
+Fitness: 0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRgeMb8, Author: niuaoyula
+Expression: rank(ts_delta(cash / assets, 22))
+Sharpe: 0.32
+Turnover: 0.1566
+Fitness: 0.09
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw39eda, Author: niuaoyula
+Expression: rank(ts_mean((close - open) / open, 5))
+Sharpe: -1.1
+Turnover: 0.2695
+Fitness: -0.73
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vkn0KZnJ, Author: niuaoyula
+Expression: rank(ts_mean(close / vwap, 10))
+Sharpe: -0.85
+Turnover: 0.1817
+Fitness: -0.49
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RgNg0z, Author: niuaoyula
+Expression: rank(ts_mean(close / vwap, 10))
+Sharpe: -1.47
+Turnover: 0.4108
+Fitness: -0.77
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MVkbKL, Author: niuaoyula
+Expression: rank(ts_mean(abs(close - vwap) / vwap, 22))
+Sharpe: -0.19
+Turnover: 0.0642
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO6eb0K, Author: niuaoyula
+Expression: rank(ts_mean(abs(close - vwap) / vwap, 22))
+Sharpe: -0.2
+Turnover: 0.0502
+Fitness: -0.11
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0e8Kpk1, Author: niuaoyula
+Expression: rank(ts_mean((close - open) / open, 5))
+Sharpe: -1.28
+Turnover: 0.3621
+Fitness: -0.8
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvZ619M, Author: niuaoyula
+Expression: rank(ts_mean(abs(close - vwap) / vwap, 22))
+Sharpe: -0.18
+Turnover: 0.1133
+Fitness: -0.1
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blpO77WM, Author: niuaoyula
+Expression: rank(ts_mean(abs(returns), 66) / ts_mean(abs(returns), 22))
+Sharpe: -0.07
+Turnover: 0.2387
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX60nKz, Author: niuaoyula
+Expression: rank(ts_mean(abs(returns), 66) / ts_mean(abs(returns), 22))
+Sharpe: -0.07
+Turnover: 0.1119
+Fitness: -0.01
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVOVRX5, Author: niuaoyula
+Expression: rank(ts_mean(debt / equity, 66))
+Sharpe: 0.98
+Turnover: 0.0116
+Fitness: 0.71
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q1q60v, Author: niuaoyula
+Expression: rank(ts_mean(debt / equity, 66))
+Sharpe: 0.99
+Turnover: 0.0115
+Fitness: 0.72
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlQl2eA, Author: niuaoyula
+Expression: rank(ts_zscore(ebitda / assets, 126))
+Sharpe: 0.7
+Turnover: 0.0482
+Fitness: 0.31
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: 78O6ONvv, Author: niuaoyula
 Expression: rank(ts_mean(debt / equity, 66))
 Sharpe: 0.98

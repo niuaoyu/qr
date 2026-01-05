@@ -6,6 +6,7 @@ import sqlite3
 import os
 import shutil
 import glob
+import time
 from datetime import datetime
 from config import DEFAULT_DB_PATH, DB_TYPE, DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME
 
@@ -16,9 +17,11 @@ try:
 except ImportError:
     MYSQL_AVAILABLE = False
 
-# ============ 备份配置 ============
+# ============ 连接配置 ============
 MAX_BACKUPS = 5  # 保留最近5个备份
 BACKUP_ON_INIT = True  # 初始化时自动备份
+MYSQL_RETRY_COUNT = 3  # MySQL 连接重试次数
+MYSQL_RETRY_DELAY = 2  # 重试间隔（秒）
 
 
 def backup_database(db_path=None):
@@ -126,16 +129,27 @@ def get_connection(db_path=None):
     if DB_TYPE == 'mysql':
         if not MYSQL_AVAILABLE:
             raise ImportError("请安装 pymysql: pip install pymysql")
-        conn = pymysql.connect(
-            host=DB_HOST,
-            port=DB_PORT,
-            user=DB_USER,
-            password=DB_PASSWORD,
-            database=DB_NAME,
-            charset='utf8mb4',
-            cursorclass=pymysql.cursors.DictCursor
-        )
-        return conn
+
+        last_error = None
+        for attempt in range(MYSQL_RETRY_COUNT):
+            try:
+                conn = pymysql.connect(
+                    host=DB_HOST,
+                    port=DB_PORT,
+                    user=DB_USER,
+                    password=DB_PASSWORD,
+                    database=DB_NAME,
+                    charset='utf8mb4',
+                    cursorclass=pymysql.cursors.DictCursor,
+                    connect_timeout=10
+                )
+                return conn
+            except Exception as e:
+                last_error = e
+                if attempt < MYSQL_RETRY_COUNT - 1:
+                    print(f"⚠️ MySQL连接失败，{MYSQL_RETRY_DELAY}秒后重试 ({attempt+1}/{MYSQL_RETRY_COUNT}): {e}")
+                    time.sleep(MYSQL_RETRY_DELAY)
+        raise ConnectionError(f"MySQL连接失败，已重试{MYSQL_RETRY_COUNT}次: {last_error}")
     else:
         # SQLite 模式
         path = db_path or DEFAULT_DB_PATH
