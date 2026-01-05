@@ -1,4 +1,52 @@
 --------------------------------------------------
+Alpha ID: e7AQ0ALz, Author: niuaoyula
+Expression: -ts_mean(abs(returns), 22)
+Sharpe: 0.43
+Turnover: 0.0762
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2Wl5o5, Author: niuaoyula
+Expression: -ts_mean(abs(returns), 22)
+Sharpe: 0.43
+Turnover: 0.0617
+Fitness: 0.4
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPeKapVp, Author: niuaoyula
+Expression: -ts_mean(abs(returns), 22)
+Sharpe: 0.45
+Turnover: 0.125
+Fitness: 0.43
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZMpoK6, Author: niuaoyula
+Expression: group_rank(ts_rank(sales/assets, 252), industry)
+Sharpe: 0.77
+Turnover: 0.0492
+Fitness: 0.37
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO68Q36, Author: niuaoyula
+Expression: group_rank(ts_rank(sales/assets, 252), industry)
+Sharpe: 0.62
+Turnover: 0.0379
+Fitness: 0.28
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkepzQo, Author: niuaoyula
+Expression: group_rank(ts_rank(sales/assets, 252), industry)
+Sharpe: 0.66
+Turnover: 0.042
+Fitness: 0.3
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: lexKzweO, Author: niuaoyula
 Expression: rank(ts_mean((high - low) / vwap, 22))
 Sharpe: -0.17
