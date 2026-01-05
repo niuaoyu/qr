@@ -23,26 +23,35 @@ BACKUP_ON_INIT = True  # 初始化时自动备份
 MYSQL_RETRY_COUNT = 3  # MySQL 连接重试次数
 MYSQL_RETRY_DELAY = 2  # 重试间隔（秒）
 
+# MySQL 备份目录（相对于项目根目录）
+MYSQL_BACKUP_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'io', 'mysql_backups')
+
 
 def backup_database(db_path=None):
     """
-    备份数据库文件
+    备份数据库（支持 SQLite 和 MySQL）
 
     Args:
-        db_path: 数据库路径
+        db_path: SQLite 数据库路径（MySQL 模式下忽略）
 
     Returns:
         str: 备份文件路径，失败返回 None
     """
+    if DB_TYPE == 'mysql':
+        return _backup_mysql()
+    else:
+        return _backup_sqlite(db_path)
+
+
+def _backup_sqlite(db_path=None):
+    """SQLite 备份（文件复制）"""
     path = db_path or DEFAULT_DB_PATH
     if not os.path.exists(path):
         return None
 
-    # 创建备份目录
     backup_dir = os.path.join(os.path.dirname(path), 'backups')
     os.makedirs(backup_dir, exist_ok=True)
 
-    # 生成备份文件名
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     db_name = os.path.basename(path)
     backup_name = f"{db_name}.{timestamp}.bak"
@@ -50,19 +59,79 @@ def backup_database(db_path=None):
 
     try:
         shutil.copy2(path, backup_path)
-        print(f"📦 数据库已备份: {backup_name}")
-
-        # 清理旧备份（保留最近N个）
-        _cleanup_old_backups(backup_dir, db_name)
+        print(f"📦 SQLite已备份: {backup_name}")
+        _cleanup_old_backups(backup_dir, db_name, '.bak')
         return backup_path
     except Exception as e:
-        print(f"⚠️ 备份失败: {e}")
+        print(f"⚠️ SQLite备份失败: {e}")
         return None
 
 
-def _cleanup_old_backups(backup_dir, db_name):
+def _backup_mysql():
+    """MySQL 备份（SQL导出）"""
+    if not MYSQL_AVAILABLE:
+        print("⚠️ pymysql 未安装，无法备份")
+        return None
+
+    os.makedirs(MYSQL_BACKUP_DIR, exist_ok=True)
+
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    backup_name = f"{DB_NAME}.{timestamp}.sql"
+    backup_path = os.path.join(MYSQL_BACKUP_DIR, backup_name)
+
+    try:
+        conn = get_connection()
+        cursor = conn.cursor()
+
+        with open(backup_path, 'w', encoding='utf-8') as f:
+            f.write(f"-- MySQL Backup: {DB_NAME}\n")
+            f.write(f"-- Date: {datetime.now().isoformat()}\n")
+            f.write(f"-- Host: {DB_HOST}\n\n")
+
+            # 导出表结构
+            cursor.execute("SHOW CREATE TABLE alpha_is")
+            row = cursor.fetchone()
+            create_sql = row['Create Table'] if isinstance(row, dict) else row[1]
+            f.write(f"DROP TABLE IF EXISTS alpha_is;\n")
+            f.write(f"{create_sql};\n\n")
+
+            # 导出数据
+            cursor.execute("SELECT * FROM alpha_is")
+            rows = cursor.fetchall()
+
+            if rows:
+                columns = list(rows[0].keys()) if isinstance(rows[0], dict) else None
+                for row in rows:
+                    if isinstance(row, dict):
+                        values = [_escape_sql_value(row[col]) for col in columns]
+                    else:
+                        values = [_escape_sql_value(v) for v in row]
+                    f.write(f"INSERT INTO alpha_is VALUES ({','.join(values)});\n")
+
+        conn.close()
+        print(f"📦 MySQL已备份: {backup_name} ({len(rows)}条记录)")
+        _cleanup_old_backups(MYSQL_BACKUP_DIR, DB_NAME, '.sql')
+        return backup_path
+
+    except Exception as e:
+        print(f"⚠️ MySQL备份失败: {e}")
+        return None
+
+
+def _escape_sql_value(value):
+    """转义 SQL 值"""
+    if value is None:
+        return 'NULL'
+    elif isinstance(value, (int, float)):
+        return str(value)
+    else:
+        escaped = str(value).replace("'", "''").replace("\\", "\\\\")
+        return f"'{escaped}'"
+
+
+def _cleanup_old_backups(backup_dir, db_name, ext='.bak'):
     """清理旧备份，保留最近 MAX_BACKUPS 个"""
-    pattern = os.path.join(backup_dir, f"{db_name}.*.bak")
+    pattern = os.path.join(backup_dir, f"{db_name}.*{ext}")
     backups = sorted(glob.glob(pattern), reverse=True)
 
     for old_backup in backups[MAX_BACKUPS:]:
@@ -75,45 +144,80 @@ def _cleanup_old_backups(backup_dir, db_name):
 
 def restore_database(backup_path, db_path=None):
     """
-    从备份恢复数据库
+    从备份恢复数据库（支持 SQLite 和 MySQL）
 
     Args:
         backup_path: 备份文件路径
-        db_path: 目标数据库路径
+        db_path: SQLite 目标数据库路径（MySQL 模式下忽略）
 
     Returns:
         bool: 是否恢复成功
     """
-    path = db_path or DEFAULT_DB_PATH
-
     if not os.path.exists(backup_path):
         print(f"❌ 备份文件不存在: {backup_path}")
         return False
 
+    if DB_TYPE == 'mysql':
+        return _restore_mysql(backup_path)
+    else:
+        return _restore_sqlite(backup_path, db_path)
+
+
+def _restore_sqlite(backup_path, db_path=None):
+    """SQLite 恢复"""
+    path = db_path or DEFAULT_DB_PATH
     try:
-        # 先备份当前数据库
         if os.path.exists(path):
             backup_database(path)
-
         shutil.copy2(backup_path, path)
-        print(f"✅ 数据库已恢复: {backup_path}")
+        print(f"✅ SQLite已恢复: {backup_path}")
         return True
     except Exception as e:
-        print(f"❌ 恢复失败: {e}")
+        print(f"❌ SQLite恢复失败: {e}")
+        return False
+
+
+def _restore_mysql(backup_path):
+    """MySQL 恢复（执行SQL文件）"""
+    try:
+        backup_database()  # 先备份当前数据
+
+        conn = get_connection()
+        cursor = conn.cursor()
+
+        with open(backup_path, 'r', encoding='utf-8') as f:
+            sql_content = f.read()
+
+        # 分割并执行 SQL 语句
+        for statement in sql_content.split(';'):
+            statement = statement.strip()
+            if statement and not statement.startswith('--'):
+                cursor.execute(statement)
+
+        conn.commit()
+        conn.close()
+        print(f"✅ MySQL已恢复: {backup_path}")
+        return True
+    except Exception as e:
+        print(f"❌ MySQL恢复失败: {e}")
         return False
 
 
 def list_backups(db_path=None):
-    """列出所有备份文件"""
-    path = db_path or DEFAULT_DB_PATH
-    backup_dir = os.path.join(os.path.dirname(path), 'backups')
-    db_name = os.path.basename(path)
-
-    if not os.path.exists(backup_dir):
-        return []
-
-    pattern = os.path.join(backup_dir, f"{db_name}.*.bak")
-    return sorted(glob.glob(pattern), reverse=True)
+    """列出所有备份文件（支持 SQLite 和 MySQL）"""
+    if DB_TYPE == 'mysql':
+        if not os.path.exists(MYSQL_BACKUP_DIR):
+            return []
+        pattern = os.path.join(MYSQL_BACKUP_DIR, f"{DB_NAME}.*.sql")
+        return sorted(glob.glob(pattern), reverse=True)
+    else:
+        path = db_path or DEFAULT_DB_PATH
+        backup_dir = os.path.join(os.path.dirname(path), 'backups')
+        db_name = os.path.basename(path)
+        if not os.path.exists(backup_dir):
+            return []
+        pattern = os.path.join(backup_dir, f"{db_name}.*.bak")
+        return sorted(glob.glob(pattern), reverse=True)
 
 
 def get_connection(db_path=None):
@@ -171,11 +275,18 @@ def init_db(db_path=None):
     Returns:
         数据库连接对象
     """
-    # SQLite 自动备份
-    if DB_TYPE == 'sqlite':
-        path = db_path or DEFAULT_DB_PATH
-        if BACKUP_ON_INIT and os.path.exists(path):
-            backup_database(path)
+    # 自动备份（SQLite 和 MySQL 都支持）
+    if BACKUP_ON_INIT:
+        if DB_TYPE == 'sqlite':
+            path = db_path or DEFAULT_DB_PATH
+            if os.path.exists(path):
+                backup_database(path)
+        else:
+            # MySQL 备份
+            try:
+                backup_database()
+            except Exception:
+                pass  # 首次初始化时表可能不存在
 
     conn = get_connection(db_path)
     cursor = conn.cursor()

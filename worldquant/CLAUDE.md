@@ -134,3 +134,103 @@ python main.py
 | 429错误 | 自动重试，检查WQ网页端 |
 | 连接超时 | 检查Tailscale网络 |
 | 权限拒绝 | 检查MySQL用户授权 |
+
+---
+
+## 前端数据展示
+
+详见 [front_demonstration.md](front_demonstration/front_demonstration.md)
+
+```bash
+cd front_demonstration
+python server.py
+# 然后浏览器打开 index.html
+```
+
+---
+
+## 各机器 .env 配置
+
+### Windows B (lab) - 100.103.93.93
+
+```
+USER_CHOICE=lab
+DB_TYPE=mysql
+DB_HOST=100.84.80.8
+DB_PORT=3306
+DB_USER=wq_user
+DB_PASSWORD=NAYnay232408.
+DB_NAME=worldquant
+```
+
+### Windows A (mylab) - 100.110.126.49
+
+```
+USER_CHOICE=mylab
+DB_TYPE=mysql
+DB_HOST=100.84.80.8
+DB_PORT=3306
+DB_USER=wq_user
+DB_PASSWORD=NAYnay232408.
+DB_NAME=worldquant
+```
+
+### Ubuntu - 100.84.80.8
+
+```
+USER_CHOICE=ubuntu
+DB_TYPE=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=wq_user
+DB_PASSWORD=NAYnay232408.
+DB_NAME=worldquant
+```
+
+---
+
+## 工具脚本
+
+| 脚本 | 功能 |
+|------|------|
+| `test_connection.py` | 测试数据库连接 |
+| `migrate_to_mysql.py` | SQLite迁移到MySQL |
+| `front_demonstration/server.py` | 前端API服务 |
+
+---
+
+## 数据备份
+
+详见 [storage.md](storage/storage.md)
+
+| 数据库 | 备份目录 | 格式 |
+|--------|----------|------|
+| SQLite | `io/sqlite/backups/` | .bak |
+| MySQL | `io/mysql_backups/` | .sql |
+
+- 自动备份：`init_db()` 时触发
+- 备份轮转：保留最近 5 个
+- 手动备份：`backup_database()`
+
+---
+
+## MySQL 配置（Ubuntu）
+
+```bash
+# 安装
+sudo apt install mysql-server -y
+
+# 配置远程访问
+sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+# bind-address = 0.0.0.0
+
+# 创建数据库和用户
+sudo mysql
+CREATE DATABASE worldquant CHARACTER SET utf8mb4;
+CREATE USER 'wq_user'@'%' IDENTIFIED BY 'NAYnay232408.';
+GRANT ALL ON worldquant.* TO 'wq_user'@'%';
+FLUSH PRIVILEGES;
+
+# 重启
+sudo systemctl restart mysql
+```

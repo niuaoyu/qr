@@ -1,4 +1,3 @@
-import sqlite3
 import os
 import sys
 from flask import Flask, request, jsonify, g
@@ -10,10 +9,22 @@ import traceback
 current_file = os.path.abspath(__file__)
 api_dir = os.path.dirname(current_file)
 worldquant_dir = os.path.dirname(api_dir)
-qr_package_dir = os.path.dirname(worldquant_dir)
-project_root = os.path.dirname(qr_package_dir)
-if project_root not in sys.path:
-    sys.path.insert(0, project_root)
+
+sys.path.insert(0, worldquant_dir)
+
+from dotenv import load_dotenv
+load_dotenv(os.path.join(worldquant_dir, '.env'))
+
+from config import DB_TYPE, DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME, SQLITE_DIR
+
+# MySQL 支持
+try:
+    import pymysql
+    MYSQL_AVAILABLE = True
+except ImportError:
+    MYSQL_AVAILABLE = False
+
+import sqlite3
 
 
 # -----------------------------------------------------------------------------
@@ -22,18 +33,32 @@ if project_root not in sys.path:
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 
-DB_PATH = os.path.join(worldquant_dir, "io", "sqlite", "alphas.db")
+DB_PATH = os.path.join(SQLITE_DIR, "alphas.db")
+
 # -----------------------------------------------------------------------------
 # 3. 数据库连接管理
 # -----------------------------------------------------------------------------
 def get_db():
-    """获取数据库连接（每个请求独立）"""
+    """获取数据库连接（支持 SQLite 和 MySQL）"""
     db = getattr(g, '_database', None)
     if db is None:
-        if not os.path.exists(DB_PATH):
-            return None
-        db = g._database = sqlite3.connect(DB_PATH)
-        db.row_factory = sqlite3.Row
+        if DB_TYPE == 'mysql':
+            if not MYSQL_AVAILABLE:
+                return None
+            db = g._database = pymysql.connect(
+                host=DB_HOST,
+                port=DB_PORT,
+                user=DB_USER,
+                password=DB_PASSWORD,
+                database=DB_NAME,
+                charset='utf8mb4',
+                cursorclass=pymysql.cursors.DictCursor
+            )
+        else:
+            if not os.path.exists(DB_PATH):
+                return None
+            db = g._database = sqlite3.connect(DB_PATH)
+            db.row_factory = sqlite3.Row
     return db
 
 @app.teardown_appcontext
@@ -70,7 +95,7 @@ def get_alphas():
     """
     db = get_db()
     if not db:
-        return jsonify({"error": f"Database file not found at {DB_PATH}"}), 500
+        return jsonify({"error": "Database connection failed"}), 500
 
     # 获取查询参数
     id_query = request.args.get('id', '').strip()
@@ -80,6 +105,9 @@ def get_alphas():
         limit = int(request.args.get('limit', 20))
     except ValueError:
         limit = 20
+
+    # 占位符（MySQL用%s，SQLite用?）
+    ph = '%s' if DB_TYPE == 'mysql' else '?'
 
     # 构建 SQL 查询
     query_sql = """
@@ -93,37 +121,46 @@ def get_alphas():
             COALESCE(date_modified, date_created) as latest_date
         FROM alpha_is
     """
-    
+
     params = []
     conditions = []
 
     # ID 搜索
     if id_query:
-        conditions.append("id LIKE ?")
+        conditions.append(f"id LIKE {ph}")
         params.append(f"%{id_query}%")
 
     # 表达式搜索
     if expression_query:
-        conditions.append("expression LIKE ?")
+        conditions.append(f"expression LIKE {ph}")
         params.append(f"%{expression_query}%")
 
     if conditions:
         query_sql += " WHERE " + " AND ".join(conditions)
 
-    # 排序（使用 latest_date = COALESCE(date_modified, date_created)）
+    # 排序
     if sort_by == 'sharpe':
         query_sql += " ORDER BY sharpe DESC"
     else:
-        query_sql += " ORDER BY latest_date DESC NULLS LAST, sharpe DESC"
-    
-    query_sql += " LIMIT ?"
+        if DB_TYPE == 'mysql':
+            query_sql += " ORDER BY latest_date DESC, sharpe DESC"
+        else:
+            query_sql += " ORDER BY latest_date DESC NULLS LAST, sharpe DESC"
+
+    query_sql += f" LIMIT {ph}"
     params.append(limit)
 
     try:
-        cursor = db.execute(query_sql, params)
-        rows = cursor.fetchall()
-        data = [dict(row) for row in rows]
-        
+        if DB_TYPE == 'mysql':
+            cursor = db.cursor()
+            cursor.execute(query_sql, params)
+            rows = cursor.fetchall()
+            data = list(rows)  # 已经是字典列表
+        else:
+            cursor = db.execute(query_sql, params)
+            rows = cursor.fetchall()
+            data = [dict(row) for row in rows]
+
         return jsonify({
             "count": len(data),
             "limit": limit,
@@ -139,23 +176,18 @@ def get_alphas():
 def status():
     """健康检查接口"""
     return jsonify({
-        "status": "running", 
-        "db_path": DB_PATH,
-        "db_exists": os.path.exists(DB_PATH)
+        "status": "running",
+        "db_type": DB_TYPE,
+        "db_host": DB_HOST if DB_TYPE == 'mysql' else 'local',
+        "db_name": DB_NAME if DB_TYPE == 'mysql' else DB_PATH
     })
 
 if __name__ == '__main__':
     print(f"Starting Flask API Server...")
-    print(f"Database Path: {DB_PATH}")
-    
-    # 启动时自检：打印数据库中所有的表名
-    if os.path.exists(DB_PATH):
-        try:
-            with sqlite3.connect(DB_PATH) as conn:
-                cursor = conn.cursor()
-                cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-                print(f"DEBUG: Existing tables in DB: {[row[0] for row in cursor.fetchall()]}")
-        except Exception as e:
-            print(f"DEBUG: Error inspecting DB: {e}")
-            
+    print(f"DB_TYPE: {DB_TYPE}")
+    if DB_TYPE == 'mysql':
+        print(f"MySQL: {DB_USER}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
+    else:
+        print(f"SQLite: {DB_PATH}")
+
     app.run(host='0.0.0.0', port=5001, debug=True)
