@@ -1,0 +1,624 @@
+--------------------------------------------------
+Alpha ID: LLeRRbgL, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoRJeVV, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw078eGj, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRKQYMK, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mo8z6zv, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lex0rEml, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MOAKGL, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvgJjZQ, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMnR3XN, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88ALnQjq, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blp9vLbp, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qQdQNx, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqK6xj8, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbgRnm2, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eo3Kgg, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0evVdkM, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MAZwm8, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw08Lw96, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvJ88nJ, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np03jlZ3, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoJeMgq, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZr8z6x, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0dE27r, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np03jdld, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0dXpEG, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AnxlzW, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaOn9EO, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZQopxR, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np035nX3, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AnNoLa, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeXbnvx, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0eLnxG, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58Rawolo, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0moe73Ok, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vkn28Anw, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vkn28W5V, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOxvogp, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPe58bpQ, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZWe75v, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RqXlRk, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLelQ19e, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkWo9Gk, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6J2635, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoAdL1d, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53r8Wzm, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXkljLg, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRLvwkL, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJWegM1, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl5o2wn, Author: niuaoyula
+Expression: rank(ts_delta(fscore_value, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: VknY6Z7b, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkr59gd, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkr50pa, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qlO1QK, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOxgmz5, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53rvv8R, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om296NpE, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl5xpgW, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw01P1b6, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMmYmdl, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AK3k3q, Author: niuaoyula
+Expression: rank(ts_delta(fscore_quality, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0eX6LE7, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw01EdVj, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvnLj96, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0eX6gnL, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om29vgxv, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0moKdMz6, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLel6db6, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZWxrYj, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXkYNvn, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0J95nw, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1M56qlp, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0eX6qrJ, Author: niuaoyula
+Expression: rank(ts_delta(fscore_growth, 5))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRm9R1l, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOzQkWE, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0moQ5WN1, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxqNm5Y, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxqNmrO, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLeX3V16, Author: niuaoyula
+Expression: rank(ts_delta(fscore_momentum, 30))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------

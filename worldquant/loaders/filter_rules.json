@@ -1,0 +1,37 @@
+{
+  "description": "表达式过滤规则配置文件，添加新规则请按格式填写",
+  "how_to_add": {
+    "1": "找到需要过滤的表达式",
+    "2": "抽象成模板（用 ... 代替具体值）",
+    "3": "写出正则表达式",
+    "4": "添加到 forbidden_templates 数组"
+  },
+  "regex_tips": {
+    "func(": "func\\s*\\(",
+    "...或xxx": ".*",
+    "/": "\\/",
+    "空格可选": "\\s*"
+  },
+  "forbidden_templates": [
+    {
+      "template": "group_neutralize(...ts_backfill.../ts_backfill...)",
+      "regex": "group_neutralize\\s*\\([^)]*ts_backfill[^)]*\\/[^)]*ts_backfill",
+      "description": "group_neutralize包含ts_backfill除法"
+    },
+    {
+      "template": "-rank(ts_corr(...))",
+      "regex": "^-rank\\s*\\(\\s*ts_corr\\s*\\(",
+      "description": "负号开头的rank(ts_corr)"
+    },
+    {
+      "template": "ts_rank(ts_backfill(...) / ..., ...)",
+      "regex": "ts_rank\\s*\\(\\s*ts_backfill\\s*\\([^)]+\\)\\s*\\/",
+      "description": "ts_rank包含ts_backfill除法"
+    },
+    {
+      "template": "rank(ts_decay_linear(ts_backfill(...) / ts_backfill(...), ...))",
+      "regex": "rank\\s*\\(\\s*ts_decay_linear\\s*\\(\\s*ts_backfill.*\\/.*ts_backfill",
+      "description": "rank(ts_decay_linear(ts_backfill除法))"
+    }
+  ]
+}

@@ -1,4 +1,452 @@
 --------------------------------------------------
+Alpha ID: wp6bK0M2, Author: niuaoyula
+Expression: rank(ts_mean(debt / assets, 66))
+Sharpe: 1.27
+Turnover: 0.0115
+Fitness: 1.06
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMbO5kJ, Author: niuaoyula
+Expression: rank(ts_mean(debt / assets, 66))
+Sharpe: 1.27
+Turnover: 0.0114
+Fitness: 1.06
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPeKZO5r, Author: niuaoyula
+Expression: rank(ts_mean(debt / assets, 66))
+Sharpe: 1.26
+Turnover: 0.012
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eNaRxp, Author: niuaoyula
+Expression: group_rank(ts_backfill(liabilities/equity, 60) * ts_backfill(sales/assets, 60), sector);
+Sharpe: 1.34
+Turnover: 0.016
+Fitness: 1.1
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAM3grMw, Author: niuaoyula
+Expression: group_rank(ts_backfill(liabilities/equity, 60) * ts_backfill(sales/assets, 60), sector);
+Sharpe: 1.34
+Turnover: 0.016
+Fitness: 1.1
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2LOL62, Author: niuaoyula
+Expression: group_rank(ts_backfill(liabilities/equity, 60) * ts_backfill(sales/assets, 60), sector);
+Sharpe: 1.34
+Turnover: 0.0171
+Fitness: 1.1
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlNKG0j, Author: niuaoyula
+Expression: group_rank(ts_backfill(liabilities/equity, 60) * ts_backfill(sales/assets, 60), sector);
+Sharpe: 1.34
+Turnover: 0.0198
+Fitness: 1.1
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEwdNzZ, Author: niuaoyula
+Expression: group_rank(ts_backfill(liabilities/equity, 60) * ts_backfill(sales/assets, 60), sector);
+Sharpe: 1.34
+Turnover: 0.0171
+Fitness: 1.1
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEwdaKZ, Author: niuaoyula
+Expression: group_rank(ts_backfill(liabilities/equity, 60) * ts_backfill(sales/assets, 60), sector);
+Sharpe: 1.34
+Turnover: 0.0198
+Fitness: 1.1
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ7LrKR, Author: niuaoyula
+Expression: ts_backfill(fnd6_drc, 252)/assets
+Sharpe: 1.35
+Turnover: 0.0153
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZ75jMq, Author: niuaoyula
+Expression: ts_backfill(fnd6_drc, 252)/assets
+Sharpe: 1.42
+Turnover: 0.0139
+Fitness: 1.23
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw77nXn, Author: niuaoyula
+Expression: ts_backfill(fnd6_drc, 252)/assets
+Sharpe: 1.48
+Turnover: 0.0133
+Fitness: 1.24
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AzzNpp, Author: niuaoyula
+Expression: ts_backfill(fnd6_drc, 252)/assets
+Sharpe: 1.43
+Turnover: 0.0142
+Fitness: 1.24
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdllXPP, Author: niuaoyula
+Expression: ts_backfill(fnd6_drc, 252)/assets
+Sharpe: 1.35
+Turnover: 0.0157
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2qq6zk, Author: niuaoyula
+Expression: ts_backfill(fnd6_drc, 252)/assets
+Sharpe: 1.48
+Turnover: 0.0136
+Fitness: 1.24
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVllk1J, Author: niuaoyula
+Expression: ts_backfill(fnd6_drc, 252)/assets
+Sharpe: 1.44
+Turnover: 0.015
+Fitness: 1.25
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZ77mJM, Author: niuaoyula
+Expression: ts_backfill(fnd6_drc, 252)/assets
+Sharpe: 1.36
+Turnover: 0.0165
+Fitness: 1.03
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPe77dEp, Author: niuaoyula
+Expression: ts_backfill(fnd6_drc, 252)/assets
+Sharpe: 1.49
+Turnover: 0.0144
+Fitness: 1.25
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vkn7P8Pw, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-ts_delay(close,1))/ts_delay(close,1)),20),2)-power(ts_std_dev((close-ts_delay(close,1))/ts_delay(close,1),20),2);
+Sharpe: 1.03
+Turnover: 0.0792
+Fitness: 1.59
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AlQL1v, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-ts_delay(close,1))/ts_delay(close,1)),20),2)-power(ts_std_dev((close-ts_delay(close,1))/ts_delay(close,1),20),2);
+Sharpe: 1.11
+Turnover: 0.0849
+Fitness: 1.7
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2qlVWv, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-ts_delay(close,1))/ts_delay(close,1)),20),2)-power(ts_std_dev((close-ts_delay(close,1))/ts_delay(close,1),20),2);
+Sharpe: 0.97
+Turnover: 0.0712
+Fitness: 1.51
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRj0rOL, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-ts_delay(close,1))/ts_delay(close,1)),20),2)-power(ts_std_dev((close-ts_delay(close,1))/ts_delay(close,1),20),2);
+Sharpe: 1.16
+Turnover: 0.1038
+Fitness: 1.82
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvjM62M, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-ts_delay(close,1))/ts_delay(close,1)),20),2)-power(ts_std_dev((close-ts_delay(close,1))/ts_delay(close,1),20),2);
+Sharpe: 1.02
+Turnover: 0.0875
+Fitness: 1.62
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl7OMYe, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-ts_delay(close,1))/ts_delay(close,1)),20),2)-power(ts_std_dev((close-ts_delay(close,1))/ts_delay(close,1),20),2);
+Sharpe: 1.07
+Turnover: 0.0968
+Fitness: 1.68
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0jLXpG, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-ts_delay(close,1))/ts_delay(close,1)),20),2)-power(ts_std_dev((close-ts_delay(close,1))/ts_delay(close,1),20),2);
+Sharpe: 1.08
+Turnover: 0.1544
+Fitness: 1.53
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPe7bzx1, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-ts_delay(close,1))/ts_delay(close,1)),20),2)-power(ts_std_dev((close-ts_delay(close,1))/ts_delay(close,1),20),2);
+Sharpe: 1.17
+Turnover: 0.1652
+Fitness: 1.6
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw7p656, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-ts_delay(close,1))/ts_delay(close,1)),20),2)-power(ts_std_dev((close-ts_delay(close,1))/ts_delay(close,1),20),2);
+Sharpe: 1.03
+Turnover: 0.1411
+Fitness: 1.55
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexjVKxO, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-open)/open),20),2)-power(ts_std_dev((close-open)/open,20),2);
+Sharpe: 1.22
+Turnover: 0.081
+Fitness: 1.94
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRX7p21n, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-open)/open),20),2)-power(ts_std_dev((close-open)/open,20),2);
+Sharpe: 1.06
+Turnover: 0.0674
+Fitness: 1.69
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLe7pe96, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-open)/open),20),2)-power(ts_std_dev((close-open)/open,20),2);
+Sharpe: 1.12
+Turnover: 0.0753
+Fitness: 1.77
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16l3AXR, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-open)/open),20),2)-power(ts_std_dev((close-open)/open,20),2);
+Sharpe: 1.24
+Turnover: 0.0994
+Fitness: 1.98
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rElKo05, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-open)/open),20),2)-power(ts_std_dev((close-open)/open,20),2);
+Sharpe: 1.08
+Turnover: 0.0832
+Fitness: 1.73
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0jm6xQ, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-open)/open),20),2)-power(ts_std_dev((close-open)/open,20),2);
+Sharpe: 1.14
+Turnover: 0.0924
+Fitness: 1.81
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53lKRxK, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-open)/open),20),2)-power(ts_std_dev((close-open)/open,20),2);
+Sharpe: 1.16
+Turnover: 0.1505
+Fitness: 1.7
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np07WNbd, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-open)/open),20),2)-power(ts_std_dev((close-open)/open,20),2);
+Sharpe: 1.26
+Turnover: 0.1614
+Fitness: 1.78
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OjdK91, Author: niuaoyula
+Expression: power(ts_std_dev(abs((close-open)/open),20),2)-power(ts_std_dev((close-open)/open,20),2);
+Sharpe: 1.09
+Turnover: 0.1368
+Fitness: 1.68
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88ApjZ2m, Author: niuaoyula
+Expression: trade_when(rank(vec_sum(scl12_alltype_buzzvec)) > 0.95, -zscore(scl12_buzz), -1)
+Sharpe: 1.58
+Turnover: 0.1099
+Fitness: 1.34
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxpjQj5, Author: niuaoyula
+Expression: trade_when(rank(vec_sum(scl12_alltype_buzzvec)) > 0.95, -zscore(scl12_buzz), -1)
+Sharpe: 1.59
+Turnover: 0.1384
+Fitness: 1.22
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qZbo3K, Author: niuaoyula
+Expression: trade_when(rank(vec_sum(scl12_alltype_buzzvec)) > 0.95, -zscore(scl12_buzz), -1)
+Sharpe: 1.74
+Turnover: 0.127
+Fitness: 1.5
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: JjlGNWxn, Author: niuaoyula
+Expression: trade_when(rank(vec_sum(scl12_alltype_buzzvec)) > 0.95, -zscore(scl12_buzz), -1)
+Sharpe: 2.1
+Turnover: 0.3146
+Fitness: 1.37
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2L6AYqO, Author: niuaoyula
+Expression: trade_when(rank(vec_sum(scl12_alltype_buzzvec)) > 0.95, -zscore(scl12_buzz), -1)
+Sharpe: 2.32
+Turnover: 0.295
+Fitness: 1.69
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdpXjXN, Author: niuaoyula
+Expression: trade_when(rank(vec_sum(scl12_alltype_buzzvec)) > 0.95, -zscore(scl12_buzz), -1)
+Sharpe: 2.2
+Turnover: 0.2509
+Fitness: 1.72
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2vqMvl, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.42
+Turnover: 0.014
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0e67aKp, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.42
+Turnover: 0.0161
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOAjwMx, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.42
+Turnover: 0.0161
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2vqmg5, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.42
+Turnover: 0.0149
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rERlrLY, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.42
+Turnover: 0.0172
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rERpY0Y, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.42
+Turnover: 0.014
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qmZPEE, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.42
+Turnover: 0.0149
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1M6b26g, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_cptnewqv1300_lctq, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.42
+Turnover: 0.0172
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R9OALn, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 1.26
+Turnover: 0.0119
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJlnaXw, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 1.26
+Turnover: 0.0119
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPejVv2G, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 1.25
+Turnover: 0.0125
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdxRek0, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(assets, 20), 10))
+Sharpe: 1.25
+Turnover: 0.0125
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mod8Znr, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.25
+Turnover: 0.0121
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qoKRlAe, Author: niuaoyula
+Expression: rank(ts_decay_linear(ts_backfill(fnd6_newa2v1300_ppent, 20) / ts_backfill(assets, 20), 5))
+Sharpe: 1.25
+Turnover: 0.0121
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: Jjl0WZYx, Author: niuaoyula
 Expression: rank(ts_delta(fscore_quality, 10))
 Sharpe: 12.2

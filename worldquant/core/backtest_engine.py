@@ -143,53 +143,53 @@ class BacktestEngine:
         # 开始计时
         task_logger.start_task(task_id, expression, settings)
 
+        # 3. 提交回测（仅提交阶段需要控制并发）
         with self.semaphore:
-            # 3. 提交回测
             progress_url = submit_simulation(sess, payload)
             if not progress_url:
                 sess = sign_in(self.user_choice)
                 progress_url = submit_simulation(sess, payload)
 
-            if not progress_url:
-                graceful.update_stats('failed')
-                task_logger.log_error(task_id, "提交失败")
-                conn.close()
-                return
+        if not progress_url:
+            graceful.update_stats('failed')
+            task_logger.log_error(task_id, "提交失败")
+            conn.close()
+            return
 
-            # 4. 轮询结果
-            alpha_id = poll_simulation_result(sess, progress_url)
-            if not alpha_id:
-                graceful.update_stats('failed')
-                task_logger.log_error(task_id, "获取结果失败")
-                conn.close()
-                return
+        # 4. 轮询结果（轮询不占用 API 并发配额）
+        alpha_id = poll_simulation_result(sess, progress_url)
+        if not alpha_id:
+            graceful.update_stats('failed')
+            task_logger.log_error(task_id, "获取结果失败")
+            conn.close()
+            return
 
-            # 5. 获取详情
-            alpha_detail = get_alpha_detail(sess, alpha_id)
-            if not alpha_detail:
-                task_logger.log_error(task_id, "获取详情失败")
-                conn.close()
-                return
+        # 5. 获取详情
+        alpha_detail = get_alpha_detail(sess, alpha_id)
+        if not alpha_detail:
+            task_logger.log_error(task_id, "获取详情失败")
+            conn.close()
+            return
 
-            # 6. 保存到数据库
-            alpha_detail['author'] = self.author_name
-            is_data = alpha_detail.get('is', {})
-            grade = alpha_detail.get('grade')
+        # 6. 保存到数据库
+        alpha_detail['author'] = self.author_name
+        is_data = alpha_detail.get('is', {})
+        grade = alpha_detail.get('grade')
 
-            if save_alpha(conn, alpha_detail, fingerprint):
-                conn.commit()
-                graceful.update_stats('success')
-                task_logger.end_task(
-                    task_id,
-                    alpha_id=alpha_id,
-                    grade=grade,
-                    success=True,
-                    sharpe=is_data.get('sharpe'),
-                    fitness=is_data.get('fitness')
-                )
+        if save_alpha(conn, alpha_detail, fingerprint):
+            conn.commit()
+            graceful.update_stats('success')
+            task_logger.end_task(
+                task_id,
+                alpha_id=alpha_id,
+                grade=grade,
+                success=True,
+                sharpe=is_data.get('sharpe'),
+                fitness=is_data.get('fitness')
+            )
 
-            # 7. 写入结果文件
-            self._write_result(alpha_detail, alpha_id)
+        # 7. 写入结果文件
+        self._write_result(alpha_detail, alpha_id)
 
         conn.close()
 

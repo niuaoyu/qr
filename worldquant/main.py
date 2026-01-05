@@ -18,7 +18,7 @@ from loaders import load_from_json
 
 
 # ============ 运行时配置 ============
-USER_CHOICE = os.getenv('USER_CHOICE', 'lab')  # 从 .env 读取
+USER_CHOICE = 'lab' 
 CONFIG_FILE = os.path.join(os.path.dirname(__file__), 'batch_config.json')
 
 

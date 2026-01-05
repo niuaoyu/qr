@@ -371,7 +371,7 @@
         status.text('正在请求数据...');
 
         // API URL 包含所有参数
-        const apiUrl = `http://localhost:5000/api/alphas?id=${encodeURIComponent(idQuery)}&expression=${encodeURIComponent(expr)}&limit=${limit}&sort=${sortBy}`;
+        const apiUrl = `http://localhost:5001/api/alphas?id=${encodeURIComponent(idQuery)}&expression=${encodeURIComponent(expr)}&limit=${limit}&sort=${sortBy}`;
 
         $.ajax({
             url: apiUrl,

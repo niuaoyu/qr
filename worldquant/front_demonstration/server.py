@@ -2,6 +2,7 @@ import sqlite3
 import os
 import sys
 from flask import Flask, request, jsonify, g
+import traceback
 
 # -----------------------------------------------------------------------------
 # 1. 环境与路径配置
@@ -51,6 +52,10 @@ def after_request(response):
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
     return response
+
+@app.route('/')
+def index():
+    return "WorldQuant Alpha Server is Running! Access <a href='/api/alphas'>/api/alphas</a> to see data."
 
 @app.route('/api/alphas', methods=['GET'])
 def get_alphas():
@@ -126,6 +131,8 @@ def get_alphas():
             "data": data
         })
     except Exception as e:
+        print(f"Error executing query: {e}")
+        traceback.print_exc()
         return jsonify({"error": str(e)}), 500
 
 @app.route('/api/status', methods=['GET'])
@@ -140,4 +147,15 @@ def status():
 if __name__ == '__main__':
     print(f"Starting Flask API Server...")
     print(f"Database Path: {DB_PATH}")
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    
+    # 启动时自检：打印数据库中所有的表名
+    if os.path.exists(DB_PATH):
+        try:
+            with sqlite3.connect(DB_PATH) as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+                print(f"DEBUG: Existing tables in DB: {[row[0] for row in cursor.fetchall()]}")
+        except Exception as e:
+            print(f"DEBUG: Error inspecting DB: {e}")
+            
+    app.run(host='0.0.0.0', port=5001, debug=True)

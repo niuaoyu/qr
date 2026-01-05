@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from loaders import txt_to_json_templates
 
-
+# python convert_txt.py C:\qr\qr\worldquant\io\input\ready_to_test_alpha_list\clean_alpha\temp_test.txt C:\qr\qr\worldquant\batch_config.json
 def main():
     if len(sys.argv) < 2:
         print("用法: python convert_txt.py <txt文件路径> [json输出路径]")

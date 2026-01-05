@@ -1,35 +1,46 @@
 """
-文件 input: 表达式字符串
+文件 input: filter_rules.json 规则配置
 文件 output: is_forbidden() 检查函数, filter_expressions() 过滤函数
-文件 pos: 表达式过滤模块，管理禁止规则
+文件 pos: 表达式过滤模块，从JSON读取规则
 一旦我被更新，务必更新我的开头注释，以及所属的文件夹的md
 """
 import re
+import os
+import json
 
 
-# ============ 禁止规则 ============
-FORBIDDEN_PATTERNS = [
-    # 规则1: group_neutralize 包含 ts_backfill 除法
-    (r'group_neutralize\s*\([^)]*ts_backfill[^)]*\/[^)]*ts_backfill',
-     'group_neutralize(...ts_backfill.../ts_backfill...)'),
+# 加载规则配置
+def _load_rules():
+    """从JSON文件加载过滤规则"""
+    rules_path = os.path.join(os.path.dirname(__file__), 'filter_rules.json')
 
-    # 规则2: -rank(ts_corr(...))
-    (r'^-rank\s*\(\s*ts_corr\s*\(',
-     '-rank(ts_corr(...))'),
+    if not os.path.exists(rules_path):
+        print(f"⚠️ 规则文件不存在: {rules_path}")
+        return []
 
-    # 规则3: ts_rank(ts_backfill(...) / ..., ...)
-    (r'ts_rank\s*\(\s*ts_backfill\s*\([^)]+\)\s*\/',
-     'ts_rank(ts_backfill(...) / ...)'),
-]
+    with open(rules_path, 'r', encoding='utf-8') as f:
+        config = json.load(f)
+
+    patterns = []
+    for rule in config.get('forbidden_templates', []):
+        patterns.append((rule['regex'], rule['description']))
+
+    return patterns
+
+
+# 加载规则
+FORBIDDEN_PATTERNS = _load_rules()
+
+
+def reload_rules():
+    """重新加载规则（规则文件修改后调用）"""
+    global FORBIDDEN_PATTERNS
+    FORBIDDEN_PATTERNS = _load_rules()
+    print(f"✅ 已加载 {len(FORBIDDEN_PATTERNS)} 条过滤规则")
 
 
 def is_forbidden(expression):
-    """
-    检查表达式是否匹配禁止规则
-
-    Returns:
-        tuple: (是否禁止, 规则名称)
-    """
+    """检查表达式是否匹配禁止规则"""
     for pattern, name in FORBIDDEN_PATTERNS:
         if re.search(pattern, expression, re.IGNORECASE):
             return True, name
@@ -37,15 +48,7 @@ def is_forbidden(expression):
 
 
 def filter_expressions(expressions):
-    """
-    过滤表达式列表，移除禁止的模式
-
-    Args:
-        expressions: 表达式列表
-
-    Returns:
-        tuple: (保留的表达式列表, 被过滤的数量)
-    """
+    """过滤表达式列表，移除禁止的模式"""
     kept = []
     removed_count = 0
 

@@ -1,10 +1,29 @@
 1.
 
 
+2026-01-04：
+    1.自制 ai 数据库，筛选数据集后多次反复对话（需要自己筛，嚼碎后给他的认知体系）
+    2.需要大小 agents 大的操控小的，每个小的 agents 独自完成一部分的数据筛选，
+      比如字段读取有哪些，其他的 agents 专门读取页面的信息筛选(解决办法：skill但还没学会)
+    3.对于多行表达式，回测是容易的，去重不方便，且展示不方便
+        > my_group = market;
+        my_group2 = bucket(rank(cap),range='0,1,0.1');
+        alpha=rank(group_rank(ts_decay_linear(volume/ts_sum(volume,252),10),my_group)*group_rank(ts_rank(vec_avg({Fundamenta
+        l})),my_group)*group_rank(-ts_delta(close,5),my_group));
+        trade_when(volume>adv20,group_neutralize(alpha,my_group2),-1)，
+        新问题，对于多行表达式，针对性的修改多个文件，convert_txt文件需要修改，如何转化为json，
+        以及回测系统如何读取这种多行表达式（每行后面有;分号代表一行，换行），
+        最大的问题是回测结果写回前端展示这是最大的问题，比如第一行，my_group，如果换一种名词，my_g，
+        那么设置和表达式形成的fingerprint就不一样，但是其实逻辑是一样的，这种怎么解决？
+        给出思路，先别写代码
+        思路：原理：计算fingerprint前，把所有变量替换回实际值
+
+2025-12-31：
+    1.用一个mcp操控多个notebooklm，让他们之间配合完成任务，每个lm只做一种知识的总结
 
 2025-12-30：
     1.当前只是对json一行的表达式进行回测，需要修改为可以对多行表达式进行回测（以;分开）
-    2.主数据库（lab）能存，而ubuntu和mylab只能检测是否存在，然后保存id
+    2.三台电脑之间mysql连接，保存内容。现在有更好的代码了，暂时不需要了。
     3.写一个博客用notion搭起来
 
 2025-12-24：
