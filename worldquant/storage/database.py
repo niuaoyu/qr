@@ -213,9 +213,16 @@ def init_db(db_path=None):
                 fingerprint     VARCHAR(128) NOT NULL PRIMARY KEY
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
         ''')
-        cursor.execute('CREATE INDEX IF NOT EXISTS idx_grade ON alpha_is(grade)')
-        cursor.execute('CREATE INDEX IF NOT EXISTS idx_sharpe ON alpha_is(sharpe DESC)')
-        cursor.execute('CREATE INDEX IF NOT EXISTS idx_fitness ON alpha_is(fitness DESC)')
+        # MySQL 索引（忽略已存在的错误）
+        for idx_sql in [
+            'CREATE INDEX idx_grade ON alpha_is(grade)',
+            'CREATE INDEX idx_sharpe ON alpha_is(sharpe)',
+            'CREATE INDEX idx_fitness ON alpha_is(fitness)'
+        ]:
+            try:
+                cursor.execute(idx_sql)
+            except Exception:
+                pass  # 索引已存在，忽略
     else:
         # SQLite 建表语句
         cursor.execute('''

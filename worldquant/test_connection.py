@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from dotenv import load_dotenv
 load_dotenv()
 
-from config import DB_TYPE, DB_HOST, DB_PORT, DB_USER, DB_NAME, USER_CHOICE
+from config import DB_TYPE, DB_HOST, DB_PORT, DB_USER, DB_NAME
 
 
 def test_connection():
@@ -63,15 +63,15 @@ def test_fingerprint():
     print("测试指纹去重")
     print("=" * 50)
     try:
-        from core.fingerprint import generate_fingerprint
+        from core.fingerprint import make_fingerprint
         from storage.database import get_connection, check_exists
 
         test_expr = "group_rank(ts_rank(sales/assets, 252), industry)"
         test_settings = {"region": "USA", "universe": "TOP3000", "delay": 1}
 
-        fp = generate_fingerprint(test_expr, test_settings)
+        fp = make_fingerprint(test_expr, test_settings)
         print(f"测试表达式: {test_expr[:40]}...")
-        print(f"生成指纹: {fp}")
+        print(f"生成指纹: {fp[:32]}...")
 
         conn = get_connection()
         exists = check_exists(conn, fp)
