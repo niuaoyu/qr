@@ -23,6 +23,62 @@ Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+Alpha ID: gJvWxrpM, Author: niuaoyula
+Expression: trade_when(ts_rank(returns, 20) > 0.8, -1, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OoJo2v, Author: niuaoyula
+Expression: trade_when(ts_rank(returns, 20) > 0.8, -1, 1)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OogawL, Author: niuaoyula
+Expression: group_mean(close, 1, sector)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0e8jL0R, Author: niuaoyula
+Expression: group_neutralize(ts_backfill(fnd6_pncdq / eps, 60), sector);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPeKA6Rw, Author: niuaoyula
+Expression: group_neutralize(ts_backfill(fnd6_pncdq / eps, 60), sector);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexKY1Ae, Author: niuaoyula
+Expression: group_neutralize(ts_backfill(fnd6_pncdq / eps, 60), sector);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexK1Z5e, Author: niuaoyula
+Expression: group_mean(returns, 1, market)
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: LLeRRbgL, Author: niuaoyula
 Expression: rank(ts_delta(fscore_momentum, 5))
 Sharpe: 0.0
