@@ -1,4 +1,44 @@
 --------------------------------------------------
+Alpha ID: WjklEGqx, Author: 672019598---这个不好，long和short都几个股票，非常脆弱
+Expression: rank(ts_mean(news_mins_10_pct_up / news_mins_10_pct_dn, 22));
+Sharpe: 0.97
+Turnover: 0.2531
+Fitness: 1.1
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZaRjG8, Author: 672019598
+Expression: rank(ts_mean(news_mins_10_pct_up / news_mins_10_pct_dn, 22));
+Sharpe: 1.15
+Turnover: 0.2446
+Fitness: 1.46
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AvY77m, Author: 672019598    ---这个不好，long和short都几个股票，非常脆弱
+Expression: group_rank(ts_zscore(ts_backfill(fnd6_esopr / equity, 60), 252), subindustry);
+Sharpe: 0.83
+Turnover: 0.0046
+Fitness: 1.27
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qKoA3j, Author: 672019598
+Expression: group_rank(ts_zscore(ts_backfill(fnd6_esopr / equity, 60), 252), subindustry);
+Sharpe: 0.83
+Turnover: 0.0046
+Fitness: 1.27
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OoMEXO, Author: 672019598
+Expression: group_rank(ts_zscore(ts_backfill(fnd6_esopr / equity, 60), 252), subindustry);
+Sharpe: 0.83
+Turnover: 0.0046
+Fitness: 1.27
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: wp6bK0M2, Author: niuaoyula
 Expression: rank(ts_mean(debt / assets, 66))
 Sharpe: 1.27
