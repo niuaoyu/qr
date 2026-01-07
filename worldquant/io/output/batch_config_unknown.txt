@@ -1,4 +1,28 @@
 --------------------------------------------------
+Alpha ID: blpOjAk6, Author: 2734849800
+Expression: rank(ts_mean(high/ts_arg_max(high,5), 10) * ts_mean(low/ts_arg_min(low,5), 10))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZA7zw0, Author: 2734849800
+Expression: rank(ts_mean(high/ts_arg_max(high,5), 10) * ts_mean(low/ts_arg_min(low,5), 10))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEmlAwZ, Author: 2734849800
+Expression: rank(ts_mean(high/ts_arg_max(high,5), 10) * ts_mean(low/ts_arg_min(low,5), 10))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: LLeRRbgL, Author: niuaoyula
 Expression: rank(ts_delta(fscore_momentum, 5))
 Sharpe: 0.0
