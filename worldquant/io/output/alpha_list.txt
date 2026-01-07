@@ -1,4 +1,108 @@
 --------------------------------------------------
+Alpha ID: 78Oo6p11, Author: niuaoyula
+Expression: group_rank(ts_delta(implied_volatility_mean_60, 5), industry)
+Sharpe: 1.96
+Turnover: 0.4006
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPemNxek, Author: niuaoyula  不行 sub-universe不够
+Expression: group_rank(ts_zscore(ts_backfill(fnd6_optgr / sharesout, 60), 252), industry)
+Sharpe: 1.68
+Turnover: 0.0168
+Fitness: 1.04
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vknd6mZV, Author: niuaoyula
+Expression: group_neutralize(ts_backfill(fnd6_drc/liabilities_curr, 60), industry)
+Sharpe: 1.37
+Turnover: 0.0125
+Fitness: 1.04
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkd5NOo, Author: niuaoyula
+Expression: group_neutralize(ts_backfill(fnd6_drc/liabilities_curr, 60), industry)
+Sharpe: 1.39
+Turnover: 0.0136
+Fitness: 1.06
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVgdKLJ, Author: niuaoyula
+Expression: group_neutralize(ts_backfill(fnd6_drc/liabilities_curr, 60), industry)
+Sharpe: 1.37
+Turnover: 0.0121
+Fitness: 1.04
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdjAZkP, Author: niuaoyula
+Expression: group_neutralize(ts_backfill(fnd6_drc/liabilities_curr, 60), sector);
+Sharpe: 1.37
+Turnover: 0.0126
+Fitness: 1.04
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw0xWw6, Author: niuaoyula
+Expression: group_neutralize(ts_backfill(fnd6_drc/liabilities_curr, 60), sector);
+Sharpe: 1.37
+Turnover: 0.0122
+Fitness: 1.04
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MeOx0q, Author: niuaoyula
+Expression: group_neutralize(ts_backfill(fnd6_drc/liabilities_curr, 60), sector);
+Sharpe: 1.39
+Turnover: 0.0136
+Fitness: 1.06
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6XxAOn5p, Author: niuaoyula
+Expression: group_rank(ts_zscore(ts_backfill(fnd6_optgr / sharesout, 60), 252), market);
+Sharpe: 1.84
+Turnover: 0.0161
+Fitness: 1.18
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16QMAEX, Author: niuaoyula
+Expression: group_rank(ts_zscore(ts_backfill(fnd6_optgr / sharesout, 60), 252), market);
+Sharpe: 1.8
+Turnover: 0.0172
+Fitness: 1.14
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZxGV8v, Author: niuaoyula
+Expression: group_rank(ts_zscore(ts_backfill(fnd6_optgr / sharesout, 60), 252), market);
+Sharpe: 1.79
+Turnover: 0.0195
+Fitness: 1.12
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58RgzEnX, Author: niuaoyula
+Expression: if_else(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, 0);
+Sharpe: 1.96
+Turnover: 0.3187
+Fitness: 1.41
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2WLKdE, Author: niuaoyula
+Expression: if_else(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, 0);
+Sharpe: 1.92
+Turnover: 0.2383
+Fitness: 1.6
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: wp6bK0M2, Author: niuaoyula
 Expression: rank(ts_mean(debt / assets, 66))
 Sharpe: 1.27
