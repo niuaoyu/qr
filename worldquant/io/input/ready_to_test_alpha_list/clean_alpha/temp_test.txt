@@ -1,2 +1,0 @@
-group_rank(ts_rank(sales/assets, 252), industry)
--ts_mean(abs(returns), 22)
