@@ -640,4 +640,634 @@ ts_zscore(ts_mean(implied_volatility_mean_360 / historical_volatility_360, 60), 
 rank(ts_corr(beta_last_180_days_spy, ts_delta(close, 1), 60));
 group_neutralize(ts_backfill(fnd6_fatl / ppent, 60), subindustry);
 ts_rank(signed_power(ts_delta(correlation_last_30_days_spy, 1), 3), 252);
-rank(ts_mean(snt_social_value, 5) * historical_volatility_10);
+rank(ts_mean(snt_social_value, 5) * historical_volatility_10);group_rank(ts_rank(sales/assets, 252), industry)
+-ts_mean(abs(returns), 22)
+ts_decay_linear(rank(volume), 10)
+group_zscore(ts_delta(ebitda, 66), sector)
+-ts_quantile(close/vwap, 126)
+group_neutralize(ts_rank(debt/assets, 252), industry)
+ts_zscore(high - low, 22)
+-ts_rank(ts_sum(returns, 5), 126)
+rank(ts_corr(close, volume, 126))
+group_zscore(ts_backfill(vec_avg(anl4_netprofit_mean), 90), industry)
+ts_rank(cash/assets, 252)
+-group_rank(ts_std_dev(returns, 66), sector)
+ts_decay_linear(group_rank(returns, market), 5)
+group_neutralize(ts_zscore(equity/assets, 126), subindustry)
+-ts_delta(ts_mean(volume, 5), 22)
+rank(ts_regression(returns, group_mean(returns, 1, market), 252))
+group_rank(ts_quantile(operating_income/sales, 126), industry)
+ts_zscore(vwap/close, 66)
+-group_zscore(ts_rank(historical_volatility_20, 126), sector)
+-ts_rank(ts_decay_linear(volume, 22), 126)
+group_neutralize(ts_zscore(ebitda/cap, 126), subindustry)
+ts_rank(winsorize(ts_backfill(vec_avg(anl4_epsr_mean), 120), std=4), 60)
+ts_decay_linear(-densify(zscore(winsorize(ts_backfill(operating_income, 115), std=4))), 10)
+rank(group_rank(ts_decay_linear(volume/ts_sum(volume, 252), 10), market) * group_rank(ts_rank(vec_avg(anl4_epsr_mean), 252), market) * group_rank(-ts_delta(close, 5), market))
+group_neutralize(group_neutralize(ts_zscore(operating_income, 252), bucket(rank(cap), range="0.1,1,0.1")), subindustry)
+ts_regression(returns, group_mean(returns, 1, market), 252, rettype=2)
+ts_delta(implied_volatility_call_270, 22) - ts_delta(implied_volatility_put_270, 22)
+trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1)
+group_rank(ts_zscore(historical_volatility_60, 126), sector)
+ts_rank(implied_volatility_call_120/parkinson_volatility_120, 66)
+ts_mean(vec_avg(anl4_epsr_mean), 22) - ts_mean(vec_avg(anl4_epsr_mean), 66)
+ts_backfill(vec_avg(nws12_prez_4l), 504)
+ts_rank(vec_avg(anl4_netprofit_mean), 66)
+rank(vec_avg(scl12_alltype_buzzvec) * vec_avg(scl12_sentiment))
+ts_decay_linear(vec_avg(scl12_sentiment), 10)
+group_zscore(ts_backfill(vec_avg(nws18_ber), 30), sector)
+ts_zscore(vec_avg(anl4_epsr_high) - vec_avg(anl4_epsr_low), 66)
+group_rank(ts_rank(vec_avg(anl4_bvps_flag), 126), industry)
+group_rank(ts_rank(operating_income, 252), industry)
+group_neutralize(liabilities/assets, sector)
+-ts_quantile(debt, 126)
+ts_backfill(fnd6_drc, 252)/assets
+quantile(ts_rank(pretax_income, 250))
+-ts_rank(fn_liab_fair_val_l1_a, 252)
+ts_rank(ebitda/assets, 252)
+ts_zscore(operating_income/cap, 126)
+ts_scale(close, 22)
+ts_sum(abs(close - open), 20) / ts_sum(high - low, 20)
+group_rank(ts_sum(returns, 5), sector)
+ts_zscore(volume, 20)
+ts_rank(close, 10) - ts_rank(volume, 10)
+ts_std_dev(high, 20) / ts_std_dev(low, 20)
+ts_corr(vwap, close, 20)
+ts_decay_linear(ts_delta(close, 1), 5, dense=false)
+group_zscore(adv20, sector)
+ts_arg_min(low, 60)
+rank(close) - ts_delay(rank(close), 5)
+(high - close) / (high - low)
+ts_mean(close, 5) / close
+ts_mean(abs(ts_delta(close, 1)), 20)
+ts_product(1 + returns, 5) - 1
+ts_sum(sign(ts_delta(volume, 1)), 20)
+(vwap - close) / close
+group_neutralize(ts_delta(close, 5), industry)
+ts_covariance(close, volume, 20)
+if_else(close > ts_delay(close, 1), volume, -volume)
+group_rank(ts_std_dev(log(cap), 252), market);
+ts_partial_corr(high - low, volume, ts_mean(volume, 252), 22);
+group_rank(ts_backfill(liabilities/equity, 60) * ts_backfill(sales/assets, 60), sector);
+ts_zscore(historical_volatility_180 - historical_volatility_30, 252);
+ts_mean(anl4_epsr_high - anl4_epsr_low, 252);
+ts_mean(log(cap) * correlation_last_60_days_spy, 60);
+group_rank(ts_backfill(cogs/fnd6_cptnewqv1300_apq, 60), subindustry);
+signed_power(pcr_vol_30, 2) * implied_volatility_mean_30;
+ts_decay_linear(vec_avg(nws18_relevance) * news_max_up_ret, 5);
+group_rank(ts_regression(cashflow_op, ts_step(1), 252, rettype=2), market);
+ts_delta(ts_zscore(cap, 252), 22);
+ts_zscore(ts_mean(volume, 252) - ts_mean(volume, 22), 252);
+group_rank(ts_delta(ts_backfill(receivable/sales, 60), 22), industry);
+group_rank(ts_corr(implied_volatility_call_60, implied_volatility_put_60, 60), sector);
+if_else(abs(news_max_up_ret) > 0.05, rank(-cap), 0);
+ts_rank(ts_regression(rd_expense/sales, ts_step(1), 252, rettype=2), 252);
+group_rank(ts_delta(liabilities, 60) * unsystematic_risk_last_60_days, sector);
+ts_rank(ts_zscore(ts_mean(log(cap), 252), 252), 252);
+rank(signed_power(vec_sum(anl4_ady_numest) / cap, 2));
+group_rank(ts_mean(volume/sharesout, 252) - ts_mean(volume/sharesout, 22), market);
+signed_power(ts_std_dev(returns, 22), 0.5);
+ts_corr(close/log(cap), volume/log(cap), 252);
+group_neutralize(ts_regression(dividend/close, ts_step(1), 252, rettype=2), industry);
+rank(ts_mean(returns, 5) * ts_zscore(volume/sharesout, 252));
+group_rank(ts_zscore(implied_volatility_mean_120, 252), sector);
+ts_delta(ts_zscore(ts_backfill(return_assets, 60), 252), 4);
+ts_zscore(ts_mean(equity/assets, 252), 252);
+ts_decay_linear(rank(-(high-low)/open, 10) * signed_power(returns, 2), 10);
+group_rank(vec_sum(anl4_ady_numest), market);
+group_rank(ts_std_dev(volume, 252) - ts_std_dev(volume, 22), industry);
+rank(ts_mean(returns, 22) * ts_zscore(volume, 22));
+rank(ts_mean(volume/sharesout, 252) / historical_volatility_20);
+group_rank(ts_delta(log(cap), 60), industry);
+group_rank(ts_zscore(beta_last_90_days_spy, 252), market);
+rank(signed_power(vec_sum(anl4_ady_numest), 2) / historical_volatility_180);
+rank(ts_delta(pcr_vol_30, 5) * ts_mean(returns, 126));
+group_neutralize(ts_delta(cogs/fnd6_cptnewqv1300_apq, 22), subindustry);
+ts_rank(signed_power(ts_backfill(enterprise_value/assets, 252), 0.5), 252);
+ts_zscore(correlation_last_360_days_spy - correlation_last_60_days_spy, 60);
+ts_rank(ts_mean(dividend/close, 252), 252);
+group_rank(ts_delta(unsystematic_risk_last_360_days, 22) - ts_delta(unsystematic_risk_last_90_days, 22), market);
+ts_zscore(ts_delta(volume, 5) / ts_delta(volume, 60), 252);
+rank(news_max_up_ret * ts_mean(returns, 22));
+group_rank(ts_delta(implied_volatility_mean_60, 5), industry);
+rank(beta_last_360_days_spy / historical_volatility_180);
+ts_rank(ts_delta(ts_zscore(equity, 252), 22), 252);
+group_rank(ts_delta(ts_backfill(rd_expense/assets, 60), 4), sector);
+if_else(historical_volatility_30 < ts_mean(historical_volatility_30, 252) && volume < adv20, -returns, 0);
+ts_zscore(ts_corr(returns, volume, 252) - ts_corr(returns, volume, 22), 252);
+ts_rank(signed_power(est_eps/close, 0.618), 252);
+rank(ts_delta(beta_last_360_days_spy, 60) - ts_delta(beta_last_90_days_spy, 60));
+ts_rank(ts_regression(sales/assets, ts_step(1), 180, rettype=2), 180);
+group_rank(-ts_backfill(close/sales_ps, 60), industry);
+rank(ts_product(1+returns, 252) - ts_product(1+returns, 60));
+ts_zscore(ts_delta(ts_backfill(receivable/assets, 60), 22), 252);
+rank(ts_backfill(return_equity, 60) / ts_std_dev(log(cap), 180));
+rank(if_else(abs(news_max_up_ret) > 0.03, ts_mean(returns, 10), 0));
+group_rank(signed_power(implied_volatility_put_120 - implied_volatility_call_120, 3), market);
+ts_rank(ts_delta(vec_sum(anl4_ady_numest), 22), 252);
+ts_zscore(volume - ts_mean(volume, 252), 60);
+group_neutralize(ts_delta(equity, 60), sector);
+ts_corr(returns, high - low, 22);
+ts_rank(ts_backfill(cashflow_op/assets, 252), 252);
+group_rank(signed_power(ts_mean(returns, 180), 0.5), bucket(rank(cap), range="0.1,1,0.1"));
+rank(signed_power(pcr_oi_60 / pcr_vol_60, 2));
+ts_zscore(ts_backfill(rd_expense/revenue, 60), 252);
+group_rank(ts_delta(assets, 252) - ts_delta(assets, 60), industry);
+ts_rank(ts_delta(ts_backfill(fnd6_cptnewqv1300_apq, 252), 252), 252);
+rank(ts_mean(volume, 252) * ts_mean(volume/sharesout, 22));
+rank(ts_mean(returns, 10) / historical_volatility_180);
+ts_rank(signed_power(ts_zscore(beta_last_360_days_spy, 252), 3), 252);
+group_neutralize(ts_backfill(enterprise_value/sales, 60), sector);
+rank(-ts_delta(high - low, 10));
+ts_rank(ts_regression(est_eps, ts_step(1), 252, rettype=2), 252);
+group_rank(signed_power(open/ts_delay(close, 1)-1, 3), bucket(rank(cap), range="0,1,0.2"));
+rank(ts_backfill(sales/assets, 60) * ts_mean(returns, 126));
+ts_zscore(ts_corr(implied_volatility_call_90, implied_volatility_put_90, 90), 252);
+rank(ts_product(1+returns, 180) - ts_product(1+returns, 22));
+group_rank(ts_delta(est_eps, 5) / historical_volatility_20, industry);
+ts_zscore(ts_delta(liabilities, 22) / ts_mean(liabilities, 252), 60);
+group_neutralize(ts_mean(close/open-1, 5), sector);
+rank(log(implied_volatility_mean_120 / pcr_vol_120));
+group_rank(ts_corr(close, volume, 22), subindustry);
+rank(beta_last_60_days_spy * beta_last_360_days_spy);
+ts_rank(ts_delta(ts_backfill(fnd6_intan/assets, 252), 60), 252);
+if_else(news_max_up_ret > 0.05, rank(ts_mean(returns, 5)), 0);
+ts_rank(ts_mean(close * volume, 252) / (ts_std_dev(close, 252) * ts_std_dev(volume, 252)), 252);
+rank(signed_power(volume/cap, 0.618));
+ts_rank(ts_regression(cashflow_op/cap, ts_step(1), 252, rettype=2), 252);
+rank(ts_product(1+returns, 252) / ts_product(1+returns, 5));
+group_rank(-unsystematic_risk_last_360_days * log(cap), industry);
+ts_zscore(implied_volatility_mean_10, 252);
+rank(ts_count_nans(debt, 252) / 252);
+trade_when(volume > adv20 * 1.5, ts_mean(returns, 5), 0);
+ts_rank(ts_delta(liabilities_curr/liabilities, 60), 252);
+group_rank(signed_power(ts_backfill(enterprise_value/assets, 60), 3), sector);
+rank(vec_sum(anl4_ady_numest) * ts_delta(volume, 5));
+rank(-beta_last_360_days_spy * ts_mean(returns, 5));
+ts_rank(ts_corr(returns, high-low, 60) * ts_corr(returns, ts_delay(returns, 5), 60), 252);
+group_rank(ts_delta(ts_backfill(bookvalue_ps/close, 22), 22), industry);
+ts_decay_linear(if_else(historical_volatility_20 < ts_mean(historical_volatility_20, 252), -returns, 0), 10);
+ts_zscore(call_breakeven_270/close, 252);
+group_rank(abs(ts_mean(volume, 252) - ts_mean(volume, 22)), market);
+rank(if_else(ts_backfill(news_pe_ratio, 60) < 10, ts_mean(returns, 10), 0));
+group_neutralize(ts_backfill(rd_expense/revenue, 60), subindustry);
+ts_rank(ts_delta(ts_backfill(sales/assets, 252), 252), 252);
+group_rank(signed_power(ts_delta(implied_volatility_mean_60, 22), 3), sector);
+group_rank(ts_backfill(fnd6_cptnewqv1300_apq/liabilities, 60), industry);
+rank(news_max_up_ret / news_max_dn_ret);
+rank(dividend/close * ts_product(1+returns, 126));
+group_rank(ts_std_dev(volume, 252), subindustry);
+ts_zscore(ts_delta(log(cap), 252) / ts_delta(log(cap), 22), 252);
+rank(implied_volatility_mean_90 * pcr_oi_90);
+group_neutralize(ts_mean(close/open-1, 10), industry);
+ts_rank(signed_power(ts_delta(assets, 252), 0.5), 252);
+trade_when(volume > ts_mean(volume, 252), ts_mean(returns, 180), 0);
+group_rank(signed_power(liabilities/assets, 2), industry);
+ts_zscore(vec_sum(anl4_ady_numest), 252);
+ts_rank(forward_price_270 / close, 252);
+rank(ts_delta(volume, 60) - ts_delta(volume, 5));
+group_neutralize(ts_delta(rd_expense/revenue, 22), sector);
+rank(ts_zscore(volume, 5) * beta_last_30_days_spy);
+group_neutralize(ts_mean(receivable/sales, 60), subindustry);
+rank(signed_power(ts_mean(close/open-1, 60), 3));
+if_else(historical_volatility_90 < ts_mean(historical_volatility_90, 252), signed_power(ts_product(1+returns, 180), 0.5), 0);
+ts_rank(implied_volatility_mean_180 - implied_volatility_mean_30, 252);
+rank(unsystematic_risk_last_30_days / ts_product(1+returns, 252));
+ts_rank(ts_delta(put_breakeven_10/close, 5), 252);
+rank(close / ts_delay(close, 20))
+group_neutralize(rank(returns), industry)
+rank(implied_volatility_mean_720) - rank(historical_volatility_20)
+rank(ts_corr(close, volume, 10))
+rank(ts_zscore(close, 20))
+rank((high - low) / vwap)
+group_neutralize(rank(close / vwap), industry)
+rank(ts_delta(historical_volatility_10, 5))
+rank(volume / ts_mean(volume, 20))
+rank((close - open) / (high - low))
+rank(ts_corr(close, returns, 10))
+group_neutralize(rank(ts_rank(close, 5)), industry)
+rank(high - ts_delay(high, 1) - (low - ts_delay(low, 1)))
+rank(abs(returns) / ts_mean(abs(returns), 20))
+group_neutralize(rank(vwap / ts_delay(close, 1)), industry)
+rank(ts_corr(close, volume, 30) - ts_corr(close, volume, 5))
+rank((close - ts_mean(close, 10)) * volume)
+rank(historical_volatility_120 / historical_volatility_20)
+rank(sign(returns) * volume)
+group_neutralize(rank(log(close / ts_delay(close, 1))), industry)
+rank(close) - rank(vwap)
+rank(implied_volatility_mean_720) - rank(historical_volatility_60)
+rank(implied_volatility_mean_720 / historical_volatility_60)
+rank(ts_corr(close, implied_volatility_mean_720, 20))
+rank(ts_delta(returns, 1))
+rank(ts_delta(returns, 5))
+rank(ts_corr(close, volume, 50))
+rank(ts_corr(close, volume, 100))
+rank(close / ts_mean(close, 10)) - rank(close / ts_mean(close, 60))
+rank(ts_mean(returns, 5)) - rank(ts_mean(returns, 20))
+group_neutralize(rank(returns), subindustry)
+rank(ts_std_dev(returns, 10)) / rank(ts_std_dev(returns, 60))
+rank(adv20 / cap)
+rank(volume) / rank(adv20)
+rank(volume * returns)
+rank(abs(returns))
+rank(close - ts_mean(close, 5))
+rank(vwap - ts_mean(vwap, 5))
+rank(ts_sum(returns > 0, 20))
+rank(ts_sum(returns < 0, 20))
+rank(ts_sum(abs(returns), 20)) / rank(volume)
+rank(ts_mean(volume, 60))
+rank(ts_zscore(returns, 10))
+rank(ts_zscore(volume, 10))
+rank((open - close) / close)
+rank((high - open) / open)
+rank((close - low) / low)
+rank(close / open)
+rank(open / close)
+rank((vwap - close) / close)
+rank(vwap / ts_delay(close, 1))
+rank(ts_delta(vwap, 5))
+group_neutralize(rank(vwap), industry)
+rank(ts_zscore(assets, 252))
+rank(ts_zscore(debt, 252))
+rank(ts_zscore(sales, 252))
+rank(operating_income / sales)
+rank(operating_income / debt)
+rank(ebitda / debt)
+rank(cash / debt)
+rank(equity / cap)
+rank(goodwill / cap)
+rank(implied_volatility_mean_720 / implied_volatility_mean_60)
+rank(historical_volatility_180 / historical_volatility_60)
+rank(ts_delta(historical_volatility_20, 5))
+rank(ts_corr(historical_volatility_20, returns, 10))
+rank(ts_corr(close, returns, 20))
+rank(ts_corr(volume, close, 20))
+rank(ts_corr(volume, returns, 20))
+rank(ts_corr(adv20, returns, 20))
+rank(ts_mean(high - low, 5))
+rank(ts_mean(high - low, 20))
+rank(ts_mean(high - low, 60))
+rank(ts_mean(close - open, 5))
+rank(ts_mean(close - open, 20))
+rank(ts_mean(vwap - close, 5))
+rank(ts_mean(vwap - close, 20))
+group_neutralize(rank(close / ts_mean(close, 20)), industry)
+ts_rank(ts_delta(close/open-1, 5), 20)
+group_neutralize(rank(ts_zscore(volume/adv20, 10)), industry)
+-1 * ts_rank(ts_sum(returns, 5), 22)
+rank(zscore(close/vwap) + zscore(ts_delta(vwap, 1)))
+ts_decay_linear(rank(ts_corr(high, low, 10)), 5)
+group_rank(ts_delta(close, 2)/close, sector)
+ts_rank(divide(historical_volatility_20, historical_volatility_60), 66)
+rank(ts_mean(abs(returns), 10) / ts_mean(volume, 10))
+ts_rank(ts_sum(if_else(close>open, volume, 0), 5), 20)
+group_neutralize(ts_zscore(high/low, 10), industry)
+rank(signed_power(ts_delta(volume, 1), 0.5) * sign(ts_delta(volume, 1)))
+ts_delay(rank(zscore(high-low)), 1) - rank(zscore(high-low))
+ts_rank(divide(ts_sum(volume, 5), ts_sum(adv20, 5)), 30)
+rank(ts_covariance(returns, high/low, 20) / ts_std_dev(high/low, 20))
+group_neutralize(ts_rank(volume/sharesout, 10), industry)
+if_else(ts_delta(close,1)>0, rank(ts_delta(volume,1)), -1*rank(ts_delta(volume,1)))
+ts_rank(ts_zscore(close/ts_mean(close, 20), 10), 30)
+rank(ts_sum(returns*volume, 5) / ts_sum(volume, 5))
+group_rank(ts_delta(vwap, 1)/vwap, industry)
+ts_rank(divide(close-ts_arg_min(low,5), ts_arg_max(high,5)-ts_arg_min(low,5)), 10)
+rank(zscore(ts_delta(close,1)) * zscore(ts_delta(volume,1)))
+ts_decay_linear(rank(ts_corr(close, volume, 15)), 10)
+group_neutralize(ts_rank(high/ts_mean(high,10), 20), sector)
+-1 * ts_rank(ts_std_dev(returns, 5), 22)
+rank(ts_mean(close/open-1, 10) / ts_std_dev(close/open-1, 10))
+ts_rank(ts_sum(if_else(returns<0, volume, 0), 3), 15)
+group_rank(ts_delta(close, 3)/ts_std_dev(returns, 10), industry)
+rank(divide(historical_volatility_30, historical_volatility_90))
+ts_zscore(ts_delta(volume/adv20, 1), 10)
+group_neutralize(rank(ts_mean(high-low, 5)/close), industry)
+ts_rank(ts_covariance(close, volume, 20)/ts_std_dev(volume,20), 30)
+rank(signed_power(ts_delta(adv20, 2), 0.3))
+ts_delay(rank(zscore(volume/sharesout)), 2) - rank(zscore(volume/sharesout))
+ts_rank(divide(ts_sum(if_else(returns>0,1,0),10), 10), 20)
+group_neutralize(ts_zscore(ts_delta(close,2), 15), industry)
+if_else(volume>adv20, rank(ts_delta(close,1)), -1*rank(ts_delta(close,1)))
+rank(ts_mean(abs(close-open), 5) / ts_mean(volume, 5))
+ts_rank(ts_zscore(vwap/ts_mean(vwap,15), 10), 25)
+group_rank(ts_delta(high/low, 1), industry)
+rank(ts_corr(ts_delta(close,1), ts_delta(volume,1), 10))
+ts_decay_linear(rank(ts_std_dev(returns, 3)/ts_std_dev(returns, 10)), 8)
+group_neutralize(ts_rank(close/ts_mean(close,30), 20), sector)
+-1 * ts_rank(ts_sum(returns*ts_delta(volume,1), 5), 15)
+rank(zscore(ts_delta(high,1)) + zscore(ts_delta(low,1)))
+ts_rank(divide(ts_sum(volume*abs(returns), 5), ts_sum(volume, 5)), 20)
+group_neutralize(rank(ts_mean(close/vwap, 10)), industry)
+rank(ts_covariance(close/open-1, volume/adv20, 15))
+ts_rank(ts_zscore(ts_delta(volume,2)/volume, 10), 20)
+group_rank(ts_delta(close,1)/ts_std_dev(returns,5), industry)
+if_else(ts_delta(adv20,1)>0, rank(ts_delta(close,1)), 0)
+rank(divide(historical_volatility_10, historical_volatility_30))
+ts_decay_linear(rank(ts_corr(close, high-low, 12)), 6)
+group_neutralize(ts_rank(volume/ts_mean(volume,20), 15), industry)
+rank(ts_mean(if_else(close>ts_mean(close,5), volume, 0), 10))
+ts_rank(ts_sum(signed_power(returns, 2), 5), 15)
+group_neutralize(ts_zscore(high/ts_mean(high,10), 10), sector)
+-1 * ts_rank(ts_delta(volume/adv20, 1), 20)
+rank(zscore(ts_delta(close,2)) * zscore(ts_delta(adv20,2)))
+ts_rank(divide(ts_sum(if_else(returns*ts_delta(volume,1)>0,1,0),8), 8), 16)
+group_rank(ts_delta(vwap/close, 1), industry)
+rank(ts_corr(ts_delta(close,1), ts_delta(high-low,1), 8))
+ts_decay_linear(rank(ts_std_dev(close/open-1, 5)), 10)
+group_neutralize(ts_rank(ts_delta(close,3)/close, 15), industry)
+if_else(ts_delta(close,1)*ts_delta(volume,1)>0, rank(ts_delta(close,1)), 0)
+rank(ts_mean(abs(ts_delta(close,1)), 10) / ts_mean(abs(returns), 10))
+ts_rank(ts_zscore(volume/ts_mean(volume,15), 8), 20)
+group_neutralize(rank(ts_corr(close, volume, 20)), industry)
+rank(divide(ts_sum(volume*returns, 3), ts_sum(abs(volume*returns), 3)))
+ts_rank(ts_covariance(close, ts_delta(volume,1), 10)/ts_std_dev(ts_delta(volume,1),10), 15)
+group_rank(ts_delta(close/ts_mean(close,5), 1), industry)
+rank(signed_power(ts_delta(high/low, 1), 0.7))
+ts_delay(rank(zscore(ts_delta(close,1))), 1) - rank(zscore(ts_delta(close,1)))
+ts_rank(divide(ts_sum(if_else(close>vwap, volume, 0), 5), ts_sum(volume, 5)), 15)
+group_neutralize(ts_zscore(ts_delta(volume,2)/adv20, 10), industry)
+if_else(ts_delta(close,1)>0.01, rank(volume), if_else(ts_delta(close,1)<-0.01, -1*rank(volume), 0))
+rank(ts_mean(high/ts_arg_max(high,5), 10) * ts_mean(low/ts_arg_min(low,5), 10))
+ts_decay_linear(rank(ts_corr(ts_delta(close,1), ts_delta(vwap,1), 10)), 5)
+group_neutralize(ts_rank(close/ts_mean(high,10), 20), sector)
+-1 * ts_rank(ts_sum(if_else(returns<0, returns*volume, 0), 5), 10)
+rank(zscore(ts_delta(volume/adv20, 1)) + zscore(ts_delta(close/vwap, 1)))
+ts_rank(divide(ts_sum(abs(ts_delta(close,1)), 5), ts_sum(volume, 5)), 15)
+group_neutralize(rank(ts_mean(close/open-1, 5) / ts_std_dev(close/open-1, 5)), industry)
+rank(ts_covariance(high-low, volume, 12) / ts_std_dev(high-low, 12))
+ts_rank(ts_zscore(ts_delta(close,1)/ts_std_dev(returns,5), 10), 20)
+group_rank(ts_delta(volume/ts_mean(volume,10), 1), industry)
+if_else(ts_delta(close,1)>0 && ts_delta(volume,1)>0, rank(ts_delta(close,1)), 0)
+rank(divide(historical_volatility_60, historical_volatility_120))
+ts_decay_linear(rank(ts_corr(close, ts_delta(volume,1), 15)), 8)
+group_neutralize(ts_rank(ts_delta(close,2)/ts_std_dev(returns,10), 15), industry)
+rank(ts_mean(if_else(close>ts_delay(close,1), high-low, 0), 8))
+ts_rank(ts_sum(signed_power(ts_delta(close,1), 3), 5), 12)
+group_neutralize(ts_zscore(vwap/ts_mean(vwap,20), 10), sector)
+-1 * ts_rank(ts_delta(volume/sharesout, 1), 18)
+rank(zscore(ts_delta(high,2)) * zscore(ts_delta(low,2)))
+ts_rank(divide(ts_sum(if_else(returns*ts_delta(adv20,1)>0,1,0),6), 6), 12)
+group_rank(ts_delta(close/ts_arg_min(low,3), 1), industry)
+rank(ts_corr(ts_delta(close,1), ts_delta(high/low,1), 6))
+ts_decay_linear(rank(ts_std_dev(close/ts_mean(close,3), 5)), 10)
+group_neutralize(ts_rank(ts_delta(close,5)/ts_mean(abs(returns),10), 20), industry)
+if_else(volume > 2*adv20, rank(ts_delta(close,1)), 0)
+rank(ts_mean(ts_delta(close,1)/close, 10) / ts_std_dev(ts_delta(close,1)/close, 10))
+ts_rank(ts_zscore(ts_delta(volume,1)/ts_mean(volume,10), 8), 16)
+group_neutralize(rank(ts_corr(high-low, ts_delta(volume,1), 10)), industry)
+rank(divide(ts_sum(volume*(close>open), 5), ts_sum(volume*(close<=open), 5)))
+ts_rank(ts_delta(close, 5) / ts_delta(close, 20), 10)
+rank(zscore(volume) + zscore(ts_corr(high, low, 10)))
+group_neutralize(rank(ts_sum(returns, 20) / ts_std_dev(returns, 20)), industry)
+-1 * ts_rank(ts_zscore(close, 30), 60)
+ts_decay_linear(rank(volume / adv20), 5)
+rank(ts_covariance(returns, volume, 30) / ts_std_dev(volume, 30))
+ts_rank(divide(historical_volatility_20, historical_volatility_90), 60)
+group_neutralize(ts_zscore(close / vwap, 20), industry)
+rank(signed_power(ts_delta(vwap, 1), 2) * sign(ts_delta(vwap, 1)))
+ts_rank(ts_sum(if_else(returns > 0, volume, 0), 5), 20)
+rank(ts_mean(high - low, 10) / ts_mean(volume, 10))
+-1 * ts_corr(rank(volume), rank(high - low), 10)
+group_rank(ts_delta(close, 1) / close, industry)
+ts_rank(zscore(high / low), 30)
+rank(divide(ts_sum(volume, 5), ts_sum(volume, 20)))
+ts_delay(rank(zscore(close)), 1) - rank(zscore(close))
+group_neutralize(ts_rank(volume, 10), industry)
+rank(ts_delta(adv20, 5) / adv20 + ts_delta(volume, 5) / volume)
+ts_rank(divide(close - ts_arg_min(low, 10), ts_arg_max(high, 10) - ts_arg_min(low, 10)), 20)
+if_else(ts_delta(close, 1) > 0, rank(volume), -1 * rank(volume))
+ts_zscore(close, 20)
+rank(ts_delta(close, 5))
+ts_rank(returns, 20)
+zscore(volume)
+winsorize(rank(close / vwap), std=2)
+ts_decay_linear(rank(historical_volatility_30), 10)
+group_neutralize(rank(returns), industry)
+if_else(close > ts_delay(close, 1), rank(volume), -rank(volume))
+ts_av_diff(close, 30)
+scale(ts_zscore(returns, 10))
+rank(ts_sum(volume, 5) / ts_sum(adv20, 5))
+ts_corr(rank(close), rank(returns), 30)
+group_zscore(rank(close), sector)
+ts_delta(historical_volatility_30, 10) / historical_volatility_30
+rank(ts_mean(close, 10) / ts_mean(close, 50))
+winsorize(ts_zscore(volume, 20), std=3)
+group_neutralize(ts_rank(returns, 10), industry)
+if_else(rank(close) > 0.5, ts_zscore(volume, 20), -ts_zscore(volume, 20))
+ts_decay_linear(rank(returns), 20)
+scale(rank(historical_volatility_20) * ts_zscore(close, 10))
+ts_zscore(ts_mean(volume, 10) / ts_mean(volume, 50), 20)
+rank(ts_delta(historical_volatility_60, 5))
+group_neutralize(ts_zscore(close, 30), sector)
+ts_decay_linear(rank(ts_corr(close, volume, 20)), 10)
+if_else(ts_rank(returns, 20) > 0.7, rank(close), -rank(close))
+winsorize(ts_delta(close, 10), std=2)
+scale(ts_rank(volume, 20))
+ts_av_diff(returns, 20) / ts_std_dev(returns, 20)
+group_zscore(ts_rank(close, 30), industry)
+rank(ts_sum(returns, 10) / ts_sum(returns, 50))
+ts_zscore(ts_decay_linear(rank(volume), 20), 10)
+if_else(close > ts_mean(close, 20), rank(returns), -rank(returns))
+winsorize(rank(ts_corr(close, returns, 30)), std=3)
+ts_delta(rank(historical_volatility_90), 10)
+group_neutralize(ts_zscore(volume, 20), sector)
+scale(ts_rank(ts_zscore(close, 20), 30))
+rank(ts_mean(close, 5) / ts_mean(close, 20))
+ts_decay_linear(rank(ts_delta(volume, 10)), 20)
+if_else(ts_zscore(returns, 20) > 1, rank(close), -rank(close))
+winsorize(ts_rank(close, 30), std=2)
+group_zscore(rank(ts_sum(volume, 20) / ts_sum(adv20, 20)), industry)
+ts_zscore(ts_corr(close, volume, 10), 20)
+rank(ts_decay_linear(rank(returns), 30))
+scale(ts_delta(rank(close), 10))
+ts_av_diff(close, 20) / ts_mean(close, 20)
+group_neutralize(ts_rank(volume, 20), sector)
+if_else(rank(historical_volatility_30) > 0.6, ts_zscore(close, 20), -ts_zscore(close, 20))
+winsorize(ts_rank(ts_zscore(returns, 20), 30), std=3)
+rank(ts_mean(returns, 10) / ts_mean(returns, 30))
+ts_decay_linear(rank(ts_corr(close, returns, 20)), 30)
+scale(ts_zscore(volume, 30))
+group_zscore(rank(ts_delta(close, 20)), industry)
+ts_zscore(rank(ts_sum(close, 10) / ts_sum(close, 50)), 20)
+if_else(ts_rank(volume, 20) > 0.8, rank(returns), -rank(returns))
+winsorize(ts_delta(rank(close), 20), std=2)
+rank(ts_decay_linear(rank(historical_volatility_60), 20))
+ts_av_diff(volume, 30) / ts_std_dev(volume, 30)
+group_neutralize(ts_zscore(close, 20), sector)
+scale(ts_rank(ts_delta(close, 10), 20))
+ts_zscore(rank(ts_mean(close, 20) / ts_mean(close, 60)), 10)
+if_else(close > ts_delay(close, 5), rank(volume), -rank(volume))
+winsorize(ts_zscore(returns, 30), std=3)
+rank(ts_corr(rank(close), rank(volume), 20))
+ts_decay_linear(rank(ts_zscore(close, 20)), 20)
+group_zscore(rank(ts_sum(returns, 20) / ts_sum(returns, 60)), industry)
+scale(ts_delta(rank(historical_volatility_20), 10))
+ts_rank(ts_av_diff(close, 20), 30)
+rank(winsorize(ts_zscore(volume, 20), std=2))
+if_else(ts_zscore(close, 20) > 0.5, rank(returns), -rank(returns))
+group_neutralize(ts_rank(returns, 30), sector)
+ts_zscore(ts_decay_linear(rank(close), 30), 20)
+rank(ts_mean(volume, 10) / ts_mean(volume, 30))
+winsorize(ts_rank(close, 20), std=3)
+scale(ts_corr(close, returns, 30))
+ts_delta(rank(historical_volatility_30), 5) / rank(historical_volatility_30)
+group_zscore(rank(ts_zscore(returns, 20)), industry)
+ts_decay_linear(rank(ts_sum(close, 20) / ts_sum(close, 50)), 20)
+if_else(rank(volume) > 0.7, ts_zscore(close, 20), -ts_zscore(close, 20))
+winsorize(ts_rank(ts_delta(returns, 10), 30), std=2)
+rank(ts_av_diff(close, 10) / ts_av_diff(close, 30))
+scale(ts_zscore(ts_rank(volume, 20), 30))
+group_neutralize(ts_decay_linear(rank(close), 20), sector)
+ts_zscore(rank(ts_mean(returns, 5) / ts_mean(returns, 25)), 20)
+rank(ts_corr(rank(volume), rank(returns), 20))
+if_else(ts_rank(close, 20) > 0.6, rank(volume), -rank(volume))
+winsorize(ts_zscore(close, 30), std=2)
+ts_decay_linear(rank(ts_zscore(returns, 20)), 30)
+group_zscore(rank(ts_delta(volume, 20)), industry)
+scale(rank(ts_sum(close, 10) / ts_sum(close, 40)))
+ts_rank(winsorize(ts_zscore(close, 20), std=3), 30)
+rank(ts_decay_linear(rank(historical_volatility_90), 30))
+if_else(close > ts_mean(close, 30), ts_zscore(volume, 20), -ts_zscore(volume, 20))
+group_neutralize(ts_rank(ts_zscore(returns, 20), 30), sector)
+ts_zscore(rank(ts_av_diff(close, 20)), 10)
+winsorize(ts_rank(close, 30), std=3)
+rank(ts_corr(close, volume, 20))
+scale(ts_delta(rank(returns), 10))
+ts_decay_linear(group_zscore(rank(close), industry), 20)
+if_else(ts_zscore(volume, 20) > 1, rank(close), -rank(close))
+rank(ts_mean(historical_volatility_30, 10) / ts_mean(historical_volatility_30, 30))
+winsorize(ts_zscore(returns, 20), std=2)
+group_zscore(ts_rank(close, 20), sector)
+ts_zscore(rank(ts_sum(volume, 20) / ts_sum(adv20, 20)), 20)
+scale(ts_decay_linear(rank(ts_delta(close, 10)), 30))
+rank(ts_zscore(ts_corr(close, returns, 20), 30))
+if_else(rank(returns) > 0.8, ts_zscore(close, 20), -ts_zscore(close, 20))
+winsorize(ts_rank(volume, 20), std=3)
+ts_av_diff(returns, 20) / ts_mean(returns, 20)
+group_neutralize(rank(ts_zscore(close, 30)), industry)
+rank(ts_decay_linear(rank(historical_volatility_20), 20))
+scale(ts_zscore(ts_rank(close, 20), 30))
+ts_zscore(rank(ts_mean(close, 15) / ts_mean(close, 45)), 20)
+if_else(ts_rank(volume, 30) > 0.7, rank(returns), -rank(returns))
+winsorize(ts_delta(rank(close), 15), std=2)
+rank(ts_corr(rank(historical_volatility_60), rank(returns), 20))
+group_zscore(ts_decay_linear(rank(close), 30), sector)
+scale(ts_rank(ts_zscore(volume, 20), 30))
+ts_decay_linear(rank(ts_zscore(returns, 20)), 20)
+rank(ts_av_diff(close, 30) / ts_std_dev(close, 30))
+if_else(close > ts_delay(close, 10), rank(volume), -rank(volume))
+winsorize(ts_zscore(close, 20), std=3)
+group_neutralize(ts_rank(returns, 20), sector)
+ts_zscore(rank(ts_sum(close, 20) / ts_sum(close, 60)), 10)
+scale(ts_decay_linear(rank(ts_delta(volume, 10)), 20))
+rank(ts_mean(historical_volatility_90, 20) / ts_mean(historical_volatility_90, 60))
+if_else(ts_zscore(returns, 30) > 0.5, rank(close), -rank(close))
+winsorize(ts_rank(ts_zscore(close, 20), 30), std=2)
+ts_decay_linear(group_zscore(rank(returns), industry), 30)
+rank(ts_corr(close, volume, 30))
+scale(ts_zscore(ts_rank(volume, 20), 30))
+group_zscore(rank(ts_delta(close, 20)), sector)
+ts_zscore(rank(ts_mean(volume, 10) / ts_mean(volume, 50)), 20)
+if_else(rank(close) > 0.6, ts_zscore(returns, 20), -ts_zscore(returns, 20))
+winsorize(ts_decay_linear(rank(close), 20), std=3)
+rank(ts_av_diff(returns, 20) / ts_std_dev(returns, 20))
+ts_rank(winsorize(ts_zscore(close, 30), std=2), 30)
+group_neutralize(ts_zscore(volume, 20), sector)
+scale(rank(ts_sum(returns, 20) / ts_sum(returns, 50)))
+ts_decay_linear(rank(ts_zscore(close, 20)), 30)
+rank(ts_mean(historical_volatility_30, 10) / ts_mean(historical_volatility_30, 50))
+if_else(ts_rank(close, 20) > 0.8, rank(volume), -rank(volume))
+winsorize(ts_zscore(returns, 20), std=3)
+group_zscore(ts_rank(ts_delta(close, 10), 20), industry)
+ts_zscore(rank(ts_corr(close, returns, 20)), 20)
+scale(ts_decay_linear(rank(historical_volatility_60), 30))
+rank(ts_zscore(ts_mean(close, 20) / ts_mean(close, 40), 20))
+if_else(close > ts_mean(close, 20), ts_zscore(volume, 20), -ts_zscore(volume, 20))
+winsorize(ts_rank(returns, 30), std=2)
+ts_decay_linear(group_neutralize(rank(close), sector), 20)
+rank(ts_sum(volume, 20) / ts_sum(adv20, 20))
+scale(ts_zscore(rank(ts_delta(close, 15)), 30))
+group_zscore(rank(ts_zscore(returns, 20)), industry)
+ts_rank(winsorize(ts_zscore(close, 20), std=3), 30)
+rank(ts_decay_linear(rank(historical_volatility_30), 20))
+if_else(ts_zscore(volume, 20) > 1, rank(close), -rank(close))
+winsorize(ts_delta(rank(returns), 10), std=2)
+group_neutralize(ts_zscore(ts_rank(close, 20), 30), sector)
+ts_zscore(rank(ts_mean(returns, 10) / ts_mean(returns, 30)), 20)
+scale(ts_corr(rank(close), rank(volume), 20))
+rank(ts_decay_linear(rank(ts_zscore(returns, 20)), 30))
+if_else(rank(historical_volatility_20) > 0.7, ts_zscore(close, 20), -ts_zscore(close, 20))
+winsorize(ts_rank(volume, 20), std=3)
+ts_av_diff(close, 20) / ts_mean(close, 20)
+group_zscore(ts_decay_linear(rank(returns), 30), industry)
+rank(ts_zscore(ts_sum(close, 20) / ts_sum(close, 50), 20))
+scale(ts_rank(ts_zscore(volume, 20), 30))
+ts_decay_linear(rank(ts_delta(close, 20)), 30)
+if_else(ts_rank(returns, 20) > 0.6, rank(close), -rank(close))
+winsorize(ts_zscore(close, 30), std=2)
+group_neutralize(rank(ts_corr(close, volume, 20)), sector)
+ts_zscore(rank(ts_mean(volume, 20) / ts_mean(volume, 40)), 20)
+rank(ts_decay_linear(rank(historical_volatility_90), 30))
+scale(ts_zscore(ts_rank(returns, 20), 30))
+if_else(close > ts_delay(close, 15), rank(volume), -rank(volume))
+winsorize(ts_rank(ts_zscore(close, 20), 30), std=3)
+ts_decay_linear(group_zscore(rank(close), industry), 20)
+rank(ts_av_diff(returns, 30) / ts_std_dev(returns, 30))
+group_zscore(ts_rank(ts_delta(volume, 10), 20), sector)
+ts_zscore(rank(ts_sum(returns, 20) / ts_sum(returns, 40)), 20)
+scale(ts_decay_linear(rank(ts_zscore(close, 20)), 30))
+rank(ts_mean(historical_volatility_60, 20) / ts_mean(historical_volatility_60, 60))
+if_else(ts_zscore(close, 20) > 0.5, rank(returns), -rank(returns))
+winsorize(ts_zscore(volume, 20), std=2)
+group_neutralize(ts_rank(close, 30), sector)
+ts_decay_linear(rank(ts_corr(close, returns, 30)), 20)
+rank(ts_zscore(ts_rank(volume, 20), 30))
+scale(ts_delta(rank(close), 20))
+ts_zscore(rank(ts_mean(close, 15) / ts_mean(close, 45)), 20)
+if_else(rank(volume) > 0.8, ts_zscore(close, 20), -ts_zscore(close, 20))
+winsorize(ts_rank(returns, 30), std=3)
+group_zscore(ts_decay_linear(rank(close), 30), industry)
+rank(ts_decay_linear(rank(historical_volatility_20), 20))
+scale(ts_zscore(ts_mean(volume, 10) / ts_mean(volume, 50), 20))
+ts_rank(winsorize(ts_zscore(close, 30), std=2), 30)
+group_neutralize(rank(ts_delta(close, 20)), sector)
+ts_zscore(rank(ts_corr(close, volume, 20)), 20)
+if_else(ts_rank(returns, 30) > 0.7, rank(close), -rank(close))
+winsorize(ts_zscore(returns, 20), std=3)
+ts_decay_linear(group_zscore(rank(volume), industry), 30)
+rank(ts_mean(historical_volatility_30, 10) / ts_mean(historical_volatility_30, 40))
+scale(ts_rank(ts_zscore(close, 20), 30))
+group_zscore(ts_rank(ts_delta(returns, 10), 20), sector)
+ts_zscore(rank(ts_sum(close, 20) / ts_sum(close, 60)), 20)
+if_else(close > ts_mean(close, 30), rank(volume), -rank(volume))
+winsorize(ts_decay_linear(rank(close), 20), std=2)
+rank(ts_av_diff(close, 20) / ts_std_dev(close, 20))
+scale(ts_zscore(ts_rank(returns, 20), 30))
+group_neutralize(rank(ts_zscore(volume, 20)), sector)
+ts_decay_linear(rank(ts_corr(rank(close), rank(returns), 20)), 30)
+rank(ts_zscore(ts_mean(returns, 20) / ts_mean(returns, 40), 20))
+if_else(ts_zscore(volume, 20) > 1, rank(close), -rank(close))
+winsorize(ts_rank(close, 30), std=3)
+group_zscore(ts_decay_linear(rank(historical_volatility_60), 30), industry)
+ts_zscore(rank(ts_delta(close, 15)), 20)
+scale(ts_corr(close, returns, 20))
+rank(ts_decay_linear(rank(ts_zscore(returns, 20)), 30))
+if_else(rank(returns) > 0.7, ts_zscore(close, 20), -ts_zscore(close, 20))
+winsorize(ts_zscore(close, 20), std=2)
+ts_rank(group_neutralize(rank(volume), sector), 30)
+rank(ts_mean(volume, 20) / ts_mean(volume, 60))
+scale(ts_decay_linear(rank(ts_zscore(close, 20)), 20))
+group_neutralize(ts_rank(returns, 20), sector)
+ts_zscore(rank(ts_corr(close, volume, 30)), 20)
+if_else(ts_rank(close, 20) > 0.6, rank(returns), -rank(returns))
+winsorize(ts_zscore(returns, 30), std=3)
+ts_decay_linear(rank(ts_delta(close, 20)), 30)
+rank(ts_zscore(ts_rank(volume, 20), 30))
+group_zscore(rank(ts_sum(close, 20) / ts_sum(close, 50)), industry)
+scale(ts_av_diff(returns, 20) / ts_std_dev(returns, 20))
+if_else(close > ts_delay(close, 20), rank(volume), -rank(volume))
+winsorize(ts_rank(ts_zscore(close, 20), 30), std=2)
+ts_zscore(rank(ts_mean(historical_volatility_30, 10) / ts_mean(historical_volatility_30, 50)), 20)
+rank(ts_decay_linear(rank(close), 30))
+group_neutralize(ts_zscore(volume, 20), sector)
+scale(ts_corr(rank(close), rank(returns), 20))
