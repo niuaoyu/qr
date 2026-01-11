@@ -11,6 +11,12 @@ __pycache__/
 *.db
 *.sqlite3
 
+# generated outputs
+worldquant/io/output/
+worldquant/io/mysql_backups/
+*.sql
+
+
 # IDE
 .idea/
 .vscode/
