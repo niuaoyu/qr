@@ -1,4 +1,292 @@
 --------------------------------------------------
+Alpha ID: 6Xx2zrjL, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 22) < 0.08, rank(ts_delta(close, 11)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0moazEMv, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 22) < 0.08, rank(ts_delta(close, 11)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjkx9aLG, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 22) < 0.08, rank(ts_delta(close, 11)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qd2nEnQ, Author: niuaoyula
+Expression: trade_when(returns > 0.05, -1, 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1Yv2bY2k, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.03, rank(ts_delta(close, 9)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0oMRlQ, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.03, rank(ts_delta(close, 9)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZ9rRwJ, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.03, rank(ts_delta(close, 9)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blpKlzGN, Author: niuaoyula
+Expression: trade_when(adv20 < 1000000, 0, ts_rank(close, 60));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: pw0pwWQo, Author: niuaoyula
+Expression: trade_when(adv20 < 1000000, 0, ts_rank(close, 60));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLe2L5pe, Author: niuaoyula
+Expression: trade_when(adv20 < 1000000, 0, ts_rank(close, 60));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqR9Q7m8, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.04, rank(ts_delta(open, 6)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqM1jP5, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.04, rank(ts_delta(open, 6)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 88AXO03v, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.04, rank(ts_delta(open, 6)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOQxLzp, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 19) < 0.07, rank(ts_delta(open, 8)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16Eaxbe, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 19) < 0.07, rank(ts_delta(open, 8)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJGPa2W, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 19) < 0.07, rank(ts_delta(open, 8)), 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO1vj59, Author: niuaoyula
+Expression: trade_when(pcr_vol_20 > 1, -1, 1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqa0WwnK, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_mean(returns, 22)));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vkn58KYw, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_mean(returns, 22)));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXKrX9z, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_mean(returns, 22)));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEWZqzZ, Author: niuaoyula
+Expression: trade_when(ts_rank(ts_corr(close, volume, 20), 60) > 0.7, 0, rank(returns));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Vkn5lwJV, Author: niuaoyula
+Expression: trade_when(ts_rank(ts_corr(close, volume, 20), 60) > 0.7, 0, rank(returns));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZMlL38, Author: niuaoyula
+Expression: trade_when(ts_rank(ts_corr(close, volume, 20), 60) > 0.7, 0, rank(returns));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: np0Q0aqz, Author: niuaoyula
+Expression: trade_when(ts_rank(news_curr_vol, 44) > 0.7, signed_power((rank(ts_zscore(news_eod_close, 150)))/(rank(ts_rank(volume, 20))+1), 1.5), group_rank(ts_corr(returns, volume, 120), sector));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0e8egaL, Author: niuaoyula
+Expression: trade_when(ts_rank(news_curr_vol, 44) > 0.7, signed_power((rank(ts_zscore(news_eod_close, 150)))/(rank(ts_rank(volume, 20))+1), 1.5), group_rank(ts_corr(returns, volume, 120), sector));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZJZb2R, Author: niuaoyula
+Expression: trade_when(ts_rank(news_curr_vol, 44) > 0.7, signed_power((rank(ts_zscore(news_eod_close, 150)))/(rank(ts_rank(volume, 20))+1), 1.5), group_rank(ts_corr(returns, volume, 120), sector));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qowOpg, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_delta(close, 5)));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvdzxYv, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_delta(close, 5)));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqa0z5PR, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_delta(close, 5)));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qzvnMK, Author: niuaoyula
+Expression: trade_when(ts_zscore(news_curr_vol, 150) < -1, group_neutralize(ts_rank(ts_zscore(news_eod_close, 120), 22), sector), signed_power(rank(ts_corr(high, low, 126)), 3));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ezgmzg, Author: niuaoyula
+Expression: trade_when(ts_zscore(news_curr_vol, 150) < -1, group_neutralize(ts_rank(ts_zscore(news_eod_close, 120), 22), sector), signed_power(rank(ts_corr(high, low, 126)), 3));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AGEgJz, Author: niuaoyula
+Expression: trade_when(ts_zscore(news_curr_vol, 150) < -1, group_neutralize(ts_rank(ts_zscore(news_eod_close, 120), 22), sector), signed_power(rank(ts_corr(high, low, 126)), 3));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvlkR8J, Author: niuaoyula
+Expression: rank(ts_backfill(close / vwap, 5) - ts_backfill(close / vwap, 10));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blpOjAk6, Author: 2734849800
+Expression: rank(ts_mean(high/ts_arg_max(high,5), 10) * ts_mean(low/ts_arg_min(low,5), 10))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZA7zw0, Author: 2734849800
+Expression: rank(ts_mean(high/ts_arg_max(high,5), 10) * ts_mean(low/ts_arg_min(low,5), 10))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rEmlAwZ, Author: 2734849800
+Expression: rank(ts_mean(high/ts_arg_max(high,5), 10) * ts_mean(low/ts_arg_min(low,5), 10))
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: gJvWxrpM, Author: niuaoyula
 Expression: trade_when(ts_rank(returns, 20) > 0.8, -1, 1)
 Sharpe: 0.0

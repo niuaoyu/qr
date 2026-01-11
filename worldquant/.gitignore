@@ -14,6 +14,8 @@ __pycache__/
 # IDE
 .idea/
 .vscode/
+.serena
+.claude
 *.swp
 *.swo
 
@@ -24,3 +26,4 @@ data/backup/
 # 临时文件
 *.tmp
 *.log
+.ace-tool/
