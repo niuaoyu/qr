@@ -1,156 +1,249 @@
 --------------------------------------------------
 Alpha ID: RRXOqxkz, Author: 2734849800
 Expression: winsorize(zscore(signed_power(ts_backfill(fn_intangible_assets_accum_amort_q, 90), 2)), std=5);
+Alpha ID: O0eLbEK1, Author: niuaoyula
+Expression: rank(ts_backfill(fnd6_newqv1300_citotalq, 45) / (basic_shares_max_guidance_qtr + 1));
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: KPeoq2wx, Author: 2734849800
 Expression: winsorize(zscore(signed_power(ts_backfill(fn_intangible_assets_accum_amort_q, 90), 2)), std=5);
+=======
+Alpha ID: vR0Eeqmz, Author: niuaoyula
+Expression: rank(ts_backfill(fnd6_newqv1300_citotalq, 45) / (basic_shares_max_guidance_qtr + 1));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: N1Mdq8Zq, Author: 2734849800
 Expression: winsorize(zscore(signed_power(ts_backfill(fn_intangible_assets_accum_amort_q, 90), 2)), std=5);
+=======
+Alpha ID: kqRw1EGk, Author: niuaoyula
+Expression: rank(ts_backfill(fnd6_newqv1300_citotalq, 45) / (basic_shares_max_guidance_qtr + 1));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: om2bwapv, Author: 2734849800
 Expression: group_neutralize((min_tangible_book_value_per_share_guidance_2*fnd6_newqv1300_glcea12), subindustry);
+=======
+Alpha ID: 6Xx2zrjL, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 22) < 0.08, rank(ts_delta(close, 11)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: 58Rm7g75, Author: 2734849800
 Expression: group_neutralize((min_tangible_book_value_per_share_guidance_2*fnd6_newqv1300_glcea12), subindustry);
+=======
+Alpha ID: 0moazEMv, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 22) < 0.08, rank(ts_delta(close, 11)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: 0moVk8mv, Author: 2734849800
 Expression: group_neutralize((min_tangible_book_value_per_share_guidance_2*fnd6_newqv1300_glcea12), subindustry);
+=======
+Alpha ID: Wjkx9aLG, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 22) < 0.08, rank(ts_delta(close, 11)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: QPexrXdQ, Author: 2734849800
 Expression: trade_when(volume > adv20, ts_decay_linear(ts_backfill(sales_estimate_average_quarterly, 120), 7), rank(returns));
+=======
+Alpha ID: 3qd2nEnQ, Author: niuaoyula
+Expression: trade_when(returns > 0.05, -1, 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: WjkZwQlo, Author: 2734849800
 Expression: trade_when(volume > adv20, ts_decay_linear(ts_backfill(sales_estimate_average_quarterly, 120), 7), rank(returns));
+=======
+Alpha ID: 1Yv2bY2k, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.03, rank(ts_delta(close, 9)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: xAMLw8GJ, Author: 2734849800
 Expression: trade_when(volume > adv20, ts_decay_linear(ts_backfill(sales_estimate_average_quarterly, 120), 7), rank(returns));
+=======
+Alpha ID: vR0oMRlQ, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.03, rank(ts_delta(close, 9)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: j2LpQmNQ, Author: 2734849800
 Expression: ts_regression(implied_volatility_mean_10, fnd6_newqv1300_glceeps12, 120);
+=======
+Alpha ID: YPZ9rRwJ, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.03, rank(ts_delta(close, 9)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: d5qMwpqx, Author: 2734849800
 Expression: ts_regression(implied_volatility_mean_10, fnd6_newqv1300_glceeps12, 120);
+=======
+Alpha ID: blpKlzGN, Author: niuaoyula
+Expression: trade_when(adv20 < 1000000, 0, ts_rank(close, 60));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: j2Lpmq5O, Author: 2734849800
 Expression: ts_regression(implied_volatility_mean_10, fnd6_newqv1300_glceeps12, 120);
+=======
+Alpha ID: pw0pwWQo, Author: niuaoyula
+Expression: trade_when(adv20 < 1000000, 0, ts_rank(close, 60));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: KPeoar51, Author: 2734849800
 Expression: trade_when(volume > adv20, ts_regression(fnd6_optfvgr, sga_expense, 252), rank(returns));
+=======
+Alpha ID: LLe2L5pe, Author: niuaoyula
+Expression: trade_when(adv20 < 1000000, 0, ts_rank(close, 60));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: 9qoe0jm2, Author: 2734849800
 Expression: trade_when(volume > adv20, ts_regression(fnd6_optfvgr, sga_expense, 252), rank(returns));
+=======
+Alpha ID: kqR9Q7m8, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.04, rank(ts_delta(open, 6)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: QPexLYYM, Author: 2734849800
 Expression: ts_corr(fnd6_newqv1300_spceepsq, fnd2_dbplanepdfbnfpnext12m, 22);
+=======
+Alpha ID: XgqM1jP5, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.04, rank(ts_delta(open, 6)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: P0eRd7Op, Author: 2734849800
 Expression: ts_corr(fnd6_newqv1300_spceepsq, fnd2_dbplanepdfbnfpnext12m, 22);
+=======
+Alpha ID: 88AXO03v, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 18) < 0.04, rank(ts_delta(open, 6)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: LLevjEMm, Author: 2734849800
 Expression: ts_regression(fnd6_newqv1300_prcaq, capex, 120);
+=======
+Alpha ID: mLOQxLzp, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 19) < 0.07, rank(ts_delta(open, 8)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: wp6dm3Qx, Author: 2734849800
 Expression: ts_regression(fnd6_newqv1300_prcaq, capex, 120);
+=======
+Alpha ID: A16Eaxbe, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 19) < 0.07, rank(ts_delta(open, 8)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: gJvlAK3K, Author: 2734849800
 Expression: ts_regression(fnd6_newqv1300_prcaq, capex, 120);
+=======
+Alpha ID: akJGPa2W, Author: niuaoyula
+Expression: trade_when(ts_std_dev(volume, 19) < 0.07, rank(ts_delta(open, 8)), 0);
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: d5qM5YYJ, Author: 2734849800
 Expression: trade_when(returns > 0, ((rp_nip_product+news_prev_day_ret)*signed_power(fn_comp_options_exercisable_number_q, 3)), rank(returns));
 Sharpe: 0.0
@@ -648,6 +741,9 @@ Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
 Alpha ID: qMbYaraP, Author: 2734849800
+=======
+Alpha ID: mLO1vj59, Author: niuaoyula
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Expression: trade_when(pcr_vol_20 > 1, -1, 1);
 Sharpe: 0.0
 Turnover: 0.0
@@ -655,112 +751,198 @@ Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: KPe5JQbl, Author: 2734849800
 Expression: trade_when(adv20 < 500000, 0, ts_rank(close, 22));
+=======
+Alpha ID: zqa0WwnK, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_mean(returns, 22)));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: xAM2rWeN, Author: 2734849800
 Expression: trade_when(adv20 < 500000, 0, ts_rank(close, 22));
+=======
+Alpha ID: Vkn58KYw, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_mean(returns, 22)));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: A16rNZWw, Author: 2734849800
 Expression: trade_when(ts_std_dev(returns, 20) > group_mean(ts_std_dev(returns, 20), 1, market), 0, returns);
+=======
+Alpha ID: RRXKrX9z, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_mean(returns, 22)));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: QPeNbZkp, Author: 2734849800
 Expression: trade_when(ts_std_dev(returns, 20) > group_mean(ts_std_dev(returns, 20), 1, market), 0, returns);
+=======
+Alpha ID: 2rEWZqzZ, Author: niuaoyula
+Expression: trade_when(ts_rank(ts_corr(close, volume, 20), 60) > 0.7, 0, rank(returns));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: d5q3OJdx, Author: 2734849800
 Expression: trade_when(ts_std_dev(returns, 20) > group_mean(ts_std_dev(returns, 20), 1, market), 0, returns);
+=======
+Alpha ID: Vkn5lwJV, Author: niuaoyula
+Expression: trade_when(ts_rank(ts_corr(close, volume, 20), 60) > 0.7, 0, rank(returns));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: 78Ovj165, Author: 2734849800
 Expression: group_mean(close, 1, sector);
+=======
+Alpha ID: ZYZMlL38, Author: niuaoyula
+Expression: trade_when(ts_rank(ts_corr(close, volume, 20), 60) > 0.7, 0, rank(returns));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: O0eMkJmd, Author: 2734849800
 Expression: trade_when(ts_rank(close, 20) < 0.2, 1, 0);
+=======
+Alpha ID: np0Q0aqz, Author: niuaoyula
+Expression: trade_when(ts_rank(news_curr_vol, 44) > 0.7, signed_power((rank(ts_zscore(news_eod_close, 150)))/(rank(ts_rank(volume, 20))+1), 1.5), group_rank(ts_corr(returns, volume, 120), sector));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: KPe5xKLl, Author: 2734849800
 Expression: trade_when(ts_zscore(close, 20) > 2, -1, 0);
+=======
+Alpha ID: P0e8egaL, Author: niuaoyula
+Expression: trade_when(ts_rank(news_curr_vol, 44) > 0.7, signed_power((rank(ts_zscore(news_eod_close, 150)))/(rank(ts_rank(volume, 20))+1), 1.5), group_rank(ts_corr(returns, volume, 120), sector));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: A16rMd3e, Author: 2734849800
 Expression: trade_when(ts_arg_max(close, 20)==0, -1, 0);
+=======
+Alpha ID: YPZJZb2R, Author: niuaoyula
+Expression: trade_when(ts_rank(news_curr_vol, 44) > 0.7, signed_power((rank(ts_zscore(news_eod_close, 150)))/(rank(ts_rank(volume, 20))+1), 1.5), group_rank(ts_corr(returns, volume, 120), sector));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: 9qod1zed, Author: 2734849800
 Expression: trade_when(pcr_oi_20 > 1.2, -1, 1);
+=======
+Alpha ID: d5qowOpg, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_delta(close, 5)));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: QPeNJ89w, Author: 2734849800
 Expression: trade_when(pcr_oi_20 > 1.2, -1, 1);
+=======
+Alpha ID: gJvdzxYv, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_delta(close, 5)));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: 3qdkb2MZ, Author: 2734849800
 Expression: trade_when(close > ts_mean(close, 20), 1, -1);
+=======
+Alpha ID: zqa0z5PR, Author: niuaoyula
+Expression: trade_when(abs(returns) > 0.05, 0, rank(ts_delta(close, 5)));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: 9qodYNm9, Author: 2734849800
 Expression: trade_when(returns > 0.03, -1, 0);
+=======
+Alpha ID: d5qzvnMK, Author: niuaoyula
+Expression: trade_when(ts_zscore(news_curr_vol, 150) < -1, group_neutralize(ts_rank(ts_zscore(news_eod_close, 120), 22), sector), signed_power(rank(ts_corr(high, low, 126)), 3));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None
 Grade: UNKNOWN
 --------------------------------------------------
 --------------------------------------------------
+<<<<<<< HEAD
 Alpha ID: mLOdzR32, Author: 2734849800
 Expression: trade_when(pcr_vol_20 > 1, -1, 1);
+=======
+Alpha ID: O0ezgmzg, Author: niuaoyula
+Expression: trade_when(ts_zscore(news_curr_vol, 150) < -1, group_neutralize(ts_rank(ts_zscore(news_eod_close, 120), 22), sector), signed_power(rank(ts_corr(high, low, 126)), 3));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7AGEgJz, Author: niuaoyula
+Expression: trade_when(ts_zscore(news_curr_vol, 150) < -1, group_neutralize(ts_rank(ts_zscore(news_eod_close, 120), 22), sector), signed_power(rank(ts_corr(high, low, 126)), 3));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 1YvlkR8J, Author: niuaoyula
+Expression: rank(ts_backfill(close / vwap, 5) - ts_backfill(close / vwap, 10));
+>>>>>>> 4b5f8fd5f96f190fba94cb65d09a826cf96e9766
 Sharpe: 0.0
 Turnover: 0.0
 Fitness: None

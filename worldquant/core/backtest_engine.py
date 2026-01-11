@@ -194,7 +194,7 @@ class BacktestEngine:
         conn.close()
 
     def _write_result(self, alpha_detail, alpha_id):
-        """根据 grade 写入对应文件"""
+        """根据 grade 写入对应文件，非优质结果添加失败的 checks 信息"""
         grade = alpha_detail.get('grade')
         is_data = alpha_detail.get('is', {})
         regular = alpha_detail.get('regular', {})
@@ -208,8 +208,33 @@ class BacktestEngine:
             f"Turnover: {is_data.get('turnover')}\n"
             f"Fitness: {is_data.get('fitness')}\n"
             f"Grade: {grade}\n"
-            f"{'-'*50}"
         )
+
+        # 对于非 INFERIOR/UNKNOWN 的结果，添加非 PASS 的 checks
+        if grade not in ('INFERIOR', 'UNKNOWN', None, ''):
+            checks = is_data.get('checks', [])
+            failed_checks = [c for c in checks if c.get('result') != 'PASS']
+
+            if failed_checks:
+                content += "Checks:\n"
+                for check in failed_checks:
+                    name = check.get('name', 'UNKNOWN')
+                    result = check.get('result', 'UNKNOWN')
+                    value = check.get('value')
+                    limit = check.get('limit')
+
+                    # 格式化 check 信息
+                    check_line = f"  - {name}: {result}"
+                    if limit is not None and value is not None:
+                        check_line += f" (limit: {limit}, value: {value})"
+                    elif limit is not None:
+                        check_line += f" (limit: {limit})"
+                    elif value is not None:
+                        check_line += f" (value: {value})"
+
+                    content += check_line + "\n"
+
+        content += f"{'-'*50}"
 
         if grade == 'INFERIOR':
             prepend_to_file(self.inferior_path, content, self.file_lock)
