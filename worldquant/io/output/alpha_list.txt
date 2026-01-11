@@ -1,4 +1,181 @@
 --------------------------------------------------
+Alpha ID: VknrJXrV, Author: 2734849800(很多问题)
+Expression: zscore(rank(ts_corr(fn_finite_lived_intangible_assets_gross_q, snt_value, 7)));
+Sharpe: 1.43
+Turnover: 0.7019
+Fitness: 1.07
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRpJNQ8, Author: 2734849800（可以用）
+Expression: group_zscore(ts_regression(rp_ess_price, news_mins_20_pct_dn, 252), market);
+Sharpe: 1.38
+Turnover: 0.0732
+Fitness: 2.3
+Grade: EXCELLENT
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJvNWW3v, Author: 2734849800
+Expression: group_zscore(ts_regression(rp_ess_price, news_mins_20_pct_dn, 252), market);
+Sharpe: 1.35
+Turnover: 0.0764
+Fitness: 2.23
+Grade: EXCELLENT
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPeAmmX1, Author: 2734849800
+Expression: group_zscore(ts_regression(rp_ess_price, news_mins_20_pct_dn, 252), market);
+Sharpe: 1.35
+Turnover: 0.0849
+Fitness: 2.24
+Grade: EXCELLENT
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: QPepa5mG, Author: 2734849800
+Expression: ts_rank((open - close) / close, 40) * rank(volume / adv20);
+Sharpe: 1.85
+Turnover: 0.3748
+Fitness: 1.03
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRMWVJl, Author: 2734849800
+Expression: ts_rank((open - close) / vwap, 60) * rank(volume / adv20);
+Sharpe: 1.89
+Turnover: 0.3734
+Fitness: 1.07
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Oroqv1, Author: 2734849800 
+Expression: ts_rank((vwap - vwap) / (high + low), 40);
+Sharpe: 1.22
+Turnover: 0.0252
+Fitness: 1.4
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLew5eva, Author: 2734849800----Weight concentration 50% is above cutoff of 10% on 7/30/2018.
+Expression: ts_rank((vwap - vwap) / (high + low), 40);
+Sharpe: 1.27
+Turnover: 0.027
+Fitness: 1.41
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A162pYqW, Author: 2734849800
+Expression: ts_rank((vwap - vwap) / (high - low), 40);
+Sharpe: 1.27
+Turnover: 0.0272
+Fitness: 1.42
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 2rE2gPPZ, Author: 2734849800
+Expression: ts_rank((vwap - vwap) / (high - low), 40);
+Sharpe: 1.21
+Turnover: 0.0247
+Fitness: 1.39
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+group_neutralize(ts_corr(high, low, 40), industry);niuaoyula提交过类似的了
+Alpha ID: 0moa5L8K, Author: 2734849800
+Expression: group_neutralize(rank(ts_corr(vwap, close, 60)), subindustry);
+Sharpe: 1.27
+Turnover: 0.0605
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLermkb6, Author: 2734849800
+Expression: group_rank(ts_zscore(fnd6_ds,60), subindustry);
+Sharpe: 0.93
+Turnover: 0.0588
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0ezbJob, Author: 2734849800
+Expression: trade_when(ts_zscore(close, 20) < -2, 1, 0);
+Sharpe: 1.21
+Turnover: 0.0295
+Fitness: 1.36
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2G3NRE, Author: 2734849800
+Expression: trade_when(ts_zscore(close, 20) < -2, 1, 0);
+Sharpe: 1.03
+Turnover: 0.0238
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6Gwjzv, Author: 2734849800
+Expression: trade_when(ts_arg_min(close, 20)==0, 1, 0);
+Sharpe: 1.07
+Turnover: 0.0248
+Fitness: 1.11
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMGww3g, Author: 2734849800
+Expression: trade_when(ts_arg_min(close, 20)==0, 1, 0);
+Sharpe: 1.15
+Turnover: 0.0275
+Fitness: 1.29
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: LLemQpze, Author: 2734849800
+Expression: trade_when(close > ts_mean(close, 20), 1, -1);
+Sharpe: 1.05
+Turnover: 0.026
+Fitness: 1.13
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0eMk8NY, Author: 2734849800
+Expression: trade_when(ts_rank(close, 20) < 0.2, 1, 0);
+Sharpe: 1.1
+Turnover: 0.0244
+Fitness: 1.15
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blprZGZ6, Author: 2734849800  ----Weight concentration 50% is above cutoff of 10% on 8/16/2018.
+Expression: trade_when(close > ts_mean(close, 20), 1, -1);
+Sharpe: 1.25
+Turnover: 0.0267
+Fitness: 1.4
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qo85k32, Author: 2734849800
+Expression: group_neutralize(implied_volatility_call_60 / implied_volatility_put_60, sector);
+Sharpe: 1.97
+Turnover: 0.354
+Fitness: 1.06
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexEaK38, Author: 2734849800
+Expression: -ts_delta(close, 5);
+Sharpe: 1.38
+Turnover: 0.2707
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1MLA70p, Author: 2734849800  变成这个就可以提交了group_neutralize(ts_corr(high, low, 60),INDUSTRY);
+Expression: ts_corr(high, low, 60);   
+Sharpe: 1.23
+Turnover: 0.1089
+Fitness: 1.03
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: 58RJXV5n, Author: 2734849800---用了
 Expression: ts_mean(close, 20) - close;
 Sharpe: 1.26
