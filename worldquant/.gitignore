@@ -12,7 +12,6 @@ __pycache__/
 *.sqlite3
 
 # generated outputs
-worldquant/io/output/
 worldquant/io/mysql_backups/
 *.sql
 
