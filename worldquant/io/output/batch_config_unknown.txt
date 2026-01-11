@@ -1,4 +1,148 @@
 --------------------------------------------------
+Alpha ID: E53ndplr, Author: 672019598
+Expression: trade_when(ts_rank(close, 22) < 0.2, 1, 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OPVWWx, Author: 672019598
+Expression: trade_when(scl12_sentiment > 0, 1, -1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXvK9Zn, Author: 672019598
+Expression: trade_when(pcr_vol_20 > 1.5, -1, 1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0eA8o6L, Author: 672019598
+Expression: trade_when(pcr_vol_20 > 1.5, -1, 1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPe25rdg, Author: 672019598
+Expression: trade_when(pcr_oi_20 > 1.5, -1, 1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: YPZ9EgKA, Author: 672019598
+Expression: trade_when(pcr_oi_20 > 1.5, -1, 1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qd2keQO, Author: 672019598
+Expression: trade_when(pcr_oi_20 > 1.5, -1, 1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV7krWQ, Author: 672019598
+Expression: trade_when(implied_volatility_call_30 > implied_volatility_put_30, group_rank(pcr_vol_30, industry), group_rank(volume, industry));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LM12eo, Author: 672019598
+Expression: trade_when(implied_volatility_call_30 > implied_volatility_put_30, group_rank(pcr_vol_30, industry), group_rank(volume, industry));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blpKNw5p, Author: 672019598
+Expression: trade_when(implied_volatility_call_30 > implied_volatility_put_30, group_rank(pcr_vol_30, industry), group_rank(volume, industry));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2ZWKob, Author: 672019598
+Expression: trade_when(implied_volatility_mean_20 < 0.15, 1, 0);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJGLG51, Author: 672019598
+Expression: ts_corr(revenue, sales, 252);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: WjkzngMQ, Author: 672019598
+Expression: group_neutralize(trade_when(close > ts_mean(close, 20), 1, -1),industry);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 6Xx03z97, Author: 672019598
+Expression: group_scale(trade_when(close > ts_mean(close, 20), 1, -1),industry);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJzMNpw, Author: 672019598
+Expression: group_zscore(trade_when(close > ts_mean(close, 20), 1, -1),industry);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ezrmkE, Author: 672019598
+Expression: trade_when(close > ts_mean(close, 20), 1, -1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZzwzVx, Author: 672019598
+Expression: trade_when(close > ts_mean(close, 20), 1, -1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2GwR0n, Author: 672019598
+Expression: trade_when(close > ts_mean(close, 20), 1, -1);
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: gJvWxrpM, Author: niuaoyula
 Expression: trade_when(ts_rank(returns, 20) > 0.8, -1, 1)
 Sharpe: 0.0

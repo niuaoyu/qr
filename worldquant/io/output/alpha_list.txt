@@ -1,5 +1,493 @@
 --------------------------------------------------
-Alpha ID: 78Oo6p11, Author: niuaoyula
+Alpha ID: RRXxg98z, Author: 672019598
+Expression: trade_when(ts_rank(close, 22) < 0.2, 1, 0);
+Sharpe: 1.07
+Turnover: 0.0248
+Fitness: 1.11
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: O0edb7O1, Author: 672019598
+Expression: ts_corr(close, vwap, 22) > 0 ? 1 : 0;
+Sharpe: 0.78
+Turnover: 0.158
+Fitness: 1.18
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAM7a9ZJ, Author: 672019598
+Expression: debt / assets;
+Sharpe: 1.32
+Turnover: 0.0233
+Fitness: 1.09
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXxLL5a, Author: 672019598
+Expression: debt / assets;
+Sharpe: 1.31
+Turnover: 0.0237
+Fitness: 1.08
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexwZZ0l, Author: 672019598
+Expression: debt / assets;
+Sharpe: 1.3
+Turnover: 0.0245
+Fitness: 1.06
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: om2jepV6, Author: 672019598
+Expression: trade_when(scl12_sentiment > 0, 1, -1);
+Sharpe: 1.07
+Turnover: 0.0265
+Fitness: 1.17
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0moZWOZv, Author: 672019598
+Expression: trade_when(scl12_sentiment > 0, 1, -1);
+Sharpe: 1.35
+Turnover: 0.0251
+Fitness: 1.58
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbJlQz2, Author: 672019598
+Expression: group_rank(debt / assets, industry);
+Sharpe: 1.55
+Turnover: 0.0228
+Fitness: 1.21
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbppqrK, Author: 672019598
+Expression: -ts_mean(volume/adv20,150);
+Sharpe: 1.35
+Turnover: 0.0861
+Fitness: 1.5
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: rKkwwXK3, Author: 672019598
+Expression: -ts_mean(volume/adv20,150);
+Sharpe: 1.38
+Turnover: 0.0637
+Fitness: 1.55
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: blpggG6q, Author: 672019598
+Expression: -ts_mean(volume/adv20,150);
+Sharpe: 1.34
+Turnover: 0.0708
+Fitness: 1.49
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJ88kZW, Author: 672019598
+Expression: -ts_mean(volume/adv20,180);
+Sharpe: 1.42
+Turnover: 0.0594
+Fitness: 1.66
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPep2AAz, Author: 672019598
+Expression: -ts_mean(volume/adv20,180);
+Sharpe: 1.41
+Turnover: 0.066
+Fitness: 1.64
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53M2z1J, Author: 672019598
+Expression: -ts_mean(volume/adv20,180);
+Sharpe: 1.42
+Turnover: 0.0799
+Fitness: 1.66
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZ9paO8, Author: 672019598
+Expression: group_rank(implied_volatility_call_120 - implied_volatility_put_120, industry);
+Sharpe: 1.77
+Turnover: 0.16
+Fitness: 1.29
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexYVjo7, Author: 672019598
+Expression: group_rank(implied_volatility_call_120 - implied_volatility_put_120, industry);
+Sharpe: 1.84
+Turnover: 0.2635
+Fitness: 1.04
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A162LZWW, Author: 672019598
+Expression: group_rank(ts_delta(operating_income / sales, 66), industry);
+Sharpe: 1.68
+Turnover: 0.0457
+Fitness: 1.22
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qP9p3X, Author: 672019598
+Expression: group_rank(ts_delta(operating_income / sales, 66), industry);
+Sharpe: 1.74
+Turnover: 0.0548
+Fitness: 1.28
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: qMbw0dL1, Author: 672019598
+Expression: group_rank(ts_delta(operating_income / sales, 126), industry);
+Sharpe: 1.49
+Turnover: 0.0349
+Fitness: 1.13
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: XgqOJqgl, Author: 672019598
+Expression: group_rank(ts_delta(operating_income / sales, 126), industry);
+Sharpe: 1.51
+Turnover: 0.0388
+Fitness: 1.14
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrV7OJw0, Author: 672019598
+Expression: group_rank(ts_delta(operating_income / sales, 126), industry);
+Sharpe: 1.54
+Turnover: 0.0467
+Fitness: 1.17
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw2G5Jn, Author: 672019598
+Expression: group_rank(ts_rank(ebitda / assets, 126), industry);
+Sharpe: 1.58
+Turnover: 0.0563
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLOlb3AW, Author: 672019598
+Expression: rank(ts_rank(operating_income / cap, 252));
+Sharpe: 1.37
+Turnover: 0.1424
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: gJv0PwZl, Author: 672019598
+Expression: group_rank(ts_delta(revenue / equity, 66), sector);
+Sharpe: 1.68
+Turnover: 0.0403
+Fitness: 1.1
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A162a9ge, Author: 672019598
+Expression: group_rank(ts_delta(revenue / equity, 66), sector);
+Sharpe: 1.7
+Turnover: 0.0442
+Fitness: 1.11
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMEzq9m, Author: 672019598
+Expression: group_rank(ts_delta(revenue / equity, 66), sector);
+Sharpe: 1.72
+Turnover: 0.0543
+Fitness: 1.13
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: RRXvnRrn, Author: 672019598
+Expression: group_rank(ts_delta(anl4_epsr_low / cap, 126), industry);
+Sharpe: 1.98
+Turnover: 0.0877
+Fitness: 1.77
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: MPw2RvY9, Author: 672019598
+Expression: group_rank(ts_delta(anl4_epsr_low / cap, 126), industry);
+Sharpe: 1.84
+Turnover: 0.04
+Fitness: 1.61
+Grade: GOOD
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: wp6vxPgl, Author: 672019598
+Expression: group_rank(ts_delta(eps / cap, 126), industry);
+Sharpe: 1.39
+Turnover: 0.0408
+Fitness: 1.07
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: N1M2mVaq, Author: 672019598
+Expression: group_rank(ts_delta(eps / cap, 126), industry);
+Sharpe: 1.43
+Turnover: 0.0481
+Fitness: 1.11
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Jjl2EGzj, Author: 672019598
+Expression: group_rank(ts_delta(eps / cap, 126), industry);
+Sharpe: 1.5
+Turnover: 0.072
+Fitness: 1.18
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqR9Wb8O, Author: 672019598
+Expression: rank(ts_rank(anl4_epsr_high / cap, 126));
+Sharpe: 1.39
+Turnover: 0.1034
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qdJkZzZ, Author: 672019598
+Expression: rank(ts_rank(anl4_epsr_high / cap, 126));
+Sharpe: 1.64
+Turnover: 0.2081
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: zqaebbkO, Author: 672019598
+Expression: trade_when(implied_volatility_mean_20 < 0.15, 1, 0);
+Sharpe: 1.37
+Turnover: 0.0283
+Fitness: 1.11
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 3qd51QdX, Author: 672019598
+Expression: -ts_delta(close,3);
+Sharpe: 1.47
+Turnover: 0.3325
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO1Vb25, Author: 672019598
+Expression: -ts_delta(close,10);
+Sharpe: 1.33
+Turnover: 0.2466
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78OMwzdO, Author: 672019598
+Expression: -(high-ts_mean(high,10));
+Sharpe: 1.31
+Turnover: 0.2302
+Fitness: 1.03
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: j2LxZQwZ, Author: 672019598
+Expression: -(vwap-ts_mean(vwap,10));
+Sharpe: 1.43
+Turnover: 0.3035
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZMpGg8, Author: 672019598
+Expression: -(vwap-ts_mean(vwap,10));
+Sharpe: 1.3
+Turnover: 0.2297
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7Avram6, Author: 672019598
+Expression: -(close-ts_mean(close,10));
+Sharpe: 1.37
+Turnover: 0.2325
+Fitness: 1.1
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: e7Avr55O, Author: 672019598
+Expression: -(close-ts_mean(close,10));
+Sharpe: 1.47
+Turnover: 0.3094
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: Wjk09YRo, Author: 672019598
+Expression: -ts_delta(close,5);
+Sharpe: 1.38
+Turnover: 0.2707
+Fitness: 1.02
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR06d2Vv, Author: 672019598
+Expression: -(close-ts_mean(close,5));
+Sharpe: 1.49
+Turnover: 0.3178
+Fitness: 1.07
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qoEMnX, Author: 672019598
+Expression: -(close-ts_mean(close,20));
+Sharpe: 1.26
+Turnover: 0.2072
+Fitness: 1.04
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: KPezYzGE, Author: 672019598 -------后续好好研究这个表达式，就改了天数啥也不变怎么有的unknown有的average
+Expression: trade_when(close > ts_mean(close, 20), 1, -1);
+Sharpe: 1.12
+Turnover: 0.0261
+Fitness: 1.16
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMGXG7W, Author: 672019598
+Expression: group_neutralize(ts_corr(high, low, 60),INDUSTRY);
+Sharpe: 1.23
+Turnover: 0.1089
+Fitness: 1.03
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZzk7bQ, Author: 672019598
+Expression: group_neutralize(ts_corr(high, low, 60),INDUSTRY);
+Sharpe: 1.38
+Turnover: 0.0736
+Fitness: 1.23
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: GrVzElJQ, Author: 672019598
+Expression: group_neutralize(ts_corr(high, low, 60),INDUSTRY);
+Sharpe: 1.33
+Turnover: 0.0848
+Fitness: 1.16
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: A16z6QgX, Author: 672019598 -----这几个咋样都小，先不搞了Sub-universe Sharpe of 0.99 is below cutoff of 1.08.
+Expression: ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),5)* rank(volume*close) + ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),10)* (1-rank(volume*close));
+Sharpe: 2.45
+Turnover: 0.1593
+Fitness: 2.75
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: xAMGM30q, Author: 672019598
+Expression: ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),5)* rank(volume*close) + ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),10)* (1-rank(volume*close));
+Sharpe: 2.43
+Turnover: 0.1416
+Fitness: 2.89
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 58R5RQXz, Author: 672019598
+Expression: ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),5)* rank(volume*close) + ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),10)* (1-rank(volume*close));
+Sharpe: 2.5
+Turnover: 0.2145
+Fitness: 2.44
+Grade: EXCELLENT
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: lexGZ9dA, Author: 672019598 ---Sub-universe Sharpe of 0.98 is below cutoff of 1.08.
+Expression: ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),10);
+Sharpe: 2.49
+Turnover: 0.1929
+Fitness: 2.56
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: ZYZzLaWZ, Author: 672019598  ---Sub-universe Sharpe of 0.93 is below cutoff of 1.05.
+Expression: ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),10);
+Sharpe: 2.42
+Turnover: 0.138
+Fitness: 2.91
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: mLO7kbRp, Author: 672019598 -----Sub-universe Sharpe of 0.96 is below cutoff of 1.05.
+Expression: ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),10);
+Sharpe: 2.43
+Turnover: 0.1512
+Fitness: 2.79
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: E53zAabK, Author: 672019598   ------ Sub-universe Sharpe of 0.98 is below cutoff of 1.06.
+Expression: ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),5);
+Sharpe: 2.44
+Turnover: 0.1787
+Fitness: 2.57
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 0mogWQEG, Author: 672019598----Sub-universe Sharpe of 0.99 is below cutoff of 1.1.
+Expression: ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),5);
+Sharpe: 2.53
+Turnover: 0.2578
+Fitness: 2.24
+Grade: EXCELLENT
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5qzwmr2, Author: 672019598  ---Sub-universe Sharpe of 0.96 is below cutoff of 1.06.
+Expression: ts_decay_linear(trade_when(pcr_oi_270 < 1, implied_volatility_call_270 - implied_volatility_put_270, -1),5);
+Sharpe: 2.44
+Turnover: 0.1507
+Fitness: 2.81
+Grade: SPECTACULAR
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: d5q3RJQK, Author: 672019598
+Expression: if_else(unsystematic_risk_last_30_days > ts_mean(unsystematic_risk_last_30_days, 126), -ts_mean(returns, 5), 0);
+Sharpe: 1.48
+Turnover: 0.4194
+Fitness: 1.01
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: akJeaXMR, Author: 672019598
+Expression: group_rank(ts_mean(implied_volatility_call_90, 60) - ts_mean(implied_volatility_put_90, 60), industry);
+Sharpe: 1.48
+Turnover: 0.0291
+Fitness: 1.03
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: P0ex5ePq, Author: 672019598
+Expression: group_rank(ts_mean(implied_volatility_call_90, 60) - ts_mean(implied_volatility_put_90, 60), industry);
+Sharpe: 1.49
+Turnover: 0.0353
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 9qo8lL6q, Author: 672019598
+Expression: group_rank(ts_mean(implied_volatility_call_90, 60) - ts_mean(implied_volatility_put_90, 60), industry);
+Sharpe: 1.5
+Turnover: 0.0564
+Fitness: 1.05
+Grade: AVERAGE
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: 78Oo6p11, Author: niuaoyula---交了
 Expression: group_rank(ts_delta(implied_volatility_mean_60, 5), industry)
 Sharpe: 1.96
 Turnover: 0.4006
