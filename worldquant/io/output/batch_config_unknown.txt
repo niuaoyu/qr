@@ -1,4 +1,28 @@
 --------------------------------------------------
+Alpha ID: O0eLbEK1, Author: niuaoyula
+Expression: rank(ts_backfill(fnd6_newqv1300_citotalq, 45) / (basic_shares_max_guidance_qtr + 1));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: vR0Eeqmz, Author: niuaoyula
+Expression: rank(ts_backfill(fnd6_newqv1300_citotalq, 45) / (basic_shares_max_guidance_qtr + 1));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
+Alpha ID: kqRw1EGk, Author: niuaoyula
+Expression: rank(ts_backfill(fnd6_newqv1300_citotalq, 45) / (basic_shares_max_guidance_qtr + 1));
+Sharpe: 0.0
+Turnover: 0.0
+Fitness: None
+Grade: UNKNOWN
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: 6Xx2zrjL, Author: niuaoyula
 Expression: trade_when(ts_std_dev(volume, 22) < 0.08, rank(ts_delta(close, 11)), 0);
 Sharpe: 0.0

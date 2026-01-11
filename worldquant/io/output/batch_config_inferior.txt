@@ -1,4 +1,12 @@
 --------------------------------------------------
+Alpha ID: om2b9xxk, Author: niuaoyula
+Expression: trade_when(volume > adv20, rank(dividend_estimate_maximum), -1);
+Sharpe: -0.07
+Turnover: 0.0065
+Fitness: -0.02
+Grade: INFERIOR
+--------------------------------------------------
+--------------------------------------------------
 Alpha ID: QPex5RmX, Author: niuaoyula
 Expression: trade_when(volume > adv20, rank(dividend_estimate_maximum), -1);
 Sharpe: -0.07
