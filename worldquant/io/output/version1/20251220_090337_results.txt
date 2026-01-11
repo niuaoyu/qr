@@ -1,6 +1,0 @@
-Alpha ID: xAa17N0n
-Expression: -rank(ts_mean(returns, 3) - ts_mean(returns, 20))
-Sharpe: 1.37
-Turnover: 0.7847
-Fitness: 0.56
---------------------------------------------------
